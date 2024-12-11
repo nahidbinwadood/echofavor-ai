@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header fixed top-0 left-0 w-full">
+    <header class="header">
       <nav
         class="container font-plus-jakarta flex items-center justify-between py-4"
       >
@@ -62,11 +62,11 @@
       </nav>
     </header>
     <!-- main -->
-    <main>
+    <main style="min-height: 200vh">
       <!-- hero section::start -->
-      <section class="hero">
-        <div class="container">
-          <div class="pt-16 flex flex-col items-center justify-center gap-10">
+      <section class="hero relative">
+        <div class="container hero-wrapper">
+          <div class="pt-10 flex flex-col items-center justify-center gap-8">
             <!-- glow button -->
             <div class="button button-transparent font-plus-jakarta">
               <div>
@@ -88,12 +88,141 @@
 
             <!-- title -->
             <h1 class="text-center hero-title">
-              Your Personal <span class="glowing-hero-title">AI Content </span><br />
+              Your Personal <span class="glowing-hero-title">AI Content </span
+              ><br />
               Companion
             </h1>
+
+            <!-- search button -->
+            <div
+              class="bg-white flex items-center gap-3 rounded-full pt-1 pr-1 pb-1 pl-6"
+            >
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                >
+                  <path
+                    d="M23.9016 12.4717C14.2041 14.1872 14.1014 16.0698 12.7464 23.5954C11.3308 16.1794 10.7054 13.8572 1.10156 12.5266C10.7148 11.1483 11.3047 8.84097 12.6876 1.40625C14.0824 8.90553 14.2092 10.8049 23.9016 12.4717ZM22.0598 5.20641C20.1292 5.54793 20.1086 5.92281 19.8391 7.42089C19.5571 5.94465 19.4325 5.48241 17.5207 5.21745C19.4344 4.94313 19.552 4.48377 19.8271 3.00369C20.105 4.49649 20.1302 4.87473 22.0598 5.20641Z"
+                    fill="#141414"
+                  />
+                  <path
+                    d="M8.6324 18.8185C6.54584 19.1877 6.52376 19.5928 6.2324 21.2121C5.9276 19.6163 5.7932 19.1169 3.72656 18.8303C5.79512 18.5339 5.92208 18.0373 6.21968 16.4375C6.51968 18.0513 6.54704 18.46 8.6324 18.8185Z"
+                    fill="#141414"
+                  />
+                </svg>
+              </div>
+              <form style="z-index: 1" class="flex icon gap-4 w-full">
+                <input
+                  placeholder="Ask questions any here"
+                  class="outline-none border-none w-full banner-filter-input"
+                  type="text"
+                  name="banner-filter"
+                  id="banner-filter"
+                />
+                <button
+                  type="submit"
+                  style="background-color: #081839"
+                  class="button"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.1875 22.25C18.1926 22.25 22.25 18.1926 22.25 13.1875C22.25 8.18242 18.1926 4.125 13.1875 4.125C8.18242 4.125 4.125 8.18242 4.125 13.1875C4.125 18.1926 8.18242 22.25 13.1875 22.25Z"
+                      stroke="#ADD8E6"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M25.875 25.8737L19.8334 19.832"
+                      stroke="#ADD8E6"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- banner image -->
+          <div class="banner-image">
+            <img
+              class="h-full w-full object-cover"
+              src="./assets/images/3.png"
+              alt=""
+            />
           </div>
         </div>
       </section>
+
+      <!-- video section -->
+      <div class="hero-video-wrapper container relative !w-full">
+        <!-- shade -->
+        <div class="hero-video-wrapper-shade"></div>
+
+        <!-- video -->
+        <div>
+          <video
+            autoplay
+            muted
+            loop
+            id="video"
+            class="w-full h-full object-cover rounded-2xl"
+          >
+            <source
+              src="https://videos.pexels.com/video-files/9783693/9783693-uhd_2732_1440_25fps.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+
+        <!-- play btn -->
+        <div
+          class="absolute top-0 left-0 w-full h-full flex justify-center items-center"
+        >
+          <div class="hero-video-play-btn rounded-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="58"
+              height="58"
+              viewBox="0 0 58 58"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M46.496 32.5943C48.4975 31.4399 48.4975 28.5514 46.496 27.397L20.4989 12.4019C18.4989 11.2483 16 12.6917 16 15.0006V44.9907C16 47.2996 18.4989 48.743 20.4989 47.5894L46.496 32.5943Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div id="pause-btn" class="rounded-full bg-black/40 p-5 lg:p-8">
+            <svg class="size-5 xl:size-8" xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+              <g clip-path="url(#clip0_9136_4548)">
+                <rect x="12" y="10" width="10" height="32" fill="white"></rect>
+                <rect x="30" y="10" width="10" height="32" fill="white"></rect>
+              </g>
+              <defs>
+                <clipPath id="clip0_9136_4548">
+                  <rect width="52" height="52" fill="white"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+
       <!-- hero section::end -->
     </main>
     <!-- footer -->

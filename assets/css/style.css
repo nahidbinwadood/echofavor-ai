@@ -63,9 +63,7 @@ body {
   font-size: var(--text-reg);
 }
 
-main {
-  overflow: hidden;
-}
+
 
 /* =====fonts::start===== */
 .font-plus-jakarta {
@@ -100,6 +98,7 @@ main {
   background: #fff;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .button-white {
@@ -122,9 +121,14 @@ main {
 
 /* ==============Homepage Hero============== */
 .hero {
-  margin-top: 110px;
   min-height: calc(100vh - 110px);
   background: #091836;
+  overflow: hidden;
+}
+
+.hero-wrapper {
+  z-index: 1;
+  min-height: calc(100vh - 110px);
 }
 
 .hero-title {
@@ -141,4 +145,59 @@ main {
 .glowing-hero-title {
   color: #ADD8E6;
   font-size: 76px;
+}
+
+.banner-filter-input {
+  max-width: 400px;
+  min-width: 400px;
+  width: 100%;
+}
+
+.banner-image {
+  height: 700px;
+  width: 700px;
+  position: absolute;
+  right: 80px;
+  bottom: -20%;
+}
+
+/* hero video section */
+
+
+.hero-video-wrapper {
+  margin-top: -350px;
+  position: relative;
+  border-radius: 16px;
+  width: 100%;
+  height: 780px;
+  overflow: hidden;
+  width: 100% !important;
+  padding-left: 0;
+  padding-right: 0
+}
+
+.hero-video-wrapper-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  /* Adjust opacity as needed */
+}
+
+#video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-video-play-btn {
+  cursor: pointer;
+  padding: 20px;
+  fill: rgba(0, 0, 0, 0.25);
+  stroke-width: 1px;
+  stroke: #FFF;
+  box-shadow: -0.73px 0.73px 0.73px -1.46px rgba(255, 255, 255, 0.35) inset;
+  backdrop-filter: blur(10px);
 }
