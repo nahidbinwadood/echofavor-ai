@@ -1,0 +1,121 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+i,
+ol,
+ul,
+li,
+form,
+label,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+:root {
+  --primary--color: #081839;
+}
+
+body {
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  width: 100%;
+  font-size: var(--text-reg);
+}
+
+main {
+  overflow: hidden;
+}
+
+/* =====fonts::start===== */
+.font-plus-jakarta {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-space-grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* =====fonts::end===== */
+
+/* =====common css::start===== */
+.container {
+  max-width: 1536px;
+  margin: 0 auto;
+}
+
+.button {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  display: flex;
+  padding: 13px 33px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 44px;
+  background: #fff;
+  outline: none;
+  border: none;
+}
+
+.button-white {
+  background: #fff;
+  color: var(--primary--color);
+}
+
+.button-transparent {
+  background: transparent;
+  border: 1px solid #FFF;
+  color: white;
+}
+
+/* =====common css::end===== */
+
+/* ==============navbar============== */
+.header {
+  background: var(--primary--color);
+}
