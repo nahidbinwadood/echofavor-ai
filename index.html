@@ -173,13 +173,7 @@
 
         <!-- video -->
         <div>
-          <video
-            autoplay
-            muted
-            loop
-            id="video"
-            class="w-full h-full object-cover rounded-2xl"
-          >
+          <video id="hero-video" class="w-full h-full object-cover rounded-2xl">
             <source
               src="https://videos.pexels.com/video-files/9783693/9783693-uhd_2732_1440_25fps.mp4"
               type="video/mp4"
@@ -191,7 +185,7 @@
         <div
           class="absolute top-0 left-0 w-full h-full flex justify-center items-center"
         >
-          <div class="hero-video-play-btn rounded-full">
+          <div id="play-btn" class="hero-video-play-btn rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="58"
@@ -207,8 +201,15 @@
               />
             </svg>
           </div>
-          <div id="pause-btn" class="rounded-full bg-black/40 p-5 lg:p-8">
-            <svg class="size-5 xl:size-8" xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+
+          <div id="pause-btn" class="hero-video-play-btn rounded-full hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="58"
+              height="58"
+              viewBox="0 0 52 52"
+              fill="none"
+            >
               <g clip-path="url(#clip0_9136_4548)">
                 <rect x="12" y="10" width="10" height="32" fill="white"></rect>
                 <rect x="30" y="10" width="10" height="32" fill="white"></rect>
@@ -220,6 +221,13 @@
               </defs>
             </svg>
           </div>
+
+          <video
+            id="hero-video"
+            class="hidden"
+            src="your-video-url.mp4"
+            preload="auto"
+          ></video>
         </div>
       </div>
 
