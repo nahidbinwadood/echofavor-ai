@@ -139,6 +139,12 @@ body {
   letter-spacing: -0.8px;
 }
 
+.trial-button {
+  border-radius: 30px;
+  background: #081839;
+  padding: 15px 58px;
+}
+
 /* =====common css::end===== */
 
 /* ==============navbar============== */
@@ -301,4 +307,105 @@ body {
   line-height: 140%;
 }
 
+.testimonials-nav-btn {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  padding: 18px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background: #F0F0F0;
+  cursor: pointer;
+  transition: ease 0.5s;
+}
+
+.testimonials-nav-btn:hover {
+  background: var(--primary--color);
+}
+
+.testimonials-nav-btn:hover svg path {
+  stroke: #FFF;
+}
+
 /* ==============Testimonial::end============== */
+
+/* ==============Article::start============== */
+.article-card-image-wrapper {
+  height: 350px;
+  width: 100%;
+}
+
+.article-card-image-wrapper img {
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.article-card-title {
+  color: #081839;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 180%;
+  margin-bottom: 6px;
+}
+
+.article-card-big-title {
+  color: #141414;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 132%;
+  letter-spacing: -0.64px;
+  margin-bottom: 6px;
+}
+
+.article-card-description {
+  color: #5A5C5F;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 180%;
+  margin-bottom: 8px;
+}
+
+.article-card-date {
+  color: #8993A4;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 164%;
+}
+
+/* ==============Article::end============== */
+
+/* ==============Trial::Start============== */
+.trial-wrapper {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  max-height: 700px;
+  min-height: 700px;
+  height: full;
+  background: linear-gradient(to right, #c2d5fd 0%, #c2d5fd 100%)
+}
+
+.trial-title {
+  color: #141414;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 132%;
+  letter-spacing: -1.28px;
+}
+
+.trial-description {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  color: #141414;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+/* ==============Trial::end============== */
