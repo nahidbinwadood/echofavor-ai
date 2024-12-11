@@ -554,7 +554,7 @@
       <!-- featured section::end -->
 
       <!-- testimonials section::start -->
-      <section class="py-16 container">
+      <section class="py-16 container testimonial-slider-wrapper">
         <!-- title -->
         <div class="w-full flex flex-col gap-4 items-center justify-center">
           <div class="button button-title font-plus-jakarta">
@@ -580,7 +580,7 @@
         </div>
 
         <!-- testimonial slider -->
-        <div class="mt-16 grid grid-cols-3 gap-12">
+        <div class="mt-16 owl-carousel overflow-hidden rounded-lg">
           <div class="p-4 testimonial-slider rounded-2xl">
             <!-- stars -->
             <div class="flex items-center gap-2">
@@ -843,7 +843,7 @@
 
         <!-- nav buttons -->
         <div class="mt-8 w-full flex items-center justify-center gap-6">
-          <div class="testimonials-nav-btn">
+          <div id="testimonial-slider-prev-btn" class="testimonials-nav-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -869,7 +869,7 @@
               />
             </svg>
           </div>
-          <div class="testimonials-nav-btn">
+          <div id="testimonial-slider-next-btn" class="testimonials-nav-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -1179,6 +1179,7 @@
     </footer>
     <!-- scripts -->
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
