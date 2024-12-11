@@ -117,5 +117,28 @@ main {
 
 /* ==============navbar============== */
 .header {
-  background: var(--primary--color);
+  background: #091836;
+}
+
+/* ==============Homepage Hero============== */
+.hero {
+  margin-top: 110px;
+  min-height: calc(100vh - 110px);
+  background: #091836;
+}
+
+.hero-title {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 76px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 132%;
+  letter-spacing: -0.76px;
+}
+
+.glowing-hero-title {
+  color: #ADD8E6;
+  font-size: 76px;
 }
