@@ -621,6 +621,9 @@
 .flex-col-reverse {
   flex-direction: column-reverse;
 }
+.flex-1 {
+  flex: 1 1 0%;
+}
 
 /* Flex Wrap */
 .flex-wrap {
