@@ -618,9 +618,7 @@ body {
   line-height: 164%;
   text-transform: capitalize;
   display: flex;
-  width: 293px;
-  height: 56px;
-  padding: 6px 24px;
+  padding: 12px 24px;
   justify-content: center;
   align-items: center;
   gap: 12px;
