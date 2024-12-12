@@ -740,6 +740,7 @@ body {
 .blog-tabs-wrapper .nav {
   gap: 28px;
 }
+
 .blog-tabs-wrapper .nav-link {
   text-decoration: none;
   min-width: 120px;
@@ -757,13 +758,64 @@ body {
   border-radius: 29px;
   border: 1px solid #141414;
 }
+
 .blog-tabs-wrapper .nav-link.active {
-  color:#fff;
+  color: #fff;
   text-align: center;
   font-style: normal;
   font-weight: 400;
-  line-height: 180%; /* 28.8px */
+  line-height: 180%;
+  /* 28.8px */
   border-radius: 29px;
   background: #081839;
 }
+
 /*==========================================Blog Page::end=========================================== */
+/*========================================Blog Details::end========================================= */
+.blog-details-banner {
+  height: 650px;
+}
+
+.blog-details-banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog-details-description {
+  color: #5A5C5F;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164%;
+}
+
+.blog-details-page {
+  background: var(--primary--color);
+  min-height: 400px;
+}
+
+.details-bg {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.details-filter-input {
+  min-width: 400px;
+}
+
+.details-filter-input-btn {
+  border: none;
+  outline: none;
+  width: 48px;
+height: 48px;
+flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/*========================================Blog Details::start======================================== */

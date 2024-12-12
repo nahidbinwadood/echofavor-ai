@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Echofavor | Home</title>
+    <title>Echofavor | Blog Details</title>
     <!-- ==== Favicon ==== -->
     <link rel="icon" href="./assets/images/favicon.svg" type="image/svg" />
 
@@ -35,13 +35,13 @@
         <div>
           <ul class="flex items-center gap-8 text-lg font-medium">
             <li>
-              <a href="index.html" class="navlink_active">Home</a>
+              <a href="index.html">Home</a>
             </li>
             <li>
               <a href="pricing.html">Pricing</a>
             </li>
             <li>
-              <a href="blog.html">Blog</a>
+              <a href="index.html" class="navlink_active">Blog</a>
             </li>
             <li>
               <a href="index.html">Affiliate</a>
@@ -63,976 +63,200 @@
     </header>
     <!-- main -->
     <main>
-      <!-- hero section::start -->
-      <section class="hero relative">
-        <div class="container hero-wrapper">
-          <div class="pt-10 flex flex-col items-center justify-center gap-8">
-            <!-- glow button -->
-            <div class="button button-transparent font-plus-jakarta">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="27"
-                  height="26"
-                  viewBox="0 0 27 26"
-                  fill="none"
-                >
-                  <path
-                    d="M21.1523 14.3946C14.3957 15.5059 13.1945 16.9174 12.2936 25.1456C12.2635 25.416 11.8729 25.416 11.843 25.1456C10.9421 16.9174 9.74093 15.536 2.98405 14.3946C2.71365 14.3647 2.71365 13.9745 2.98405 13.9443C9.74093 12.8333 10.9421 11.452 11.843 3.22348C11.8729 2.95308 12.2635 2.95308 12.2936 3.22348C13.1943 11.452 14.3955 12.8034 21.1523 13.9443C21.3926 13.9745 21.3926 14.3346 21.1523 14.3946ZM24.0355 4.90516C21.9328 5.32584 21.3323 6.0164 20.9722 8.47886C20.9423 8.74926 20.5517 8.74926 20.5218 8.47886C20.1615 6.0164 19.5609 5.32558 17.4588 4.87526C17.4076 4.86378 17.3618 4.83522 17.329 4.79427C17.2963 4.75332 17.2784 4.70243 17.2784 4.64997C17.2784 4.59751 17.2963 4.54661 17.329 4.50567C17.3618 4.46472 17.4076 4.43615 17.4588 4.42468C19.531 4.00426 20.1615 3.3137 20.5216 0.851238C20.5517 0.580837 20.9423 0.580837 20.9722 0.851238C21.3325 3.31344 21.9331 4.00426 24.0355 4.45484C24.2757 4.51464 24.2757 4.87526 24.0355 4.90516Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-              <span class="font-normal">Welcome To ecohofavor ai</span>
-            </div>
-
-            <!-- title -->
-            <h1 class="text-center hero-title">
-              Your Personal <span class="glowing-hero-title">AI Content </span
-              ><br />
-              Companion
-            </h1>
-
-            <!-- search button -->
-            <div
-              class="bg-white flex items-center gap-3 rounded-full pt-1 pr-1 pb-1 pl-6"
-            >
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="25"
-                  viewBox="0 0 25 25"
-                  fill="none"
-                >
-                  <path
-                    d="M23.9016 12.4717C14.2041 14.1872 14.1014 16.0698 12.7464 23.5954C11.3308 16.1794 10.7054 13.8572 1.10156 12.5266C10.7148 11.1483 11.3047 8.84097 12.6876 1.40625C14.0824 8.90553 14.2092 10.8049 23.9016 12.4717ZM22.0598 5.20641C20.1292 5.54793 20.1086 5.92281 19.8391 7.42089C19.5571 5.94465 19.4325 5.48241 17.5207 5.21745C19.4344 4.94313 19.552 4.48377 19.8271 3.00369C20.105 4.49649 20.1302 4.87473 22.0598 5.20641Z"
-                    fill="#141414"
-                  />
-                  <path
-                    d="M8.6324 18.8185C6.54584 19.1877 6.52376 19.5928 6.2324 21.2121C5.9276 19.6163 5.7932 19.1169 3.72656 18.8303C5.79512 18.5339 5.92208 18.0373 6.21968 16.4375C6.51968 18.0513 6.54704 18.46 8.6324 18.8185Z"
-                    fill="#141414"
-                  />
-                </svg>
-              </div>
-              <form style="z-index: 1" class="flex icon gap-4 w-full">
-                <input
-                  placeholder="Ask questions any here"
-                  class="outline-none border-none w-full banner-filter-input"
-                  type="text"
-                  name="banner-filter"
-                  id="banner-filter"
-                />
-                <button
-                  type="submit"
-                  style="background-color: #081839"
-                  class="button"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                  >
-                    <path
-                      d="M13.1875 22.25C18.1926 22.25 22.25 18.1926 22.25 13.1875C22.25 8.18242 18.1926 4.125 13.1875 4.125C8.18242 4.125 4.125 8.18242 4.125 13.1875C4.125 18.1926 8.18242 22.25 13.1875 22.25Z"
-                      stroke="#ADD8E6"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M25.875 25.8737L19.8334 19.832"
-                      stroke="#ADD8E6"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </form>
-            </div>
-          </div>
-
-          <!-- banner image -->
-          <div class="banner-image">
-            <img
-              class="h-full w-full object-cover"
-              src="./assets/images/3.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- video section -->
-      <div class="hero-video-wrapper container relative !w-full">
-        <!-- shade -->
-        <div class="hero-video-wrapper-shade"></div>
-
-        <!-- video -->
-        <div>
-          <video id="hero-video" class="w-full h-full object-cover rounded-2xl">
-            <source
-              src="https://videos.pexels.com/video-files/9783693/9783693-uhd_2732_1440_25fps.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-
-        <!-- play btn -->
-        <div
-          class="absolute top-0 left-0 w-full h-full flex justify-center items-center"
-        >
-          <div id="play-btn" class="hero-video-play-btn rounded-full">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="58"
-              height="58"
-              viewBox="0 0 58 58"
-              fill="none"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M46.496 32.5943C48.4975 31.4399 48.4975 28.5514 46.496 27.397L20.4989 12.4019C18.4989 11.2483 16 12.6917 16 15.0006V44.9907C16 47.2996 18.4989 48.743 20.4989 47.5894L46.496 32.5943Z"
-                fill="white"
-              />
-            </svg>
-          </div>
-
-          <div id="pause-btn" class="hero-video-play-btn rounded-full hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="58"
-              height="58"
-              viewBox="0 0 52 52"
-              fill="none"
-            >
-              <g clip-path="url(#clip0_9136_4548)">
-                <rect x="12" y="10" width="10" height="32" fill="white"></rect>
-                <rect x="30" y="10" width="10" height="32" fill="white"></rect>
-              </g>
-              <defs>
-                <clipPath id="clip0_9136_4548">
-                  <rect width="52" height="52" fill="white"></rect>
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-
-          <video
-            id="hero-video"
-            class="hidden"
-            src="your-video-url.mp4"
-            preload="auto"
-          ></video>
-        </div>
-      </div>
-
-      <!-- hero section::end -->
-
-      <!-- featured section::start -->
-      <section class="pt-16 container">
+      <!-- blog details title section::start -->
+      <section class="mt-20">
         <!-- title -->
         <div class="w-full flex flex-col gap-4 items-center justify-center">
           <div class="button button-title font-plus-jakarta">
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="26"
-                height="26"
-                viewBox="0 0 26 26"
-                fill="none"
-              >
-                <path
-                  d="M20.6523 14.3946C13.8957 15.5059 12.6945 16.9174 11.7936 25.1456C11.7635 25.416 11.3729 25.416 11.343 25.1456C10.4421 16.9174 9.24093 15.536 2.48405 14.3946C2.21365 14.3647 2.21365 13.9745 2.48405 13.9443C9.24093 12.8333 10.4421 11.452 11.343 3.22348C11.3729 2.95308 11.7635 2.95308 11.7936 3.22348C12.6943 11.452 13.8955 12.8034 20.6523 13.9443C20.8926 13.9745 20.8926 14.3346 20.6523 14.3946ZM23.5355 4.90516C21.4328 5.32584 20.8323 6.0164 20.4722 8.47886C20.4423 8.74926 20.0517 8.74926 20.0218 8.47886C19.6615 6.0164 19.0609 5.32558 16.9588 4.87526C16.9076 4.86378 16.8618 4.83522 16.829 4.79427C16.7963 4.75332 16.7784 4.70243 16.7784 4.64997C16.7784 4.59751 16.7963 4.54661 16.829 4.50567C16.8618 4.46472 16.9076 4.43615 16.9588 4.42468C19.031 4.00426 19.6615 3.3137 20.0216 0.851238C20.0517 0.580837 20.4423 0.580837 20.4722 0.851238C20.8325 3.31344 21.4331 4.00426 23.5355 4.45484C23.7757 4.51464 23.7757 4.87526 23.5355 4.90516Z"
-                  fill="#141414"
-                />
-              </svg>
-            </div>
-            <span class="font-normal">Featured</span>
+            <span class="font-normal">Product updates</span>
           </div>
           <div>
-            <h2 class="primary-title">Learn how GPT works</h2>
-          </div>
-        </div>
-
-        <!-- features -->
-        <div class="my-24 flex flex-col gap-12">
-          <!-- feature-1 -->
-          <div class="flex items-center gap-12">
-            <!-- image section -->
-            <div class="p-4 feature-image-card rounded-2xl">
-              <img src="./assets/images/feature-1.png" alt="" />
-            </div>
-            <!-- info section -->
-            <div
-              class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
+            <h2
+              style="width: 70%; margin: 0 auto"
+              class="primary-title text-center"
             >
-              <div>
-                <button class="button featured-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <span>Advantage</span>
-                </button>
-
-                <!-- description -->
-                <div class="mt-16">
-                  <h3 class="font-space-grotesk text-3xl text-black font-bold">
-                    Multi-File Type Support
-                  </h3>
-                  <p class="mt-4">
-                    The AI chatbot can handle various file formats, making it
-                    incredibly versatile and user-friendly. Users can upload and
-                    query content from multiple file types, including Word, txt,
-                    PDF, Excel, and HTML.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- feature-2 -->
-          <div class="flex flex-row-reverse items-center gap-12">
-            <!-- image section -->
-            <div class="p-4 feature-image-card rounded-2xl">
-              <img src="./assets/images/feature-2.png" alt="" />
-            </div>
-            <!-- info section -->
-            <div
-              class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
+              Zoom Transcription: How To Transcribe a Meeting With One Simple
+              Too
+            </h2>
+            <p
+              style="
+                color: #42526e;
+                text-align: center;
+                margin-top: 12px;
+                font-weight: 500;
+              "
             >
-              <div>
-                <button class="button featured-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <span>Advantage</span>
-                </button>
-
-                <!-- description -->
-                <div class="mt-16">
-                  <h3 class="font-space-grotesk text-3xl text-black font-bold">
-                    Personalized Content Queries
-                  </h3>
-                  <p class="mt-4">
-                    Users can ask questions specifically about their own
-                    content, making it a tailored experience.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- feature-3 -->
-          <div class="flex items-center gap-12">
-            <!-- image section -->
-            <div class="p-4 feature-image-card rounded-2xl">
-              <img src="./assets/images/feature-3.png" alt="" />
-            </div>
-            <!-- info section -->
-            <div
-              class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
-            >
-              <div>
-                <button class="button featured-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <span>Advantage</span>
-                </button>
-
-                <!-- description -->
-                <div class="mt-16">
-                  <h3 class="font-space-grotesk text-3xl text-black font-bold">
-                    Web Integration
-                  </h3>
-                  <p class="mt-4">
-                    The AI can pull relevant information from the web, providing
-                    comprehensive answers.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- feature-4 -->
-          <div class="flex flex-row-reverse items-center gap-12">
-            <!-- image section -->
-            <div class="p-4 feature-image-card rounded-2xl">
-              <img src="./assets/images/feature-4.png" alt="" />
-            </div>
-            <!-- info section -->
-            <div
-              class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
-            >
-              <div>
-                <button class="button featured-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <span>Advantage</span>
-                </button>
-
-                <!-- description -->
-                <div class="mt-16">
-                  <h3 class="font-space-grotesk text-3xl text-black font-bold">
-                    User-Friendly Interface
-                  </h3>
-                  <p class="mt-4">
-                    Easy to navigate and interact with, ensuring a smooth user
-                    experience.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- feature-5 -->
-          <div class="flex items-center gap-12">
-            <!-- image section -->
-            <div class="p-4 feature-image-card rounded-2xl">
-              <img src="./assets/images/feature-5.png" alt="" />
-            </div>
-            <!-- info section -->
-            <div
-              class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
-            >
-              <div>
-                <button class="button featured-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <span>Advantage</span>
-                </button>
-
-                <!-- description -->
-                <div class="mt-16">
-                  <h3 class="font-space-grotesk text-3xl text-black font-bold">
-                    Real-Time Responses
-                  </h3>
-                  <p class="mt-4">
-                    Get instant answers to your queries, enhancing productivity
-                    and efficiency.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- feature-6 -->
-          <div class="flex flex-row-reverse items-center gap-12">
-            <!-- image section -->
-            <div class="p-4 feature-image-card rounded-2xl">
-              <img src="./assets/images/feature-6.png" alt="" />
-            </div>
-            <!-- info section -->
-            <div
-              class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
-            >
-              <div>
-                <button class="button featured-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <span>Advantage</span>
-                </button>
-
-                <!-- description -->
-                <div class="mt-16">
-                  <h3 class="font-space-grotesk text-3xl text-black font-bold">
-                    Versatile Applications
-                  </h3>
-                  <p class="mt-4">
-                    Suitable for various needs, from personal inquiries to
-                    professional research.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- feature-7 -->
-          <div class="flex items-center gap-12">
-            <!-- image section -->
-            <div class="p-4 feature-image-card rounded-2xl">
-              <img src="./assets/images/feature-7.png" alt="" />
-            </div>
-            <!-- info section -->
-            <div
-              class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
-            >
-              <div>
-                <button class="button featured-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <span>Advantage</span>
-                </button>
-
-                <!-- description -->
-                <div class="mt-16">
-                  <h3 class="font-space-grotesk text-3xl text-black font-bold">
-                    Secure and Private
-                  </h3>
-                  <p class="mt-4">
-                    Ensures user data and content are handled with utmost
-                    security and privacy.
-                  </p>
-                </div>
-              </div>
-            </div>
+              November 21, 2023
+            </p>
           </div>
         </div>
       </section>
-      <!-- featured section::end -->
+      <!-- blog details title section::end -->
 
-      <!-- testimonials section::start -->
-      <section class="py-16 container testimonial-slider-wrapper">
-        <!-- title -->
-        <div class="w-full flex flex-col gap-4 items-center justify-center">
-          <div class="button button-title font-plus-jakarta">
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="26"
-                height="26"
-                viewBox="0 0 26 26"
-                fill="none"
-              >
-                <path
-                  d="M20.6523 14.3946C13.8957 15.5059 12.6945 16.9174 11.7936 25.1456C11.7635 25.416 11.3729 25.416 11.343 25.1456C10.4421 16.9174 9.24093 15.536 2.48405 14.3946C2.21365 14.3647 2.21365 13.9745 2.48405 13.9443C9.24093 12.8333 10.4421 11.452 11.343 3.22348C11.3729 2.95308 11.7635 2.95308 11.7936 3.22348C12.6943 11.452 13.8955 12.8034 20.6523 13.9443C20.8926 13.9745 20.8926 14.3346 20.6523 14.3946ZM23.5355 4.90516C21.4328 5.32584 20.8323 6.0164 20.4722 8.47886C20.4423 8.74926 20.0517 8.74926 20.0218 8.47886C19.6615 6.0164 19.0609 5.32558 16.9588 4.87526C16.9076 4.86378 16.8618 4.83522 16.829 4.79427C16.7963 4.75332 16.7784 4.70243 16.7784 4.64997C16.7784 4.59751 16.7963 4.54661 16.829 4.50567C16.8618 4.46472 16.9076 4.43615 16.9588 4.42468C19.031 4.00426 19.6615 3.3137 20.0216 0.851238C20.0517 0.580837 20.4423 0.580837 20.4722 0.851238C20.8325 3.31344 21.4331 4.00426 23.5355 4.45484C23.7757 4.51464 23.7757 4.87526 23.5355 4.90516Z"
-                  fill="#141414"
-                />
-              </svg>
-            </div>
-            <span class="font-normal">Testimonials</span>
-          </div>
-          <div>
-            <h2 class="primary-title">What our client say</h2>
-          </div>
-        </div>
-
-        <!-- testimonial slider -->
-        <div class="mt-16 owl-carousel overflow-hidden rounded-lg">
-          <div class="p-4 testimonial-slider rounded-2xl">
-            <!-- stars -->
-            <div class="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 27 26"
-                fill="none"
-              >
-                <path
-                  d="M12.2286 1.0247C12.528 0.103393 13.8314 0.103396 14.1307 1.02471L16.5474 8.4624C16.6813 8.87442 17.0652 9.15338 17.4985 9.15338H25.3189C26.2876 9.15338 26.6904 10.393 25.9067 10.9624L19.5798 15.5591C19.2293 15.8138 19.0827 16.2652 19.2165 16.6772L21.6332 24.1149C21.9325 25.0362 20.8781 25.8023 20.0944 25.2329L13.7675 20.6362C13.417 20.3815 12.9424 20.3815 12.5919 20.6362L6.26502 25.2329C5.48131 25.8023 4.42683 25.0362 4.72618 24.1149L7.14283 16.6772C7.27671 16.2652 7.13005 15.8138 6.77956 15.5591L0.452678 10.9624C-0.331035 10.393 0.0717432 9.15338 1.04047 9.15338H8.86092C9.29415 9.15338 9.6781 8.87442 9.81198 8.4624L12.2286 1.0247Z"
-                  fill="#FFD700"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 27 26"
-                fill="none"
-              >
-                <path
-                  d="M12.2286 1.0247C12.528 0.103393 13.8314 0.103396 14.1307 1.02471L16.5474 8.4624C16.6813 8.87442 17.0652 9.15338 17.4985 9.15338H25.3189C26.2876 9.15338 26.6904 10.393 25.9067 10.9624L19.5798 15.5591C19.2293 15.8138 19.0827 16.2652 19.2165 16.6772L21.6332 24.1149C21.9325 25.0362 20.8781 25.8023 20.0944 25.2329L13.7675 20.6362C13.417 20.3815 12.9424 20.3815 12.5919 20.6362L6.26502 25.2329C5.48131 25.8023 4.42683 25.0362 4.72618 24.1149L7.14283 16.6772C7.27671 16.2652 7.13005 15.8138 6.77956 15.5591L0.452678 10.9624C-0.331035 10.393 0.0717432 9.15338 1.04047 9.15338H8.86092C9.29415 9.15338 9.6781 8.87442 9.81198 8.4624L12.2286 1.0247Z"
-                  fill="#FFD700"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 27 26"
-                fill="none"
-              >
-                <path
-                  d="M12.2286 1.0247C12.528 0.103393 13.8314 0.103396 14.1307 1.02471L16.5474 8.4624C16.6813 8.87442 17.0652 9.15338 17.4985 9.15338H25.3189C26.2876 9.15338 26.6904 10.393 25.9067 10.9624L19.5798 15.5591C19.2293 15.8138 19.0827 16.2652 19.2165 16.6772L21.6332 24.1149C21.9325 25.0362 20.8781 25.8023 20.0944 25.2329L13.7675 20.6362C13.417 20.3815 12.9424 20.3815 12.5919 20.6362L6.26502 25.2329C5.48131 25.8023 4.42683 25.0362 4.72618 24.1149L7.14283 16.6772C7.27671 16.2652 7.13005 15.8138 6.77956 15.5591L0.452678 10.9624C-0.331035 10.393 0.0717432 9.15338 1.04047 9.15338H8.86092C9.29415 9.15338 9.6781 8.87442 9.81198 8.4624L12.2286 1.0247Z"
-                  fill="#FFD700"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 27 26"
-                fill="none"
-              >
-                <path
-                  d="M12.2286 1.0247C12.528 0.103393 13.8314 0.103396 14.1307 1.02471L16.5474 8.4624C16.6813 8.87442 17.0652 9.15338 17.4985 9.15338H25.3189C26.2876 9.15338 26.6904 10.393 25.9067 10.9624L19.5798 15.5591C19.2293 15.8138 19.0827 16.2652 19.2165 16.6772L21.6332 24.1149C21.9325 25.0362 20.8781 25.8023 20.0944 25.2329L13.7675 20.6362C13.417 20.3815 12.9424 20.3815 12.5919 20.6362L6.26502 25.2329C5.48131 25.8023 4.42683 25.0362 4.72618 24.1149L7.14283 16.6772C7.27671 16.2652 7.13005 15.8138 6.77956 15.5591L0.452678 10.9624C-0.331035 10.393 0.0717432 9.15338 1.04047 9.15338H8.86092C9.29415 9.15338 9.6781 8.87442 9.81198 8.4624L12.2286 1.0247Z"
-                  fill="#FFD700"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 27 26"
-                fill="none"
-              >
-                <path
-                  d="M12.2286 1.0247C12.528 0.103393 13.8314 0.103396 14.1307 1.02471L16.5474 8.4624C16.6813 8.87442 17.0652 9.15338 17.4985 9.15338H25.3189C26.2876 9.15338 26.6904 10.393 25.9067 10.9624L19.5798 15.5591C19.2293 15.8138 19.0827 16.2652 19.2165 16.6772L21.6332 24.1149C21.9325 25.0362 20.8781 25.8023 20.0944 25.2329L13.7675 20.6362C13.417 20.3815 12.9424 20.3815 12.5919 20.6362L6.26502 25.2329C5.48131 25.8023 4.42683 25.0362 4.72618 24.1149L7.14283 16.6772C7.27671 16.2652 7.13005 15.8138 6.77956 15.5591L0.452678 10.9624C-0.331035 10.393 0.0717432 9.15338 1.04047 9.15338H8.86092C9.29415 9.15338 9.6781 8.87442 9.81198 8.4624L12.2286 1.0247Z"
-                  fill="#FFD700"
-                />
-              </svg>
-            </div>
-            <div class="mt-3">
-              <p class="testimonial-slider-description">
-                Our experience with Campain was nothing short of amazing. Their
-                comprehensive approach and personalized strategies helped
-                us achieve remarkable results in a short period.Our experience
-                with Campain was nothing short of amazing.
-              </p>
-
-              <!-- user information -->
-              <div class="mt-4 flex gap-4">
-                <div class="testimonial-slider-user-image rounded-full">
-                  <img class="" src="./assets/images/user.png" alt="" />
-                </div>
-                <div class="font-space-grotesk">
-                  <h4 class="text-lg font-bold">Alex Miller</h4>
-                  <p class="testimonial-slider-user-designation">
-                    Co-Founder, echofavor ai
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="p-4 testimonial-slider rounded-2xl">
-            <!-- stars -->
-            <div class="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 27 26"
-                fill="none"
-              >
-                <path
-                  d="M12.2286 1.0247C12.528 0.103393 13.8314 0.103396 14.1307 1.02471L16.5474 8.4624C16.6813 8.87442 17.0652 9.15338 17.4985 9.15338H25.3189C26.2876 9.15338 26.6904 10.393 25.9067 10.9624L19.5798 15.5591C19.2293 15.8138 19.0827 16.2652 19.2165 16.6772L21.6332 24.1149C21.9325 25.0362 20.8781 25.8023 20.0944 25.2329L13.7675 20.6362C13.417 20.3815 12.9424 20.3815 12.5919 20.6362L6.26502 25.2329C5.48131 25.8023 4.42683 25.0362 4.72618 24.1149L7.14283 16.6772C7.27671 16.2652 7.13005 15.8138 6.77956 15.5591L0.452678 10.9624C-0.331035 10.393 0.0717432 9.15338 1.04047 9.15338H8.86092C9.29415 9.15338 9.6781 8.87442 9.81198 8.4624L12.2286 1.0247Z"
-                  fill="#FFD700"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 27 26"
-                fill="none"
-              >
-                <path
-                  d="M12.2286 1.0247C12.528 0.103393 13.8314 0.103396 14.1307 1.02471L16.5474 8.4624C16.6813 8.87442 17.0652 9.15338 17.4985 9.15338H25.3189C26.2876 9.15338 26.6904 10.393 25.9067 10.9624L19.5798 15.5591C19.2293 15.8138 19.0827 16.2652 19.2165 16.6772L21.6332 24.1149C21.9325 25.0362 20.8781 25.8023 20.0944 25.2329L13.7675 20.6362C13.417 20.3815 12.9424 20.3815 12.5919 20.6362L6.26502 25.2329C5.48131 25.8023 4.42683 25.0362 4.72618 24.1149L7.14283 16.6772C7.27671 16.2652 7.13005 15.8138 6.77956 15.5591L0.452678 10.9624C-0.331035 10.393 0.0717432 9.15338 1.04047 9.15338H8.86092C9.29415 9.15338 9.6781 8.87442 9.81198 8.4624L12.2286 1.0247Z"
-                  fill="#FFD700"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 27 26"
-                fill="none"
-              >
-                <path
-                  d="M12.2286 1.0247C12.528 0.103393 13.8314 0.103396 14.1307 1.02471L16.5474 8.4624C16.6813 8.87442 17.0652 9.15338 17.4985 9.15338H25.3189C26.2876 9.15338 26.6904 10.393 25.9067 10.9624L19.5798 15.5591C19.2293 15.8138 19.0827 16.2652 19.2165 16.6772L21.6332 24.1149C21.9325 25.0362 20.8781 25.8023 20.0944 25.2329L13.7675 20.6362C13.417 20.3815 12.9424 20.3815 12.5919 20.6362L6.26502 25.2329C5.48131 25.8023 4.42683 25.0362 4.72618 24.1149L7.14283 16.6772C7.27671 16.2652 7.13005 15.8138 6.77956 15.5591L0.452678 10.9624C-0.331035 10.393 0.0717432 9.15338 1.04047 9.15338H8.86092C9.29415 9.15338 9.6781 8.87442 9.81198 8.4624L12.2286 1.0247Z"
-                  fill="#FFD700"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 27 26"
-                fill="none"
-              >
-                <path
-                  d="M12.2286 1.0247C12.528 0.103393 13.8314 0.103396 14.1307 1.02471L16.5474 8.4624C16.6813 8.87442 17.0652 9.15338 17.4985 9.15338H25.3189C26.2876 9.15338 26.6904 10.393 25.9067 10.9624L19.5798 15.5591C19.2293 15.8138 19.0827 16.2652 19.2165 16.6772L21.6332 24.1149C21.9325 25.0362 20.8781 25.8023 20.0944 25.2329L13.7675 20.6362C13.417 20.3815 12.9424 20.3815 12.5919 20.6362L6.26502 25.2329C5.48131 25.8023 4.42683 25.0362 4.72618 24.1149L7.14283 16.6772C7.27671 16.2652 7.13005 15.8138 6.77956 15.5591L0.452678 10.9624C-0.331035 10.393 0.0717432 9.15338 1.04047 9.15338H8.86092C9.29415 9.15338 9.6781 8.87442 9.81198 8.4624L12.2286 1.0247Z"
-                  fill="#FFD700"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 27 26"
-                fill="none"
-              >
-                <path
-                  d="M12.2286 1.0247C12.528 0.103393 13.8314 0.103396 14.1307 1.02471L16.5474 8.4624C16.6813 8.87442 17.0652 9.15338 17.4985 9.15338H25.3189C26.2876 9.15338 26.6904 10.393 25.9067 10.9624L19.5798 15.5591C19.2293 15.8138 19.0827 16.2652 19.2165 16.6772L21.6332 24.1149C21.9325 25.0362 20.8781 25.8023 20.0944 25.2329L13.7675 20.6362C13.417 20.3815 12.9424 20.3815 12.5919 20.6362L6.26502 25.2329C5.48131 25.8023 4.42683 25.0362 4.72618 24.1149L7.14283 16.6772C7.27671 16.2652 7.13005 15.8138 6.77956 15.5591L0.452678 10.9624C-0.331035 10.393 0.0717432 9.15338 1.04047 9.15338H8.86092C9.29415 9.15338 9.6781 8.87442 9.81198 8.4624L12.2286 1.0247Z"
-                  fill="#FFD700"
-                />
-              </svg>
-            </div>
-            <div class="mt-3">
-              <p class="testimonial-slider-description">
-                Our experience with Campain was nothing short of amazing. Their
-                comprehensive approach and personalized strategies helped
-                us achieve remarkable results in a short period.Our experience
-                with Campain was nothing short of amazing.
-              </p>
-
-              <!-- user information -->
-              <div class="mt-4 flex gap-4">
-                <div class="testimonial-slider-user-image rounded-full">
-                  <img class="" src="./assets/images/user.png" alt="" />
-                </div>
-                <div class="font-space-grotesk">
-                  <h4 class="text-lg font-bold">Alex Miller</h4>
-                  <p class="testimonial-slider-user-designation">
-                    Co-Founder, echofavor ai
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="p-4 testimonial-slider rounded-2xl">
-            <!-- stars -->
-            <div class="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 27 26"
-                fill="none"
-              >
-                <path
-                  d="M12.2286 1.0247C12.528 0.103393 13.8314 0.103396 14.1307 1.02471L16.5474 8.4624C16.6813 8.87442 17.0652 9.15338 17.4985 9.15338H25.3189C26.2876 9.15338 26.6904 10.393 25.9067 10.9624L19.5798 15.5591C19.2293 15.8138 19.0827 16.2652 19.2165 16.6772L21.6332 24.1149C21.9325 25.0362 20.8781 25.8023 20.0944 25.2329L13.7675 20.6362C13.417 20.3815 12.9424 20.3815 12.5919 20.6362L6.26502 25.2329C5.48131 25.8023 4.42683 25.0362 4.72618 24.1149L7.14283 16.6772C7.27671 16.2652 7.13005 15.8138 6.77956 15.5591L0.452678 10.9624C-0.331035 10.393 0.0717432 9.15338 1.04047 9.15338H8.86092C9.29415 9.15338 9.6781 8.87442 9.81198 8.4624L12.2286 1.0247Z"
-                  fill="#FFD700"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 27 26"
-                fill="none"
-              >
-                <path
-                  d="M12.2286 1.0247C12.528 0.103393 13.8314 0.103396 14.1307 1.02471L16.5474 8.4624C16.6813 8.87442 17.0652 9.15338 17.4985 9.15338H25.3189C26.2876 9.15338 26.6904 10.393 25.9067 10.9624L19.5798 15.5591C19.2293 15.8138 19.0827 16.2652 19.2165 16.6772L21.6332 24.1149C21.9325 25.0362 20.8781 25.8023 20.0944 25.2329L13.7675 20.6362C13.417 20.3815 12.9424 20.3815 12.5919 20.6362L6.26502 25.2329C5.48131 25.8023 4.42683 25.0362 4.72618 24.1149L7.14283 16.6772C7.27671 16.2652 7.13005 15.8138 6.77956 15.5591L0.452678 10.9624C-0.331035 10.393 0.0717432 9.15338 1.04047 9.15338H8.86092C9.29415 9.15338 9.6781 8.87442 9.81198 8.4624L12.2286 1.0247Z"
-                  fill="#FFD700"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 27 26"
-                fill="none"
-              >
-                <path
-                  d="M12.2286 1.0247C12.528 0.103393 13.8314 0.103396 14.1307 1.02471L16.5474 8.4624C16.6813 8.87442 17.0652 9.15338 17.4985 9.15338H25.3189C26.2876 9.15338 26.6904 10.393 25.9067 10.9624L19.5798 15.5591C19.2293 15.8138 19.0827 16.2652 19.2165 16.6772L21.6332 24.1149C21.9325 25.0362 20.8781 25.8023 20.0944 25.2329L13.7675 20.6362C13.417 20.3815 12.9424 20.3815 12.5919 20.6362L6.26502 25.2329C5.48131 25.8023 4.42683 25.0362 4.72618 24.1149L7.14283 16.6772C7.27671 16.2652 7.13005 15.8138 6.77956 15.5591L0.452678 10.9624C-0.331035 10.393 0.0717432 9.15338 1.04047 9.15338H8.86092C9.29415 9.15338 9.6781 8.87442 9.81198 8.4624L12.2286 1.0247Z"
-                  fill="#FFD700"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 27 26"
-                fill="none"
-              >
-                <path
-                  d="M12.2286 1.0247C12.528 0.103393 13.8314 0.103396 14.1307 1.02471L16.5474 8.4624C16.6813 8.87442 17.0652 9.15338 17.4985 9.15338H25.3189C26.2876 9.15338 26.6904 10.393 25.9067 10.9624L19.5798 15.5591C19.2293 15.8138 19.0827 16.2652 19.2165 16.6772L21.6332 24.1149C21.9325 25.0362 20.8781 25.8023 20.0944 25.2329L13.7675 20.6362C13.417 20.3815 12.9424 20.3815 12.5919 20.6362L6.26502 25.2329C5.48131 25.8023 4.42683 25.0362 4.72618 24.1149L7.14283 16.6772C7.27671 16.2652 7.13005 15.8138 6.77956 15.5591L0.452678 10.9624C-0.331035 10.393 0.0717432 9.15338 1.04047 9.15338H8.86092C9.29415 9.15338 9.6781 8.87442 9.81198 8.4624L12.2286 1.0247Z"
-                  fill="#FFD700"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 27 26"
-                fill="none"
-              >
-                <path
-                  d="M12.2286 1.0247C12.528 0.103393 13.8314 0.103396 14.1307 1.02471L16.5474 8.4624C16.6813 8.87442 17.0652 9.15338 17.4985 9.15338H25.3189C26.2876 9.15338 26.6904 10.393 25.9067 10.9624L19.5798 15.5591C19.2293 15.8138 19.0827 16.2652 19.2165 16.6772L21.6332 24.1149C21.9325 25.0362 20.8781 25.8023 20.0944 25.2329L13.7675 20.6362C13.417 20.3815 12.9424 20.3815 12.5919 20.6362L6.26502 25.2329C5.48131 25.8023 4.42683 25.0362 4.72618 24.1149L7.14283 16.6772C7.27671 16.2652 7.13005 15.8138 6.77956 15.5591L0.452678 10.9624C-0.331035 10.393 0.0717432 9.15338 1.04047 9.15338H8.86092C9.29415 9.15338 9.6781 8.87442 9.81198 8.4624L12.2286 1.0247Z"
-                  fill="#FFD700"
-                />
-              </svg>
-            </div>
-            <div class="mt-3">
-              <p class="testimonial-slider-description">
-                Our experience with Campain was nothing short of amazing. Their
-                comprehensive approach and personalized strategies helped
-                us achieve remarkable results in a short period.Our experience
-                with Campain was nothing short of amazing.
-              </p>
-
-              <!-- user information -->
-              <div class="mt-4 flex gap-4">
-                <div class="testimonial-slider-user-image rounded-full">
-                  <img class="" src="./assets/images/user.png" alt="" />
-                </div>
-                <div class="font-space-grotesk">
-                  <h4 class="text-lg font-bold">Alex Miller</h4>
-                  <p class="testimonial-slider-user-designation">
-                    Co-Founder, echofavor ai
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- nav buttons -->
-        <div class="mt-8 w-full flex items-center justify-center gap-6">
-          <div id="testimonial-slider-prev-btn" class="testimonials-nav-btn">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M9.56995 5.92969L3.49995 11.9997L9.56995 18.0697"
-                stroke="#292D32"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M20.5 12H3.67"
-                stroke="#292D32"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-          <div id="testimonial-slider-next-btn" class="testimonials-nav-btn">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M14.4301 5.92969L20.5001 11.9997L14.4301 18.0697"
-                stroke="#292D32"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M3.5 12H20.33"
-                stroke="#292D32"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-        </div>
-      </section>
-      <!-- testimonials section::end -->
-
-      <!-- articles section::start -->
-      <section class="py-16 container">
-        <!-- title -->
-        <div class="w-full flex flex-col gap-4 items-center justify-center">
-          <div class="button button-title font-plus-jakarta">
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="26"
-                height="26"
-                viewBox="0 0 26 26"
-                fill="none"
-              >
-                <path
-                  d="M20.6523 14.3946C13.8957 15.5059 12.6945 16.9174 11.7936 25.1456C11.7635 25.416 11.3729 25.416 11.343 25.1456C10.4421 16.9174 9.24093 15.536 2.48405 14.3946C2.21365 14.3647 2.21365 13.9745 2.48405 13.9443C9.24093 12.8333 10.4421 11.452 11.343 3.22348C11.3729 2.95308 11.7635 2.95308 11.7936 3.22348C12.6943 11.452 13.8955 12.8034 20.6523 13.9443C20.8926 13.9745 20.8926 14.3346 20.6523 14.3946ZM23.5355 4.90516C21.4328 5.32584 20.8323 6.0164 20.4722 8.47886C20.4423 8.74926 20.0517 8.74926 20.0218 8.47886C19.6615 6.0164 19.0609 5.32558 16.9588 4.87526C16.9076 4.86378 16.8618 4.83522 16.829 4.79427C16.7963 4.75332 16.7784 4.70243 16.7784 4.64997C16.7784 4.59751 16.7963 4.54661 16.829 4.50567C16.8618 4.46472 16.9076 4.43615 16.9588 4.42468C19.031 4.00426 19.6615 3.3137 20.0216 0.851238C20.0517 0.580837 20.4423 0.580837 20.4722 0.851238C20.8325 3.31344 21.4331 4.00426 23.5355 4.45484C23.7757 4.51464 23.7757 4.87526 23.5355 4.90516Z"
-                  fill="#141414"
-                />
-              </svg>
-            </div>
-            <span class="font-normal">Recent articles</span>
-          </div>
-          <div>
-            <h2 class="primary-title">Discover our latest blog posts</h2>
-          </div>
-        </div>
-
-        <!-- article cards section -->
-        <div class="mt-16 grid grid-cols-3 gap-12">
-          <!-- card-1 -->
-          <div class="rounded-2xl cursor-pointer">
-            <!-- image -->
-            <div class="article-card-image-wrapper">
-              <img src="./assets/images/article-1.jpg" alt="" />
-            </div>
-
-            <!-- card info -->
-            <div class="mt-4">
-              <h4 class="article-card-title">Business</h4>
-              <h3 class="article-card-big-title">
-                The Benefits of using an AI tool for Startups
-              </h3>
-              <p class="article-card-description">
-                Unleashing the Power of Creativity and Wordsmithing with ai Our
-                round investors play a crucial role in shaping the future of our
-                venture. Their investment represents not just
-              </p>
-              <p class="article-card-date">November 21, 2023</p>
-            </div>
-          </div>
-          <!-- card-2 -->
-          <div class="rounded-2xl cursor-pointer">
-            <!-- image -->
-            <div class="article-card-image-wrapper">
-              <img src="./assets/images/article-2.jpg" alt="" />
-            </div>
-
-            <!-- card info -->
-            <div class="mt-4">
-              <h4 class="article-card-title">Business</h4>
-              <h3 class="article-card-big-title">
-                The Benefits of using an AI tool for Startups
-              </h3>
-              <p class="article-card-description">
-                Unleashing the Power of Creativity and Wordsmithing with ai Our
-                round investors play a crucial role in shaping the future of our
-                venture. Their investment represents not just
-              </p>
-              <p class="article-card-date">November 21, 2023</p>
-            </div>
-          </div>
-          <!-- card-3 -->
-          <div class="rounded-2xl cursor-pointer">
-            <!-- image -->
-            <div class="article-card-image-wrapper">
-              <img src="./assets/images/article-3.jpg" alt="" />
-            </div>
-
-            <!-- card info -->
-            <div class="mt-4">
-              <h4 class="article-card-title">Business</h4>
-              <h3 class="article-card-big-title">
-                The Benefits of using an AI tool for Startups
-              </h3>
-              <p class="article-card-description">
-                Unleashing the Power of Creativity and Wordsmithing with ai Our
-                round investors play a crucial role in shaping the future of our
-                venture. Their investment represents not just
-              </p>
-              <p class="article-card-date">November 21, 2023</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- see all btn -->
-        <div class="mt-16 flex items-center justify-center">
-          <a href="blog.html" class="button featured-button">See All</a>
-        </div>
-      </section>
-      <!-- articles section::end -->
-
-      <!-- trial section::start -->
-      <section
-        class="container trial-wrapper rounded-2xl overflow-hidden relative flex flex-col items-center justify-center"
-      >
-        <div>
+      <!-- blog details section::start -->
+      <section class="pt-16 container overflow-hidden">
+        <!-- banner -->
+        <div class="blog-details-banner">
           <img
-            class="mx-auto w-full absolute inset-0"
-            src="./assets/images/trail-bg.png"
+            class="rounded-2xl"
+            src="./assets/images/blog-details.png"
             alt=""
           />
         </div>
 
-        <!-- contents -->
-        <div class="z-10">
-          <h3 class="trial-title text-center">
-            Experience the Future of AI-Powered <br />
-            Assistance Today!
-          </h3>
-          <p class="trial-description mt-4">
-            Unlock the full potential of echofavor.ai with a free trial. Explore
-            our AI chatbot's capabilities to ask questions about your own
-            content and get comprehensive answers from the web. No credit card
-            required – just pure innovation at your fingertips.
+        <!-- details -->
+        <div class="mt-16">
+          <p class="blog-details-description">
+            As artificial intelligence (AI) continues to evolve, it’s
+            transforming industries in ways we couldn’t have imagined just a few
+            years ago. One of the most powerful applications of AI is
+            automation, allowing businesses to streamline processes, reduce
+            operational costs, and enhance productivity. Automation is no longer
+            just a tool for tech giants—businesses of all sizes can harness AI
+            to gain a competitive edge and adapt to In this article, we’ll
+            explore how AI-driven automation is shaping the future of business
+            and how you can leverage it to grow and succeed.
           </p>
 
-          <!-- start trial button -->
-          <div class="mt-8 w-full flex items-center justify-center">
-            <a href="index.html" class="button trial-button w-fit rounded-full"
-              >Start Your Free Trial</a
-            >
+          <!-- title with details -->
+          <div class="mt-10">
+            <h3 class="text-black font-plus-jakarta text-xl font-semibold">
+              1. Boosting Efficiency by Automating Repetitive Tasks
+            </h3>
+            <p class="blog-details-description mt-3">
+              AI-powered automation doesn’t just help with internal
+              processes—it’s also revolutionizing the customer experience. By
+              analyzing customer data in real time, AI tools can deliver
+              personalized recommendations, create targeted marketing campaigns,
+              and provide 24/7 customer support.
+            </p>
+            <p class="blog-details-description mt-1">
+              For example, an AI system can track a customer’s browsing
+              behavior, predict what products they’re interested in, and
+              automatically send personalized emails or product suggestions. In
+              industries like e-commerce, this level of customization can
+              dramatically increase sales and customer retention. Additionally,
+              AI chatbots and virtual assistants can answer customer queries
+              instantly, providing support at any time of the day without
+              requiring human intervention. These tools not only improve
+              customer satisfaction but also reduce the burden on customer
+              service teams.
+            </p>
+            <p class="blog-details-description mt-1">
+              How it helps your business: With AI automation, you can offer
+              personalized, always-available customer support, improving
+              satisfaction and engagement, while lowering the cost of human
+              support.
+            </p>
+          </div>
+          <div class="mt-10">
+            <h3 class="text-black font-plus-jakarta text-xl font-semibold">
+              1. Boosting Efficiency by Automating Repetitive Tasks
+            </h3>
+            <p class="blog-details-description mt-3">
+              AI-powered automation doesn’t just help with internal
+              processes—it’s also revolutionizing the customer experience. By
+              analyzing customer data in real time, AI tools can deliver
+              personalized recommendations, create targeted marketing campaigns,
+              and provide 24/7 customer support.
+            </p>
+            <p class="blog-details-description mt-1">
+              For example, an AI system can track a customer’s browsing
+              behavior, predict what products they’re interested in, and
+              automatically send personalized emails or product suggestions. In
+              industries like e-commerce, this level of customization can
+              dramatically increase sales and customer retention. Additionally,
+              AI chatbots and virtual assistants can answer customer queries
+              instantly, providing support at any time of the day without
+              requiring human intervention. These tools not only improve
+              customer satisfaction but also reduce the burden on customer
+              service teams.
+            </p>
+            <p class="blog-details-description mt-1">
+              How it helps your business: With AI automation, you can offer
+              personalized, always-available customer support, improving
+              satisfaction and engagement, while lowering the cost of human
+              support.
+            </p>
           </div>
         </div>
       </section>
-      <!-- trial section::end -->
+      <!-- blog details section::end -->
+
+      <!-- newsletter -->
+      <section class="container">
+        <div
+          class="blog-details-page my-20 rounded-2xl py-16 flex flex-col items-center justify-center gap-10 relative"
+        >
+          <div class="text-center">
+            <h5 class="font-semibold text-3xl">What can I help with?</h5>
+            <p class="opacity-50 pt-3">
+              Get instant answers with AI powered search of Have a question?
+            </p>
+          </div>
+
+          <!-- form -->
+
+          <div class="bg-white flex items-center gap-3 rounded-full px-6 py-1">
+            <div>
+              <img src="./assets/images/mini-logo.png" alt="" />
+            </div>
+            <form style="z-index: 1" class="flex icon gap-4 w-full">
+              <input
+                placeholder="What's in your minds"
+                class="outline-none border-none w-full details-filter-input"
+                type="text"
+                name="details-filter"
+                id="details-filter"
+              />
+              <button
+                type="submit"
+                style="background-color: #081839"
+                class="details-filter-input-btn"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_8820_56471)">
+                    <mask
+                      id="mask0_8820_56471"
+                      style="mask-type: luminance"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="32"
+                      height="32"
+                    >
+                      <path d="M0 0H32V32H0V0Z" fill="white" />
+                    </mask>
+                    <g mask="url(#mask0_8820_56471)">
+                      <path
+                        d="M13 17L3 13L25 5L17 27L13 17ZM13 17L18 12"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_8820_56471">
+                      <rect width="32" height="32" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <!-- bg -->
+          <div class="details-bg">
+            <img src="./assets/images/details-bg.png" alt="" />
+          </div>
+        </div>
+      </section>
     </main>
     <!-- footer -->
     <footer class="footer">
@@ -1057,10 +281,10 @@
           <div class="mt-3">
             <ul class="flex flex-col gap-2">
               <li>
-                <a href="pricing.html" class="footer-item">Pricing</a>
+                <a href="price.html" class="footer-item">Pricing</a>
               </li>
               <li>
-                <a href="blog.html" class="footer-item">Blog</a>
+                <a href="index.html" class="footer-item">Blog</a>
               </li>
             </ul>
           </div>
@@ -1178,6 +402,7 @@
       </section>
     </footer>
     <!-- scripts -->
+
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
