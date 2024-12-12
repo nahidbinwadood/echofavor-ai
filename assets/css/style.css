@@ -53,7 +53,7 @@ select:focus {
 
 body {
   color: #fff;
-  background-color: #F9FAFC;
+  background-color: #f9fafc;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -63,8 +63,6 @@ body {
   width: 100%;
   font-size: var(--text-reg);
 }
-
-
 
 /* =====fonts::start===== */
 .font-plus-jakarta {
@@ -85,6 +83,24 @@ body {
 .container {
   max-width: 1536px;
   margin: 0 auto;
+}
+
+.navlink_active {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navlink_active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 25px;
+  background: #fff;
+  border-radius: 2px;
 }
 
 .button {
@@ -109,7 +125,7 @@ body {
 
 .button-transparent {
   background: transparent;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   color: white;
 }
 
@@ -186,7 +202,7 @@ body {
 }
 
 .footer-item-title {
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
   font-weight: 500;
   line-height: 164%;
@@ -194,7 +210,7 @@ body {
 }
 
 .footer-item {
-  color: #C7E2E4;
+  color: #c7e2e4;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -202,7 +218,7 @@ body {
 }
 
 .footer-form-title {
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -212,7 +228,7 @@ body {
 }
 
 .footer-earning-wrapper {
-  background: #B9DDE7;
+  background: #b9dde7;
   border-radius: 24px;
   padding: 40px 180px;
   position: relative;
@@ -235,7 +251,7 @@ body {
 }
 
 .footer-bottom {
-  border-top: 1px solid #42526E;
+  border-top: 1px solid #42526e;
 }
 
 .footer-earning-image-wrapper-left {
@@ -274,7 +290,7 @@ body {
 }
 
 .hero-title {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Raleway;
   font-size: 76px;
@@ -285,7 +301,7 @@ body {
 }
 
 .glowing-hero-title {
-  color: #ADD8E6;
+  color: #add8e6;
   font-size: 76px;
 }
 
@@ -305,7 +321,6 @@ body {
 
 /* hero video section */
 
-
 .hero-video-wrapper {
   margin-top: -350px;
   position: relative;
@@ -315,7 +330,7 @@ body {
   overflow: hidden;
   width: 100% !important;
   padding-left: 0;
-  padding-right: 0
+  padding-right: 0;
 }
 
 .hero-video-wrapper-shade {
@@ -339,7 +354,7 @@ body {
   padding: 20px;
   fill: rgba(0, 0, 0, 0.25);
   stroke-width: 1px;
-  stroke: #FFF;
+  stroke: #fff;
   box-shadow: -0.73px 0.73px 0.73px -1.46px rgba(255, 255, 255, 0.35) inset;
   backdrop-filter: blur(10px);
 }
@@ -347,7 +362,7 @@ body {
 /* ==============Features::start============== */
 .feature-image-card {
   width: 40%;
-  background-color: #ECEEF2;
+  background-color: #eceef2;
 }
 
 .feature-card {
@@ -356,7 +371,7 @@ body {
 
 .feature-card h3 {
   color: #141414;
-  font-family: "Space Grotesk";
+  font-family: 'Space Grotesk';
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -366,7 +381,7 @@ body {
 
 .feature-card p {
   color: #141414;
-  font-family: "Space Grotesk";
+  font-family: 'Space Grotesk';
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -376,20 +391,18 @@ body {
 
 /* ==============Features::end============== */
 
-
 /* ==============Testimonial::start============== */
 .testimonial-slider {
-  border: 1px solid #E5E5E5;
-  background: #FFF;
+  border: 1px solid #e5e5e5;
+  background: #fff;
 }
 
 .testimonial-slider-description {
-  color: #5A5C5F;
-  font-family: "Plus Jakarta Sans";
+  color: #5a5c5f;
+  font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 400;
   line-height: 200%;
-
 }
 
 .testimonial-slider-user-image {
@@ -410,7 +423,7 @@ body {
 }
 
 .testimonial-slider-user-designation {
-  color: #5A5C5F;
+  color: #5a5c5f;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -424,7 +437,7 @@ body {
   align-items: center;
   gap: 10px;
   border-radius: 30px;
-  background: #F0F0F0;
+  background: #f0f0f0;
   cursor: pointer;
   transition: ease 0.5s;
 }
@@ -434,7 +447,7 @@ body {
 }
 
 .testimonials-nav-btn:hover svg path {
-  stroke: #FFF;
+  stroke: #fff;
 }
 
 /* ==============Testimonial::end============== */
@@ -470,7 +483,7 @@ body {
 }
 
 .article-card-description {
-  color: #5A5C5F;
+  color: #5a5c5f;
   font-size: 16px;
   font-weight: 400;
   line-height: 180%;
@@ -478,7 +491,7 @@ body {
 }
 
 .article-card-date {
-  color: #8993A4;
+  color: #8993a4;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -494,7 +507,7 @@ body {
   max-height: 700px;
   min-height: 700px;
   height: full;
-  background: linear-gradient(to right, #c2d5fd 0%, #c2d5fd 100%)
+  background: linear-gradient(to right, #c2d5fd 0%, #c2d5fd 100%);
 }
 
 .trial-title {
@@ -518,3 +531,72 @@ body {
 }
 
 /* ==============Trial::end============== */
+
+/*==========================================Pricing Page::start=========================================== */
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.tab-container {
+  display: flex;
+  position: relative;
+  gap: 12px;
+  margin-bottom: 30px;
+  border: 1px solid #D7DCDA;
+  border-radius: 126.556px;
+  background-color: #EBECF0;
+}
+
+.tab-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 13px 25px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.tab-button.active {
+  color: white;
+}
+
+.indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 110px;
+  background-color: #081839;
+  border-radius: 126.556px;
+  transition: left 0.3s ease, width 0.3s ease;
+}
+
+.content-container {
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.content {
+  display: none;
+  opacity: 0;
+  padding: 20px;
+  background-color: #000;
+  border-radius: 10px;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.content.active {
+  opacity: 1;
+  display: block;
+  transform: translateY(0);
+}
+
+/*==========================================Pricing Page::end=========================================== */
