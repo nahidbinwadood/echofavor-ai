@@ -85,6 +85,10 @@ body {
   margin: 0 auto;
 }
 
+.text-light {
+  color: #5a5c5f !important;
+}
+
 .navlink_active {
   position: relative;
   color: #fff;
@@ -549,9 +553,9 @@ body {
   position: relative;
   gap: 12px;
   margin-bottom: 30px;
-  border: 1px solid #D7DCDA;
+  border: 1px solid #d7dcda;
   border-radius: 126.556px;
-  background-color: #EBECF0;
+  background-color: #ebecf0;
 }
 
 .tab-button {
@@ -602,10 +606,10 @@ body {
 .pricing-card {
   position: relative;
   border-radius: 10.124px;
-  background: #FFF;
-  border-right: 1px solid #E4E4E7;
-  border-bottom: 1px solid #E4E4E7;
-  border-left: 1px solid #E4E4E7;
+  background: #fff;
+  border-right: 1px solid #e4e4e7;
+  border-bottom: 1px solid #e4e4e7;
+  border-left: 1px solid #e4e4e7;
   padding: 40px 32px;
   color: #141414;
 }
@@ -641,15 +645,15 @@ body {
 }
 
 .pricing-card-1 {
-  border-top: 2.531px solid #5A5C5F;
+  border-top: 2.531px solid #5a5c5f;
 }
 
 .pricing-card-2 {
-  border-top: 2.531px solid #FFAB00;
+  border-top: 2.531px solid #ffab00;
 }
 
 .pricing-card-3 {
-  border-top: 2.531px solid #05D9A8;
+  border-top: 2.531px solid #05d9a8;
 }
 
 .pricing-card-popular-button {
@@ -657,7 +661,7 @@ body {
   padding: 8px 16px;
   right: 16.127px;
   top: 16.75px;
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -671,3 +675,34 @@ body {
 }
 
 /*==========================================Pricing Page::end=========================================== */
+
+/*==========================================Accordion::start=========================================== */
+.pricing-accordion-section,
+.pricing-accordion-header,
+.pricing-accordion-content,
+.pricing-dropdown--arrow {
+  transition: transform 0.5s ease;
+}
+.pricing-accordion-section {
+  margin-bottom: 20px;
+}
+.pricing-accordion-header {
+  background: #f2f2f3;
+  padding: 20px 32px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.pricing-accordion-content {
+  max-height: 0px;
+  overflow: hidden;
+  padding: 0 15px;
+  background-color: #fff;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+.pricing-accordion-content-item {
+  border-bottom: 1.261px solid #d4d4d8;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/*==========================================Accordion::end=========================================== */

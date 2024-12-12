@@ -1265,6 +1265,9 @@
 .normal-case {
   text-transform: none;
 }
+.text-start{
+  text-align: start;
+}
 
 /* Border */
 .border {
