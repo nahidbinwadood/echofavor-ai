@@ -442,6 +442,10 @@ body {
   transition: ease 0.5s;
 }
 
+.testimonials-nav-btn svg path {
+  transition: ease 0.5s;
+}
+
 .testimonials-nav-btn:hover {
   background: var(--primary--color);
 }
@@ -591,11 +595,12 @@ body {
 
 .content.active {
   opacity: 1;
-  display: block;
+  display: grid;
   transform: translateY(0);
 }
 
 .pricing-card {
+  position: relative;
   border-radius: 10.124px;
   background: #FFF;
   border-right: 1px solid #E4E4E7;
@@ -620,17 +625,49 @@ body {
   align-items: center;
   gap: 12px;
   border-radius: 94px;
+  transition: 0.3s ease-in-out;
   border: 1px solid #081839;
 }
+
+.pricing-card-button svg path {
+  transition: 0.3s ease-in-out;
+}
+
+.pricing-card-button:hover {
+  background: var(--primary--color);
+  color: #fff;
+}
+
+.pricing-card-button:hover svg path {
+  stroke: #fff;
+}
+
 .pricing-card-1 {
   border-top: 2.531px solid #5A5C5F;
 }
+
 .pricing-card-2 {
   border-top: 2.531px solid #FFAB00;
 }
+
 .pricing-card-3 {
   border-top: 2.531px solid #05D9A8;
 }
+
+.pricing-card-popular-button {
+  position: absolute;
+  padding: 8px 16px;
+  right: 16.127px;
+  top: 16.75px;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+  border-radius: 126.556px;
+  background: #059669;
+}
+
 .pricing-card-4 {
   border-top: 2.531px solid #081839;
 }

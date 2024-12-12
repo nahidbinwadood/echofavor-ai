@@ -1109,7 +1109,9 @@
 .hidden {
   display: none;
 }
-
+.line-through {
+  text-decoration-line: line-through;
+}
 /* Opacity */
 .opacity-0 {
   opacity: 0;
@@ -1331,7 +1333,7 @@
 .w-full {
   width: 100%;
 }
-.w-fit{
+.w-fit {
   width: fit-content;
 }
 .w-screen {
