@@ -63,7 +63,7 @@
     </header>
     <!-- main -->
     <main>
-      <!-- blog section::start -->
+      <!-- blog title section::start -->
       <section class="mt-20">
         <!-- title -->
         <div class="w-full flex flex-col gap-4 items-center justify-center">
@@ -92,12 +92,801 @@
               feugi
             </p>
           </div>
+
+          <!-- search button -->
+          <form action="" class="mt-2 w-full flex items-center justify-center">
+            <div class="rounded-full blog-search-wrapper">
+              <input
+                placeholder="searching  articles...."
+                class="border-none blog-search-input"
+                type="text"
+                name=""
+                id=""
+              />
+              <button
+                style="
+                  outline: none;
+                  border: none;
+                  background: transparent;
+                  padding: 0;
+                "
+                type="submit"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+                    stroke="#5A5C5F"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M21 21L16 16"
+                    stroke="#5A5C5F"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- blog title section::end -->
+
+      <!-- blog tab section::start -->
+      <section class="pt-16 container">
+        <!-- tabs -->
+        <div class="flex items-center justify-center blog-tabs-wrapper">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-all-articles-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-all-articles"
+                type="button"
+                role="tab"
+                aria-controls="pills-all-articles"
+                aria-selected="true"
+              >
+                All Articles
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-business-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-business"
+                type="button"
+                role="tab"
+                aria-controls="pills-business"
+                aria-selected="false"
+              >
+                Business
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-idea-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-idea"
+                type="button"
+                role="tab"
+                aria-controls="pills-idea"
+                aria-selected="false"
+              >
+                Idea
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-ai-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-ai"
+                type="button"
+                role="tab"
+                aria-controls="pills-ai"
+                aria-selected="false"
+              >
+                Ai
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-product-updates-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-product-updates"
+                type="button"
+                role="tab"
+                aria-controls="pills-product-updates"
+                aria-selected="false"
+              >
+                Product updates
+              </button>
+            </li>
+          </ul>
         </div>
 
+        <!-- tab content -->
+        <div class="tab-content text-black my-16" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-all-articles"
+            role="tabpanel"
+            aria-labelledby="pills-all-articles-tab"
+            tabindex="0"
+          >
+            <div class="grid grid-cols-3 gap-12">
+              <!-- card-1 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-1.jpg" alt="" />
+                </div>
 
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-2 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-2.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-3 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-3.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-1 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-1.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-2 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-2.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-3 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-3.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-1 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-1.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-2 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-2.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-3 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-3.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-1 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-1.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-2 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-2.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-3 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-3.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-business"
+            role="tabpanel"
+            aria-labelledby="pills-business-tab"
+            tabindex="0"
+          >
+            <div class="grid grid-cols-3 gap-12">
+
+              <!-- card-1 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-1.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-2 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-2.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-3 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-3.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-1 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-1.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-2 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-2.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-3 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-3.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-idea"
+            role="tabpanel"
+            aria-labelledby="pills-idea-tab"
+            tabindex="0"
+          >
+            <div class="grid grid-cols-3 gap-12">
+              <!-- card-1 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-1.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-2 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-2.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-3 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-3.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-1 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-1.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-2 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-2.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-3 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-3.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-ai"
+            role="tabpanel"
+            aria-labelledby="pills-ai-tab"
+            tabindex="0"
+          >
+            <div class="grid grid-cols-3 gap-12">
+              <!-- card-1 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-1.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-2 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-2.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-3 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-3.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-product-updates"
+            role="tabpanel"
+            aria-labelledby="pills-product-updates-tab"
+            tabindex="0"
+          >
+            <div class="grid grid-cols-3 gap-12">
+              <!-- card-1 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-1.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+              <!-- card-2 -->
+              <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+                <!-- image -->
+                <div class="article-card-image-wrapper">
+                  <img src="./assets/images/article-2.jpg" alt="" />
+                </div>
+
+                <!-- card info -->
+                <div class="mt-4">
+                  <h4 class="article-card-title">Business</h4>
+                  <h3 class="article-card-big-title">
+                    The Benefits of using an AI tool for Startups
+                  </h3>
+                  <p class="article-card-description">
+                    Unleashing the Power of Creativity and Wordsmithing with ai
+                    Our round investors play a crucial role in shaping the
+                    future of our venture. Their investment represents not just
+                  </p>
+                  <p class="article-card-date">November 21, 2023</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
-      <!-- blog section::end -->
-
+      <!-- blog tab section::end -->
     </main>
     <!-- footer -->
     <footer class="footer">
