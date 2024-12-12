@@ -537,7 +537,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .tab-container {
@@ -571,7 +571,7 @@ body {
   bottom: 0;
   left: 0;
   height: 100%;
-  width: 110px;
+  width: 111px;
   background-color: #081839;
   border-radius: 126.556px;
   transition: left 0.3s ease, width 0.3s ease;
@@ -579,16 +579,12 @@ body {
 
 .content-container {
   width: 100%;
-  max-width: 600px;
   overflow: hidden;
 }
 
 .content {
   display: none;
   opacity: 0;
-  padding: 20px;
-  background-color: #000;
-  border-radius: 10px;
   transform: translateY(20px);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -597,6 +593,46 @@ body {
   opacity: 1;
   display: block;
   transform: translateY(0);
+}
+
+.pricing-card {
+  border-radius: 10.124px;
+  background: #FFF;
+  border-right: 1px solid #E4E4E7;
+  border-bottom: 1px solid #E4E4E7;
+  border-left: 1px solid #E4E4E7;
+  padding: 40px 32px;
+  color: #141414;
+}
+
+.pricing-card-button {
+  color: #081839;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 164%;
+  text-transform: capitalize;
+  display: flex;
+  width: 293px;
+  height: 56px;
+  padding: 6px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 94px;
+  border: 1px solid #081839;
+}
+.pricing-card-1 {
+  border-top: 2.531px solid #5A5C5F;
+}
+.pricing-card-2 {
+  border-top: 2.531px solid #FFAB00;
+}
+.pricing-card-3 {
+  border-top: 2.531px solid #05D9A8;
+}
+.pricing-card-4 {
+  border-top: 2.531px solid #081839;
 }
 
 /*==========================================Pricing Page::end=========================================== */
