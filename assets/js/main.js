@@ -46,6 +46,7 @@ $(document).ready(function () {
   });
 
   //////////////////////////Pricing::start //////////////////////////
+
   const tabButtons = document.querySelectorAll('.tab-button');
   const contents = document.querySelectorAll('.content');
   const indicator = document.querySelector('.indicator');
@@ -82,8 +83,12 @@ $(document).ready(function () {
   if (headers.length > 0) {
     const firstHeader = headers[0];
     const firstSection = firstHeader.closest('.pricing-accordion-section');
-    const firstContent = firstSection.querySelector('.pricing-accordion-content');
-    const firstDropdownArrow = firstHeader.querySelector('.pricing-dropdown--arrow');
+    const firstContent = firstSection.querySelector(
+      '.pricing-accordion-content'
+    );
+    const firstDropdownArrow = firstHeader.querySelector(
+      '.pricing-dropdown--arrow'
+    );
 
     // Open the first accordion
     firstContent.style.maxHeight = firstContent.scrollHeight + 'px';
@@ -102,9 +107,15 @@ $(document).ready(function () {
       // Close all other accordions
       headers.forEach((otherHeader) => {
         if (otherHeader !== header) {
-          const otherSection = otherHeader.closest('.pricing-accordion-section');
-          const otherContent = otherSection.querySelector('.pricing-accordion-content');
-          const otherDropdownArrow = otherHeader.querySelector('.pricing-dropdown--arrow');
+          const otherSection = otherHeader.closest(
+            '.pricing-accordion-section'
+          );
+          const otherContent = otherSection.querySelector(
+            '.pricing-accordion-content'
+          );
+          const otherDropdownArrow = otherHeader.querySelector(
+            '.pricing-dropdown--arrow'
+          );
 
           otherContent.style.maxHeight = null;
           otherContent.style.padding = '0 15px';
@@ -131,4 +142,31 @@ $(document).ready(function () {
   });
 
   //////////////////////////Pricing::end //////////////////////////
+
+  //////////////////////////Affiliate::start //////////////////////////
+
+  const affiliateHeaders = document.querySelectorAll(
+    '.affiliate-accordion-header'
+  );
+  affiliateHeaders?.forEach((header) => {
+    header?.addEventListener('click', () => {
+      const item = header?.closest('.affiliate-accordion-item');
+      const content = item?.querySelector('.affiliate-accordion-content');
+      const arrow = header?.querySelector('.affiliate-down--arrow');
+
+      // show the content:
+      if (!content.maxHeight) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        content.style.padding = '15px';
+        item.classList.add('active');
+        arrow.style.transform = 'rotate(180deg)';
+      }else{
+        content.style.maxHeight = null;
+        content.style.padding = '0 15px';
+        item.classList.remove('active');
+        arrow.style.transform = 'rotate(0deg)';
+      }
+    });
+  });
+  //////////////////////////Affiliate::end //////////////////////////
 });

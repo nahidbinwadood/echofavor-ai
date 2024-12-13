@@ -783,8 +783,8 @@ body {
 }
 
 .blog-details-description {
-  color: #5A5C5F;
-  font-family: "Plus Jakarta Sans";
+  color: #5a5c5f;
+  font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 400;
   line-height: 164%;
@@ -810,8 +810,8 @@ body {
   border: none;
   outline: none;
   width: 48px;
-height: 48px;
-flex-shrink: 0;
+  height: 48px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -819,3 +819,80 @@ flex-shrink: 0;
 }
 
 /*========================================Blog Details::start======================================== */
+
+/*========================================Affiliate::start======================================== */
+.affiliate-title {
+  color: #000;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 132%;
+  letter-spacing: -1.28px;
+}
+
+.affiliate-description {
+  color: #5a5c5f;
+  width: 50%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164%;
+  /* 29.52px */
+}
+
+.affiliate-banner-bg {
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.affiliate-banner-bg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.affiliate-buttons-wrapper {
+  gap: 85px;
+}
+
+.affiliate-button {
+  display: flex;
+  height: 62px;
+  padding: 15px 31px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  background: #dfe1e6;
+  color: #141414;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 164%;
+}
+
+/* accordion */
+.affiliate-faq .accordion {
+  --bs-accordion-btn-focus-border-color: none --bs-accordion-active-color: none;
+  --bs-accordion-active-bg: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+
+.affiliate-faq .accordion-button {
+  color: #111827;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 34.521px;
+  /* 155.556% */
+}
+
+.affiliate-faq .accordion-body p {
+  color: #79637C;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+/*========================================Affiliate::end======================================== */
