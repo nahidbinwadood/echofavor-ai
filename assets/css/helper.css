@@ -708,7 +708,9 @@
 .flex-shrink-0 {
   flex-shrink: 0;
 }
-
+.flex-1 {
+  flex: 1 1 0;
+}
 /* Flex Item Order */
 .order-1 {
   order: 1;
@@ -926,7 +928,18 @@
 .gap-16 {
   gap: 4rem;
 }
-
+.gap-20 {
+  gap: 5rem;
+}
+.gap-24 {
+  gap: 6rem;
+}
+.gap-28 {
+  gap: 7rem;
+}
+.gap-32 {
+  gap: 8rem;
+}
 /* Grid Column Gap */
 .gap-x-0 {
   column-gap: 0px;
@@ -1265,7 +1278,7 @@
 .normal-case {
   text-transform: none;
 }
-.text-start{
+.text-start {
   text-align: start;
 }
 

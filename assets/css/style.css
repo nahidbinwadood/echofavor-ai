@@ -52,7 +52,7 @@ select:focus {
 }
 
 body {
-  color: #fff;
+  color: #000;
   background-color: #f9fafc;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -85,8 +85,16 @@ body {
   margin: 0 auto;
 }
 
+footer p {
+  color: #fff;
+}
+
 .text-light {
   color: #5a5c5f !important;
+}
+
+.text-black {
+  color: #111827;
 }
 
 .navlink_active {
@@ -871,11 +879,11 @@ body {
 
 /* accordion */
 .affiliate-faq .accordion {
-  --bs-accordion-btn-focus-border-color: none --bs-accordion-active-color: none;
+  --bs-accordion-btn-focus-border-color: none;
+  --bs-accordion-active-color: none;
   --bs-accordion-active-bg: none;
   --bs-accordion-btn-focus-box-shadow: none;
 }
-
 
 .affiliate-faq .accordion-button {
   color: #111827;
@@ -887,8 +895,8 @@ body {
 }
 
 .affiliate-faq .accordion-body p {
-  color: #79637C;
-  font-family: "Plus Jakarta Sans";
+  color: #79637c;
+  font-family: 'Plus Jakarta Sans';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -896,3 +904,97 @@ body {
 }
 
 /*========================================Affiliate::end======================================== */
+
+/*========================================Contact Us::Start======================================== */
+.contact-us-description {
+  font-size: 18px;
+  width: 66%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164%;
+}
+
+.contact-us-card {
+  padding: 32px;
+  border-radius: 18px;
+  border: 1.172px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 23.447px;
+  width: 50%;
+}
+
+.contact-us-card-icon {
+  padding: 12px;
+  border-radius: 50%;
+  background: #081839;
+}
+
+.contact-us-card-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 132%;
+  letter-spacing: -0.48px;
+}
+
+.contact-us-card-description {
+  color: #6b7280;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  /* 28.8px */
+}
+
+.contact-form label {
+  color: #4B5563;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 164%;
+  /* 29.52px */
+  text-transform: capitalize;
+}
+
+.contact-input {
+  margin: 12px 0;
+  padding: 12px 16px;
+  border-radius: 11722.166px;
+  border: 1.172px solid #D1D5DB;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-input input,
+.contact-form textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+
+}
+
+.contact-form textarea {
+  padding: 16px;
+  margin-top: 12px;
+  border-radius: 18.757px;
+  border: 1.172px solid #D1D5DB;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 16px;
+  color: #fff;
+  display: flex;
+  border: none;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  width: 100%;
+  border-radius: 11722.166px;
+  background: var(--primary--color);
+  box-shadow: 0px 1.172px 2.345px 0px rgba(0, 0, 0, 0.05);
+}
+
+/*========================================Contact Us::End======================================== */
