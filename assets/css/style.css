@@ -126,9 +126,11 @@ footer p {
   font-weight: 400;
   line-height: 180%;
 }
-.error-page{
+
+.error-page {
   min-height: calc(100vh - 110px);
 }
+
 .error-image {
   height: 610px;
 }
@@ -1022,3 +1024,161 @@ footer p {
 }
 
 /*========================================Contact Us::End======================================== */
+
+
+/*========================================Auth pages::Start======================================== */
+.auth-wrapper {
+  max-width: 500px;
+  min-width: 500px;
+}
+
+.auth-title {
+  color: #232323;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 164%;
+  text-transform: capitalize;
+}
+
+.auth-title-bold {
+  color: #232323;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 132%;
+  letter-spacing: -0.8px;
+}
+
+/* Container for input and label */
+.auth-input-container {
+  position: relative;
+}
+
+/* Input field styling */
+.auth-input-field {
+  background-color: transparent;
+  height: 3rem;
+  width: 100%;
+  border-radius: 6px;
+  color: #232323 !important;
+  border: 1px solid #D9D9D9;
+  padding: 0 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+
+  /* Placeholder hidden */
+  color: transparent;
+}
+
+.auth-input-field:focus {
+  border-color: var(--primary--color);
+}
+
+/* Label styling */
+.auth-input-label {
+  position: absolute;
+  top: -0.75rem;
+  left: 0.75rem;
+  font-size: 0.875rem;
+  color: #081839;
+  background-color: #fff;
+  padding: 0 0.75rem;
+  cursor: text;
+  transition: all 0.2s ease;
+}
+
+
+.auth-input-field::placeholder {
+  color: transparent;
+}
+
+.auth-input-field:placeholder-shown+.auth-input-label {
+  font-size: 1rem;
+  color: #6b7280;
+  top: 0.625rem;
+  right: 12px;
+  width: fit-content;
+
+}
+
+/* Focused input styling */
+.auth-input-field:focus+.auth-input-label {
+  font-size: 14px;
+  color: var(--primary--color);
+  padding: 0 4px;
+  background: #fff;
+  z-index: 11111;
+  top: -0.75rem;
+}
+
+/* show/hide pass */
+.auth-input-container .pass-svg {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.auth-button {
+  color: #FFF;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  line-height: 164%;
+  text-transform: capitalize;
+  display: flex;
+  width: 100%;
+  padding: 10px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--10-primary-button, #081839);
+}
+
+.auth-ssl-button {
+  color: #141414;
+  font-weight: 500;
+  line-height: 164%;
+  text-transform: capitalize;
+  border-radius: 10px;
+  border: 1px solid #EEE;
+  background: #FFF;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px;
+}
+
+.hr-line {
+  height: 1px;
+  width: 100%;
+  background: #EEEEEE;
+}
+
+.auth-toggle {
+  color: #6C6C6C;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+}
+
+.auth-toggle-link {
+  color: var(--primary--color);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
+  line-height: 150%;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+/*========================================Auth pages::End======================================== */

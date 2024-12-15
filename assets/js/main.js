@@ -160,7 +160,7 @@ $(document).ready(function () {
         content.style.padding = '15px';
         item.classList.add('active');
         arrow.style.transform = 'rotate(180deg)';
-      }else{
+      } else {
         content.style.maxHeight = null;
         content.style.padding = '0 15px';
         item.classList.remove('active');
@@ -169,4 +169,24 @@ $(document).ready(function () {
     });
   });
   //////////////////////////Affiliate::end //////////////////////////
+
+  //////////////////////////Auth page::start //////////////////////////
+  const showPassButton = document.getElementById('show-pass');
+  const hidePassButton = document.getElementById('hide-pass');
+  const passwordInput = document.querySelector('.auth-input-password');
+  showPassButton?.addEventListener('click', () => {
+    if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      showPassButton.classList.add("hidden")
+      hidePassButton.classList.remove("hidden")
+    }
+  });
+  hidePassButton?.addEventListener('click', () => {
+    if (passwordInput.type === 'text') {
+      passwordInput.type = 'password';
+      showPassButton.classList.remove("hidden")
+      hidePassButton.classList.add("hidden")
+    }
+  });
+  //////////////////////////Auth page:::end //////////////////////////
 });

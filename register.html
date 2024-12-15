@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Echofavor | Register</title>
+    <!-- ==== Favicon ==== -->
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/svg" />
+
+    <!-- All Plugins CSS -->
+    <link rel="stylesheet" href="./assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/plugins/aos.css" />
+    <link rel="stylesheet" href="./assets/css/plugins/nice-select.min.css" />
+    <link rel="stylesheet" href="./assets/css/plugins/owl.carousel.min.css" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./assets/css/helper.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- main -->
+    <main>
+      <!-- main section::start -->
+      <section
+        class="py-20 container flex items-center justify-center text-black error-page"
+      >
+        <!-- auth contents -->
+        <div class="flex flex-col items-center justify-center auth-wrapper">
+          <!-- logo -->
+          <div class="w-full flex items-center justify-center">
+            <img src="./assets/images/auth-logo.png" alt="" />
+          </div>
+          <!-- form contents-->
+          <div class="pb-10">
+            <!-- title -->
+            <div>
+              <h2 class="auth-title">Welcome to Echofavor AI</h2>
+              <h1 class="mt-3 auth-title-bold">Sign in</h1>
+              <p class="text-light mt-2">
+                Please login to continue to your account.
+              </p>
+            </div>
+
+            <!-- form -->
+            <form action="" class="py-8 flex flex-col gap-3">
+              <!-- email -->
+              <div class="auth-input-container">
+                <input
+                  required
+                  type="email"
+                  id="name"
+                  name="name"
+                  class="auth-input-field"
+                  placeholder="Email"
+                />
+                <label for="name" class="auth-input-label"> Email </label>
+              </div>
+              <!-- password -->
+              <div class="auth-input-container">
+                <input
+                  required
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="auth-input-field auth-input-password"
+                  placeholder="Password"
+                />
+                <label for="password" class="auth-input-label">
+                  Password
+                </label>
+
+                <!-- eye icons -->
+                <div id="show-pass" class="pass-svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M10.7429 5.09232C11.1494 5.03223 11.5686 5 12.0004 5C17.1054 5 20.4553 9.50484 21.5807 11.2868C21.7169 11.5025 21.785 11.6103 21.8231 11.7767C21.8518 11.9016 21.8517 12.0987 21.8231 12.2236C21.7849 12.3899 21.7164 12.4985 21.5792 12.7156C21.2793 13.1901 20.8222 13.8571 20.2165 14.5805M6.72432 6.71504C4.56225 8.1817 3.09445 10.2194 2.42111 11.2853C2.28428 11.5019 2.21587 11.6102 2.17774 11.7765C2.1491 11.9014 2.14909 12.0984 2.17771 12.2234C2.21583 12.3897 2.28393 12.4975 2.42013 12.7132C3.54554 14.4952 6.89541 19 12.0004 19C14.0588 19 15.8319 18.2676 17.2888 17.2766M3.00042 3L21.0004 21M9.8791 9.87868C9.3362 10.4216 9.00042 11.1716 9.00042 12C9.00042 13.6569 10.3436 15 12.0004 15C12.8288 15 13.5788 14.6642 14.1217 14.1213"
+                      stroke="#9A9A9A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div id="hide-pass" class="pass-svg hidden">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 5C6.895 5 3.545 9.504 2.42 11.286C2.284 11.502 2.216 11.61 2.178 11.777C2.149 11.901 2.149 12.099 2.178 12.223C2.216 12.39 2.284 12.498 2.42 12.714C3.545 14.495 6.895 19 12 19C17.105 19 20.455 14.495 21.58 12.713C21.717 12.497 21.785 12.39 21.823 12.223C21.852 12.099 21.852 11.901 21.823 11.776C21.785 11.61 21.717 11.502 21.58 11.286C20.455 9.504 17.105 5 12 5ZM12 15C10.344 15 9 13.657 9 12C9 11.172 9.336 10.422 9.879 9.879C10.422 9.336 11.172 9 12 9C13.657 9 15 10.343 15 12C15 12.828 14.664 13.578 14.121 14.121C13.578 14.664 12.828 15 12 15Z"
+                      stroke="#9A9A9A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                </div>
+              </div>
+              <div>
+                <a
+                  class="text-sm text-light w-full flex items-center justify-end cursor-pointer"
+                  >Forgot Password?</a
+                >
+              </div>
+              <div>
+                <button type="submit" class="auth-button">Sign in</button>
+              </div>
+
+              <!-- horizontal line -->
+              <div class="w-full flex items-center justify-center gap-3">
+                <div class="hr-line"></div>
+                <p>or</p>
+                <div class="hr-line"></div>
+              </div>
+
+              <!-- SSL buttons -->
+              <div class="flex flex-col gap-3">
+                <button class="auth-ssl-button">
+                  Sign in with Google
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="18"
+                      viewBox="0 0 17 18"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16.66 9.19176C16.66 8.58904 16.6059 8.00949 16.5055 7.45312H8.5V10.7411H13.0746C12.8775 11.8036 12.2786 12.7038 11.3784 13.3065V15.4393H14.1255C15.7327 13.9595 16.66 11.7804 16.66 9.19176Z"
+                        fill="#4285F4"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.50022 17.4983C10.7952 17.4983 12.7193 16.7372 14.1257 15.439L11.3786 13.3062C10.6175 13.8162 9.64386 14.1176 8.50022 14.1176C6.28635 14.1176 4.41248 12.6224 3.74407 10.6133H0.904297V12.8156C2.30294 15.5935 5.17749 17.4983 8.50022 17.4983Z"
+                        fill="#34A853"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.74387 10.6159C3.57387 10.1059 3.47728 9.5611 3.47728 9.00087C3.47728 8.44064 3.57387 7.89587 3.74387 7.38587V5.18359H0.904092C0.32841 6.3311 0 7.62928 0 9.00087C0 10.3725 0.32841 11.6706 0.904092 12.8182L3.74387 10.6159Z"
+                        fill="#FBBC05"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.50022 3.88069C9.74817 3.88069 10.8686 4.30955 11.7495 5.15183L14.1875 2.71387C12.7155 1.34227 10.7914 0.5 8.50022 0.5C5.17748 0.5 2.30294 2.40478 0.904297 5.18274L3.74407 7.38501C4.41248 5.37592 6.28635 3.88069 8.50022 3.88069Z"
+                        fill="#EA4335"
+                      /></svg
+                  ></span>
+                </button>
+                <button class="auth-ssl-button">
+                  Sign in with Microsoft
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path d="M11 11H2V2H11V11Z" fill="#F1511B" />
+                      <path d="M21.9999 11H13V2H21.9999V11Z" fill="#80CC28" />
+                      <path d="M10.9998 22H2V13H10.9998V22Z" fill="#00ADEF" />
+                      <path
+                        d="M21.9999 22H13V13H21.9999V22Z"
+                        fill="#FBBC09"
+                      /></svg
+                  ></span>
+                </button>
+              </div>
+
+              <!-- Switch to Register Page -->
+              <div>
+                <p class="auth-toggle">
+                  Need an account?
+                  <a class="auth-toggle-link" href="register.html"
+                    >Create Register</a
+                  >
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- main section::end -->
+    </main>
+
+    <!-- scripts -->
+
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
