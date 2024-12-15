@@ -177,15 +177,35 @@ $(document).ready(function () {
   showPassButton?.addEventListener('click', () => {
     if (passwordInput.type === 'password') {
       passwordInput.type = 'text';
-      showPassButton.classList.add("hidden")
-      hidePassButton.classList.remove("hidden")
+      showPassButton.classList.add('hidden');
+      hidePassButton.classList.remove('hidden');
     }
   });
   hidePassButton?.addEventListener('click', () => {
     if (passwordInput.type === 'text') {
       passwordInput.type = 'password';
-      showPassButton.classList.remove("hidden")
-      hidePassButton.classList.add("hidden")
+      showPassButton.classList.remove('hidden');
+      hidePassButton.classList.add('hidden');
+    }
+  });
+
+  const confirmShowPassButton = document.getElementById('confirm-show-pass');
+  const confirmHidePassButton = document.getElementById('confirm-hide-pass');
+  const confirmPasswordInput = document.querySelector(
+    '.auth-input-confirm-password'
+  );
+  confirmShowPassButton?.addEventListener('click', () => {
+    if (confirmPasswordInput.type === 'password') {
+      confirmPasswordInput.type = 'text';
+      confirmShowPassButton.classList.add('hidden');
+      confirmHidePassButton.classList.remove('hidden');
+    }
+  });
+  confirmHidePassButton?.addEventListener('click', () => {
+    if (confirmPasswordInput.type === 'text') {
+      confirmPasswordInput.type = 'password';
+      confirmShowPassButton.classList.remove('hidden');
+      confirmHidePassButton.classList.add('hidden');
     }
   });
   //////////////////////////Auth page:::end //////////////////////////

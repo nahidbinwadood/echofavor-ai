@@ -36,14 +36,28 @@
             <!-- title -->
             <div>
               <h2 class="auth-title">Welcome to Echofavor AI</h2>
-              <h1 class="mt-3 auth-title-bold">Sign in</h1>
+              <h1 class="mt-3 auth-title-bold">Register</h1>
               <p class="text-light mt-2">
-                Please login to continue to your account.
+                Please Sign in to continue to your account.
               </p>
             </div>
 
             <!-- form -->
             <form action="" class="py-8 flex flex-col gap-3">
+              <!-- email -->
+              <div class="auth-input-container">
+                <input
+                  required
+                  type="text"
+                  id="username"
+                  name="username"
+                  class="auth-input-field"
+                  placeholder="User Name"
+                />
+                <label for="username" class="auth-input-label">
+                  User Name
+                </label>
+              </div>
               <!-- email -->
               <div class="auth-input-container">
                 <input
@@ -89,7 +103,7 @@
                   </svg>
                 </div>
                 <div id="hide-pass" class="pass-svg hidden">
-                    <svg
+                  <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -104,17 +118,62 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-
                 </div>
               </div>
-              <div>
-                <a
-                  class="text-sm text-light w-full flex items-center justify-end cursor-pointer"
-                  >Forgot Password?</a
-                >
+
+              <!-- confirm password -->
+              <div class="auth-input-container">
+                <input
+                  required
+                  type="password"
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  class="auth-input-field auth-input-confirm-password"
+                  placeholder="Password"
+                />
+                <label for="confirmPassword" class="auth-input-label">
+                  Confirm Password
+                </label>
+
+                <!-- eye icons -->
+                <div id="confirm-show-pass" class="pass-svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M10.7429 5.09232C11.1494 5.03223 11.5686 5 12.0004 5C17.1054 5 20.4553 9.50484 21.5807 11.2868C21.7169 11.5025 21.785 11.6103 21.8231 11.7767C21.8518 11.9016 21.8517 12.0987 21.8231 12.2236C21.7849 12.3899 21.7164 12.4985 21.5792 12.7156C21.2793 13.1901 20.8222 13.8571 20.2165 14.5805M6.72432 6.71504C4.56225 8.1817 3.09445 10.2194 2.42111 11.2853C2.28428 11.5019 2.21587 11.6102 2.17774 11.7765C2.1491 11.9014 2.14909 12.0984 2.17771 12.2234C2.21583 12.3897 2.28393 12.4975 2.42013 12.7132C3.54554 14.4952 6.89541 19 12.0004 19C14.0588 19 15.8319 18.2676 17.2888 17.2766M3.00042 3L21.0004 21M9.8791 9.87868C9.3362 10.4216 9.00042 11.1716 9.00042 12C9.00042 13.6569 10.3436 15 12.0004 15C12.8288 15 13.5788 14.6642 14.1217 14.1213"
+                      stroke="#9A9A9A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div id="confirm-hide-pass" class="pass-svg hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M12 5C6.895 5 3.545 9.504 2.42 11.286C2.284 11.502 2.216 11.61 2.178 11.777C2.149 11.901 2.149 12.099 2.178 12.223C2.216 12.39 2.284 12.498 2.42 12.714C3.545 14.495 6.895 19 12 19C17.105 19 20.455 14.495 21.58 12.713C21.717 12.497 21.785 12.39 21.823 12.223C21.852 12.099 21.852 11.901 21.823 11.776C21.785 11.61 21.717 11.502 21.58 11.286C20.455 9.504 17.105 5 12 5ZM12 15C10.344 15 9 13.657 9 12C9 11.172 9.336 10.422 9.879 9.879C10.422 9.336 11.172 9 12 9C13.657 9 15 10.343 15 12C15 12.828 14.664 13.578 14.121 14.121C13.578 14.664 12.828 15 12 15Z"
+                      stroke="#9A9A9A"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
               </div>
+
               <div>
-                <button type="submit" class="auth-button">Sign in</button>
+                <button type="submit" class="auth-button">Register</button>
               </div>
 
               <!-- horizontal line -->
@@ -186,9 +245,9 @@
               <!-- Switch to Register Page -->
               <div>
                 <p class="auth-toggle">
-                  Need an account?
-                  <a class="auth-toggle-link" href="register.html"
-                    >Create Register</a
+                  Already have an Account?
+                  <a class="auth-toggle-link" href="sign-in.html"
+                    > Sign In</a
                   >
                 </p>
               </div>
