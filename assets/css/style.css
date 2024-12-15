@@ -130,7 +130,7 @@ footer p {
   display: none;
   position: absolute;
   top: 100%;
-  left:-50%;
+  left: -50%;
   min-width: 200px;
   background-color: #fff;
   border: 1px solid var(--primary--color);
@@ -579,6 +579,12 @@ footer p {
 /* ==============Testimonial::end============== */
 
 /* ==============Article::start============== */
+.articles-section-wrapper {
+  padding: 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #eceef21a;
+}
 .article-card-image-wrapper {
   height: 350px;
   width: 100%;
@@ -1160,7 +1166,7 @@ footer p {
   color: transparent;
 }
 
-.auth-input-field:placeholder-shown+.auth-input-label {
+.auth-input-field:placeholder-shown + .auth-input-label {
   font-size: 1rem;
   color: #6b7280;
   top: 0.625rem;
@@ -1169,7 +1175,7 @@ footer p {
 }
 
 /* Focused input styling */
-.auth-input-field:focus+.auth-input-label {
+.auth-input-field:focus + .auth-input-label {
   font-size: 14px;
   color: var(--primary--color);
   padding: 0 4px;
