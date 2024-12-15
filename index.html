@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="./assets/css/plugins/aos.css" />
     <link rel="stylesheet" href="./assets/css/plugins/nice-select.min.css" />
     <link rel="stylesheet" href="./assets/css/plugins/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.1.18/dist/lenis.css"
+    />
 
     <!-- Custom Css -->
     <link rel="stylesheet" href="./assets/css/helper.css" />
@@ -26,19 +30,26 @@
       >
         <!-- logo -->
         <div>
-          <a href="index.html">
+          <a class="nav-logo" href="index.html">
             <img src="./assets/images/logo.svg" alt="" />
           </a>
         </div>
 
         <!-- navLinks -->
         <div>
-          <ul class="flex items-center gap-8 text-lg font-medium">
+          <ul class="flex items-center gap-8 text-lg font-medium nav_links">
             <li>
               <a href="index.html" class="navlink_active">Home</a>
             </li>
             <li>
               <a href="pricing.html">Pricing</a>
+            </li>
+            <li class="menu-item">
+              <a class="cursor-pointer">Product</a>
+              <ul class="submenu">
+                <li><a href="#">For individual</a></li>
+                <li><a href="#">For business</a></li>
+              </ul>
             </li>
             <li>
               <a href="blog.html">Blog</a>
@@ -54,19 +65,19 @@
 
         <!-- button -->
         <div class="flex items-center gap-4">
-          <a href="sign-in.html" class="button button-white">Log in</a>
-          <a href="index.html" class="button button-transparent"
+          <a href="register.html" class="button button-white">Register</a>
+          <a href="sign-in.html" class="button button-transparent"
             >Start for Free</a
           >
         </div>
       </nav>
     </header>
     <!-- main -->
-    <main>
+    <main class="">
       <!-- hero section::start -->
       <section class="hero relative">
         <div class="container hero-wrapper">
-          <div class="pt-10 flex flex-col items-center justify-center gap-8">
+          <div class="pt-10 flex flex-col items-center justify-center gap-8 hero-content">
             <!-- glow button -->
             <div class="button button-transparent font-plus-jakarta">
               <div>
@@ -167,7 +178,7 @@
       </section>
 
       <!-- video section -->
-      <div class="hero-video-wrapper container relative !w-full">
+      <div class="hero-video-wrapper container relative">
         <!-- shade -->
         <div class="hero-video-wrapper-shade"></div>
 
@@ -262,7 +273,7 @@
         <!-- features -->
         <div class="my-24 flex flex-col gap-12">
           <!-- feature-1 -->
-          <div class="flex items-center gap-12">
+          <div class="flex items-center gap-12 feature-card-wrapper">
             <!-- image section -->
             <div class="p-4 feature-image-card rounded-2xl">
               <img src="./assets/images/feature-1.png" alt="" />
@@ -305,7 +316,9 @@
           </div>
 
           <!-- feature-2 -->
-          <div class="flex flex-row-reverse items-center gap-12">
+          <div
+            class="flex flex-row-reverse items-center gap-12 feature-card-wrapper"
+          >
             <!-- image section -->
             <div class="p-4 feature-image-card rounded-2xl">
               <img src="./assets/images/feature-2.png" alt="" />
@@ -346,7 +359,7 @@
           </div>
 
           <!-- feature-3 -->
-          <div class="flex items-center gap-12">
+          <div class="flex items-center gap-12 feature-card-wrapper">
             <!-- image section -->
             <div class="p-4 feature-image-card rounded-2xl">
               <img src="./assets/images/feature-3.png" alt="" />
@@ -387,7 +400,9 @@
           </div>
 
           <!-- feature-4 -->
-          <div class="flex flex-row-reverse items-center gap-12">
+          <div
+            class="flex flex-row-reverse items-center gap-12 feature-card-wrapper"
+          >
             <!-- image section -->
             <div class="p-4 feature-image-card rounded-2xl">
               <img src="./assets/images/feature-4.png" alt="" />
@@ -428,7 +443,7 @@
           </div>
 
           <!-- feature-5 -->
-          <div class="flex items-center gap-12">
+          <div class="flex items-center gap-12 feature-card-wrapper">
             <!-- image section -->
             <div class="p-4 feature-image-card rounded-2xl">
               <img src="./assets/images/feature-5.png" alt="" />
@@ -469,7 +484,9 @@
           </div>
 
           <!-- feature-6 -->
-          <div class="flex flex-row-reverse items-center gap-12">
+          <div
+            class="flex flex-row-reverse items-center gap-12 feature-card-wrapper"
+          >
             <!-- image section -->
             <div class="p-4 feature-image-card rounded-2xl">
               <img src="./assets/images/feature-6.png" alt="" />
@@ -510,7 +527,7 @@
           </div>
 
           <!-- feature-7 -->
-          <div class="flex items-center gap-12">
+          <div class="flex items-center gap-12 feature-card-wrapper">
             <!-- image section -->
             <div class="p-4 feature-image-card rounded-2xl">
               <img src="./assets/images/feature-7.png" alt="" />
@@ -1026,7 +1043,9 @@
 
           <!-- start trial button -->
           <div class="mt-8 w-full flex items-center justify-center">
-            <a href="index.html" class="button trial-button w-fit rounded-full"
+            <a
+              href="sign-in.html"
+              class="button trial-button w-fit rounded-full"
               >Start Your Free Trial</a
             >
           </div>
@@ -1035,7 +1054,7 @@
       <!-- trial section::end -->
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer hidden">
       <section class="container py-16 grid grid-cols-6 gap-12">
         <!-- logo section -->
         <div class="col-span-2">
@@ -1092,7 +1111,7 @@
           </p>
 
           <!-- form -->
-          <div class="mt-8">
+          <div class="mt-8 hero-filter">
             <h4 class="footer-form-title">Sign up for ecohofavor AI updates</h4>
 
             <!-- form input -->

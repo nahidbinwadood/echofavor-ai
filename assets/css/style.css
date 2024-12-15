@@ -52,11 +52,11 @@ select:focus {
 }
 
 body {
-  color: #000;
+  color: #fff;
   background-color: #f9fafc;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   scroll-behavior: smooth;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
@@ -115,6 +115,66 @@ footer p {
   border-radius: 2px;
 }
 
+.menu-item {
+  position: relative;
+}
+
+.menu-item > a {
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+/* Submenu Styles */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left:-50%;
+  min-width: 200px;
+  background-color: #fff;
+  border: 1px solid var(--primary--color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.submenu li {
+  position: relative;
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: var(--primary--color);
+  padding: 10px 20px;
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.submenu li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Ensure submenu stays visible when hovering over it */
+.menu-item:hover .submenu,
+.submenu:hover {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .primary-description {
   width: 60%;
   margin: 0 auto;
@@ -145,7 +205,7 @@ footer p {
 }
 
 .error-description {
-  color: #5A5C5F;
+  color: #5a5c5f;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -161,6 +221,7 @@ footer p {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  font-size: 18px;
   border-radius: 44px;
   background: #fff;
   outline: none;
@@ -171,6 +232,13 @@ footer p {
 .button-white {
   background: #fff;
   color: var(--primary--color);
+  transition: all 0.4s ease;
+  border: 1px solid #fff;
+}
+
+.button-white:hover {
+  background-color: transparent;
+  color: white;
 }
 
 .button-transparent {
@@ -410,6 +478,10 @@ footer p {
 }
 
 /* ==============Features::start============== */
+.feature-card-wrapper {
+  background: #f9fafc;
+}
+
 .feature-image-card {
   width: 40%;
   background-color: #eceef2;
@@ -558,8 +630,8 @@ footer p {
 .trial-wrapper {
   margin-top: 60px;
   margin-bottom: 60px;
-  max-height: 700px;
-  min-height: 700px;
+  max-height: 550px;
+  min-height: 550px;
   height: full;
   background: linear-gradient(to right, #c2d5fd 0%, #c2d5fd 100%);
 }
@@ -974,7 +1046,7 @@ footer p {
 }
 
 .contact-form label {
-  color: #4B5563;
+  color: #4b5563;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -987,7 +1059,7 @@ footer p {
   margin: 12px 0;
   padding: 12px 16px;
   border-radius: 11722.166px;
-  border: 1.172px solid #D1D5DB;
+  border: 1.172px solid #d1d5db;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -998,14 +1070,13 @@ footer p {
   width: 100%;
   border: none;
   outline: none;
-
 }
 
 .contact-form textarea {
   padding: 16px;
   margin-top: 12px;
   border-radius: 18.757px;
-  border: 1.172px solid #D1D5DB;
+  border: 1.172px solid #d1d5db;
   resize: none;
 }
 
@@ -1024,7 +1095,6 @@ footer p {
 }
 
 /*========================================Contact Us::End======================================== */
-
 
 /*========================================Auth pages::Start======================================== */
 .auth-wrapper {
@@ -1060,7 +1130,7 @@ footer p {
   width: 100%;
   border-radius: 6px;
   color: #232323 !important;
-  border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
   padding: 0 1rem;
   outline: none;
   transition: border-color 0.3s ease;
@@ -1086,7 +1156,6 @@ footer p {
   transition: all 0.2s ease;
 }
 
-
 .auth-input-field::placeholder {
   color: transparent;
 }
@@ -1097,7 +1166,6 @@ footer p {
   top: 0.625rem;
   right: 12px;
   width: fit-content;
-
 }
 
 /* Focused input styling */
@@ -1120,7 +1188,7 @@ footer p {
 }
 
 .auth-button {
-  color: #FFF;
+  color: #fff;
   outline: none;
   border: none;
   font-weight: 500;
@@ -1143,8 +1211,8 @@ footer p {
   line-height: 164%;
   text-transform: capitalize;
   border-radius: 10px;
-  border: 1px solid #EEE;
-  background: #FFF;
+  border: 1px solid #eee;
+  background: #fff;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1156,11 +1224,11 @@ footer p {
 .hr-line {
   height: 1px;
   width: 100%;
-  background: #EEEEEE;
+  background: #eeeeee;
 }
 
 .auth-toggle {
-  color: #6C6C6C;
+  color: #6c6c6c;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -1170,7 +1238,7 @@ footer p {
 .auth-toggle-link {
   color: var(--primary--color);
   font-feature-settings: 'liga' off, 'clig' off;
-  font-family: "Plus Jakarta Sans";
+  font-family: 'Plus Jakarta Sans';
   font-weight: 500;
   line-height: 150%;
   text-decoration-line: underline;

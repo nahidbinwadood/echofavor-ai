@@ -1,30 +1,70 @@
-@media only screen and (min-width: 1600px) {
-}
+@media only screen and (min-width: 1600px) {}
 
 /* laptop devices */
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
+    header {
+        padding: 0 32px;
+    }
+
+    .nav-logo img {
+        max-width: 250px !important;
+    }
+
+    .nav_links {
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .button {
+        padding: 10px 24px;
+        font-size: 16px;
+    }
+
+    /* banner */
+    .hero-title,
+    .glowing-hero-title {
+        font-size: 52px;
+    }
+
+    .banner-image {
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        right: 20px;
+        bottom: -20%;
+    }
+
+    .banner-filter-input {
+        max-width: 300px;
+        min-width: 300px;
+        width: 100%;
+    }
+
+    .hero-video-wrapper {
+        margin-top: -250px;
+        height: 500px;
+        width: 80% !important;
+    }
+    .hero-video-play-btn svg{
+        height: 40px;
+        width: 40px;
+    }
 }
 
 /* large tablet devices */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
 
 /* medium tablet devices */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-}
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
 
 /* small tablet devices */
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-}
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
 
 /* large mobile devices */
-@media only screen and (min-width: 480px) and (max-width: 575px) {
-}
+@media only screen and (min-width: 480px) and (max-width: 575px) {}
 
 /* mobile devices */
-@media only screen and (min-width: 375px) and (max-width: 479px) {
-}
+@media only screen and (min-width: 375px) and (max-width: 479px) {}
 
 /* extra small devices */
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-}
+@media only screen and (min-width: 320px) and (max-width: 374px) {}

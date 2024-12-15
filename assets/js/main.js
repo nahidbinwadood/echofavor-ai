@@ -1,4 +1,14 @@
 $(document).ready(function () {
+  // Initialize Lenis
+  const lenis = new Lenis({
+    autoRaf: true,
+  });
+
+  // Listen for the scroll event and log the event data
+  lenis.on('scroll', (e) => {
+   // console.log(e);
+  });
+
   // play the video:
   // Get the elements
   const playBtn = document.getElementById('play-btn');
