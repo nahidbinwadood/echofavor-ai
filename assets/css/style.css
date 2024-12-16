@@ -140,7 +140,6 @@ footer p {
   transform: translateY(-20px);
   transition: all 0.3s ease;
   z-index: 1000;
-
 }
 
 .menu-item:hover .submenu {
@@ -491,7 +490,13 @@ footer p {
 .feature-card {
   width: 60%;
 }
+.feature-image-card-left {
+  border-radius: 16px 0 0 16px !important;
+}
 
+.feature-image-card-right {
+  border-radius: 0 16px 16px 0 !important;
+}
 .feature-card h3 {
   color: #141414;
   font-family: 'Space Grotesk';
