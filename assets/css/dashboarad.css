@@ -505,10 +505,124 @@ body {
 }
 
 .chat-history-table {
+    margin: 40px 100px;
+}
 
-    margin: 30px 100px;
+.chat-history-table .table thead tr th {
+    padding: 16px 24px;
+    background: #F4F5F7;
+    color: #141414;
+    font-size: 18px;
+}
+
+.chat-history-table .table tbody tr td {
+    padding: 16px 24px;
+    font-weight: 500;
 }
 
 /* chat history page */
 
 /* ===================================dashboard::start============================================ */
+
+
+/* ===================================Modals::start============================================ */
+.title-modal-container {
+    padding: 32px;
+    position: relative;
+}
+
+.title-modal-container-description {
+    margin-top: 12px;
+    color: #141414;
+    font-family: "Plus Jakarta Sans";
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 164%;
+    text-transform: capitalize;
+}
+
+.title-modal-container-title {
+    margin-top: 12px;
+    color: #081839;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 199%;
+}
+
+.title-modal-container-stats {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #42526E;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 199%;
+}
+
+.title-modal-container-cross-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+/* delete modal */
+.delete-modal-container {
+    padding: 16px;
+}
+
+.delete-modal-title {
+    color: #081839;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 172%;
+    letter-spacing: -0.48px;
+}
+
+.delete-modal-description {
+    margin-top: 8px;
+    color: #5A5C5F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 164%;
+    text-transform: capitalize;
+}
+.delete-modal-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 32px;
+    gap: 12px;
+}
+
+.delete-modal-btn {
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 4px 16px;
+    border-radius: 8px;
+    line-height: 164%;
+    text-transform: capitalize;
+    min-width: 120px;
+}
+
+.delete-modal-btn.transparent {
+    border: 1px solid #D0D5DD;
+    background: #fff;
+    color: var(--primary--color);
+}
+
+.delete-modal-btn.primary {
+    border: 1px solid var(--primary--color);
+    background: var(--primary--color);
+    color: #fff
+}
+
+/* ===================================Modals::end============================================ */
