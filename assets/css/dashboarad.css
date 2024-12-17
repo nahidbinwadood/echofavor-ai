@@ -519,7 +519,10 @@ body {
     padding: 16px 24px;
     font-weight: 500;
 }
-
+.chat-history-table .table tfoot tr td {
+    padding: 16px 24px;
+    font-weight: 600;
+}
 /* chat history page */
 
 /* ===================================dashboard::start============================================ */
