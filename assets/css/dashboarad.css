@@ -49,7 +49,7 @@ select:focus {
 
 :root {
     --primary--color: #081839;
-    --dashboard--text--color: #ADD8E6;
+    --dashboard--text--color: #add8e6;
 }
 
 body {
@@ -143,7 +143,7 @@ body {
     margin-top: 40px;
     display: flex;
     border-radius: 94px;
-    border: 1px solid #FFF;
+    border: 1px solid #fff;
     background: #081839;
     display: inline-flex;
     padding: 12px 24px;
@@ -155,15 +155,14 @@ body {
 
 .dashboard-chat-history-title {
     padding: 12px 28px;
-    color: #ADD8E6;
-    font-family: "Plus Jakarta Sans";
+    color: #add8e6;
+    font-family: 'Plus Jakarta Sans';
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 164%;
     text-transform: capitalize;
-    border-bottom: 1px solid #42526E;
-    ;
+    border-bottom: 1px solid #42526e;
 }
 
 .dashboard-chat-history {
@@ -196,7 +195,7 @@ body {
 
 .dashboard-chat-history-item.active {
     border-radius: 8px;
-    background: #172B4D;
+    background: #172b4d;
     position: relative;
     padding: 16px;
 }
@@ -210,7 +209,7 @@ body {
     top: 50%;
     transform: translateY(0%);
     border-radius: 11px;
-    background: #FFF;
+    background: #fff;
     box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.12);
     display: flex;
     flex-direction: column;
@@ -255,12 +254,12 @@ body {
 
 .dashboard-sidebar-manage-title {
     color: var(--dashboard--text--color);
-    font-family: "Plus Jakarta Sans";
+    font-family: 'Plus Jakarta Sans';
     font-size: 18px;
     font-weight: 500;
     line-height: 164%;
     text-transform: capitalize;
-    border-top: 1px solid #42526E;
+    border-top: 1px solid #42526e;
     padding: 16px 28px;
 }
 
@@ -274,7 +273,7 @@ body {
 
 .dashboard-sidebar-manage-item.active {
     border-radius: 8px;
-    background: var(--30-dark-neutrals-04, #172B4D);
+    background: var(--30-dark-neutrals-04, #172b4d);
 }
 
 .dashboard-sidebar-manage-item.files {
@@ -286,7 +285,6 @@ body {
 .space-y-2>*+* {
     margin-top: 0.5rem;
 }
-
 
 /* dashboard container */
 .dashboard-container {
@@ -356,7 +354,7 @@ body {
     border-radius: 16px;
     display: flex;
     width: 244px;
-    background: #FFF;
+    background: #fff;
     padding: 19px 29px;
     flex-direction: column;
     align-items: flex-start;
@@ -385,7 +383,6 @@ body {
     max-height: calc(100vh - 100px);
     width: 100%;
     overflow-y: auto;
-
 }
 
 .dashboard-main-content-wrapper-homepage {
@@ -401,7 +398,6 @@ body {
 
 .dashboard-main-title-wrapper {
     text-align: center;
-
 }
 
 .dashboard-home-main-title {
@@ -434,22 +430,19 @@ body {
     align-items: center;
     gap: 14px;
     border-radius: 48px;
-    border: 1px solid #E4E5E9;
+    border: 1px solid #e4e5e9;
     color: #141414;
     font-style: normal;
     font-weight: 400;
     cursor: pointer;
 }
 
-
 .dashboard-form-input-wrapper {
-
     border-radius: 48px;
     padding: 0 12px;
-    border: 1px solid #E4E5E9;
-    background: #FFF;
+    border: 1px solid #e4e5e9;
+    background: #fff;
     min-width: 1000px;
-
 }
 
 .dashboard-form-input-form {
@@ -482,21 +475,18 @@ body {
     width: 30px;
 }
 
-
-
 .dashboard-form-input-logo img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-
 /* chat history page */
 .chat-history-title {
     margin-top: 32px;
     text-align: center;
     color: #000;
-    font-family: "Plus Jakarta Sans";
+    font-family: 'Plus Jakarta Sans';
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -504,13 +494,14 @@ body {
     letter-spacing: -0.64px;
 }
 
-.chat-history-table {
+.chat-history-table,
+.subscription-cards-wrapper {
     margin: 40px 100px;
 }
 
 .chat-history-table .table thead tr th {
     padding: 16px 24px;
-    background: #F4F5F7;
+    background: #f4f5f7;
     color: #141414;
     font-size: 18px;
 }
@@ -519,14 +510,88 @@ body {
     padding: 16px 24px;
     font-weight: 500;
 }
+
 .chat-history-table .table tfoot tr td {
     padding: 16px 24px;
     font-weight: 600;
 }
+
 /* chat history page */
 
-/* ===================================dashboard::start============================================ */
+/* subscription */
+.subscription-card {
+    color: #141414;
+    background: #fff;
+    display: flex;
+    padding: 38.991px 38.991px 19.496px 29.243px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 9.748px;
+    border-right: 0.963px solid #e4e4e7;
+    border-bottom: 0.963px solid #e4e4e7;
+    border-left: 0.963px solid #e4e4e7;
+}
 
+.subscription-card-discount {
+    color: #141414;
+    font-size: 15.405px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 132%;
+    letter-spacing: -0.308px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.subscription-card-button {
+    width: 100%;
+    display: flex;
+    padding: 12px 0;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #081839;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 164%;
+    text-transform: capitalize;
+    border-radius: 90.503px;
+    border: 0.963px solid #081839;
+    transition: all 0.5s ease-in-out;
+}
+
+.subscription-card-button svg path {
+    transition: all 0.5s ease-in-out;
+}
+
+.subscription-card-button:hover {
+    background: var(--primary--color);
+    color: #fff;
+}
+
+.subscription-card-button:hover svg path {
+    stroke: #fff;
+}
+
+.subscription-card-1 {
+    border-top: 2.437px solid #5a5c5f;
+}
+
+.subscription-card-2 {
+    border-top: 2.437px solid #FFAB00;
+}
+
+.subscription-card-3 {
+    border-top: 2.437px solid #05D9A8;
+}
+
+
+/* subscription */
+
+/* ===================================dashboard::start============================================ */
 
 /* ===================================Modals::start============================================ */
 .title-modal-container {
@@ -537,7 +602,7 @@ body {
 .title-modal-container-description {
     margin-top: 12px;
     color: #141414;
-    font-family: "Plus Jakarta Sans";
+    font-family: 'Plus Jakarta Sans';
     font-size: 15px;
     font-weight: 500;
     line-height: 164%;
@@ -556,7 +621,7 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
-    color: #42526E;
+    color: #42526e;
     text-align: center;
     font-style: normal;
     font-weight: 400;
@@ -588,14 +653,15 @@ body {
 
 .delete-modal-description {
     margin-top: 8px;
-    color: #5A5C5F;
+    color: #5a5c5f;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 164%;
     text-transform: capitalize;
 }
-.delete-modal-btn-container{
+
+.delete-modal-btn-container {
     display: flex;
     align-items: center;
     justify-content: end;
@@ -617,7 +683,7 @@ body {
 }
 
 .delete-modal-btn.transparent {
-    border: 1px solid #D0D5DD;
+    border: 1px solid #d0d5dd;
     background: #fff;
     color: var(--primary--color);
 }
@@ -625,7 +691,142 @@ body {
 .delete-modal-btn.primary {
     border: 1px solid var(--primary--color);
     background: var(--primary--color);
-    color: #fff
+    color: #fff;
+}
+
+
+.subscription-history-modal-container {
+    padding: 16px;
+    position: relative;
+}
+
+.subscription-history-modal-title {
+    color: #081839;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 164%;
+    text-transform: capitalize;
+}
+
+.subscription-history-modal-info-wrapper {
+    margin-top: 16px;
+}
+
+.subscription-history-modal-info-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #EBECF0;
+    text-align: center;
+}
+
+.subscription-history-modal-info-info-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    font-size: 16px;
+}
+
+.subscription-history-modal-info-title {
+    color: #141414;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 170%;
+    padding-bottom: 8px;
+
+}
+
+.cancel-subscription-btn {
+    outline: none;
+    border: 1px solid var(--primary--color);
+    color: #081839;
+    font-family: "Plus Jakarta Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 164%;
+    padding: 8px 24px;
+    border-radius: 90.503px;
+    border: 0.963px solid #081839;
+    text-transform: capitalize;
+}
+
+.subscription-cancel-modal-description {
+    margin-top: 8px;
+    color: #767676;
+    font-weight: 400;
+    line-height: 180%;
+
+}
+
+
+/* custom radio */
+.subscription-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.custom-input-title {
+    color: #333;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 164%;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.custom-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: fit-content;
+}
+
+.custom-radio {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #D0D5DD;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.custom-radio-indicator {
+    height: 10px;
+    opacity: 0;
+    width: 10px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.subscription-cancel-reason-input:checked+.custom-radio {
+    border: 1px solid var(--primary--color);
+    background: var(--primary--color);
+}
+
+.subscription-cancel-reason-input:checked+.custom-radio .custom-radio-indicator {
+    opacity: 1;
+}
+
+.subscription-form-wrapper .subscription-form-textarea {
+    resize: none;
+    border-radius: 6px;
+    border: 1px solid #D0D5DD;
+    background: #F9FAFB;
+    padding: 12px;
 }
 
 /* ===================================Modals::end============================================ */
