@@ -557,7 +557,8 @@ body {
 }
 
 .chat-history-table,
-.subscription-cards-wrapper {
+.subscription-cards-wrapper,
+.dashboard-contact-main-wrapper {
   margin: 40px 100px;
 }
 
@@ -841,6 +842,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 24px;
+}
+
+.ai-response-details-container{
+  padding-top: 12px;
+  margin-top: 20px;
+  border-top: 1px solid #DFE1E6;
+}
+
+.ai-response-details-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ai-details-tokens-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #42526E;
+}
+
+.ai-details-intent-wrapper {
+  color: #42526E;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 

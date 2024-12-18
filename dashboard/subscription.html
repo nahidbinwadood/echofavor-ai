@@ -29,9 +29,9 @@
         <!-- sidebar header -->
         <div class="dashboard-sidebar-header">
           <!-- logo -->
-          <a href="../index.html" class="dashboard-logo">
+          <div class="dashboard-logo">
             <img src="../assets/images/dashboard-logo.png" alt="" />
-          </a>
+          </div>
 
           <!-- new chat button -->
           <div>
@@ -395,13 +395,13 @@
 
             <!-- profile menu's -->
             <div class="dashboard-header-profile-menu">
-              <a href="" class="dashboard-header-profile-menu-items"
+              <a href="subscription.html" class="dashboard-header-profile-menu-items"
                 >Subscriptions</a
               >
-              <a href="" class="dashboard-header-profile-menu-items"
+              <a href="../affiliate.html" class="dashboard-header-profile-menu-items"
                 >affiliate Program</a
               >
-              <a href="" class="dashboard-header-profile-menu-items">Contact</a>
+              <a href="dashboard-contact.html" class="dashboard-header-profile-menu-items">Contact</a>
               <a
                 href="../sign-in.html"
                 class="dashboard-header-profile-menu-items"
@@ -829,13 +829,13 @@
                 ></textarea>
 
                 <div class="mt-4 w-full flex items-center gap-2 justify-end">
-                  <button
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                    class="delete-modal-btn transparent"
+                  <div
+                    data-bs-toggle="modal"
+                    data-bs-target="#subscriptionHistory"
+                    class="delete-modal-btn transparent flex items-center justify-center cursor-pointer"
                   >
                     Cancel
-                  </button>
+                  </div>
                   <div
                     data-bs-toggle="modal"
                     data-bs-target="#confirm-subscription-modal"

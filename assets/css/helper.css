@@ -1207,6 +1207,9 @@
 .text-justify {
   text-align: justify;
 }
+.underline{
+  text-decoration: underline;
+}
 
 /* Text Size */
 .text-xs {
