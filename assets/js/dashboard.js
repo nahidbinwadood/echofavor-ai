@@ -34,4 +34,22 @@ $(document).ready(function () {
       chatHistoryOption.classList.remove('active');
     }
   });
+
+  // details toggle::
+  const toggleBtn = document.querySelector('.ai-toggle-details-btn');
+  const detailsContainer = document.querySelector(
+    '.ai-response-details-container'
+  );
+
+  toggleBtn.addEventListener('click', () => {
+    if (detailsContainer.classList.contains('collapsed')) {
+      // Expand
+      detailsContainer.classList.remove('collapsed');
+      toggleBtn.textContent = 'Hide Details';
+    } else {
+      // Collapse
+      detailsContainer.classList.add('collapsed');
+      toggleBtn.textContent = 'Show Details';
+    }
+  });
 });
