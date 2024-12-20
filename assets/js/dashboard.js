@@ -483,6 +483,19 @@ $(document).ready(function () {
     uploadDrawerWrapper.classList.remove('show');
   });
 
+  const topCloseButtonUploadWrapper=document.querySelector('.dashboard-drawer-upload-wrapper-close')
+  const bottomCloseButtonUploadWrapper=document.querySelector('.dashboard-upload-drawer-close-button')
+
+  const uploadDrawerCloseButtons=[topCloseButtonUploadWrapper, bottomCloseButtonUploadWrapper]
+  uploadDrawerCloseButtons.forEach((btn)=>{
+    btn.addEventListener('click', () => {
+      uploadDrawerWrapper.classList.remove('show');
+    })
+  })
+
+
+  //upload
+
   const allFilesUploadBtn = document.querySelector('.all-files-upload');
   const allFilesWrapper = document.querySelector('.all-files-main-wrapper');
   const allFilesItems = document.querySelectorAll('.all-files-item');
@@ -591,78 +604,80 @@ $(document).ready(function () {
   // size count:
   // Elements
   const uploadInput = document.getElementById('uploadInputFile');
-const fileChosenSpan = document.getElementById('fileChosen');
-const fileSizeInfo = document.getElementById('fileSizeInfo');
-const fileCountInfo = document.getElementById('fileCountInfo');
-const chooseFileButton = document.getElementById('chooseFileButton');
-const uploadButton = document.querySelector('.dashboard-upload-drawer-upload-button');
-const uploadedFileWrapper = document.querySelector('.uploaded-file-wrapper');
+  const fileChosenSpan = document.getElementById('fileChosen');
+  const fileSizeInfo = document.getElementById('fileSizeInfo');
+  const fileCountInfo = document.getElementById('fileCountInfo');
+  const chooseFileButton = document.getElementById('chooseFileButton');
+  const uploadButton = document.querySelector(
+    '.dashboard-upload-drawer-upload-button'
+  );
+  const uploadedFileWrapper = document.querySelector('.uploaded-file-wrapper');
 
-// Constants
-const maxTotalSizeMB = 50;
-const maxFileCount = 10;
+  // Constants
+  const maxTotalSizeMB = 50;
+  const maxFileCount = 10;
 
-// Variables to hold selected files
-let selectedFiles = [];
+  // Variables to hold selected files
+  let selectedFiles = [];
 
-// Convert size to KB or MB
-function formatSize(sizeInBytes) {
-  return sizeInBytes < 1024 * 1024
-    ? (sizeInBytes / 1024).toFixed(2) + ' KB'
-    : (sizeInBytes / (1024 * 1024)).toFixed(2) + ' MB';
-}
-
-// Open file input dialog
-chooseFileButton?.addEventListener('click', () => {
-  uploadInput.click();
-});
-
-// Event listener for file selection
-uploadInput?.addEventListener('change', (event) => {
-  const files = event.target.files;
-
-  if (files.length > 0) {
-    selectedFiles = Array.from(files); // Save selected files
-
-    // Truncate each file name to 20 characters
-    const fileNames = selectedFiles
-      .map((file) =>
-        file.name.length > 20 ? file.name.substring(0, 20) + '...' : file.name
-      )
-      .join(', ');
-
-    const totalSize = selectedFiles.reduce((sum, file) => sum + file.size, 0);
-
-    // Update UI
-    fileChosenSpan.textContent = fileNames;
-
-    // Calculate percentages
-    const totalSizePercentage = (
-      (totalSize / (maxTotalSizeMB * 1024 * 1024)) *
-      100
-    ).toFixed(2);
-    const totalFilesPercentage = (
-      (selectedFiles.length / maxFileCount) *
-      100
-    ).toFixed(2);
-
-    fileSizeInfo.textContent = `File Size ${formatSize(
-      totalSize
-    )} (Total ${formatSize(
-      totalSize
-    )}/${maxTotalSizeMB} MB ${totalSizePercentage}%)`;
-    fileCountInfo.textContent = `File Count ${selectedFiles.length} (Total ${selectedFiles.length}/${maxFileCount} ${totalFilesPercentage}%)`;
+  // Convert size to KB or MB
+  function formatSize(sizeInBytes) {
+    return sizeInBytes < 1024 * 1024
+      ? (sizeInBytes / 1024).toFixed(2) + ' KB'
+      : (sizeInBytes / (1024 * 1024)).toFixed(2) + ' MB';
   }
-});
 
-// Event listener for the Upload button
-uploadButton?.addEventListener('click', () => {
-  if (selectedFiles.length > 0) {
-    selectedFiles.forEach((file) => {
-      // Create dynamic HTML for uploaded file
-      const fileItem = document.createElement('div');
-      fileItem.className = 'uploaded-file-item';
-      fileItem.innerHTML = `
+  // Open file input dialog
+  chooseFileButton?.addEventListener('click', () => {
+    uploadInput.click();
+  });
+
+  // Event listener for file selection
+  uploadInput?.addEventListener('change', (event) => {
+    const files = event.target.files;
+
+    if (files.length > 0) {
+      selectedFiles = Array.from(files); // Save selected files
+
+      // Truncate each file name to 20 characters
+      const fileNames = selectedFiles
+        .map((file) =>
+          file.name.length > 20 ? file.name.substring(0, 20) + '...' : file.name
+        )
+        .join(', ');
+
+      const totalSize = selectedFiles.reduce((sum, file) => sum + file.size, 0);
+
+      // Update UI
+      fileChosenSpan.textContent = fileNames;
+
+      // Calculate percentages
+      const totalSizePercentage = (
+        (totalSize / (maxTotalSizeMB * 1024 * 1024)) *
+        100
+      ).toFixed(2);
+      const totalFilesPercentage = (
+        (selectedFiles.length / maxFileCount) *
+        100
+      ).toFixed(2);
+
+      fileSizeInfo.textContent = `File Size ${formatSize(
+        totalSize
+      )} (Total ${formatSize(
+        totalSize
+      )}/${maxTotalSizeMB} MB ${totalSizePercentage}%)`;
+      fileCountInfo.textContent = `File Count ${selectedFiles.length} (Total ${selectedFiles.length}/${maxFileCount} ${totalFilesPercentage}%)`;
+    }
+  });
+
+  // Event listener for the Upload button
+  uploadButton?.addEventListener('click', () => {
+    if (selectedFiles.length > 0) {
+      selectedFiles.forEach((file) => {
+        // Create dynamic HTML for uploaded file
+        const fileItem = document.createElement('div');
+        fileItem.className = 'uploaded-file-item';
+        fileItem.innerHTML = `
       <div class="uploaded-file-item-content">
         <div>
           <svg
@@ -687,9 +702,7 @@ uploadButton?.addEventListener('click', () => {
           }
         </div>
         <div class="uploaded-file-item-info">
-          ${formatSize(
-            file.size
-          )} |   ${new Date().toLocaleTimeString()}
+          ${formatSize(file.size)} |   ${new Date().toLocaleTimeString()}
         </div>
       </div>
       <div
@@ -715,20 +728,17 @@ uploadButton?.addEventListener('click', () => {
         </svg>
       </div>
     `;
-      uploadedFileWrapper.appendChild(fileItem);
-    });
+        uploadedFileWrapper.appendChild(fileItem);
+      });
 
-    // Reset selected files
-    selectedFiles = [];
-    uploadInput.value = '';
-    fileChosenSpan.textContent = 'No file chosen';
-    fileSizeInfo.textContent = 'File Size 0 KB (Total 0 KB/50 MB 0.00%)';
-    fileCountInfo.textContent = 'File Count 0 (Total 0/10 0.00%)';
-  } else {
-    alert('No files selected for upload!');
-  }
-});
-
-
-
+      // Reset selected files
+      selectedFiles = [];
+      uploadInput.value = '';
+      fileChosenSpan.textContent = 'No file chosen';
+      fileSizeInfo.textContent = 'File Size 0 KB (Total 0 KB/50 MB 0.00%)';
+      fileCountInfo.textContent = 'File Count 0 (Total 0/10 0.00%)';
+    } else {
+      alert('No files selected for upload!');
+    }
+  });
 });
