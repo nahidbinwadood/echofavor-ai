@@ -42,7 +42,7 @@ $(document).ready(function () {
     '.ai-response-details-container'
   );
 
-  toggleBtn.addEventListener('click', () => {
+  toggleBtn?.addEventListener('click', () => {
     if (detailsContainer.classList.contains('collapsed')) {
       // Expand
       detailsContainer.classList.remove('collapsed');
@@ -487,8 +487,8 @@ $(document).ready(function () {
   const bottomCloseButtonUploadWrapper=document.querySelector('.dashboard-upload-drawer-close-button')
 
   const uploadDrawerCloseButtons=[topCloseButtonUploadWrapper, bottomCloseButtonUploadWrapper]
-  uploadDrawerCloseButtons.forEach((btn)=>{
-    btn.addEventListener('click', () => {
+  uploadDrawerCloseButtons?.forEach((btn)=>{
+    btn?.addEventListener('click', () => {
       uploadDrawerWrapper.classList.remove('show');
     })
   })

@@ -18,8 +18,8 @@
     />
 
     <!-- Custom Css -->
-    <link rel="stylesheet" href="../assets/css/helper.css" />
     <link rel="stylesheet" href="../assets/css/dashboarad.css" />
+    <link rel="stylesheet" href="../assets/css/helper.css" />
     <link rel="stylesheet" href="../assets/css/responsive.css" />
   </head>
   <body>
@@ -277,25 +277,28 @@
         <div class="dashboard-sidebar-manage-wrapper">
           <h4 class="dashboard-sidebar-manage-title">Manage</h4>
           <div class="dashboard-sidebar-manage space-y-2">
-            <a href="" class="dashboard-sidebar-manage-item">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M20.6641 0.666016H3.33073C2.96406 0.666016 2.66406 0.966016 2.66406 1.33268V22.666C2.66406 23.0327 2.96406 23.3327 3.33073 23.3327H15.3307C18.6374 23.3327 21.3307 20.6393 21.3307 17.3327V1.33268C21.3307 0.966016 21.0307 0.666016 20.6641 0.666016ZM3.9974 1.99935H19.9974V16.666H15.3307C14.9641 16.666 14.6641 16.966 14.6641 17.3327V21.9993H3.9974V1.99935ZM19.7841 18.7327C19.7841 18.7327 19.7774 18.7593 19.7707 18.7727C19.7041 18.9793 19.6241 19.1727 19.5307 19.366C19.5107 19.406 19.4974 19.4393 19.4774 19.4793C19.3774 19.6727 19.2641 19.8527 19.1441 20.026C19.1174 20.0594 19.0907 20.0927 19.0641 20.1327C18.9307 20.306 18.7907 20.4793 18.6374 20.6327C18.4841 20.786 18.3107 20.926 18.1374 21.0593C18.1041 21.086 18.0707 21.1127 18.0307 21.1393C17.8574 21.266 17.6707 21.3727 17.4841 21.4727C17.4507 21.4927 17.4107 21.506 17.3774 21.526C17.1841 21.6194 16.9907 21.6994 16.7841 21.7727C16.7707 21.7727 16.7574 21.786 16.7441 21.786C16.5307 21.8527 16.3107 21.8993 16.0841 21.9394C16.0591 21.9399 16.0343 21.9444 16.0107 21.9527V18.006H19.9574C19.9574 18.006 19.9507 18.0594 19.9441 18.0793C19.9107 18.306 19.8574 18.526 19.7907 18.7393L19.7841 18.7327ZM5.9974 5.33268C5.9974 4.96602 6.2974 4.66602 6.66406 4.66602H17.3307C17.6974 4.66602 17.9974 4.96602 17.9974 5.33268C17.9974 5.69935 17.6974 5.99935 17.3307 5.99935H6.66406C6.2974 5.99935 5.9974 5.69935 5.9974 5.33268ZM5.9974 9.33268C5.9974 8.96602 6.2974 8.66602 6.66406 8.66602H17.3307C17.6974 8.66602 17.9974 8.96602 17.9974 9.33268C17.9974 9.69935 17.6974 9.99935 17.3307 9.99935H6.66406C6.2974 9.99935 5.9974 9.69935 5.9974 9.33268ZM6.66406 13.9993C6.2974 13.9993 5.9974 13.6993 5.9974 13.3327C5.9974 12.966 6.2974 12.666 6.66406 12.666H17.3307C17.6974 12.666 17.9974 12.966 17.9974 13.3327C17.9974 13.6993 17.6974 13.9993 17.3307 13.9993H6.66406Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-              <span class="dashboard-sidebar-manage-item-title">
-                Context Folders
-              </span>
-            </a>
+            <div
+            href=""
+            class="dashboard-sidebar-manage-item context-folder-btn"
+          >
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M20.6641 0.666016H3.33073C2.96406 0.666016 2.66406 0.966016 2.66406 1.33268V22.666C2.66406 23.0327 2.96406 23.3327 3.33073 23.3327H15.3307C18.6374 23.3327 21.3307 20.6393 21.3307 17.3327V1.33268C21.3307 0.966016 21.0307 0.666016 20.6641 0.666016ZM3.9974 1.99935H19.9974V16.666H15.3307C14.9641 16.666 14.6641 16.966 14.6641 17.3327V21.9993H3.9974V1.99935ZM19.7841 18.7327C19.7841 18.7327 19.7774 18.7593 19.7707 18.7727C19.7041 18.9793 19.6241 19.1727 19.5307 19.366C19.5107 19.406 19.4974 19.4393 19.4774 19.4793C19.3774 19.6727 19.2641 19.8527 19.1441 20.026C19.1174 20.0594 19.0907 20.0927 19.0641 20.1327C18.9307 20.306 18.7907 20.4793 18.6374 20.6327C18.4841 20.786 18.3107 20.926 18.1374 21.0593C18.1041 21.086 18.0707 21.1127 18.0307 21.1393C17.8574 21.266 17.6707 21.3727 17.4841 21.4727C17.4507 21.4927 17.4107 21.506 17.3774 21.526C17.1841 21.6194 16.9907 21.6994 16.7841 21.7727C16.7707 21.7727 16.7574 21.786 16.7441 21.786C16.5307 21.8527 16.3107 21.8993 16.0841 21.9394C16.0591 21.9399 16.0343 21.9444 16.0107 21.9527V18.006H19.9574C19.9574 18.006 19.9507 18.0594 19.9441 18.0793C19.9107 18.306 19.8574 18.526 19.7907 18.7393L19.7841 18.7327ZM5.9974 5.33268C5.9974 4.96602 6.2974 4.66602 6.66406 4.66602H17.3307C17.6974 4.66602 17.9974 4.96602 17.9974 5.33268C17.9974 5.69935 17.6974 5.99935 17.3307 5.99935H6.66406C6.2974 5.99935 5.9974 5.69935 5.9974 5.33268ZM5.9974 9.33268C5.9974 8.96602 6.2974 8.66602 6.66406 8.66602H17.3307C17.6974 8.66602 17.9974 8.96602 17.9974 9.33268C17.9974 9.69935 17.6974 9.99935 17.3307 9.99935H6.66406C6.2974 9.99935 5.9974 9.69935 5.9974 9.33268ZM6.66406 13.9993C6.2974 13.9993 5.9974 13.6993 5.9974 13.3327C5.9974 12.966 6.2974 12.666 6.66406 12.666H17.3307C17.6974 12.666 17.9974 12.966 17.9974 13.3327C17.9974 13.6993 17.6974 13.9993 17.3307 13.9993H6.66406Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <span class="dashboard-sidebar-manage-item-title">
+              Context Folders
+            </span>
+          </div>
             <a
               href="chat-history.html"
               class="dashboard-sidebar-manage-item active"
@@ -1111,6 +1114,661 @@
           </div>
         </div>
       </div>
+
+
+      <!-- drawer section -->
+      <div class="dashboard-drawer-wrapper" aria-hidden="true">
+        <!-- Drawer Content Here -->
+
+        <!-- context folder -->
+        <div
+          class="dashboard-drawer-context-folder-main-wrapper dashboard-drawer-main-wrapper"
+        >
+          <!-- main wrapper -->
+          <div class="dashboard-drawer-main-content-wrapper">
+            <!-- top part -->
+            <div class="dashboard-drawer-context-folders-wrapper">
+              <!-- title -->
+              <div class="w-full flex items-center justify-between">
+                <h2 class="dashboard-drawer-title">Manage Context Folder</h2>
+                <div class="dashboard-drawer-wrapper-close cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                  >
+                    <path
+                      d="M1.22656 8.77323L8.77323 1.22656"
+                      stroke="#141414"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.77323 8.77323L1.22656 1.22656"
+                      stroke="#141414"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!-- add folder form -->
+              <div>
+                <form action="" class="mt-3">
+                  <div class="add-context-folder-input-wrapper">
+                    <div class="add-context-folder-input">
+                      <input
+                        placeholder="New Content Name"
+                        type="text"
+                        name="add-context-folder-input"
+                        id="add-context-folder-input"
+                      />
+                    </div>
+                    <div class="add-context-folder-submit">Add Folder</div>
+                  </div>
+                </form>
+              </div>
+
+              <!-- context folders wrapper -->
+              <div class="context-folders-wrapper">
+                <div class="context-folder-wrapper">
+                  <div class="context-folder-name">Default</div>
+                  <div class="context-folder-settings">Settings</div>
+                  <div class="context-folder-share">Share</div>
+                  <div
+                    data-bs-toggle="modal"
+                    data-bs-target="#deleteContextModal"
+                    class="remove-context-folder-btn cursor-pointer"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M8.39844 15.6004L15.5984 8.40039"
+                        stroke="#081839"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M15.5984 15.6004L8.39844 8.40039"
+                        stroke="#081839"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- bottom part -->
+            <div class="dashboard-drawer-bottom-part">
+              <button class="dashboard-drawer-bottom-close-button">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- settings -->
+        <div
+          class="dashboard-drawer-settings-main-wrapper dashboard-drawer-main-wrapper hidden"
+        >
+          <!-- main wrapper -->
+          <div class="dashboard-drawer-main-content-wrapper">
+            <!-- top part -->
+            <div class="dashboard-drawer-context-folders-wrapper">
+              <!-- title -->
+              <div class="w-full flex items-center justify-between">
+                <h2 class="dashboard-drawer-title">Default</h2>
+                <div
+                  class="dashboard-drawer-settings-wrapper-close cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                  >
+                    <path
+                      d="M1.22656 8.77323L8.77323 1.22656"
+                      stroke="#141414"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.77323 8.77323L1.22656 1.22656"
+                      stroke="#141414"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!-- settings-main-wrapper -->
+              <div class="settings-main-wrapper">
+                <div class="mt-3 dashboard-settings-roles-wrapper">
+                  <div class="dashboard-settings-role-wrapper">
+                    <h2 class="dashboard-wrapper-container-section-title">
+                      System Role
+                    </h2>
+                    <textarea
+                      rows="2"
+                      class="settings-textarea"
+                      type="text"
+                      name=""
+                      id=""
+                    >
+  You are an AI assistant with access to both the retrieved documents and ithe nternet.
+                    </textarea>
+                  </div>
+                  <div class="dashboard-settings-role-wrapper">
+                    <h2 class="dashboard-wrapper-container-section-title">
+                      Data Role
+                    </h2>
+                    <textarea
+                      rows="2"
+                      class="settings-textarea"
+                      type="text"
+                      name=""
+                      id=""
+                    >
+  You are an AI assistant with access to both the retrieved documents and ithe nternet.
+                    </textarea>
+                  </div>
+                  <div class="dashboard-settings-role-wrapper">
+                    <h2 class="dashboard-wrapper-container-section-title">
+                      Answer Role
+                    </h2>
+                    <textarea
+                      rows="2"
+                      class="settings-textarea"
+                      type="text"
+                      name=""
+                      id=""
+                    >
+  You are an AI assistant with access to both the retrieved documents and ithe nternet.
+                    </textarea>
+                  </div>
+                </div>
+
+                <!-- forms -->
+                <div class="mt-3">
+                  <div class="dashboard-settings-checkbox-wrapper">
+                    <label for="onlyData" class="custom-checkbox-wrapper">
+                      <input
+                        checked
+                        class="hidden custom-checkbox-input"
+                        type="checkbox"
+                        name=""
+                        id="onlyData"
+                      />
+                      <!-- custom checkbox -->
+                      <div class="custom-checkbox">
+                        <div class="custom-checkbox-indicator">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="10"
+                            height="7"
+                            viewBox="0 0 10 7"
+                            fill="none"
+                          >
+                            <path
+                              d="M1 3.33L3.83 6.16L9.5 0.5"
+                              stroke="white"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="cursor-pointer">Only Data</span>
+                    </label>
+                    <label for="includeData" class="custom-checkbox-wrapper">
+                      <input
+                        class="hidden custom-checkbox-input"
+                        type="checkbox"
+                        name=""
+                        id="includeData"
+                      />
+                      <!-- custom checkbox -->
+                      <div class="custom-checkbox">
+                        <div class="custom-checkbox-indicator">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="10"
+                            height="7"
+                            viewBox="0 0 10 7"
+                            fill="none"
+                          >
+                            <path
+                              d="M1 3.33L3.83 6.16L9.5 0.5"
+                              stroke="white"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <span class="cursor-pointer">Include Data</span>
+                    </label>
+                  </div>
+
+                  <!-- max response -->
+                  <div class="dashboard-settings-responses-wrapper">
+                    <!-- range -->
+                    <div class="range-input-wrapper">
+                      <div class="dashboard-wrapper-response-section-title">
+                        MaxResponse
+                      </div>
+                      <div class="slider-row">
+                        <div class="range-input-container">
+                          <span class="min-value">1</span>
+                          <input
+                            type="range"
+                            class="range-slider"
+                            min="1"
+                            max="4000"
+                            value="700"
+                            data-name="maxResponse"
+                          /><span class="max-value">4000</span>
+                        </div>
+                        <input
+                          type="number"
+                          class="response-input-value"
+                          value="700"
+                        />
+                      </div>
+                    </div>
+                    <!-- range -->
+                    <div class="range-input-wrapper">
+                      <div class="dashboard-wrapper-response-section-title">
+                        Temperature
+                      </div>
+                      <div class="slider-row">
+                        <div class="range-input-container">
+                          <span class="min-value">0</span>
+                          <input
+                            type="range"
+                            class="range-slider"
+                            min="0"
+                            max="1"
+                            value="0.7"
+                            step="0.1"
+                            data-name="temperature"
+                          /><span class="max-value">1</span>
+                        </div>
+                        <input
+                          type="number"
+                          class="response-input-value"
+                          value="0.7"
+                        />
+                      </div>
+                    </div>
+                    <!-- range -->
+                    <div class="range-input-wrapper">
+                      <div class="dashboard-wrapper-response-section-title">
+                        Top P
+                      </div>
+                      <div class="slider-row">
+                        <div class="range-input-container">
+                          <span class="min-value">0</span>
+                          <input
+                            type="range"
+                            class="range-slider"
+                            min="0"
+                            max="1"
+                            value="0.7"
+                            step="0.1"
+                            data-name="topP"
+                          /><span class="max-value">1</span>
+                        </div>
+                        <input
+                          type="number"
+                          class="response-input-value"
+                          value="0.7"
+                        />
+                      </div>
+                    </div>
+                    <!-- range -->
+                    <div class="range-input-wrapper">
+                      <div class="dashboard-wrapper-response-section-title">
+                        Frequency penalty
+                      </div>
+                      <div class="slider-row">
+                        <div class="range-input-container">
+                          <span class="min-value">0</span>
+                          <input
+                            type="range"
+                            class="range-slider"
+                            min="0"
+                            max="2"
+                            value="0.7"
+                            step="0.1"
+                            data-name="frequencyPenalty"
+                          /><span class="max-value">2</span>
+                        </div>
+                        <input
+                          type="number"
+                          class="response-input-value"
+                          value="0.7"
+                        />
+                      </div>
+                    </div>
+                    <!-- range -->
+                    <div class="range-input-wrapper">
+                      <div class="dashboard-wrapper-response-section-title">
+                        Presence Penalty
+                      </div>
+                      <div class="slider-row">
+                        <div class="range-input-container">
+                          <span class="min-value">0</span>
+                          <input
+                            type="range"
+                            class="range-slider"
+                            min="0"
+                            max="2"
+                            value="0.7"
+                            step="0.1"
+                            data-name="presencePenalty"
+                          /><span class="max-value">2</span>
+                        </div>
+                        <input
+                          type="number"
+                          class="response-input-value"
+                          value="0.7"
+                        />
+                      </div>
+                    </div>
+                    <!-- range -->
+                    <div class="range-input-wrapper">
+                      <div class="dashboard-wrapper-response-section-title">
+                        Past Message included
+                      </div>
+                      <div class="slider-row">
+                        <div class="range-input-container">
+                          <span class="min-value">0</span>
+                          <input
+                            type="range"
+                            class="range-slider"
+                            min="0"
+                            max="10"
+                            value="2"
+                            step="1"
+                            data-name="pastMessageIncluded"
+                          /><span class="max-value">2</span>
+                        </div>
+                        <input
+                          type="number"
+                          class="response-input-value"
+                          value="2"
+                        />
+                      </div>
+                    </div>
+                    <!-- range -->
+                    <div class="range-input-wrapper">
+                      <div class="dashboard-wrapper-response-section-title">
+                        Document Count from data
+                      </div>
+                      <div class="slider-row">
+                        <div class="range-input-container">
+                          <span class="min-value">0</span>
+                          <input
+                            type="range"
+                            class="range-slider"
+                            min="0"
+                            max="20"
+                            value="10"
+                            step="1"
+                            data-name="documentCountFromData"
+                          /><span class="max-value">20</span>
+                        </div>
+                        <input
+                          type="number"
+                          class="response-input-value"
+                          value="2"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- bottom part -->
+            <div class="dashboard-drawer-bottom-part">
+              <button
+                data-bs-toggle="modal"
+                data-bs-target="#restoreSettingsModal"
+                class="dashboard-drawer-bottom-restore-button"
+              >
+                Restore System Setting
+              </button>
+              <button
+                class="dashboard-drawer-bottom-close-button dashboard-drawer-settings-bottom-close-button"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- share -->
+        <div
+          class="dashboard-drawer-share-main-wrapper dashboard-drawer-main-wrapper hidden"
+        >
+          <!-- main wrapper -->
+          <div class="dashboard-drawer-main-content-wrapper">
+            <!-- top part -->
+            <div class="dashboard-drawer-share-wrapper">
+              <!-- title -->
+              <div class="w-full flex items-center justify-between">
+                <h2 class="dashboard-drawer-title">Share</h2>
+                <div
+                  class="dashboard-drawer-share-wrapper-close cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                  >
+                    <path
+                      d="M1.22656 8.77323L8.77323 1.22656"
+                      stroke="#141414"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.77323 8.77323L1.22656 1.22656"
+                      stroke="#141414"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!-- add folder form -->
+              <div>
+                <form action="" class="mt-5">
+                  <div>
+                    <h2 class="add-email-share-title">
+                      Share context folder access via email
+                    </h2>
+                  </div>
+                  <div class="add-email-share-input-wrapper">
+                    <div class="add-email-share-input">
+                      <input
+                        placeholder="Email Address"
+                        type="email"
+                        name="add-email-share-input"
+                        id="add-email-share-input"
+                      />
+                    </div>
+                    <div class="add-email-share-submit">Invite user</div>
+                  </div>
+                </form>
+              </div>
+
+              <!-- share checkbox wrapper -->
+              <div class="share-checkbox-wrapper">
+                <label for="fileShowAccess" class="custom-checkbox-wrapper">
+                  <input
+                    checked
+                    class="hidden custom-checkbox-input"
+                    type="checkbox"
+                    name=""
+                    id="fileShowAccess"
+                  />
+                  <!-- custom checkbox -->
+                  <div class="custom-checkbox">
+                    <div class="custom-checkbox-indicator">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="10"
+                        height="7"
+                        viewBox="0 0 10 7"
+                        fill="none"
+                      >
+                        <path
+                          d="M1 3.33L3.83 6.16L9.5 0.5"
+                          stroke="white"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <span class="cursor-pointer">File Show Access</span>
+                </label>
+                <label for="fileUploadAccess" class="custom-checkbox-wrapper">
+                  <input
+                    class="hidden custom-checkbox-input"
+                    type="checkbox"
+                    name=""
+                    id="fileUploadAccess"
+                  />
+                  <!-- custom checkbox -->
+                  <div class="custom-checkbox">
+                    <div class="custom-checkbox-indicator">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="10"
+                        height="7"
+                        viewBox="0 0 10 7"
+                        fill="none"
+                      >
+                        <path
+                          d="M1 3.33L3.83 6.16L9.5 0.5"
+                          stroke="white"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <span class="cursor-pointer">File Upload Access</span>
+                </label>
+                <label for="fileDeleteAccess" class="custom-checkbox-wrapper">
+                  <input
+                    class="hidden custom-checkbox-input"
+                    type="checkbox"
+                    name=""
+                    id="fileDeleteAccess"
+                  />
+                  <!-- custom checkbox -->
+                  <div class="custom-checkbox">
+                    <div class="custom-checkbox-indicator">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="10"
+                        height="7"
+                        viewBox="0 0 10 7"
+                        fill="none"
+                      >
+                        <path
+                          d="M1 3.33L3.83 6.16L9.5 0.5"
+                          stroke="white"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <span class="cursor-pointer"> File Delete Access</span>
+                </label>
+              </div>
+
+              <!-- inviting status wrapper -->
+              <div class="inviting-status-wrapper">
+                <div>
+                  <h2 class="inviting-status-title">
+                    List Sharing invites and accepted status
+                  </h2>
+                </div>
+                <div>
+                  <p class="inviting-status-description no-invites-text mt-2">
+                    No invites yet
+                  </p>
+                  <div class="inviting-emails-wrapper hidden">
+                    <p class="inviting-status-description">
+                      echofavor127@gmail.com
+                      <span class="status-accepted">(accepted)</span>
+                    </p>
+                    <p class="inviting-status-description">
+                      echofavor127@gmail.com
+                      <span class="status-pending">(pending)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- show expired wrapper -->
+              <div class="show-expired-wrapper">
+                <div>
+                  <h2 class="inviting-status-title">Show Expired</h2>
+                </div>
+                <div>
+                  <p class="inviting-status-description no-invites-text mt-2">
+                    No invites yet
+                  </p>
+                  <div class="expired-emails-wrapper hidden">
+                    <p class="inviting-status-description">
+                      echofavor127@gmail.com
+                      <span class="status-expired">(expired)</span>
+                    </p>
+                    <p class="inviting-status-description">
+                      echofavor127@gmail.com
+                      <span class="status-expired">(expired)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- bottom part -->
+            <div class="dashboard-drawer-bottom-part">
+              <button
+                class="dashboard-drawer-bottom-close-button dashboard-drawer-share-bottom-close-button"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="drawer-backdrop"></div>
     </div>
 
     <!-- Modals -->
@@ -1263,6 +1921,175 @@
         </div>
       </div>
     </div>
+
+     <!-- Delete modal -->
+     <div
+     class="modal fade"
+     id="deleteContextModal"
+     data-bs-keyboard="false"
+     tabindex="-1"
+     aria-labelledby="deleteContextLabel"
+     aria-hidden="true"
+   >
+     <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+         <div class="modal-body text-black">
+           <!-- Delete modal -->
+           <div class="delete-modal-container">
+             <div class="w-full flex items-center justify-center">
+               <svg
+                 xmlns="http://www.w3.org/2000/svg"
+                 width="110"
+                 height="110"
+                 viewBox="0 0 110 110"
+                 fill="none"
+               >
+                 <path
+                   d="M91.4875 31.7422C91.9373 31.7422 92.3822 31.8366 92.7933 32.0192C93.2044 32.2017 93.5727 32.4685 93.8743 32.8022C94.176 33.1359 94.4043 33.5292 94.5446 33.9566C94.6848 34.384 94.7339 34.8361 94.6887 35.2837L88.3007 98.449C88.0308 101.119 86.7791 103.594 84.7883 105.393C82.7975 107.193 80.2095 108.189 77.5259 108.189H38.6537C35.9702 108.189 33.3822 107.193 31.3914 105.393C29.4006 103.594 28.1489 101.119 27.8789 98.449L21.1328 31.7422H91.4875Z"
+                   fill="#66CCFF"
+                 />
+                 <path
+                   d="M36.8186 98.5981C37.4171 102.834 40.1794 106.885 43.7243 108.189H38.654C35.9703 108.189 33.3823 107.193 31.3915 105.393C29.4007 103.594 28.1489 101.119 27.8789 98.449L21.1328 31.7422H31.1097L36.8186 98.5981Z"
+                   fill="#4DA6FF"
+                 />
+                 <path
+                   d="M96.66 10.8957C96.9912 11.8058 97.14 12.7723 97.0977 13.7399C97.0555 14.7076 96.823 15.6574 96.4137 16.5352C96.0044 17.413 95.4261 18.2016 94.712 18.8559C93.9979 19.5103 93.1619 20.0175 92.2518 20.3488L22.7967 45.6292C20.9585 46.2983 18.9298 46.2097 17.157 45.383C15.3841 44.5563 14.0123 43.0591 13.3432 41.221C12.6742 39.3828 12.7628 37.3541 13.5895 35.5813C14.4162 33.8084 15.9133 32.4366 17.7515 31.7675L87.2068 6.48772C89.0449 5.81875 91.0735 5.90733 92.8463 6.73397C94.6191 7.56062 95.9909 9.05761 96.66 10.8957Z"
+                   fill="#393939"
+                 />
+                 <path
+                   d="M32.0077 42.2765L22.7967 45.6294C20.9585 46.2984 18.9298 46.2098 17.157 45.3831C15.3841 44.5564 14.0123 43.0593 13.3432 41.2211C12.6742 39.3829 12.7628 37.3542 13.5895 35.5814C14.4162 33.8085 15.9133 32.4367 17.7515 31.7676L26.9432 28.4219L32.0077 42.2765Z"
+                   fill="#343434"
+                 />
+                 <path
+                   d="M70.2335 12.6657L64.8089 14.6399L62.8282 9.19851C62.6048 8.58688 62.148 8.08884 61.5578 7.81367C60.9677 7.53849 60.2925 7.50865 59.6803 7.7307L39.6438 15.0236C39.0322 15.247 38.5342 15.7038 38.259 16.2939C37.9839 16.884 37.954 17.5592 38.176 18.1712L40.1566 23.6128L34.732 25.5872L32.7514 20.1457C32.0076 18.0948 32.1077 15.8326 33.0297 13.8554C33.9517 11.8782 35.6204 10.3474 37.6696 9.59898L57.7066 2.30611C59.7575 1.5623 62.0196 1.66235 63.9968 2.58433C65.974 3.50631 67.5048 5.17492 68.2533 7.2241L70.2335 12.6657Z"
+                   fill="#66CCFF"
+                 />
+                 <path
+                   d="M35.7401 25.2225L34.732 25.5895L32.7514 20.1479C32.0076 18.097 32.1077 15.8348 33.0297 13.8576C33.9517 11.8804 35.6204 10.3497 37.6696 9.60125L57.7064 2.30838C59.6636 1.59475 61.8192 1.65321 63.7349 2.47187C62.1664 2.09204 60.5206 2.18466 59.0047 2.73807L38.1083 10.3887C34.4663 11.7207 32.286 15.6461 33.8387 19.9099L35.7401 25.2225Z"
+                   fill="#4DA6FF"
+                 />
+                 <path
+                   d="M60.9314 49.6445V92.4598C60.9314 93.2596 60.6137 94.0266 60.0482 94.5921C59.4826 95.1576 58.7156 95.4754 57.9159 95.4754C57.1161 95.4754 56.3491 95.1576 55.7836 94.5921C55.218 94.0266 54.9003 93.2596 54.9003 92.4598V49.6445C54.9003 48.8447 55.218 48.0777 55.7836 47.5121C56.3491 46.9466 57.1161 46.6289 57.9159 46.6289C58.7156 46.6289 59.4826 46.9466 60.0482 47.5121C60.6137 48.0777 60.9314 48.8447 60.9314 49.6445ZM74.1748 51.4661C73.375 51.4661 72.608 51.7838 72.0425 52.3493C71.477 52.9149 71.1593 53.6819 71.1593 54.4817V87.6228C71.1593 88.4226 71.477 89.1896 72.0425 89.7551C72.608 90.3206 73.375 90.6384 74.1748 90.6384C74.9746 90.6384 75.7416 90.3206 76.3071 89.7551C76.8726 89.1896 77.1904 88.4226 77.1904 87.6228V54.4817C77.1904 53.6819 76.8726 52.9149 76.3071 52.3493C75.7416 51.7838 74.9746 51.4661 74.1748 51.4661ZM42.1171 51.4661C41.3173 51.4661 40.5503 51.7838 39.9848 52.3493C39.4193 52.9149 39.1016 53.6819 39.1016 54.4817V87.6228C39.1083 88.4181 39.4289 89.1786 39.9937 89.7387C40.5585 90.2987 41.3216 90.6129 42.117 90.6129C42.9124 90.6129 43.6755 90.2987 44.2403 89.7387C44.8051 89.1786 45.1257 88.4181 45.1324 87.6228V54.4817C45.1324 53.6819 44.8148 52.9149 44.2493 52.3494C43.6838 51.7839 42.9168 51.4662 42.1171 51.4661Z"
+                   fill="#393939"
+                 />
+               </svg>
+             </div>
+
+             <!-- texts -->
+             <div class="text-center">
+               <h3 class="delete-modal-title">
+                 Are you sure you want to delete context 'Default'?
+               </h3>
+               <p class="delete-modal-description">
+                 This will also remove all file upload under this context.
+               </p>
+             </div>
+
+             <!-- buttons -->
+             <div class="delete-modal-btn-container">
+               <button
+                 data-bs-dismiss="modal"
+                 aria-label="Close"
+                 class="delete-modal-btn transparent"
+               >
+                 Cancel
+               </button>
+               <button
+                 data-bs-dismiss="modal"
+                 aria-label="Close"
+                 class="delete-modal-btn primary"
+               >
+                 Delete
+               </button>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <!-- Reset modal -->
+   <div
+     class="modal fade"
+     id="restoreSettingsModal"
+     data-bs-keyboard="false"
+     tabindex="-1"
+     aria-labelledby="restoreSettingsLabel"
+     aria-hidden="true"
+   >
+     <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+         <div class="modal-body text-black">
+           <!-- Delete modal -->
+           <div class="delete-modal-container">
+             <div class="w-full flex items-center justify-center">
+               <svg
+                 xmlns="http://www.w3.org/2000/svg"
+                 width="110"
+                 height="110"
+                 viewBox="0 0 110 110"
+                 fill="none"
+               >
+                 <g clip-path="url(#clip0_8820_88640)">
+                   <path
+                     d="M59.5143 54.0397C60.0255 53.5321 60.3379 52.8581 60.3949 52.14C60.4519 51.4219 60.2497 50.7071 59.825 50.1252L55.6882 44.4145C56.2007 43.3848 56.6414 42.3211 57.0073 41.2307L63.9704 40.1178C64.6821 40.0067 65.3305 39.6443 65.798 39.0961C66.2654 38.548 66.5209 37.8505 66.5182 37.1302V29.3881C66.5209 28.6677 66.2654 27.9702 65.798 27.4221C65.3305 26.874 64.6821 26.5115 63.9704 26.4005L57.0073 25.2876C56.6415 24.1972 56.2008 23.1334 55.6882 22.1038L59.825 16.393C60.2498 15.8112 60.452 15.0965 60.395 14.3783C60.338 13.6602 60.0256 12.9863 59.5143 12.4788L54.0397 7.00414C53.5322 6.49283 52.8582 6.18032 52.1401 6.12329C51.4219 6.06625 50.7071 6.26847 50.1252 6.69326L44.4147 10.8301C43.3851 10.3176 42.3213 9.87679 41.2309 9.51094L40.118 2.54785C40.0069 1.8361 39.6445 1.18772 39.0964 0.720284C38.5482 0.252849 37.8508 -0.00268445 37.1304 2.18484e-05H29.3883C28.6679 -0.00272077 27.9703 0.252827 27.4222 0.720313C26.8741 1.1878 26.5117 1.83626 26.4007 2.54807L25.2878 9.51094C24.1974 9.87679 23.1336 10.3176 22.104 10.8301L16.393 6.69326C15.8112 6.26857 15.0964 6.06642 14.3783 6.12345C13.6602 6.18048 12.9863 6.49293 12.4788 7.00414L7.00436 12.4786C6.49305 12.9861 6.18054 13.66 6.1235 14.3782C6.06647 15.0964 6.26868 15.8112 6.69348 16.393L10.8301 22.1038C10.3176 23.1334 9.87688 24.1972 9.51094 25.2876L2.54807 26.4005C1.83628 26.5115 1.18784 26.8739 0.720364 27.422C0.252887 27.9702 -0.00267726 28.6677 2.1152e-05 29.3881V37.1302C-0.00263306 37.8506 0.252947 38.548 0.720416 39.0962C1.18789 39.6443 1.83629 40.0067 2.54807 40.1178L9.51094 41.2307C9.87679 42.3211 10.3176 43.3849 10.8301 44.4145L6.69326 50.1252C6.26853 50.7071 6.06635 51.4218 6.12338 52.1399C6.18041 52.8581 6.49289 53.532 7.00414 54.0395L12.4786 59.5139C12.986 60.0252 13.6599 60.3377 14.3781 60.3948C15.0962 60.4518 15.811 60.2496 16.3928 59.8248L22.1036 55.6882C23.1332 56.2006 24.197 56.6414 25.2873 57.0073L26.4002 63.9704C26.5113 64.6821 26.8738 65.3305 27.4219 65.798C27.97 66.2654 28.6675 66.5209 29.3879 66.5182H37.13C37.8504 66.5209 38.5479 66.2654 39.096 65.7979C39.6441 65.3304 40.0066 64.682 40.1176 63.9702L41.2305 57.0073C42.3208 56.6415 43.3846 56.2007 44.4142 55.6882L50.125 59.825C50.7069 60.2497 51.4216 60.4518 52.1397 60.3948C52.8578 60.3378 53.5317 60.0253 54.0392 59.5141L59.5143 54.0397ZM45.4971 52.493C45.2496 52.3137 44.9563 52.2085 44.6514 52.1896C44.3464 52.1707 44.0423 52.2389 43.7747 52.3862C42.3714 53.1586 40.8872 53.7735 39.3489 54.2197C39.0553 54.3048 38.792 54.4715 38.5897 54.7006C38.3873 54.9296 38.2543 55.2115 38.2061 55.5133L36.9622 63.2958H29.5563L28.3123 55.5133C28.2641 55.2115 28.131 54.9296 27.9286 54.7006C27.7262 54.4716 27.4629 54.3048 27.1694 54.2197C25.631 53.7737 24.1467 53.1588 22.7436 52.3862C22.4759 52.2389 22.1719 52.1707 21.8669 52.1896C21.5619 52.2085 21.2686 52.3137 21.0212 52.493L14.6386 57.1167L9.4018 51.8798L14.0255 45.4971C14.2047 45.2496 14.3098 44.9563 14.3287 44.6513C14.3476 44.3464 14.2795 44.0424 14.1322 43.7747C13.3599 42.3714 12.745 40.8872 12.2988 39.3489C12.2137 39.0553 12.0469 38.792 11.8179 38.5897C11.5888 38.3873 11.307 38.2543 11.0052 38.2061L3.22268 36.9622V29.5561L11.0052 28.3121C11.307 28.2639 11.5888 28.1308 11.8178 27.9285C12.0469 27.7262 12.2137 27.4629 12.2988 27.1694C12.7448 25.631 13.3597 24.1467 14.1322 22.7436C14.2796 22.4759 14.3478 22.1719 14.3289 21.8669C14.31 21.5619 14.2047 21.2686 14.0255 21.0212L9.4018 14.6386L14.6386 9.4018L21.0212 14.0255C21.2686 14.2047 21.5619 14.31 21.8669 14.3289C22.1719 14.3478 22.4759 14.2796 22.7436 14.1322C24.1468 13.3599 25.6311 12.745 27.1694 12.2988C27.4629 12.2137 27.7263 12.0469 27.9286 11.8179C28.131 11.5888 28.2641 11.307 28.3123 11.0052L29.5561 3.22268H36.9622L38.2061 11.0052C38.2544 11.307 38.3874 11.5888 38.5897 11.8178C38.7921 12.0469 39.0553 12.2137 39.3489 12.2988C40.8872 12.7448 42.3715 13.3597 43.7747 14.1322C44.0423 14.2796 44.3464 14.3478 44.6514 14.3289C44.9563 14.31 45.2496 14.2047 45.4971 14.0255L51.8798 9.4018L57.1167 14.6386L52.493 21.0214C52.3138 21.2689 52.2086 21.5622 52.1897 21.8671C52.1708 22.1721 52.239 22.4761 52.3862 22.7438C53.1586 24.147 53.7735 25.6312 54.2195 27.1696C54.3045 27.4632 54.4713 27.7265 54.7003 27.9289C54.9294 28.1313 55.2112 28.2643 55.5131 28.3126L63.2958 29.5565V36.9624L55.5131 38.2063C55.2112 38.2545 54.9294 38.3876 54.7003 38.59C54.4713 38.7924 54.3045 39.0557 54.2195 39.3493C53.7734 40.8876 53.1586 42.3719 52.3862 43.7751C52.2389 44.0428 52.1707 44.3468 52.1896 44.6518C52.2085 44.9568 52.3137 45.2501 52.493 45.4975L57.1167 51.8803L51.8798 57.1171L45.4971 52.493Z"
+                     fill="#081839"
+                   />
+                   <path
+                     d="M49.792 31.6485H46.468C46.2754 30.0736 45.8034 28.5458 45.0741 27.1368C44.8721 26.7665 44.533 26.4902 44.1296 26.3671C43.7263 26.244 43.2907 26.2839 42.9164 26.4783C42.5421 26.6726 42.2589 27.0059 42.1276 27.4067C41.9962 27.8075 42.0272 28.2438 42.2138 28.622C42.9643 30.0668 43.3446 31.6272 43.3446 33.2596C43.3446 38.8202 38.8206 43.3441 33.26 43.3441C27.6994 43.3441 23.1755 38.8202 23.1755 33.2596C23.1755 27.699 27.6994 23.175 33.26 23.175C34.7365 23.1719 36.1953 23.496 37.5315 24.124C37.9174 24.2979 38.3563 24.3131 38.7533 24.1661C39.1502 24.0192 39.4734 23.7219 39.653 23.3386C39.8327 22.9553 39.8543 22.5168 39.7132 22.1177C39.5721 21.7186 39.2796 21.391 38.899 21.2058C37.1238 20.3739 35.2267 19.9524 33.2602 19.9524C26.4684 19.9524 20.8524 25.0682 20.054 31.6483H16.7287C16.3013 31.6483 15.8915 31.818 15.5893 32.1202C15.2871 32.4224 15.1173 32.8322 15.1173 33.2596C15.1173 33.6869 15.2871 34.0968 15.5893 34.399C15.8915 34.7012 16.3013 34.8709 16.7287 34.8709H20.0542C20.8526 41.4509 26.4686 46.5668 33.2605 46.5668C40.0523 46.5668 45.6683 41.4509 46.4667 34.8709H49.7922C50.0054 34.8734 50.2169 34.8335 50.4146 34.7536C50.6122 34.6737 50.792 34.5554 50.9436 34.4056C51.0952 34.2557 51.2155 34.0772 51.2977 33.8805C51.3798 33.6838 51.4221 33.4728 51.4221 33.2596C51.4221 33.0464 51.3797 32.8354 51.2976 32.6387C51.2154 32.442 51.0951 32.2635 50.9435 32.1137C50.7918 31.9638 50.612 31.8456 50.4144 31.7657C50.2167 31.6858 50.0052 31.646 49.792 31.6485ZM41.4565 91.4846C41.3372 91.3098 41.1846 91.1603 41.0075 91.0445C40.8304 90.9287 40.6322 90.849 40.4242 90.8098C40.2163 90.7706 40.0027 90.7728 39.7955 90.8163C39.5884 90.8597 39.3919 90.9435 39.2172 91.0629C38.8643 91.3039 38.6217 91.6752 38.5426 92.0952C38.4635 92.5151 38.5545 92.9493 38.7955 93.3022L40.0957 95.2061C40.5157 95.821 40.5385 96.6073 40.1548 97.2583C40.0218 97.4839 39.8119 97.6983 39.5474 97.879L29.9465 104.436C29.8676 104.49 29.7787 104.528 29.6851 104.547C29.5914 104.567 29.4948 104.568 29.4008 104.55C29.3067 104.532 29.2171 104.496 29.137 104.444C29.0569 104.392 28.988 104.324 28.9341 104.245L27.6146 102.313C27.5605 102.234 27.5225 102.145 27.5029 102.051C27.4833 101.958 27.4824 101.861 27.5003 101.767C27.5179 101.673 27.5539 101.583 27.6062 101.503C27.6586 101.423 27.7263 101.354 27.8054 101.3L30.1254 99.7159C30.389 99.5359 30.5933 99.2817 30.7122 98.9855C30.8311 98.6893 30.8594 98.3645 30.7934 98.0522C30.7274 97.7399 30.5702 97.4542 30.3417 97.2314C30.1131 97.0086 29.8236 96.8587 29.5097 96.8007C17.356 94.5536 8.53494 83.9462 8.53494 71.5789V70.4091C8.53517 70.216 8.61198 70.0309 8.74851 69.8943C8.88505 69.7578 9.07017 69.681 9.26326 69.6808H11.6029C11.796 69.681 11.9811 69.7578 12.1177 69.8943C12.2542 70.0309 12.331 70.216 12.3312 70.4091V71.5789C12.3312 76.8198 14.2221 81.8914 17.6553 85.86C21.0524 89.7867 25.7295 92.3841 30.8252 93.1739C31.1358 93.2222 31.4537 93.1786 31.7397 93.0484C32.0258 92.9183 32.2676 92.7073 32.4353 92.4415C32.6029 92.1756 32.6892 91.8666 32.6834 91.5523C32.6777 91.2381 32.5801 90.9324 32.4028 90.6729L30.3689 87.6943C30.3148 87.6154 30.2768 87.5266 30.2572 87.4329C30.2376 87.3392 30.2367 87.2426 30.2546 87.1486C30.2722 87.0546 30.3081 86.965 30.3605 86.8849C30.4128 86.8048 30.4804 86.7359 30.5594 86.682L32.4917 85.3624C32.5706 85.3083 32.6594 85.2703 32.753 85.2507C32.8467 85.2311 32.9433 85.2302 33.0372 85.2481C33.1313 85.2656 33.2209 85.3016 33.301 85.3539C33.3811 85.4063 33.45 85.4739 33.5039 85.553L34.5594 87.0986C34.8004 87.4514 35.1718 87.6941 35.5917 87.7732C36.0117 87.8523 36.4458 87.7613 36.7987 87.5203C37.1516 87.2793 37.3943 86.908 37.4735 86.488C37.5526 86.0681 37.4617 85.6339 37.2207 85.281L36.1651 83.7356C35.8735 83.3062 35.4997 82.9389 35.0652 82.655C34.6308 82.371 34.1444 82.1759 33.6341 82.0811C33.1242 81.9836 32.6001 81.9882 32.0921 82.0946C31.5841 82.201 31.1022 82.4072 30.6744 82.7011L28.7423 84.0205C28.3128 84.3121 27.9455 84.6859 27.6615 85.1204C27.3775 85.5549 27.1825 86.0414 27.0878 86.5518C26.9354 87.3489 27.0339 88.1737 27.3696 88.9125C20.4184 86.149 15.5541 79.2901 15.5541 71.5785V70.4086C15.5541 68.2301 13.7816 66.4577 11.6031 66.4577H9.26348C7.08496 66.4577 5.3125 68.2301 5.3125 70.4086V71.5785C5.3125 84.2845 13.5851 95.3402 25.4318 99.0967C24.8628 99.6595 24.4795 100.383 24.3335 101.17C24.236 101.68 24.2406 102.204 24.347 102.712C24.4535 103.22 24.6596 103.702 24.9535 104.13L26.2731 106.062C26.5646 106.491 26.9385 106.859 27.373 107.143C27.8075 107.427 28.294 107.622 28.8044 107.716C29.051 107.763 29.2985 107.786 29.5441 107.786C30.3313 107.786 31.0998 107.55 31.7641 107.096L41.365 100.54C42.0274 100.088 42.5544 99.5337 42.9314 98.8939C43.9405 97.1814 43.872 95.0203 42.757 93.3879L41.4565 91.4846Z"
+                     fill="#081839"
+                   />
+                   <path
+                     d="M74.0536 26.48C74.3451 26.9095 74.7189 27.2769 75.1533 27.5609C75.5878 27.8449 76.0743 28.0399 76.5846 28.1346C77.6208 28.3296 78.6729 28.1098 79.5443 27.5145L81.4764 26.1952C81.9059 25.9036 82.2733 25.5298 82.5573 25.0953C82.8413 24.6608 83.0363 24.1742 83.1309 23.6639C83.2835 22.8548 83.1829 22.0373 82.8491 21.3034C89.8003 24.0667 94.6646 30.9258 94.6646 38.6372V39.807C94.6646 41.9855 96.4371 43.758 98.6156 43.758H100.955C103.134 43.758 104.907 41.9855 104.907 39.807V38.6372C104.907 25.9311 96.6339 14.8755 84.7874 11.1189C85.3562 10.5561 85.7394 9.83272 85.8854 9.0459C85.983 8.53608 85.9785 8.01197 85.872 7.50392C85.7656 6.99588 85.5594 6.514 85.2654 6.08621L83.9458 4.15412C83.6543 3.72465 83.2805 3.35728 82.8461 3.07328C82.4116 2.78928 81.9251 2.59429 81.4148 2.49961C80.9049 2.40205 80.3808 2.40662 79.8728 2.51305C79.3647 2.61949 78.8829 2.82567 78.4551 3.11965L68.8541 9.67625C68.1918 10.1283 67.6648 10.6821 67.2877 11.322C66.2784 13.0343 66.3469 15.1956 67.4622 16.8282L74.0536 26.48ZM70.0641 12.9582C70.1969 12.7326 70.407 12.5182 70.6713 12.3375L80.2722 5.78092C80.3511 5.7268 80.44 5.68884 80.5337 5.66922C80.6273 5.64961 80.7239 5.64872 80.8179 5.66662C80.912 5.68419 81.0016 5.72016 81.0817 5.77248C81.1618 5.8248 81.2307 5.89243 81.2846 5.97149L82.6041 7.90379C82.6582 7.98268 82.6962 8.07149 82.7158 8.16511C82.7354 8.25873 82.7363 8.35531 82.7184 8.44928C82.7008 8.54333 82.6648 8.63297 82.6125 8.71305C82.5601 8.79314 82.4925 8.86208 82.4134 8.91592L80.093 10.5004C79.8294 10.6804 79.6252 10.9346 79.5063 11.2308C79.3874 11.527 79.3592 11.8519 79.4252 12.1642C79.4912 12.4765 79.6484 12.7621 79.877 12.9849C80.1055 13.2077 80.3951 13.3576 80.709 13.4156C92.8627 15.6627 101.684 26.2701 101.684 38.6374V39.8072C101.684 40.0004 101.607 40.1855 101.47 40.3221C101.334 40.4586 101.149 40.5354 100.955 40.5355H98.6156C98.4225 40.5353 98.2374 40.4585 98.1008 40.322C97.9643 40.1854 97.8875 40.0003 97.8873 39.8072V38.6374C97.8873 33.3965 95.9964 28.3249 92.5632 24.3563C89.1661 20.4296 84.489 17.8322 79.3931 17.0424C79.0826 16.9943 78.7648 17.0381 78.4788 17.1683C78.1928 17.2986 77.9512 17.5096 77.7836 17.7753C77.6159 18.0411 77.5297 18.3501 77.5354 18.6643C77.5411 18.9784 77.6385 19.2841 77.8157 19.5436L79.8498 22.5222C79.9039 22.6011 79.9419 22.6899 79.9615 22.7835C79.9811 22.8771 79.982 22.9737 79.9641 23.0677C79.9465 23.1617 79.9105 23.2514 79.8582 23.3315C79.8058 23.4115 79.7382 23.4805 79.6591 23.5343L77.727 24.8539C77.648 24.9079 77.5592 24.9458 77.4655 24.9654C77.3719 24.9851 77.2753 24.986 77.1813 24.9682C77.0872 24.9506 76.9976 24.9146 76.9175 24.8623C76.8374 24.81 76.7685 24.7424 76.7146 24.6633L70.123 15.0113L70.1228 15.011C69.703 14.3955 69.6804 13.6092 70.0641 12.9582ZM109.007 87.6392L105.134 83.81C105.403 82.3518 105.538 80.872 105.538 79.3892C105.538 77.9031 105.402 76.4202 105.134 74.9686L109.008 71.1396C110.09 70.0669 110.315 68.3965 109.553 67.0778L106.096 61.0916C105.726 60.4487 105.153 59.9469 104.467 59.6646C103.78 59.3822 103.02 59.3354 102.304 59.5314L97.047 60.9713C94.7907 59.0454 92.1741 57.5325 89.3945 56.5466L88.0158 51.2805C87.6272 49.8069 86.2926 48.7776 84.7702 48.7776H77.857C77.1153 48.7779 76.3946 49.0238 75.8075 49.4771C75.2204 49.9304 74.8001 50.5654 74.6122 51.2829L73.2329 56.5466C70.4543 57.5323 67.8379 59.0452 65.5803 60.9713L60.3236 59.5312C58.8545 59.1294 57.2951 59.7701 56.5311 61.0907L53.0771 67.0748C52.7047 67.7171 52.5562 68.465 52.6549 69.2009C52.7535 69.9368 53.0938 70.6191 53.6221 71.1407L57.4938 74.9688C57.225 76.4268 57.0896 77.9063 57.0893 79.389C57.0893 80.8701 57.2253 82.3532 57.4936 83.8096L53.6247 87.6366C53.0957 88.1575 52.7546 88.8394 52.6552 89.5752C52.5558 90.311 52.7036 91.059 53.0754 91.7017L56.5326 97.6919C56.9047 98.3328 57.4783 98.8328 58.164 99.1139C58.8496 99.3951 59.609 99.4417 60.324 99.2465L65.5799 97.8067C67.8356 99.7323 70.4517 101.245 73.2324 102.231L74.6109 107.495C74.7991 108.212 75.2196 108.847 75.8067 109.301C76.3939 109.754 77.1146 110 77.8563 110H84.7698C86.2926 110 87.6274 108.971 88.0163 107.496L89.3941 102.231C92.1761 101.245 94.7927 99.7321 97.047 97.8067L102.304 99.2463C103.019 99.442 103.779 99.3953 104.465 99.1136C105.151 98.8318 105.724 98.3309 106.095 97.6889L109.554 91.7002C110.315 90.3795 110.09 88.7091 109.007 87.6392ZM106.762 90.0905L103.305 96.0776C103.29 96.1026 103.267 96.1221 103.241 96.1331C103.214 96.1441 103.184 96.146 103.156 96.1386L97.0569 94.4684C96.7934 94.3962 96.5158 94.3922 96.2503 94.4568C95.9848 94.5214 95.7401 94.6525 95.5392 94.8377C93.2649 96.9338 90.5117 98.5257 87.5767 99.4412C87.3157 99.5226 87.0798 99.669 86.891 99.8668C86.7023 100.065 86.5669 100.307 86.4978 100.571L84.8997 106.678C84.8924 106.707 84.8757 106.732 84.8522 106.75C84.8286 106.769 84.7997 106.778 84.77 106.778H77.8565C77.8273 106.778 77.7989 106.768 77.7758 106.751C77.7526 106.733 77.736 106.708 77.7285 106.679L76.129 100.571C76.0597 100.307 75.9244 100.064 75.7357 99.8668C75.547 99.6691 75.3111 99.5226 75.0502 99.4412C72.117 98.526 69.3633 96.934 67.0873 94.8373C66.8864 94.6523 66.6417 94.5214 66.3763 94.4569C66.1109 94.3924 65.8334 94.3964 65.57 94.4686L59.4736 96.1386C59.4453 96.1465 59.4152 96.1448 59.3879 96.134C59.3606 96.1231 59.3376 96.1036 59.3224 96.0785L55.8655 90.0895C55.851 90.0643 55.8452 90.035 55.8493 90.0063C55.8534 89.9775 55.8671 89.951 55.8881 89.9309L60.3794 85.4884C60.5733 85.2965 60.7154 85.0586 60.7922 84.7969C60.8691 84.5352 60.8783 84.2582 60.819 83.992C60.4822 82.481 60.3122 80.9377 60.312 79.3896C60.312 77.8449 60.4825 76.2963 60.819 74.7868C60.8783 74.5205 60.8691 74.2436 60.7922 73.9818C60.7153 73.7201 60.5732 73.4822 60.3792 73.2904L55.8872 68.8489C55.8664 68.8285 55.8531 68.8017 55.8493 68.7728C55.8455 68.7439 55.8515 68.7146 55.8664 68.6895L59.3213 62.7036C59.3361 62.6779 59.3589 62.6578 59.3862 62.6464C59.4136 62.6349 59.4439 62.6327 59.4726 62.6402L65.5698 64.3104C65.8332 64.3825 66.1106 64.3865 66.3759 64.322C66.6412 64.2576 66.8859 64.1268 67.0868 63.9419C69.3659 61.8442 72.1198 60.2522 75.0502 59.3376C75.3111 59.2562 75.5469 59.1097 75.7356 58.9121C75.9243 58.7144 76.0597 58.4721 76.129 58.2077L77.7296 52.0993C77.7369 52.0711 77.7534 52.0462 77.7764 52.0283C77.7994 52.0105 77.8276 52.0008 77.8567 52.0007H84.77C84.8304 52.0007 84.8836 52.0426 84.8989 52.0997L86.4978 58.2073C86.567 58.4717 86.7024 58.7142 86.8911 58.9118C87.0799 59.1095 87.3158 59.256 87.5767 59.3374C90.5087 60.252 93.2623 61.844 95.5395 63.9413C95.7403 64.1263 95.985 64.2573 96.2504 64.3218C96.5158 64.3863 96.7933 64.3822 97.0567 64.3099L103.156 62.6397C103.184 62.6324 103.214 62.6346 103.241 62.6459C103.268 62.6572 103.29 62.677 103.305 62.7023L106.762 68.6895C106.776 68.7149 106.782 68.7442 106.778 68.773C106.774 68.8017 106.761 68.8285 106.74 68.8492L102.247 73.2898C102.053 73.4818 101.911 73.7201 101.834 73.9822C101.757 74.2444 101.748 74.5217 101.808 74.7883C102.145 76.2988 102.315 77.8418 102.314 79.3894C102.314 80.9436 102.144 82.4915 101.808 83.9901C101.748 84.2566 101.757 84.534 101.834 84.7961C101.911 85.0582 102.053 85.2965 102.247 85.4886L106.741 89.9318C106.783 89.9726 106.791 90.0401 106.762 90.0905Z"
+                     fill="#081839"
+                   />
+                   <path
+                     d="M92.5754 79.3886C92.5754 73.1779 87.5225 68.125 81.3118 68.125C75.1004 68.125 70.0469 73.1779 70.0469 79.3886C70.0469 85.6002 75.1002 90.6535 81.3118 90.6535C87.5225 90.6533 92.5754 85.6 92.5754 79.3886ZM81.3118 87.4306C76.8772 87.4306 73.2695 83.823 73.2695 79.3884C73.2695 74.9547 76.8772 71.3474 81.3118 71.3474C85.7455 71.3474 89.3527 74.9547 89.3527 79.3884C89.3527 83.823 85.7455 87.4306 81.3118 87.4306Z"
+                     fill="#081839"
+                   />
+                   <path
+                     d="M81.3121 62.2715C71.8738 62.2715 64.1953 69.95 64.1953 79.3883C64.1953 87.0767 69.3709 93.8643 76.7815 95.8943C76.9856 95.9503 77.1987 95.9655 77.4087 95.9391C77.6187 95.9127 77.8214 95.8452 78.0052 95.7404C78.1891 95.6356 78.3505 95.4956 78.4802 95.3284C78.6099 95.1612 78.7055 94.9701 78.7613 94.766C78.8742 94.3538 78.8187 93.9137 78.6071 93.5424C78.3955 93.1711 78.0451 92.8991 77.6329 92.7862C71.6186 91.1385 67.418 85.6291 67.418 79.3883C67.418 71.727 73.651 65.4941 81.3121 65.4941C88.9732 65.4941 95.2063 71.727 95.2063 79.3883C95.2063 85.8265 90.6529 91.525 84.379 92.9385C84.1717 92.9842 83.9755 93.0703 83.8017 93.192C83.6278 93.3138 83.4797 93.4686 83.3658 93.6478C83.252 93.8269 83.1746 94.0268 83.1382 94.2359C83.1018 94.445 83.1071 94.6592 83.1538 94.8663C83.2004 95.0733 83.2875 95.2691 83.4101 95.4424C83.5326 95.6157 83.6882 95.7631 83.8679 95.8761C84.0475 95.9891 84.2478 96.0655 84.457 96.1009C84.6663 96.1362 84.8805 96.1299 85.0874 96.0823C88.8171 95.2421 92.203 93.1351 94.6213 90.1496C97.0769 87.1182 98.4292 83.2965 98.4292 79.3883C98.4289 69.95 90.7504 62.2715 81.3121 62.2715Z"
+                     fill="#081839"
+                   />
+                 </g>
+                 <defs>
+                   <clipPath id="clip0_8820_88640">
+                     <rect width="110" height="110" fill="white" />
+                   </clipPath>
+                 </defs>
+               </svg>
+             </div>
+
+             <!-- texts -->
+             <div class="text-center">
+               <h3 class="delete-modal-title">
+                 Are you sure you want to restore setting to system default?
+               </h3>
+             </div>
+
+             <!-- buttons -->
+             <div class="delete-modal-btn-container">
+               <button
+                 data-bs-dismiss="modal"
+                 aria-label="Close"
+                 class="delete-modal-btn transparent"
+               >
+                 Cancel
+               </button>
+               <button
+                 data-bs-dismiss="modal"
+                 aria-label="Close"
+                 class="delete-modal-btn primary restore-settings-yes-btn"
+               >
+                 Yes
+               </button>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+
     <!-- scripts -->
     <script src="../assets/js/jquery-3.7.1.min.js"></script>
     <script src="../assets/js/plugins.js"></script>
