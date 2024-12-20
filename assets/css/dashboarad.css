@@ -119,7 +119,8 @@ body {
 /* Custom Scrollbar for Dashboard Main Content Wrapper */
 .dashboard-main-content-wrapper,
 .dashboard-conversation-container,
-.dashboard-drawer-context-folders-wrapper {
+.dashboard-drawer-context-folders-wrapper,
+.dashboard-drawer-share-wrapper {
   /* Webkit (Chrome, Safari, newer versions of Edge) */
   scrollbar-width: thin;
   /* Firefox */
@@ -1232,20 +1233,23 @@ body {
 }
 
 /* context folder::start */
-.dashboard-drawer-context-folders-wrapper {
+.dashboard-drawer-context-folders-wrapper,
+.dashboard-drawer-share-wrapper {
   padding: 32px 24px;
   min-height: calc(100vh - 170px);
   max-height: calc(100vh - 170px);
   overflow-y: auto;
 }
 
-.add-context-folder-input-wrapper {
+.add-context-folder-input-wrapper,
+.add-email-share-input-wrapper {
   display: flex;
   color: #141414;
   gap: 12px;
 }
 
-.add-context-folder-input {
+.add-context-folder-input,
+.add-email-share-input {
   width: 100%;
   padding: 0px 16px;
   border: 1px solid black;
@@ -1256,14 +1260,16 @@ body {
 
 }
 
-.add-context-folder-input input {
+.add-context-folder-input input,
+.add-email-share-input input {
   width: 100%;
   outline: none;
   border: none;
   background: transparent;
 }
 
-.add-context-folder-submit {
+.add-context-folder-submit,
+.add-email-share-submit {
   text-wrap: nowrap;
   display: flex;
   height: 40px;
@@ -1370,6 +1376,7 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
+  width: fit-content;
 }
 
 .custom-checkbox {
@@ -1473,4 +1480,56 @@ body {
 
 /* settings::end */
 
+
+/* share::start */
+.add-email-share-title {
+  color: #141414;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 132%;
+  letter-spacing: -0.32px;
+  margin-bottom: 12px;
+}
+
+.share-checkbox-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inviting-status-wrapper,
+.show-expired-wrapper {
+  margin-top: 20px;
+}
+
+.inviting-status-title {
+  color: #141414;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 132%;
+  letter-spacing: -0.32px;
+}
+
+.inviting-status-description {
+  color: var(--primary--color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164%;
+}
+.status{
+  color: #1DB435;
+}
+
+.inviting-emails-wrapper,.expired-emails-wrapper{
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+}
+
+/* share::end */
 /* ===================================Drawer::end============================================ */

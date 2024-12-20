@@ -76,6 +76,7 @@ $(document).ready(function () {
 
   backdrop?.addEventListener('click', () => {
     contextDrawer.classList.remove('show');
+    resetDrawerBody();
     contextDrawer.setAttribute('aria-hidden', 'true');
   });
   dashboardDrawerCloseBtn?.addEventListener('click', () => {
@@ -212,97 +213,75 @@ $(document).ready(function () {
   ];
 
   // Create a copy for current working state
-  let rangeConfigs = [...defaultRangeConfigs];
+  let rangeConfigs = JSON.parse(JSON.stringify(defaultRangeConfigs));
 
   function createRangeElement(config) {
     return `
-        <div class="range-input-wrapper">
-            <div class="dashboard-wrapper-response-section-title">
-                ${config.title}
-            </div>
-            <div class="slider-row">
-                <div class="range-input-container">
-                    <span class="min-value">${config.min}</span>
-                    <input
-                        type="range"
-                        class="range-slider"
-                        min="${config.min}"
-                        max="${config.max}"
-                        value="${config.value}"
-                        step="${config.step}"
-                        data-name="${config.name}"
-                    />
-                    <span class="max-value">${config.max}</span>
-                </div>
-                <input
-                    type="number"
-                    class="response-input-value"
-                    value="${config.value}"
-                    step="${config.step}"
-                    min="${config.min}"
-                    max="${config.max}"
-                />
-            </div>
+    <div class="range-input-wrapper">
+      <div class="dashboard-wrapper-response-section-title">
+        ${config.title}
+      </div>
+      <div class="slider-row">
+        <div class="range-input-container">
+          <span class="min-value">${config.min}</span>
+          <input
+            type="range"
+            class="range-slider"
+            min="${config.min}"
+            max="${config.max}"
+            value="${config.value}"
+            step="${config.step}"
+            data-name="${config.name}"
+          />
+          <span class="max-value">${config.max}</span>
         </div>
-    `;
+        <input
+          type="number"
+          class="response-input-value"
+          value="${config.value}"
+          step="${config.step}"
+          min="${config.min}"
+          max="${config.max}"
+        />
+      </div>
+    </div>
+  `;
   }
 
   function resetAllValues() {
-    // Reset the working config to default values
+    // Reset the working config to default values using deep copy
     rangeConfigs = JSON.parse(JSON.stringify(defaultRangeConfigs));
 
     // Update all sliders and inputs
     const container = document.querySelector(
       '.dashboard-settings-responses-wrapper'
     );
-    container
-      .querySelectorAll('.range-input-wrapper')
-      .forEach((wrapper, index) => {
-        const slider = wrapper.querySelector('.range-slider');
-        const input = wrapper.querySelector('.response-input-value');
-        const defaultValue = defaultRangeConfigs[index].value;
+    const rangeWrappers = container.querySelectorAll('.range-input-wrapper');
 
-        slider.value = defaultValue;
-        input.value = defaultValue;
-
-        // Trigger the value change handler
-        handleValueChange(slider.dataset.name, defaultValue);
-      });
-  }
-
-  function initializeDashboard() {
-    const container = document.querySelector(
-      '.dashboard-settings-responses-wrapper'
-    );
-    container.innerHTML = rangeConfigs
-      .map((config) => createRangeElement(config))
-      .join('');
-
-    container.querySelectorAll('.range-input-wrapper').forEach((wrapper) => {
+    rangeWrappers.forEach((wrapper, index) => {
       const slider = wrapper.querySelector('.range-slider');
       const input = wrapper.querySelector('.response-input-value');
+      const defaultConfig = defaultRangeConfigs[index];
 
-      slider.addEventListener('input', () => {
-        const value = Number(slider.value);
-        input.value = value;
-        handleValueChange(slider.dataset.name, value);
-      });
+      // Reset both slider and input values
+      slider.value = defaultConfig.value;
+      input.value = defaultConfig.value;
 
-      input.addEventListener('change', () => {
-        let value = Number(input.value);
-        const min = Number(slider.min);
-        const max = Number(slider.max);
+      // Make sure to update any step, min, and max values if needed
+      slider.step = defaultConfig.step;
+      input.step = defaultConfig.step;
+      slider.min = defaultConfig.min;
+      slider.max = defaultConfig.max;
+      input.min = defaultConfig.min;
+      input.max = defaultConfig.max;
 
-        value = Math.min(Math.max(value, min), max);
-        input.value = value;
-        slider.value = value;
-        handleValueChange(slider.dataset.name, value);
-      });
+      // Trigger the value change handler to update internal state
+      handleValueChange(defaultConfig.name, defaultConfig.value);
     });
+  }
 
-    // Add reset button functionality
-    const resetButton = document.querySelector('.restore-settings-yes-btn');
-    resetButton.addEventListener('click', resetAllValues);
+  function validateInputValue(value, min, max) {
+    return Math.min(Math.max(value, min), max);
   }
 
   function handleValueChange(name, value) {
@@ -313,8 +292,140 @@ $(document).ready(function () {
     if (configIndex !== -1) {
       rangeConfigs[configIndex].value = value;
     }
-    console.log(`${name}: ${value}`);
+    // console.log(`${name}: ${value}`);
+  }
+
+  function initializeDashboard() {
+    // Create initial HTML
+    const container = document.querySelector(
+      '.dashboard-settings-responses-wrapper'
+    );
+    container.innerHTML = rangeConfigs
+      .map((config) => createRangeElement(config))
+      .join('');
+
+    // Add event listeners to all range inputs
+    container.querySelectorAll('.range-input-wrapper').forEach((wrapper) => {
+      const slider = wrapper.querySelector('.range-slider');
+      const input = wrapper.querySelector('.response-input-value');
+
+      // Sync slider to number input
+      slider.addEventListener('input', () => {
+        const value = Number(slider.value);
+        input.value = value;
+        handleValueChange(slider.dataset.name, value);
+      });
+
+      // Sync number input to slider
+      input.addEventListener('change', () => {
+        let value = Number(input.value);
+        const min = Number(slider.min);
+        const max = Number(slider.max);
+
+        // Validate and constrain the input value
+        value = validateInputValue(value, min, max);
+        input.value = value;
+        slider.value = value;
+        handleValueChange(slider.dataset.name, value);
+      });
+
+      // Add blur event to handle invalid inputs
+      input.addEventListener('blur', () => {
+        if (input.value === '' || isNaN(input.value)) {
+          input.value = slider.value;
+        }
+      });
+    });
+
+    // Add reset button functionality
+    const resetButton = document.querySelector('.restore-settings-yes-btn');
+    if (resetButton) {
+      resetButton.addEventListener('click', resetAllValues);
+    }
   }
 
   initializeDashboard();
+
+  // settings:
+  const shareMainWrapper = document.querySelector(
+    '.dashboard-drawer-share-main-wrapper '
+  );
+  const addEmailShareInput = document.getElementById('add-email-share-input');
+  const inviteUserBtn = document.querySelector('.add-email-share-submit');
+  const noInvitesText = document.querySelectorAll('.no-invites-text');
+  const invitedStatusWrapper = document.querySelector(
+    '.inviting-emails-wrapper'
+  );
+  const expiredStatusWrapper = document.querySelector(
+    '.expired-emails-wrapper'
+  );
+  inviteUserBtn?.addEventListener('click', () => {
+    const invEmail = addEmailShareInput.value;
+    if (invEmail) {
+      noInvitesText.forEach((text) => {
+        text.classList.add('hidden');
+      });
+      if (invitedStatusWrapper && expiredStatusWrapper) {
+        invitedStatusWrapper.classList.remove('hidden');
+        expiredStatusWrapper.classList.remove('hidden');
+        addEmailShareInput.value = '';
+      }
+    }
+  });
+
+  //maintain drawer:
+  // Handle settings button clicks using event delegation
+  const settingsMainWrapper = document.querySelector(
+    '.dashboard-drawer-settings-main-wrapper'
+  );
+  const contextFoldersMainWrapper = document.querySelector(
+    '.dashboard-drawer-context-folder-main-wrapper'
+  );
+
+  // Add click event listener to the parent container
+  contextFoldersWrapper?.addEventListener('click', (event) => {
+    // Check if the clicked element is a settings button
+    if (event.target.classList.contains('context-folder-settings')) {
+      if (contextFoldersMainWrapper && settingsMainWrapper) {
+        settingsMainWrapper.classList.remove('hidden');
+        contextFoldersMainWrapper.classList.add('hidden');
+      }
+    } else if (event.target.classList.contains('context-folder-share')) {
+      if (contextFoldersMainWrapper && shareMainWrapper) {
+        shareMainWrapper.classList.remove('hidden');
+        contextFoldersMainWrapper.classList.add('hidden');
+      }
+    }
+  });
+
+  // reset drawer:
+  function resetDrawerBody() {
+    contextFoldersMainWrapper.classList.remove('hidden');
+    settingsMainWrapper.classList.add('hidden');
+    shareMainWrapper.classList.add('hidden');
+    noInvitesText.forEach((text) => {
+      text.classList.remove('hidden');
+    });
+    if (invitedStatusWrapper && expiredStatusWrapper) {
+      invitedStatusWrapper.classList.add('hidden');
+      expiredStatusWrapper.classList.add('hidden');
+      addEmailShareInput.value = '';
+    }
+  }
+
+
+  //close drawer:
+  const settingsTopCrossButton=document.querySelector('.dashboard-drawer-settings-wrapper-close')
+  const settingsBottomCrossButton=document.querySelector('.dashboard-drawer-settings-bottom-close-button')
+
+  const shareTopCrossButton=document.querySelector('.dashboard-drawer-share-wrapper-close')
+  const shareBottomCrossButton=document.querySelector('.dashboard-drawer-share-bottom-close-button')
+
+  const closeDrawerButtons=[settingsTopCrossButton, settingsBottomCrossButton, shareTopCrossButton, shareBottomCrossButton]
+  closeDrawerButtons.forEach(button=>{
+    button.addEventListener('click', ()=>{
+      contextDrawer.classList.remove('show');
+      resetDrawerBody();
+    })
+  })
 });

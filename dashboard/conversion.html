@@ -18,8 +18,8 @@
     />
 
     <!-- Custom Css -->
-    <link rel="stylesheet" href="../assets/css/helper.css" />
     <link rel="stylesheet" href="../assets/css/dashboarad.css" />
+    <link rel="stylesheet" href="../assets/css/helper.css" />
     <link rel="stylesheet" href="../assets/css/responsive.css" />
   </head>
   <body>
@@ -773,7 +773,7 @@
 
         <!-- context folder -->
         <div
-          class="dashboard-drawer-context-folder-main-wrapper dashboard-drawer-main-wrapper hidden"
+          class="dashboard-drawer-context-folder-main-wrapper dashboard-drawer-main-wrapper"
         >
           <!-- main wrapper -->
           <div class="dashboard-drawer-main-content-wrapper">
@@ -870,7 +870,7 @@
 
         <!-- settings -->
         <div
-          class="dashboard-drawer-settings-main-wrapper dashboard-drawer-main-wrapper"
+          class="dashboard-drawer-settings-main-wrapper dashboard-drawer-main-wrapper hidden"
         >
           <!-- main wrapper -->
           <div class="dashboard-drawer-main-content-wrapper">
@@ -879,7 +879,7 @@
               <!-- title -->
               <div class="w-full flex items-center justify-between">
                 <h2 class="dashboard-drawer-title">Default</h2>
-                <div class="dashboard-drawer-wrapper-close cursor-pointer">
+                <div class="dashboard-drawer-settings-wrapper-close cursor-pointer">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="10"
@@ -1202,7 +1202,205 @@
               >
                 Restore System Setting
               </button>
-              <button class="dashboard-drawer-bottom-close-button">
+              <button class="dashboard-drawer-bottom-close-button dashboard-drawer-settings-bottom-close-button">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- share -->
+        <div
+          class="dashboard-drawer-share-main-wrapper dashboard-drawer-main-wrapper hidden"
+        >
+          <!-- main wrapper -->
+          <div class="dashboard-drawer-main-content-wrapper">
+            <!-- top part -->
+            <div class="dashboard-drawer-share-wrapper">
+              <!-- title -->
+              <div class="w-full flex items-center justify-between">
+                <h2 class="dashboard-drawer-title">Share</h2>
+                <div class="dashboard-drawer-share-wrapper-close cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                  >
+                    <path
+                      d="M1.22656 8.77323L8.77323 1.22656"
+                      stroke="#141414"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.77323 8.77323L1.22656 1.22656"
+                      stroke="#141414"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!-- add folder form -->
+              <div>
+                <form action="" class="mt-5">
+                  <div>
+                    <h2 class="add-email-share-title">
+                      Share context folder access via email
+                    </h2>
+                  </div>
+                  <div class="add-email-share-input-wrapper">
+                    <div class="add-email-share-input">
+                      <input
+                        placeholder="Email Address"
+                        type="email"
+                        name="add-email-share-input"
+                        id="add-email-share-input"
+                      />
+                    </div>
+                    <div class="add-email-share-submit">Invite user</div>
+                  </div>
+                </form>
+              </div>
+
+              <!-- share checkbox wrapper -->
+              <div class="share-checkbox-wrapper">
+                <label for="fileShowAccess" class="custom-checkbox-wrapper">
+                  <input
+                    checked
+                    class="hidden custom-checkbox-input"
+                    type="checkbox"
+                    name=""
+                    id="fileShowAccess"
+                  />
+                  <!-- custom checkbox -->
+                  <div class="custom-checkbox">
+                    <div class="custom-checkbox-indicator">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="10"
+                        height="7"
+                        viewBox="0 0 10 7"
+                        fill="none"
+                      >
+                        <path
+                          d="M1 3.33L3.83 6.16L9.5 0.5"
+                          stroke="white"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <span class="cursor-pointer">File Show Access</span>
+                </label>
+                <label for="fileUploadAccess" class="custom-checkbox-wrapper">
+                  <input
+                    class="hidden custom-checkbox-input"
+                    type="checkbox"
+                    name=""
+                    id="fileUploadAccess"
+                  />
+                  <!-- custom checkbox -->
+                  <div class="custom-checkbox">
+                    <div class="custom-checkbox-indicator">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="10"
+                        height="7"
+                        viewBox="0 0 10 7"
+                        fill="none"
+                      >
+                        <path
+                          d="M1 3.33L3.83 6.16L9.5 0.5"
+                          stroke="white"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <span class="cursor-pointer">File Upload Access</span>
+                </label>
+                <label for="fileDeleteAccess" class="custom-checkbox-wrapper">
+                  <input
+                    class="hidden custom-checkbox-input"
+                    type="checkbox"
+                    name=""
+                    id="fileDeleteAccess"
+                  />
+                  <!-- custom checkbox -->
+                  <div class="custom-checkbox">
+                    <div class="custom-checkbox-indicator">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="10"
+                        height="7"
+                        viewBox="0 0 10 7"
+                        fill="none"
+                      >
+                        <path
+                          d="M1 3.33L3.83 6.16L9.5 0.5"
+                          stroke="white"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <span class="cursor-pointer"> File Delete Access</span>
+                </label>
+              </div>
+
+              <!-- inviting status wrapper -->
+              <div class="inviting-status-wrapper">
+                <div>
+                  <h2 class="inviting-status-title">
+                    List Sharing invites and accepted status
+                  </h2>
+                </div>
+                <div>
+                  <p class="inviting-status-description no-invites-text mt-2">
+                    No invites yet
+                  </p>
+                  <div class="inviting-emails-wrapper hidden">
+                    <p class="inviting-status-description">
+                      echofavor127@gmail.com <span class="status">(accepted)</span>
+                    </p>
+                    <p class="inviting-status-description">
+                      echofavor127@gmail.com <span class="status">(accepted)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- show expired wrapper -->
+              <div class="show-expired-wrapper">
+                <div>
+                  <h2 class="inviting-status-title">Show Expired</h2>
+                </div>
+                <div>
+                  <p class="inviting-status-description no-invites-text mt-2">
+                    No invites yet
+                  </p>
+                  <div class="expired-emails-wrapper hidden">
+                    <p class="inviting-status-description">
+                      echofavor127@gmail.com <span class="status">(accepted)</span>
+                    </p>
+                    <p class="inviting-status-description">
+                      echofavor127@gmail.com <span class="status">(accepted)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- bottom part -->
+            <div class="dashboard-drawer-bottom-part">
+              <button class="dashboard-drawer-bottom-close-button dashboard-drawer-share-bottom-close-button">
                 Close
               </button>
             </div>
