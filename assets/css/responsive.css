@@ -1,114 +1,142 @@
-@media only screen and (min-width: 1600px) {}
+@media only screen and (min-width: 1600px) {
+}
 
 /* laptop devices */
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
-    .container {
-        max-width: 1150px;
-        margin: 0 auto;
-    }
+  .container {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+  .header {
+    height: 97px;
+  }
 
-    .nav-logo img {
-        max-width: 250px !important;
-    }
+  .homepage,
+  .pricing-page,
+  .blog-page-main,
+  .blog-details-page-main-wrapper,
+  .affiliate-page-main-wrapper,
+  .contact-us-page-main-wrapper,
+  .error-page-main-wrapper,
+  .sign-in-main-wrapper,
+  .register-main-wrapper {
+    margin-top: 97px;
+  }
+  .nav-logo img {
+    max-width: 250px !important;
+  }
 
-    .nav_links {
-        gap: 20px;
-        font-size: 16px;
-    }
+  .nav_links {
+    gap: 20px;
+    font-size: 16px;
+  }
 
-    .button {
-        padding: 10px 24px;
-        font-size: 16px;
-    }
+  .button {
+    padding: 10px 24px;
+    font-size: 16px;
+  }
 
-    /* banner */
-    .hero-title,
-    .glowing-hero-title {
-        font-size: 52px;
-    }
+  /* banner */
+  .hero-title,
+  .glowing-hero-title {
+    font-size: 52px;
+  }
 
-    .banner-image {
-        height: 400px;
-        width: 400px;
-        position: absolute;
-        right: 20px;
-        bottom: -20%;
-    }
+  .banner-image {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    right: 20px;
+    bottom: -20%;
+  }
 
-    .banner-filter-input {
-        max-width: 300px;
-        min-width: 300px;
-        width: 100%;
-    }
+  .banner-filter-input {
+    max-width: 300px;
+    min-width: 300px;
+    width: 100%;
+  }
 
-    .hero-video-wrapper {
-        margin-top: -200px;
-        height: 500px;
-        width: 80% !important;
-    }
+  .hero-video-wrapper {
+    margin-top: -200px;
+    height: 500px;
+    width: 80% !important;
+  }
 
-    .hero-video-play-btn svg {
-        height: 40px;
-        width: 40px;
-    }
+  .hero-video-play-btn svg {
+    height: 40px;
+    width: 40px;
+  }
 
-    /* feature */
+  /* feature */
+  .feature-image-card {
+    height: 450px;
+  }
 
+  .feature-card-info {
+    margin-top: 24px;
+  }
 
-    
+  .feature-card-info p {
+    margin-top: 12px !important;
+  }
 
-    .feature-card-info {
-        margin-top: 24px;
-    }
+  .feature-image-card-left {
+    border-radius: 16px 0 0 16px !important;
+  }
 
-    .feature-card-info p {
-        margin-top: 12px !important;
-    }
+  .feature-image-card-right {
+    border-radius: 0 16px 16px 0 !important;
+  }
 
-    .feature-image-card-left {
-        border-radius: 16px 0 0 16px !important;
-    }
+  .feature-image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px 0 0 16px !important;
+  }
 
-    .feature-image-card-right {
-        border-radius: 0 16px 16px 0 !important;
-    }
+  .feature-card-right {
+    padding-left: 32px;
+  }
 
-    .feature-image-card img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 16px 0 0 16px !important;
-    }
+  .feature-card-left {
+    padding-right: 32px;
+  }
 
-    .trial-wrapper {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        max-height: 550px;
-        min-height: 550px;
-        height: full;
-        background: linear-gradient(to right, #c2d5fd 0%, #c2d5fd 100%);
-    }
+  .trial-wrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-height: 550px;
+    min-height: 550px;
+    height: full;
+    background: linear-gradient(to right, #c2d5fd 0%, #c2d5fd 100%);
+  }
 
-    .trial-title {
-        font-size: 40px;
-    }
-
+  .trial-title {
+    font-size: 40px;
+  }
 }
 
 /* large tablet devices */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
 
 /* medium tablet devices */
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
 
 /* small tablet devices */
-@media only screen and (min-width: 576px) and (max-width: 767px) {}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+}
 
 /* large mobile devices */
-@media only screen and (min-width: 480px) and (max-width: 575px) {}
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+}
 
 /* mobile devices */
-@media only screen and (min-width: 375px) and (max-width: 479px) {}
+@media only screen and (min-width: 375px) and (max-width: 479px) {
+}
 
 /* extra small devices */
-@media only screen and (min-width: 320px) and (max-width: 374px) {}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+}
