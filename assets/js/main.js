@@ -9,6 +9,9 @@ $(document).ready(function () {
    // console.log(e);
   });
 
+
+  //sticky navbar:
+
   // play the video:
   // Get the elements
   const playBtn = document.getElementById('play-btn');

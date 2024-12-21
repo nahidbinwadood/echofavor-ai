@@ -55,9 +55,7 @@
     /* feature */
 
 
-    .feature-card-wrapper {
-        gap: 12px;
-    }
+    
 
     .feature-card-info {
         margin-top: 24px;
@@ -94,7 +92,7 @@
     .trial-title {
         font-size: 40px;
     }
- 
+
 }
 
 /* large tablet devices */

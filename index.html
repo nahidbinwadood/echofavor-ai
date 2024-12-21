@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="./assets/css/helper.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+
   </head>
   <body>
     <!-- header -->
@@ -73,11 +75,13 @@
       </nav>
     </header>
     <!-- main -->
-    <main class="">
+    <main class="homepage">
       <!-- hero section::start -->
       <section class="hero relative">
         <div class="container hero-wrapper">
-          <div class="pt-10 flex flex-col items-center justify-center gap-8 hero-content">
+          <div
+            class="pt-10 flex flex-col items-center justify-center gap-8 hero-content"
+          >
             <!-- glow button -->
             <div class="button button-transparent font-plus-jakarta">
               <div>
@@ -273,295 +277,317 @@
         <!-- features -->
         <div class="my-24 flex flex-col gap-12">
           <!-- feature-1 -->
-          <div class="flex items-center gap-12 feature-card-wrapper">
+          <div class="flex items-center feature-card-wrapper">
             <!-- image section -->
-            <div class="p-4 feature-image-card  feature-image-card-left ">
+            <div class="p-4 feature-image-card feature-image-card-left">
               <img src="./assets/images/feature-1.png" alt="" />
             </div>
             <!-- info section -->
-            <div
-              class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
-            >
-              <div>
-                <button class="button featured-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <span>Advantage</span>
-                </button>
+            <div class="feature-card-right">
+              <div
+                class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
+              >
+                <div>
+                  <button class="button featured-button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                    >
+                      <path
+                        d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span>Advantage</span>
+                  </button>
 
-                <!-- description -->
-                <div class="mt-16 feature-card-info">
-                  <h3 class="font-space-grotesk text-3xl text-black font-bold">
-                    Multi-File Type Support
-                  </h3>
-                  <p class="mt-4 feature-card-description">
-                    The AI chatbot can handle various file formats, making it
-                    incredibly versatile and user-friendly. Users can upload and
-                    query content from multiple file types, including Word, txt,
-                    PDF, Excel, and HTML.
-                  </p>
+                  <!-- description -->
+                  <div class="mt-16 feature-card-info">
+                    <h3
+                      class="font-space-grotesk text-3xl text-black font-bold"
+                    >
+                      Multi-File Type Support
+                    </h3>
+                    <p class="mt-4 feature-card-description">
+                      The AI chatbot can handle various file formats, making it
+                      incredibly versatile and user-friendly. Users can upload
+                      and query content from multiple file types, including
+                      Word, txt, PDF, Excel, and HTML.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- feature-2 -->
-          <div
-            class="flex flex-row-reverse items-center gap-12 feature-card-wrapper"
-          >
+          <div class="flex flex-row-reverse items-center feature-card-wrapper">
             <!-- image section -->
             <div class="p-4 feature-image-card feature-image-card-right">
               <img src="./assets/images/feature-2.png" alt="" />
             </div>
             <!-- info section -->
-            <div
-              class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
-            >
-              <div>
-                <button class="button featured-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <span>Advantage</span>
-                </button>
+            <div class="feature-card-left">
+              <div
+                class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
+              >
+                <div>
+                  <button class="button featured-button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                    >
+                      <path
+                        d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span>Advantage</span>
+                  </button>
 
-                <!-- description -->
-                <div class="mt-16 feature-card-info">
-                  <h3 class="font-space-grotesk text-3xl text-black font-bold">
-                    Personalized Content Queries
-                  </h3>
-                  <p class="mt-4 feature-card-description">
-                    Users can ask questions specifically about their own
-                    content, making it a tailored experience.
-                  </p>
+                  <!-- description -->
+                  <div class="mt-16 feature-card-info">
+                    <h3
+                      class="font-space-grotesk text-3xl text-black font-bold"
+                    >
+                      Personalized Content Queries
+                    </h3>
+                    <p class="mt-4 feature-card-description">
+                      Users can ask questions specifically about their own
+                      content, making it a tailored experience.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- feature-3 -->
-          <div class="flex items-center gap-12 feature-card-wrapper">
+          <div class="flex items-center feature-card-wrapper">
             <!-- image section -->
             <div class="p-4 feature-image-card feature-image-card-left">
               <img src="./assets/images/feature-3.png" alt="" />
             </div>
             <!-- info section -->
-            <div
-              class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
-            >
-              <div>
-                <button class="button featured-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <span>Advantage</span>
-                </button>
+            <div class="feature-card-right">
+              <div
+                class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
+              >
+                <div>
+                  <button class="button featured-button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                    >
+                      <path
+                        d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span>Advantage</span>
+                  </button>
 
-                <!-- description -->
-                <div class="mt-16 feature-card-info">
-                  <h3 class="font-space-grotesk text-3xl text-black font-bold">
-                    Web Integration
-                  </h3>
-                  <p class="mt-4 feature-card-description">
-                    The AI can pull relevant information from the web, providing
-                    comprehensive answers.
-                  </p>
+                  <!-- description -->
+                  <div class="mt-16 feature-card-info">
+                    <h3
+                      class="font-space-grotesk text-3xl text-black font-bold"
+                    >
+                      Web Integration
+                    </h3>
+                    <p class="mt-4 feature-card-description">
+                      The AI can pull relevant information from the web,
+                      providing comprehensive answers.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- feature-4 -->
-          <div
-            class="flex flex-row-reverse items-center gap-12 feature-card-wrapper"
-          >
+          <div class="flex flex-row-reverse items-center feature-card-wrapper">
             <!-- image section -->
             <div class="p-4 feature-image-card feature-image-card-right">
               <img src="./assets/images/feature-4.png" alt="" />
             </div>
             <!-- info section -->
-            <div
-              class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
-            >
-              <div>
-                <button class="button featured-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <span>Advantage</span>
-                </button>
+            <div class="feature-card-left">
+              <div
+                class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
+              >
+                <div>
+                  <button class="button featured-button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                    >
+                      <path
+                        d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span>Advantage</span>
+                  </button>
 
-                <!-- description -->
-                <div class="mt-16 feature-card-info">
-                  <h3 class="font-space-grotesk text-3xl text-black font-bold">
-                    User-Friendly Interface
-                  </h3>
-                  <p class="mt-4 feature-card-description">
-                    Easy to navigate and interact with, ensuring a smooth user
-                    experience.
-                  </p>
+                  <!-- description -->
+                  <div class="mt-16 feature-card-info">
+                    <h3
+                      class="font-space-grotesk text-3xl text-black font-bold"
+                    >
+                      User-Friendly Interface
+                    </h3>
+                    <p class="mt-4 feature-card-description">
+                      Easy to navigate and interact with, ensuring a smooth user
+                      experience.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- feature-5 -->
-          <div class="flex items-center gap-12 feature-card-wrapper">
+          <div class="flex items-center feature-card-wrapper">
             <!-- image section -->
             <div class="p-4 feature-image-card feature-image-card-left">
               <img src="./assets/images/feature-5.png" alt="" />
             </div>
             <!-- info section -->
-            <div
-              class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
-            >
-              <div>
-                <button class="button featured-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <span>Advantage</span>
-                </button>
+            <div class="feature-card-right">
+              <div
+                class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
+              >
+                <div>
+                  <button class="button featured-button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                    >
+                      <path
+                        d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span>Advantage</span>
+                  </button>
 
-                <!-- description -->
-                <div class="mt-16">
-                  <h3 class="font-space-grotesk text-3xl text-black font-bold">
-                    Real-Time Responses
-                  </h3>
-                  <p class="mt-4 feature-card-description">
-                    Get instant answers to your queries, enhancing productivity
-                    and efficiency.
-                  </p>
+                  <!-- description -->
+                  <div class="mt-16">
+                    <h3
+                      class="font-space-grotesk text-3xl text-black font-bold"
+                    >
+                      Real-Time Responses
+                    </h3>
+                    <p class="mt-4 feature-card-description">
+                      Get instant answers to your queries, enhancing
+                      productivity and efficiency.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- feature-6 -->
-          <div
-            class="flex flex-row-reverse items-center gap-12 feature-card-wrapper"
-          >
+          <div class="flex flex-row-reverse items-center feature-card-wrapper">
             <!-- image section -->
             <div class="p-4 feature-image-card feature-image-card-right">
               <img src="./assets/images/feature-6.png" alt="" />
             </div>
             <!-- info section -->
-            <div
-              class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
-            >
-              <div>
-                <button class="button featured-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <span>Advantage</span>
-                </button>
+            <div class="feature-card-left">
+              <div
+                class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
+              >
+                <div>
+                  <button class="button featured-button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                    >
+                      <path
+                        d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span>Advantage</span>
+                  </button>
 
-                <!-- description -->
-                <div class="mt-16">
-                  <h3 class="font-space-grotesk text-3xl text-black font-bold">
-                    Versatile Applications
-                  </h3>
-                  <p class="mt-4 feature-card-description">
-                    Suitable for various needs, from personal inquiries to
-                    professional research.
-                  </p>
+                  <!-- description -->
+                  <div class="mt-16">
+                    <h3
+                      class="font-space-grotesk text-3xl text-black font-bold"
+                    >
+                      Versatile Applications
+                    </h3>
+                    <p class="mt-4 feature-card-description">
+                      Suitable for various needs, from personal inquiries to
+                      professional research.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- feature-7 -->
-          <div class="flex items-center gap-12 feature-card-wrapper">
+          <div class="flex items-center feature-card-wrapper">
             <!-- image section -->
             <div class="p-4 feature-image-card feature-image-card-left">
               <img src="./assets/images/feature-7.png" alt="" />
             </div>
             <!-- info section -->
-            <div
-              class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
-            >
-              <div>
-                <button class="button featured-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <span>Advantage</span>
-                </button>
+            <div class="feature-card-right">
+              <div
+                class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
+              >
+                <div>
+                  <button class="button featured-button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                    >
+                      <path
+                        d="M20.6523 14.3966C13.8957 15.5078 12.6945 16.9194 11.7936 25.1476C11.7635 25.418 11.3729 25.418 11.343 25.1476C10.4421 16.9194 9.24093 15.538 2.48405 14.3966C2.21365 14.3667 2.21365 13.9764 2.48405 13.9463C9.24093 12.8353 10.4421 11.4539 11.343 3.22543C11.3729 2.95503 11.7635 2.95503 11.7936 3.22543C12.6943 11.4539 13.8955 12.8054 20.6523 13.9463C20.8926 13.9764 20.8926 14.3365 20.6523 14.3966ZM23.5355 4.90711C21.4328 5.32779 20.8323 6.01835 20.4722 8.48081C20.4423 8.75121 20.0517 8.75121 20.0218 8.48081C19.6615 6.01835 19.0609 5.32753 16.9588 4.87721C16.9076 4.86574 16.8618 4.83717 16.829 4.79622C16.7963 4.75527 16.7784 4.70438 16.7784 4.65192C16.7784 4.59946 16.7963 4.54857 16.829 4.50762C16.8618 4.46667 16.9076 4.4381 16.9588 4.42663C19.031 4.00621 19.6615 3.31565 20.0216 0.853191C20.0517 0.582791 20.4423 0.582791 20.4722 0.853191C20.8325 3.31539 21.4331 4.00621 23.5355 4.45679C23.7757 4.51659 23.7757 4.87721 23.5355 4.90711Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span>Advantage</span>
+                  </button>
 
-                <!-- description -->
-                <div class="mt-16 feature-card-info">
-                  <h3 class="font-space-grotesk text-3xl text-black font-bold">
-                    Secure and Private
-                  </h3>
-                  <p class="mt-4 feature-card-description">
-                    Ensures user data and content are handled with utmost
-                    security and privacy.
-                  </p>
+                  <!-- description -->
+                  <div class="mt-16 feature-card-info">
+                    <h3
+                      class="font-space-grotesk text-3xl text-black font-bold"
+                    >
+                      Secure and Private
+                    </h3>
+                    <p class="mt-4 feature-card-description">
+                      Ensures user data and content are handled with utmost
+                      security and privacy.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -917,7 +943,7 @@
       <!-- testimonials section::end -->
 
       <!-- articles section::start -->
-      <section class=" container articles-section-wrapper py-16">
+      <section class="container articles-section-wrapper py-16">
         <!-- title -->
         <div class="w-full flex flex-col gap-4 items-center justify-center">
           <div class="button button-title font-plus-jakarta">
@@ -1197,6 +1223,7 @@
       </section>
     </footer>
     <!-- scripts -->
+
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>

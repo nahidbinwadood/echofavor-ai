@@ -13,17 +13,66 @@
     <link rel="stylesheet" href="./assets/css/plugins/nice-select.min.css" />
     <link rel="stylesheet" href="./assets/css/plugins/owl.carousel.min.css" />
     <link
-    rel="stylesheet"
-    href="https://unpkg.com/lenis@1.1.18/dist/lenis.css"
-  />
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.1.18/dist/lenis.css"
+    />
     <!-- Custom Css -->
     <link rel="stylesheet" href="./assets/css/helper.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
+    <!-- header -->
+    <header class="header">
+      <nav
+        class="container font-plus-jakarta flex items-center justify-between py-4"
+      >
+        <!-- logo -->
+        <div>
+          <a class="nav-logo" href="index.html">
+            <img src="./assets/images/logo.svg" alt="" />
+          </a>
+        </div>
+
+        <!-- navLinks -->
+        <div>
+          <ul class="flex items-center gap-8 text-lg font-medium nav_links">
+            <li>
+              <a href="index.html" class="navlink_active">Home</a>
+            </li>
+            <li>
+              <a href="pricing.html">Pricing</a>
+            </li>
+            <li class="menu-item">
+              <a class="cursor-pointer">Product</a>
+              <ul class="submenu">
+                <li><a href="#">For individual</a></li>
+                <li><a href="#">For business</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="affiliate.html">Affiliate</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- button -->
+        <div class="flex items-center gap-4">
+          <a href="register.html" class="button button-white">Register</a>
+          <a href="sign-in.html" class="button button-transparent"
+            >Start for Free</a
+          >
+        </div>
+      </nav>
+    </header>
     <!-- main -->
-    <main>
+    <main class="register-main-wrapper">
       <!-- main section::start -->
       <section
         class="py-20 container flex items-center justify-center text-black error-page"
@@ -249,9 +298,7 @@
               <div>
                 <p class="auth-toggle">
                   Already have an Account?
-                  <a class="auth-toggle-link" href="sign-in.html"
-                    > Sign In</a
-                  >
+                  <a class="auth-toggle-link" href="sign-in.html"> Sign In</a>
                 </p>
               </div>
             </form>
@@ -260,6 +307,150 @@
       </section>
       <!-- main section::end -->
     </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <section class="container py-16 grid grid-cols-6 gap-12">
+        <!-- logo section -->
+        <div class="col-span-2">
+          <div>
+            <img src="./assets/images/logo.svg" alt="" />
+          </div>
+          <p
+            class="mt-4 font-plus-jakarta"
+            style="width: 80%; line-height: 180%"
+          >
+            Unleashing the Power of Creativity and Wordsmithing with ai Our
+            round investors play
+          </p>
+        </div>
+
+        <!-- Pages -->
+        <div>
+          <h4 class="footer-item-title">ecohofavor AI</h4>
+          <div class="mt-3">
+            <ul class="flex flex-col gap-2">
+              <li>
+                <a href="pricing.html" class="footer-item">Pricing</a>
+              </li>
+              <li>
+                <a href="blog.html" class="footer-item">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pages -->
+        <div>
+          <h4 class="footer-item-title">Support</h4>
+          <div class="mt-3">
+            <ul class="flex flex-col gap-2">
+              <li>
+                <a href="index.html" class="footer-item">Help Center</a>
+              </li>
+              <li>
+                <a href="index.html" class="footer-item"
+                  >Ai Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Updates -->
+        <div class="col-span-2">
+          <h4 class="footer-item-title">Updates</h4>
+          <p class="mt-3">
+            Stay in the loop with updates on the AI ecosystem, company news, and
+            more.
+          </p>
+
+          <!-- form -->
+          <div class="mt-8 hero-filter">
+            <h4 class="footer-form-title">Sign up for ecohofavor AI updates</h4>
+
+            <!-- form input -->
+            <div
+              class="bg-white flex items-center gap-3 rounded-full pt-1 pr-1 pb-1 pl-6 mt-3"
+            >
+              <form style="z-index: 1" class="flex icon gap-4 w-full">
+                <input
+                  placeholder="Enter Your email"
+                  class="outline-none border-none w-full footer-input"
+                  type="text"
+                  name="footer-input"
+                  id="footer-input"
+                />
+                <button
+                  type="submit"
+                  style="background-color: #081839"
+                  class="footer-button"
+                >
+                  Sign Up
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- earning -->
+      <section
+        class="my-20 footer-earning-wrapper container flex items-center justify-between overflow-hidden"
+      >
+        <div>
+          <h4 class="footer-earning-title">
+            Earn 30% commission as a Echofai Affiliate Partner
+          </h4>
+          <p class="mt-2 footer-earning-description">
+            Just refer your friends, followers, and customers to earn 30% in
+            recurring commissions for a lifetime!
+          </p>
+        </div>
+        <div>
+          <a href="" class="flex items-center gap-2 footer-earning-button">
+            <span>Start Earning</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M14.4301 5.92969L20.5001 11.9997L14.4301 18.0697"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M3.5 12H20.33"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- images -->
+        <div class="footer-earning-image-wrapper-left">
+          <img src="./assets/images/3.png" alt="" />
+        </div>
+        <div class="footer-earning-image-wrapper-right">
+          <img src="./assets/images/3.png" alt="" />
+        </div>
+      </section>
+
+      <!-- footer bottom -->
+      <section class="mt-8 py-8 text-center footer-bottom">
+        <p>©2020 - 2024 ecohofavor AI</p>
+      </section>
+    </footer>
 
     <!-- scripts -->
 
