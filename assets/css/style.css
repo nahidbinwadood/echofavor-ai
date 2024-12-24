@@ -416,7 +416,6 @@ footer p {
 /* ==============Homepage Hero============== */
 .hero {
   min-height: calc(100vh - 110px);
-  max-height: calc(100vh - 110px);
   background: #091836;
   overflow: hidden;
 }
