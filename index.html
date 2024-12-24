@@ -179,7 +179,7 @@
     <!-- main -->
     <main class="homepage">
       <!-- hero section::start -->
-      <section class="hero relative">
+      <section class="hero relative hidden">
         <div class="container hero-wrapper">
           <div
             class="pt-10 flex flex-col items-center justify-center gap-8 hero-content"
@@ -284,7 +284,7 @@
       </section>
 
       <!-- video section -->
-      <div class="hero-video-wrapper container relative">
+      <div class="hero-video-wrapper container relative hidden">
         <!-- shade -->
         <div class="hero-video-wrapper-shade"></div>
 
@@ -300,7 +300,7 @@
 
         <!-- play btn -->
         <div
-          class="absolute top-0 left-0 w-full h-full flex justify-center items-center hero-video-wrapper-play-btn-wrapper"
+          class="absolute top-0 left-0 w-full h-full flex justify-center items-center"
         >
           <div id="play-btn" class="hero-video-play-btn rounded-full">
             <svg
@@ -351,7 +351,7 @@
       <!-- hero section::end -->
 
       <!-- featured section::start -->
-      <section class="pt-16 container featured-section ">
+      <section class="pt-16 container featured-section">
         <!-- title -->
         <div class="w-full flex flex-col gap-4 items-center justify-center">
           <div class="button button-title font-plus-jakarta">
@@ -377,7 +377,7 @@
         </div>
 
         <!-- features -->
-        <div class="my-24 flex flex-col gap-12">
+        <div class="my-24 flex flex-col gap-12 featured-cards-wrapper">
           <!-- feature-1 -->
           <div class="flex items-center feature-card-wrapper">
             <!-- image section -->
@@ -426,7 +426,7 @@
           </div>
 
           <!-- feature-2 -->
-          <div class="flex flex-row-reverse items-center feature-card-wrapper">
+          <div class="flex flex-row-reverse items-center feature-card-wrapper feature-card-wrapper-reverser">
             <!-- image section -->
             <div class="p-4 feature-image-card feature-image-card-right">
               <img src="./assets/images/feature-2.png" alt="" />
@@ -516,7 +516,7 @@
           </div>
 
           <!-- feature-4 -->
-          <div class="flex flex-row-reverse items-center feature-card-wrapper">
+          <div class="flex flex-row-reverse items-center feature-card-wrapper feature-card-wrapper-reverser">
             <!-- image section -->
             <div class="p-4 feature-image-card feature-image-card-right">
               <img src="./assets/images/feature-4.png" alt="" />
@@ -589,7 +589,7 @@
                   </button>
 
                   <!-- description -->
-                  <div class="mt-16">
+                  <div class="mt-16 feature-card-info" >
                     <h3
                       class="font-space-grotesk text-3xl text-black font-bold"
                     >
@@ -606,7 +606,7 @@
           </div>
 
           <!-- feature-6 -->
-          <div class="flex flex-row-reverse items-center feature-card-wrapper">
+          <div class="flex flex-row-reverse items-center feature-card-wrapper feature-card-wrapper-reverser">
             <!-- image section -->
             <div class="p-4 feature-image-card feature-image-card-right">
               <img src="./assets/images/feature-6.png" alt="" />
@@ -634,7 +634,7 @@
                   </button>
 
                   <!-- description -->
-                  <div class="mt-16">
+                  <div class="mt-16 feature-card-info">
                     <h3
                       class="font-space-grotesk text-3xl text-black font-bold"
                     >
@@ -699,7 +699,7 @@
       <!-- featured section::end -->
 
       <!-- testimonials section::start -->
-      <section class="py-16 container testimonial-slider-wrapper ">
+      <section class="py-16 container testimonial-slider-wrapper hidden">
         <!-- title -->
         <div class="w-full flex flex-col gap-4 items-center justify-center">
           <div class="button button-title font-plus-jakarta">
@@ -1045,7 +1045,7 @@
       <!-- testimonials section::end -->
 
       <!-- articles section::start -->
-      <section class="container articles-section-wrapper py-16 ">
+      <section class="container articles-section-wrapper py-16 hidden">
         <!-- title -->
         <div class="w-full flex flex-col gap-4 items-center justify-center">
           <div class="button button-title font-plus-jakarta">
@@ -1146,7 +1146,7 @@
 
       <!-- trial section::start -->
       <section
-        class=" container trial-wrapper rounded-2xl overflow-hidden relative flex flex-col items-center justify-center"
+        class="hidden container trial-wrapper rounded-2xl overflow-hidden relative flex flex-col items-center justify-center"
       >
         <div>
           <img
