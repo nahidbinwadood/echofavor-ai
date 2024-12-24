@@ -6,9 +6,8 @@ $(document).ready(function () {
 
   // Listen for the scroll event and log the event data
   lenis.on('scroll', (e) => {
-   // console.log(e);
+    // console.log(e);
   });
-
 
   //sticky navbar:
 
@@ -222,4 +221,30 @@ $(document).ready(function () {
     }
   });
   //////////////////////////Auth page:::end //////////////////////////
+
+  // menu sidebar:
+  const menuOpenButton = document.querySelector('.hamburger-open');
+  //const menuCloseButton = document.querySelector('.hamburger-close');
+  const sidebar = document.querySelector('.responsive-sidebar');
+  const sidebarOverlay = document.querySelector('.sidebar-overlay');
+  menuOpenButton?.addEventListener('click', () => {
+    if (menuOpenButton) {
+      sidebar.classList.add('show');
+      sidebarOverlay.classList.add('show');
+      menuOpenButton.classList.add('hidden');
+    }
+  });
+  sidebarOverlay?.addEventListener('click', () => {
+    if (menuOpenButton) {
+      menuOpenButton.classList.remove('hidden');
+      sidebar.classList.remove('show');
+      sidebarOverlay.classList.remove('show');
+    }
+  });
+
+  const productSidebar = document.querySelector('.menu-item-sidebar');
+  const submenuSidebar = document.querySelector('.submenu-sidebar');
+  productSidebar?.addEventListener('click', () => {
+    submenuSidebar?.classList.toggle('show');
+  });
 });
