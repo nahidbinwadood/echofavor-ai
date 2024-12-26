@@ -2370,6 +2370,41 @@
   }
 
   /* ===contact :end=== */
+
+
+  /* ===Auth Page::start */
+  .register-main-wrapper,
+  .sign-in-main-wrapper {
+    margin-top: 88px;
+  }
+
+  .error-page {
+    padding-top: 40px !important;
+    padding-bottom: 50px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .auth-wrapper {
+    width: 100% !important;
+  }
+
+  .auth-form {
+    padding-top: 30px !important;
+  }
+
+  .auth-title-bold {
+    font-size: 28px;
+  }
+
+  .auth-title {
+    text-align: center;
+  }
+
+  .auth-input-field {
+    font-size: 16px !important;
+  }
+  /* ===Auth  Page::end */
 }
 
 /* small tablet devices */
@@ -3307,6 +3342,69 @@
   }
 
   /* ===contact :end=== */
+
+
+
+  /* ===Auth Page::start */
+  .register-main-wrapper,
+  .sign-in-main-wrapper {
+    margin-top: 88px;
+  }
+
+  .error-page {
+    padding-top: 20px !important;
+    padding-bottom: 30px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .auth-wrapper {
+    width: 100% !important;
+  }
+
+  .auth-form {
+    padding-top: 30px !important;
+  }
+
+  .auth-title-bold {
+    font-size: 28px;
+  }
+
+  .auth-title {
+    text-align: center;
+  }
+
+  .auth-input-field {
+    font-size: 16px !important;
+  }
+
+  /* ===Auth  Page::end */
+
+  /* ====Error Page::start=== */
+  .error-page-main-wrapper {
+    margin-top: 88px !important;
+  }
+
+  .error-image {
+    height: 350px;
+    margin-top: 20px !important;
+  }
+
+  .error-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .error-title {
+    font-size: 26px;
+  }
+
+  .error-description {
+    font-size: 15px;
+  }
+
+  /* ====Error Page::end=== */
 }
 
 /* large mobile devices */
@@ -4300,6 +4398,81 @@
   }
 
   /* ===contact :end=== */
+
+
+  /* ===Auth Page::start */
+  .register-main-wrapper,
+  .sign-in-main-wrapper {
+    margin-top: 88px;
+  }
+
+  .auth-wrapper {
+    max-width: 575px;
+    min-width: 480px;
+  }
+
+  .error-page {
+    padding-top: 20px !important;
+    padding-bottom: 30px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .auth-wrapper {
+    width: 100% !important;
+  }
+
+  .auth-form {
+    padding-top: 30px !important;
+  }
+
+  .auth-title-bold {
+    font-size: 26px;
+  }
+
+  .auth-title {
+    text-align: center;
+  }
+
+  .auth-input-field {
+    font-size: 16px !important;
+  }
+
+  .auth-toggle,
+  .auth-ssl-button,
+  .auth-input-label,
+  .auth-button,
+  .auth-description {
+    font-size: 14px !important;
+  }
+
+  /* ===Auth  Page::end */
+
+  /* ====Error Page::start=== */
+  .error-page-main-wrapper {
+    margin-top: 88px !important;
+  }
+
+  .error-image {
+    height: 350px;
+    margin-top: 20px !important;
+  }
+
+  .error-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .error-title {
+    font-size: 26px;
+  }
+
+  .error-description {
+    font-size: 15px;
+  }
+
+  /* ====Error Page::end=== */
 }
 
 /* mobile devices */
@@ -5262,6 +5435,81 @@
   }
 
   /* ===contact :end=== */
+
+
+  /* ===Auth Page::start */
+  .register-main-wrapper,
+  .sign-in-main-wrapper {
+    margin-top: 88px;
+  }
+
+  .auth-wrapper {
+    max-width: 479px;
+    min-width: 375px;
+  }
+
+  .error-page {
+    padding-top: 20px !important;
+    padding-bottom: 30px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .auth-wrapper {
+    width: 100% !important;
+  }
+
+  .auth-form {
+    padding-top: 30px !important;
+  }
+
+  .auth-title-bold {
+    font-size: 26px;
+  }
+
+  .auth-title {
+    text-align: center;
+  }
+
+  .auth-input-field {
+    font-size: 16px !important;
+  }
+
+  .auth-toggle,
+  .auth-ssl-button,
+  .auth-input-label,
+  .auth-button,
+  .auth-description {
+    font-size: 14px !important;
+  }
+
+  /* ===Auth Page::end */
+
+  /* ====Error Page::start=== */
+  .error-page-main-wrapper {
+    margin-top: 88px !important;
+  }
+
+  .error-image {
+    height: 350px;
+    margin-top: 20px !important;
+  }
+
+  .error-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .error-title {
+    font-size: 26px;
+  }
+
+  .error-description {
+    font-size: 15px;
+  }
+
+  /* ====Error Page::end=== */
 }
 
 /* extra small devices */
@@ -6209,5 +6457,78 @@
 
 
 
+  /* ===Auth Page::start */
+  .register-main-wrapper,
+  .sign-in-main-wrapper {
+    margin-top: 88px;
+  }
 
+  .auth-wrapper {
+    max-width: 320px;
+    min-width: 200px;
+  }
+
+  .error-page {
+    padding-top: 20px !important;
+    padding-bottom: 30px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .auth-wrapper {
+    width: 100% !important;
+  }
+
+  .auth-form {
+    padding-top: 30px !important;
+  }
+
+  .auth-title-bold {
+    font-size: 26px;
+  }
+
+  .auth-title {
+    text-align: center;
+  }
+
+  .auth-input-field {
+    font-size: 16px !important;
+  }
+
+  .auth-toggle,
+  .auth-ssl-button,
+  .auth-input-label,
+  .auth-button,
+  .auth-description {
+    font-size: 14px !important;
+  }
+
+  /* ===Auth Page::end */
+
+
+  /* ====Error Page::start=== */
+  .error-page-main-wrapper {
+    margin-top: 88px !important;
+  }
+
+  .error-image {
+    height: 250px;
+    margin-top: 20px !important;
+  }
+
+  .error-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .error-title {
+    font-size: 26px;
+  }
+
+  .error-description {
+    font-size: 15px;
+  }
+
+  /* ====Error Page::end=== */
 }
