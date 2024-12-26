@@ -527,10 +527,95 @@
 
 
   /* ===affiliate :end=== */
+
+
+
+  /* ===contact :start=== */
+  .contact-us-page-main-wrapper {
+    margin-top: 88px;
+  }
+
+  .contact-us-page-wrapper {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    gap: 60px;
+  }
+
+  .contact-us-main-title {
+    font-size: 34px;
+  }
+
+  .contact-us-description {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .contact-us-cards-main-wrapper {
+    margin-top: 12px;
+    gap: 24px;
+    align-items: stretch;
+    /* This ensures children stretch to same height */
+    height: fit-content;
+    display: flex;
+    /* Make sure flex is explicitly set */
+  }
+
+  .contact-us-card {
+    padding: 20px;
+    border-radius: 14px;
+    gap: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* Stack contents vertically */
+  }
+
+  .contact-us-card-icon svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  .contact-us-card-title {
+    font-size: 20px;
+  }
+
+  .contact-us-card-description {
+    font-size: 15px;
+  }
+
+  .contact-form {
+    width: 100%;
+    gap: 8px !important;
+  }
+
+  .contact-input {
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+
+  .contact-input svg {
+    height: 28px;
+    width: 28px;
+  }
+
+
+
+  .contact-form button {
+    padding: 16px;
+  }
+
+  /* ===contact :end=== */
 }
 
 /* large tablet devices */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .submenu li a {
+    font-size: 14px;
+  }
 
   .responsive-sidebar,
   .sidebar-overlay,
@@ -1281,6 +1366,87 @@
 
 
   /* ===affiliate :end=== */
+
+
+  /* ===contact :start=== */
+  .contact-us-page-main-wrapper {
+    margin-top: 88px;
+  }
+
+  .contact-us-page-wrapper {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    gap: 60px;
+  }
+
+  .contact-us-main-title {
+    font-size: 34px;
+  }
+
+  .contact-us-description {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .contact-us-cards-main-wrapper {
+    margin-top: 12px;
+    gap: 24px;
+    align-items: stretch;
+    /* This ensures children stretch to same height */
+    height: fit-content;
+    display: flex;
+    /* Make sure flex is explicitly set */
+  }
+
+  .contact-us-card {
+    padding: 20px;
+    border-radius: 14px;
+    gap: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* Stack contents vertically */
+  }
+
+  .contact-us-card-icon svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  .contact-us-card-title {
+    font-size: 20px;
+  }
+
+  .contact-us-card-description {
+    font-size: 15px;
+  }
+
+  .contact-form {
+    width: 100%;
+    gap: 8px !important;
+  }
+
+  .contact-input {
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+
+  .contact-input svg {
+    height: 28px;
+    width: 28px;
+  }
+
+
+
+  .contact-form button {
+    padding: 16px;
+  }
+
+  /* ===contact :end=== */
 }
 
 /* medium tablet devices */
@@ -2122,6 +2288,88 @@
 
 
   /* ===affiliate :end=== */
+
+  /* ===contact :start=== */
+  .contact-us-page-main-wrapper {
+    margin-top: 88px;
+  }
+
+  .contact-us-page-wrapper {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    gap: 40px;
+  }
+
+  .contact-us-main-title {
+    font-size: 30px;
+  }
+
+  .contact-us-description {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .contact-us-cards-main-wrapper {
+    margin-top: 12px;
+    gap: 24px;
+    align-items: stretch;
+    /* This ensures children stretch to same height */
+    height: fit-content;
+    display: flex;
+    /* Make sure flex is explicitly set */
+  }
+
+  .contact-us-card {
+    padding: 20px;
+    border-radius: 14px;
+    gap: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* Stack contents vertically */
+  }
+
+  .contact-us-card-icon svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  .contact-us-card-title {
+    font-size: 18px;
+  }
+
+  .contact-us-card-description {
+    font-size: 14px;
+  }
+
+  .contact-form {
+    width: 100%;
+    gap: 8px !important;
+  }
+
+  .contact-input {
+    padding: 10px 13px;
+    font-size: 14px;
+  }
+
+  .contact-input svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  .contact-us-label {
+    font-size: 16px !important;
+  }
+
+  .contact-form button {
+    padding: 14px;
+  }
+
+  /* ===contact :end=== */
 }
 
 /* small tablet devices */
@@ -2974,6 +3222,91 @@
 
 
   /* ===affiliate :end=== */
+
+
+
+  /* ===contact :start=== */
+  .contact-us-page-main-wrapper {
+    margin-top: 88px;
+  }
+
+  .contact-us-page-wrapper {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact-us-main-title {
+    font-size: 26px;
+  }
+
+  .contact-us-description {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .contact-us-cards-main-wrapper {
+    margin-top: 12px;
+    gap: 24px;
+    align-items: stretch;
+    /* This ensures children stretch to same height */
+    height: fit-content;
+    display: flex;
+    /* Make sure flex is explicitly set */
+  }
+
+  .contact-us-card {
+    padding: 20px;
+    border-radius: 14px;
+    gap: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* Stack contents vertically */
+  }
+
+  .contact-us-card-icon svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  .contact-us-card-title {
+    font-size: 18px;
+  }
+
+  .contact-us-card-description {
+    font-size: 14px;
+  }
+
+  .contact-form {
+    width: 100%;
+    gap: 8px !important;
+  }
+
+  .contact-input {
+    padding: 10px 13px;
+    font-size: 14px;
+  }
+
+  .contact-input svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  .contact-us-label {
+    font-size: 16px !important;
+  }
+
+  .contact-form button {
+    padding: 14px;
+  }
+
+  /* ===contact :end=== */
 }
 
 /* large mobile devices */
@@ -3888,6 +4221,85 @@
 
 
   /* ===affiliate :end=== */
+
+
+
+
+  /* ===contact :start=== */
+  .contact-us-page-main-wrapper {
+    margin-top: 88px;
+  }
+
+  .contact-us-page-wrapper {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact-us-main-title {
+    font-size: 26px;
+  }
+
+  .contact-us-description {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .contact-us-cards-main-wrapper {
+    flex-direction: column;
+    margin-top: 12px;
+    gap: 24px;
+  }
+
+  .contact-us-card {
+    padding: 20px;
+    border-radius: 14px;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .contact-us-card-icon svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  .contact-us-card-title {
+    font-size: 18px;
+  }
+
+  .contact-us-card-description {
+    font-size: 14px;
+  }
+
+  .contact-form {
+    width: 100%;
+    gap: 8px !important;
+  }
+
+  .contact-input {
+    padding: 10px 13px;
+    font-size: 14px;
+  }
+
+  .contact-input svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  .contact-us-label {
+    font-size: 16px !important;
+  }
+
+  .contact-form button {
+    padding: 12px;
+  }
+
+  /* ===contact :end=== */
 }
 
 /* mobile devices */
@@ -4557,7 +4969,7 @@
     padding-top: 32px !important;
     padding-left: 16px !important;
     padding-right: 16px !important;
-}
+  }
 
   .blog-tabs-wrapper .nav {
     gap: 12px;
@@ -4595,11 +5007,12 @@
     width: 100% !important;
   }
 
-  .blog-details-container, .blog-details-page-main-title {
+  .blog-details-container,
+  .blog-details-page-main-title {
     padding-top: 24px !important;
     padding-left: 16px !important;
     padding-right: 16px !important;
-}
+  }
 
   .blog-details-banner {
     height: 300px;
@@ -4694,7 +5107,7 @@
     padding-bottom: 30px;
     padding-left: 16px !important;
     padding-right: 16px !important;
-}
+  }
 
   .affiliate-title {
     font-size: 26px;
