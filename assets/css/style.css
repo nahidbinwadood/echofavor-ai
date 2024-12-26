@@ -84,7 +84,9 @@ body {
   max-width: 1536px;
   margin: 0 auto;
 }
-
+input {
+  background: white;
+}
 footer p {
   color: #fff;
 }
@@ -129,12 +131,11 @@ footer p {
   /* Expand the underline on hover */
 }
 
-
 .menu-item {
   position: relative;
 }
 
-.menu-item>a {
+.menu-item > a {
   text-decoration: none;
   display: block;
   cursor: pointer;
@@ -930,11 +931,9 @@ footer p {
   border-bottom: 1px solid #d4d4d8;
   font-size: 1.125rem !important;
   line-height: 1.75rem !important;
-
 }
 
 .pricing-accordion-content td:first-child {
-
   width: 200px;
   font-weight: 500;
 }
@@ -946,7 +945,6 @@ footer p {
 
 /* Mobile Styles (320px+) */
 @media screen and (min-width: 320px) {
-
 }
 
 /* Tablet Styles (768px+) */
@@ -1305,7 +1303,7 @@ footer p {
   color: transparent;
 }
 
-.auth-input-field:placeholder-shown+.auth-input-label {
+.auth-input-field:placeholder-shown + .auth-input-label {
   font-size: 1rem;
   color: #6b7280;
   top: 0.625rem;
@@ -1314,7 +1312,7 @@ footer p {
 }
 
 /* Focused input styling */
-.auth-input-field:focus+.auth-input-label {
+.auth-input-field:focus + .auth-input-label {
   font-size: 14px;
   color: var(--primary--color);
   padding: 0 4px;

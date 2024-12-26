@@ -134,9 +134,11 @@
   .feature-card-left {
     padding-right: 32px;
   }
-.trail-section-main-wrapper{
-  padding: 0 32px;
-}
+
+  .trail-section-main-wrapper {
+    padding: 0 32px;
+  }
+
   .trial-wrapper {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -460,7 +462,7 @@
   .affiliate-banner-bg {
     max-width: 500px;
     overflow: hidden;
-}
+  }
 
   .affiliate-banner-bg img {
     height: 100%;
@@ -486,7 +488,7 @@
     padding-right: 16px !important;
     padding-top: 50px !important;
     padding-bottom: 30px !important;
-}
+  }
 
   .affiliate-how-it-works-title,
   .affiliate-faq-title h3 {
@@ -508,7 +510,7 @@
     padding-right: 16px !important;
     padding-top: 50px !important;
     padding-bottom: 20px !important;
-}
+  }
 
   .affiliate-faq {
     margin-top: 20px !important;
@@ -1214,7 +1216,7 @@
   .affiliate-banner-bg {
     max-width: 450px;
     overflow: hidden;
-}
+  }
 
   .affiliate-banner-bg img {
     height: 100%;
@@ -4018,7 +4020,7 @@
 
   /* footer start */
   .footer {
-    padding: 0 12px !important;
+    padding: 0 16px !important;
   }
 
   .footer-top-section {
@@ -4186,7 +4188,7 @@
   }
 
   .hero-video-main-wrapper {
-    margin: 0 16px;
+    margin: 0 24px;
   }
 
   /* features:Start */
@@ -4314,7 +4316,7 @@
 
   /* blog start */
   .articles-section-main-wrapper {
-    padding: 0 16px;
+    padding: 0 24px;
     margin-top: 40px;
   }
 
@@ -4355,7 +4357,7 @@
 
   /* trial start */
   .trail-section-main-wrapper {
-    padding: 0 16px;
+    padding: 0 24px;
   }
 
   .trial-wrapper {
@@ -4396,8 +4398,8 @@
   }
 
   .pricing-section-wrapper {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
   }
 
   .pricing-section-wrapper {
@@ -4481,7 +4483,7 @@
   }
 
   .pricing-accordion-wrapper {
-    padding: 0 16px !important;
+    padding: 0 12px !important;
   }
 
   .pricing-accordion-header {
@@ -4526,8 +4528,8 @@
   .blog-page-main-wrapper {
     padding-top: 40px;
     text-align: center;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
   }
 
   .blog-search-wrapper {
@@ -4553,9 +4555,9 @@
 
   .blog-page-tabs-wrapper {
     padding-top: 32px !important;
-    padding-left: 24px !important;
-    padding-right: 24px !important;
-  }
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
 
   .blog-tabs-wrapper .nav {
     gap: 12px;
@@ -4593,12 +4595,11 @@
     width: 100% !important;
   }
 
-  .blog-details-container,
-  .blog-details-page-main-title {
+  .blog-details-container, .blog-details-page-main-title {
     padding-top: 24px !important;
-    padding-left: 24px !important;
-    padding-right: 24px !important;
-  }
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
 
   .blog-details-banner {
     height: 300px;
@@ -4691,9 +4692,9 @@
     flex-direction: column;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 24px !important;
-    padding-right: 24px !important;
-  }
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
 
   .affiliate-title {
     font-size: 26px;
@@ -4705,7 +4706,7 @@
   }
 
   .affiliate-banner-bg {
-    max-height: 300px;
+    max-width: 300px;
     overflow: hidden;
   }
 
@@ -4771,6 +4772,83 @@
 
 
   /* ===affiliate :end=== */
+
+
+  /* ===contact :start=== */
+  .contact-us-page-main-wrapper {
+    margin-top: 88px;
+  }
+
+  .contact-us-page-wrapper {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact-us-main-title {
+    font-size: 26px;
+  }
+
+  .contact-us-description {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .contact-us-cards-main-wrapper {
+    flex-direction: column;
+    margin-top: 12px;
+    gap: 24px;
+  }
+
+  .contact-us-card {
+    padding: 20px;
+    border-radius: 14px;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .contact-us-card-icon svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  .contact-us-card-title {
+    font-size: 18px;
+  }
+
+  .contact-us-card-description {
+    font-size: 14px;
+  }
+
+  .contact-form {
+    width: 100%;
+    gap: 8px !important;
+  }
+
+  .contact-input {
+    padding: 10px 13px;
+    font-size: 14px;
+  }
+
+  .contact-input svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  .contact-us-label {
+    font-size: 16px !important;
+  }
+
+  .contact-form button {
+    padding: 12px;
+  }
+
+  /* ===contact :end=== */
 }
 
 /* extra small devices */
@@ -5637,6 +5715,84 @@
 
 
   /* ===affiliate :end=== */
+
+
+
+  /* ===contact :start=== */
+  .contact-us-page-main-wrapper {
+    margin-top: 88px;
+  }
+
+  .contact-us-page-wrapper {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact-us-main-title {
+    font-size: 26px;
+  }
+
+  .contact-us-description {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .contact-us-cards-main-wrapper {
+    flex-direction: column;
+    margin-top: 12px;
+    gap: 24px;
+  }
+
+  .contact-us-card {
+    padding: 20px;
+    border-radius: 14px;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .contact-us-card-icon svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  .contact-us-card-title {
+    font-size: 18px;
+  }
+
+  .contact-us-card-description {
+    font-size: 14px;
+  }
+
+  .contact-form {
+    width: 100%;
+    gap: 8px !important;
+  }
+
+  .contact-input {
+    padding: 10px 13px;
+    font-size: 14px;
+  }
+
+  .contact-input svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  .contact-us-label {
+    font-size: 16px !important;
+  }
+
+  .contact-form button {
+    padding: 12px;
+  }
+
+  /* ===contact :end=== */
 
 
 
