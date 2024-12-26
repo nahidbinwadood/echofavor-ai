@@ -38,52 +38,156 @@
         <div>
           <ul class="flex items-center gap-8 text-lg font-medium nav_links">
             <li>
-              <a href="index.html">Home</a>
+              <a href="index.html" class="navlink">Home</a>
             </li>
             <li>
-              <a href="pricing.html">Pricing</a>
+              <a href="pricing.html" class="navlink">Pricing</a>
             </li>
             <li class="menu-item">
-              <a class="cursor-pointer">Product</a>
+              <a class="cursor-pointer navlink">Product</a>
               <ul class="submenu">
                 <li><a href="#">For individual</a></li>
                 <li><a href="#">For business</a></li>
               </ul>
             </li>
             <li>
-              <a href="blog.html" class="navlink_active">Blog</a>
+              <a href="blog.html" class="navlink navlink_active">Blog</a>
             </li>
             <li>
-              <a href="affiliate.html">Affiliate</a>
+              <a href="affiliate.html" class="navlink">Affiliate</a>
             </li>
             <li>
-              <a href="contact.html">Contact Us</a>
+              <a href="contact.html" class="navlink">Contact Us</a>
             </li>
           </ul>
         </div>
 
         <!-- button -->
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 nav_cta_buttons">
           <a href="register.html" class="button button-white">Register</a>
           <a href="sign-in.html" class="button button-transparent"
             >Start for Free</a
           >
         </div>
+
+        <!-- menu hamburger -->
+        <div class="menu-buttons">
+          <!-- open menu -->
+          <div class="hamburger-open">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="24"
+              height="24"
+              x="0"
+              y="0"
+              viewBox="0 0 384 384"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              class=""
+            >
+              <g>
+                <path
+                  d="M368 154.668H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zM368 32H16C7.168 32 0 24.832 0 16S7.168 0 16 0h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zM368 277.332H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0"
+                  fill="#ffffff"
+                  opacity="1"
+                  data-original="#000000"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- menu sidebar -->
+        <div class="responsive-sidebar">
+          <!-- logo -->
+          <div class="w-full flex items-center justify-center">
+            <a href="index.html"
+              ><img
+                class="responsive-sidebar-logo"
+                src="./assets/images/logo.svg"
+                alt=""
+            /></a>
+          </div>
+
+          <!-- responsive navLinks -->
+          <div class="responsive-navLinks">
+            <ul
+              class="flex items-center gap-8 text-lg font-medium nav_links_sidebar"
+            >
+              <li>
+                <a href="index.html" class="navlink_active">Home</a>
+              </li>
+              <li>
+                <a href="pricing.html">Pricing</a>
+              </li>
+              <li class="menu-item-sidebar">
+                <a class="cursor-pointer">Product</a>
+                <div class="menu-item-sidebar-arrow">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="20"
+                    height="20"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 128 128"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                    class=""
+                  >
+                    <g>
+                      <path
+                        d="M64 88a3.988 3.988 0 0 1-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656s4.094-1.563 5.656 0L64 78.344l37.172-37.172c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-40 40A3.988 3.988 0 0 1 64 88z"
+                        fill="#ffffff"
+                        opacity="1"
+                        data-original="#000000"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+              </li>
+              <ul class="submenu-sidebar">
+                <li><a href="#">For individual</a></li>
+                <li><a href="#">For business</a></li>
+              </ul>
+              <li>
+                <a href="blog.html">Blog</a>
+              </li>
+              <li>
+                <a href="affiliate.html">Affiliate</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <!-- button -->
+            <div class="nav_cta_buttons_sidebar">
+              <a href="register.html" class="sidebar-btn white">Register</a>
+              <a href="sign-in.html" class="sidebar-btn transparent"
+                >Start for Free</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-overlay"></div>
       </nav>
     </header>
     <!-- main -->
     <main class="blog-details-page-main-wrapper">
       <!-- blog details title section::start -->
-      <section class="pt-20">
+      <section class="pt-20 blog-details-page-wrapper">
         <!-- title -->
-        <div class="w-full flex flex-col gap-4 items-center justify-center">
+        <div class="w-full flex flex-col gap-4 items-center justify-center blog-details-page-main-title">
           <div class="button button-title font-plus-jakarta">
             <span class="font-normal">Product updates</span>
           </div>
           <div>
             <h2
               style="width: 70%; margin: 0 auto"
-              class="primary-title text-center"
+              class="primary-title text-center blog-details-page-title"
             >
               Zoom Transcription: How To Transcribe a Meeting With One Simple
               Too
@@ -104,7 +208,7 @@
       <!-- blog details title section::end -->
 
       <!-- blog details section::start -->
-      <section class="pt-16 container overflow-hidden">
+      <section class="pt-16 container overflow-hidden blog-details-container">
         <!-- banner -->
         <div class="blog-details-banner">
           <img
@@ -115,7 +219,7 @@
         </div>
 
         <!-- details -->
-        <div class="mt-16">
+        <div class="mt-16 blog-details-description-wrapper">
           <p class="blog-details-description">
             As artificial intelligence (AI) continues to evolve, it’s
             transforming industries in ways we couldn’t have imagined just a few
@@ -129,7 +233,7 @@
           </p>
 
           <!-- title with details -->
-          <div class="mt-10">
+          <div class="mt-10 blog-details-with-title-wrapper">
             <h3 class="text-black font-plus-jakarta text-xl font-semibold">
               1. Boosting Efficiency by Automating Repetitive Tasks
             </h3>
@@ -159,7 +263,7 @@
               support.
             </p>
           </div>
-          <div class="mt-10">
+          <div class="mt-10 blog-details-with-title-wrapper">
             <h3 class="text-black font-plus-jakarta text-xl font-semibold">
               1. Boosting Efficiency by Automating Repetitive Tasks
             </h3>
@@ -194,90 +298,97 @@
       <!-- blog details section::end -->
 
       <!-- newsletter -->
-      <section class="container">
-        <div
-          class="blog-details-page my-20 rounded-2xl py-16 flex flex-col items-center justify-center gap-10 relative"
-        >
-          <div class="text-center">
-            <h5 class="font-semibold text-3xl">What can I help with?</h5>
-            <p class="opacity-50 pt-3">
-              Get instant answers with AI powered search of Have a question?
-            </p>
-          </div>
-
-          <!-- form -->
-
-          <div class="bg-white flex items-center gap-3 rounded-full px-6 py-1">
-            <div>
-              <img src="./assets/images/mini-logo.png" alt="" />
+      <section class="blog-details-newsletter-main-wrapper">
+        <section class="container blog-details-newsletter-warpper">
+          <div
+            class="blog-details-page my-20 rounded-2xl py-16 flex flex-col items-center justify-center gap-10 relative"
+          >
+            <div class="text-center">
+              <h5 class="font-semibold text-3xl blog-details-newsletter-title">What can I help with?</h5>
+              <p class="opacity-50 pt-3 blog-details-newsletter-description">
+                Get instant answers with AI powered search of Have a question?
+              </p>
             </div>
-            <form style="z-index: 1" class="flex icon gap-4 w-full">
-              <input
-                placeholder="What's in your minds"
-                class="outline-none border-none w-full details-filter-input"
-                type="text"
-                name="details-filter"
-                id="details-filter"
-              />
-              <button
-                type="submit"
-                style="background-color: #081839"
-                class="details-filter-input-btn"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
+
+            <!-- form -->
+
+            <div
+              class="bg-white flex items-center gap-3 rounded-full px-6 py-1 blog-details-newsletter-form"
+            >
+              <div class="blog-details-newsletter-form-logo">
+                <img src="./assets/images/mini-logo.png" alt="" />
+              </div>
+              <form style="z-index: 1" class="flex icon gap-4 w-full">
+                <input
+                  placeholder="What's in your minds"
+                  class="outline-none border-none w-full details-filter-input"
+                  type="text"
+                  name="details-filter"
+                  id="details-filter"
+                />
+                <button
+                  type="submit"
+                  style="background-color: #081839"
+                  class="details-filter-input-btn"
                 >
-                  <g clip-path="url(#clip0_8820_56471)">
-                    <mask
-                      id="mask0_8820_56471"
-                      style="mask-type: luminance"
-                      maskUnits="userSpaceOnUse"
-                      x="0"
-                      y="0"
-                      width="32"
-                      height="32"
-                    >
-                      <path d="M0 0H32V32H0V0Z" fill="white" />
-                    </mask>
-                    <g mask="url(#mask0_8820_56471)">
-                      <path
-                        d="M13 17L3 13L25 5L17 27L13 17ZM13 17L18 12"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-linejoin="round"
-                      />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_8820_56471)">
+                      <mask
+                        id="mask0_8820_56471"
+                        style="mask-type: luminance"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="32"
+                        height="32"
+                      >
+                        <path d="M0 0H32V32H0V0Z" fill="white" />
+                      </mask>
+                      <g mask="url(#mask0_8820_56471)">
+                        <path
+                          d="M13 17L3 13L25 5L17 27L13 17ZM13 17L18 12"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linejoin="round"
+                        />
+                      </g>
                     </g>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_8820_56471">
-                      <rect width="32" height="32" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </button>
-            </form>
+                    <defs>
+                      <clipPath id="clip0_8820_56471">
+                        <rect width="32" height="32" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <!-- bg -->
+            <div class="details-bg">
+              <img src="./assets/images/details-bg.png" alt="" />
+            </div>
           </div>
-          <!-- bg -->
-          <div class="details-bg">
-            <img src="./assets/images/details-bg.png" alt="" />
-          </div>
-        </div>
+        </section>
       </section>
     </main>
+
     <!-- footer -->
     <footer class="footer">
-      <section class="container py-16 grid grid-cols-6 gap-12">
+      <section
+        class="container py-16 grid grid-cols-6 gap-12 footer-top-section"
+      >
         <!-- logo section -->
         <div class="col-span-2">
           <div>
-            <img src="./assets/images/logo.svg" alt="" />
+            <img class="footer-logo" src="./assets/images/logo.svg" alt="" />
           </div>
           <p
-            class="mt-4 font-plus-jakarta"
+            class="mt-4 font-plus-jakarta footer-logo-description"
             style="width: 80%; line-height: 180%"
           >
             Unleashing the Power of Creativity and Wordsmithing with ai Our
@@ -288,13 +399,13 @@
         <!-- Pages -->
         <div>
           <h4 class="footer-item-title">ecohofavor AI</h4>
-          <div class="mt-3">
+          <div class="mt-3 footer-item-wrapper">
             <ul class="flex flex-col gap-2">
               <li>
-                <a href="price.html" class="footer-item">Pricing</a>
+                <a href="pricing.html" class="footer-item">Pricing</a>
               </li>
               <li>
-                <a href="index.html" class="footer-item">Blog</a>
+                <a href="blog.html" class="footer-item">Blog</a>
               </li>
             </ul>
           </div>
@@ -303,7 +414,7 @@
         <!-- Pages -->
         <div>
           <h4 class="footer-item-title">Support</h4>
-          <div class="mt-3">
+          <div class="mt-3 footer-item-wrapper">
             <ul class="flex flex-col gap-2">
               <li>
                 <a href="index.html" class="footer-item">Help Center</a>
@@ -318,22 +429,22 @@
         </div>
 
         <!-- Updates -->
-        <div class="col-span-2">
+        <div class="col-span-2 footer-form-main-wrapper">
           <h4 class="footer-item-title">Updates</h4>
-          <p class="mt-3">
+          <p class="mt-3 footer-item-wrapper footer-item-description">
             Stay in the loop with updates on the AI ecosystem, company news, and
             more.
           </p>
 
           <!-- form -->
-          <div class="mt-8">
+          <div class="mt-8 hero-filter">
             <h4 class="footer-form-title">Sign up for ecohofavor AI updates</h4>
 
             <!-- form input -->
             <div
-              class="bg-white flex items-center gap-3 rounded-full pt-1 pr-1 pb-1 pl-6 mt-3"
+              class="bg-white flex items-center gap-3 rounded-full pt-1 pr-1 pb-1 pl-6 mt-3 footer-form"
             >
-              <form style="z-index: 1" class="flex icon gap-4 w-full">
+              <form style="z-index: 1" class="flex items-center gap-4 w-full">
                 <input
                   placeholder="Enter Your email"
                   class="outline-none border-none w-full footer-input"
@@ -355,55 +466,60 @@
       </section>
 
       <!-- earning -->
-      <section
-        class="my-20 footer-earning-wrapper container flex items-center justify-between overflow-hidden"
-      >
-        <div>
-          <h4 class="footer-earning-title">
-            Earn 30% commission as a Echofai Affiliate Partner
-          </h4>
-          <p class="mt-2 footer-earning-description">
-            Just refer your friends, followers, and customers to earn 30% in
-            recurring commissions for a lifetime!
-          </p>
-        </div>
-        <div>
-          <a href="" class="flex items-center gap-2 footer-earning-button">
-            <span>Start Earning</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
+      <section class="earning-footer-main-wrapper">
+        <section
+          class="my-20 container footer-earning-wrapper flex items-center justify-between overflow-hidden"
+        >
+          <div style="z-index: 10">
+            <h4 class="footer-earning-title">
+              Earn 30% commission as a Echofai Affiliate Partner
+            </h4>
+            <p class="mt-2 footer-earning-description">
+              Just refer your friends, followers, and customers to earn 30% in
+              recurring commissions for a lifetime!
+            </p>
+          </div>
+          <div style="z-index: 10">
+            <a
+              href="sign-in.html"
+              class="flex items-center gap-2 footer-earning-button"
             >
-              <path
-                d="M14.4301 5.92969L20.5001 11.9997L14.4301 18.0697"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M3.5 12H20.33"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-        </div>
+              <span>Start Earning</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M14.4301 5.92969L20.5001 11.9997L14.4301 18.0697"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3.5 12H20.33"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
 
-        <!-- images -->
-        <div class="footer-earning-image-wrapper-left">
-          <img src="./assets/images/3.png" alt="" />
-        </div>
-        <div class="footer-earning-image-wrapper-right">
-          <img src="./assets/images/3.png" alt="" />
-        </div>
+          <!-- images -->
+          <div class="footer-earning-image-wrapper-left">
+            <img src="./assets/images/3.png" alt="" />
+          </div>
+          <div class="footer-earning-image-wrapper-right">
+            <img src="./assets/images/3.png" alt="" />
+          </div>
+        </section>
       </section>
 
       <!-- footer bottom -->
