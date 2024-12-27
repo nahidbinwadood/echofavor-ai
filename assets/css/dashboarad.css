@@ -159,7 +159,6 @@ body {
 
 /* Fallback for browsers that don't support custom scrollbars */
 @supports not (scrollbar-width: thin) {
-
   .dashboard-main-content-wrapper,
   .dashboard-conversation-container {
     /* Minimal fallback styling */
@@ -265,11 +264,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  z-index: 20;
+  z-index: -20;
 }
 
 .dashboard-chat-item-option-wrapper.active {
   opacity: 100;
+  z-index: 20;
   transform: translateY(-30%);
 }
 
@@ -333,7 +333,7 @@ body {
   justify-content: space-between;
 }
 
-.space-y-2>*+* {
+.space-y-2 > * + * {
   margin-top: 0.5rem;
 }
 
@@ -526,11 +526,10 @@ body {
   z-index: -10;
 }
 
-
 .upload-files-main-wrapper.show {
   opacity: 1;
   z-index: 1;
-  transform: translateY(-10px)
+  transform: translateY(-10px);
 }
 
 .upload-files-wrapper-indicator {
@@ -1254,12 +1253,14 @@ body {
   transition: all 0.3s ease;
 }
 
-.subscription-cancel-reason-input:checked+.custom-radio {
+.subscription-cancel-reason-input:checked + .custom-radio {
   border: 1px solid var(--primary--color);
   background: var(--primary--color);
 }
 
-.subscription-cancel-reason-input:checked+.custom-radio .custom-radio-indicator {
+.subscription-cancel-reason-input:checked
+  + .custom-radio
+  .custom-radio-indicator {
   opacity: 1;
 }
 
@@ -1309,7 +1310,7 @@ body {
   transition: opacity 0.5s linear;
 }
 
-.dashboard-drawer-wrapper.show+.drawer-backdrop {
+.dashboard-drawer-wrapper.show + .drawer-backdrop {
   opacity: 1;
   pointer-events: auto;
 }
@@ -1525,7 +1526,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.custom-checkbox-input:checked+.custom-checkbox {
+.custom-checkbox-input:checked + .custom-checkbox {
   background-color: #0075ff;
   border: 1px solid #0075ff;
 }
@@ -1665,8 +1666,6 @@ body {
 
 /* share::end */
 
-
-
 /* upload drawer:start */
 .upload-dashboard-drawer-wrapper {
   position: fixed;
@@ -1703,7 +1702,7 @@ body {
   transition: opacity 0.5s linear;
 }
 
-.upload-dashboard-drawer-wrapper.show+.upload-drawer-backdrop {
+.upload-dashboard-drawer-wrapper.show + .upload-drawer-backdrop {
   opacity: 1;
   pointer-events: auto;
 }
@@ -1739,9 +1738,9 @@ body {
 
 .uploaded-file-item-title {
   overflow: hidden;
-  color: var(--30-secondary-01, #8E63F7);
+  color: var(--30-secondary-01, #8e63f7);
   text-overflow: ellipsis;
-  font-family: "Plus Jakarta Sans";
+  font-family: 'Plus Jakarta Sans';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1756,7 +1755,7 @@ body {
 
 .uploaded-file-item-info {
   color: #081839;
-  font-family: "Plus Jakarta Sans";
+  font-family: 'Plus Jakarta Sans';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -1816,7 +1815,6 @@ body {
   color: #4a5568;
 }
 
-
 .dashboard-drawer-upload-wrapper {
   padding: 32px 24px;
   min-height: calc(100vh - 470px);
@@ -1843,8 +1841,8 @@ body {
 }
 
 .upload-file-details-info {
-  border-top: 1px solid #DFE1E6;
-  border-bottom: 1px solid #DFE1E6;
+  border-top: 1px solid #dfe1e6;
+  border-bottom: 1px solid #dfe1e6;
   padding: 12px 0;
   margin-bottom: 20px;
 }

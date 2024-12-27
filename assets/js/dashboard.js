@@ -55,7 +55,7 @@ $(document).ready(function () {
   });
 
   //drawer:
-  const contextFolderBtn = document.querySelector('.context-folder-btn');
+  const contextFolderBtns = document.querySelectorAll('.context-folder-btn');
   const contextDrawer = document.querySelector('.dashboard-drawer-wrapper');
   const backdrop = document.querySelector('.drawer-backdrop');
   const dashboardDrawerBottomCloseBtn = document.querySelector(
@@ -65,14 +65,16 @@ $(document).ready(function () {
     '.dashboard-drawer-wrapper-close'
   );
 
-  contextFolderBtn?.addEventListener('click', () => {
-    if (contextDrawer) {
-      contextDrawer.classList.toggle('show');
-      contextDrawer.setAttribute(
-        'aria-hidden',
-        contextDrawer.classList.contains('show') ? 'false' : 'true'
-      );
-    }
+  contextFolderBtns?.forEach((contextFolderBtn) => {
+    contextFolderBtn?.addEventListener('click', () => {
+      if (contextDrawer) {
+        contextDrawer.classList.toggle('show');
+        contextDrawer.setAttribute(
+          'aria-hidden',
+          contextDrawer.classList.contains('show') ? 'false' : 'true'
+        );
+      }
+    });
   });
 
   backdrop?.addEventListener('click', () => {
@@ -483,16 +485,22 @@ $(document).ready(function () {
     uploadDrawerWrapper.classList.remove('show');
   });
 
-  const topCloseButtonUploadWrapper=document.querySelector('.dashboard-drawer-upload-wrapper-close')
-  const bottomCloseButtonUploadWrapper=document.querySelector('.dashboard-upload-drawer-close-button')
+  const topCloseButtonUploadWrapper = document.querySelector(
+    '.dashboard-drawer-upload-wrapper-close'
+  );
+  const bottomCloseButtonUploadWrapper = document.querySelector(
+    '.dashboard-upload-drawer-close-button'
+  );
 
-  const uploadDrawerCloseButtons=[topCloseButtonUploadWrapper, bottomCloseButtonUploadWrapper]
-  uploadDrawerCloseButtons?.forEach((btn)=>{
+  const uploadDrawerCloseButtons = [
+    topCloseButtonUploadWrapper,
+    bottomCloseButtonUploadWrapper,
+  ];
+  uploadDrawerCloseButtons?.forEach((btn) => {
     btn?.addEventListener('click', () => {
       uploadDrawerWrapper.classList.remove('show');
-    })
-  })
-
+    });
+  });
 
   //upload
 
@@ -742,5 +750,49 @@ $(document).ready(function () {
     }
   });
 
-  
+  // dashboard responsive sidebar:
+  const responsiveToggleButton = document.querySelector(
+    '.dashboard-responsive-sidebar--toggle--btn'
+  );
+  const responsiveToggleButtonSvg = document.querySelector(
+    '.dashboard-responsive-sidebar--toggle--btn-svg'
+  );
+  const responsiveSidebar = document.querySelector(
+    '.dashboard-responsive-sidebar-main-wrapper'
+  );
+  const dashboardMainContentMainWrapper = document.querySelector(
+    '.dashboard-container'
+  );
+
+  responsiveToggleButton?.addEventListener('click', () => {
+    showResponsiveSidebar();
+  });
+
+  dashboardMainContentMainWrapper?.addEventListener('click', () => {
+    hideResponsiveSidebar();
+  });
+
+  function hideResponsiveSidebar() {
+    responsiveToggleButtonSvg?.classList.remove('show');
+    responsiveSidebar?.classList.remove('show');
+    dashboardMainContentMainWrapper?.classList.remove('blur');
+  }
+  function showResponsiveSidebar() {
+    responsiveSidebar?.classList.toggle('show');
+    dashboardMainContentMainWrapper?.classList.toggle('blur');
+    responsiveToggleButtonSvg?.classList.toggle('show');
+  }
+
+  const responsiveDashboardSidebarManageItems=document.querySelectorAll('.dashboard-sidebar-manage-item')
+  responsiveDashboardSidebarManageItems?.forEach((button)=>{
+    button?.addEventListener('click', ()=>{
+      hideResponsiveSidebar()
+    })
+  })
+  const newChatButtons=document.querySelectorAll('.new-chat-button')
+  newChatButtons.forEach((button)=>{
+    button?.addEventListener('click', ()=>{
+      hideResponsiveSidebar()
+    })
+  })
 });
