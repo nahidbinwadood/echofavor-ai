@@ -1,0 +1,312 @@
+@media only screen and (min-width: 1600px) {
+    .container {
+        max-width: 1520px;
+    }
+}
+
+/* laptop devices */
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {}
+
+/* large tablet devices */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* medium tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* small tablet devices */
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+/* large mobile devices */
+@media only screen and (min-width: 480px) and (max-width: 575px) {}
+
+/* mobile devices */
+@media only screen and (min-width: 375px) and (max-width: 479px) {
+    .dashboard-sidebar {
+        display: none;
+    }
+
+    .dashboard-container {
+        width: 100%;
+        max-height: auto;
+    }
+
+    .dashboard-header {
+        height: 75px;
+        max-height: 75px;
+        min-height: 75px;
+        width: 100%;
+        padding: 12px 24px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .dashboard-header-profile-image-container {
+        height: 40px;
+        width: 40px;
+    }
+
+    .dashboard-header-title {
+        font-size: 18px;
+
+    }
+
+    .dashboard-header-profile-container {
+        gap: 12px;
+    }
+
+    .dashboard-header-profile-info-container {
+        gap: 4px;
+    }
+
+    .dashboard-header-profile-info-container p {
+        font-size: 14px;
+    }
+
+    .dashboard-header-profile-menu {
+        width: 100%;
+        padding: 16px 24px;
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    .dashboard-main-content-wrapper {
+        height: calc(100% - 75px);
+        min-height: calc(100% - 75px);
+        max-height: fit-content !important;
+        width: 100%;
+        overflow-y: auto;
+        padding: 0 24px;
+    }
+
+    .dashboard-main-content-wrapper-homepage {
+        height: calc(100% - 75px);
+        min-height: calc(100% - 75px);
+        max-height: fit-content !important;
+        gap: 60px;
+    }
+
+    .dashboard-home-main-title {
+        font-size: 26px;
+        margin-bottom: 12px
+    }
+
+    .dashboard-home-main-description {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .dashboard-homepage-chat-input-main-wrapper {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .upload-files-main-wrapper {
+        min-width: 200px;
+        padding: 12px;
+        gap: 8px;
+        font-size: 14px;
+        transform: translateY(-20px);
+    }
+
+    .all-files-main-wrapper {
+        min-width: 300px;
+        padding: 12px;
+        left: -50%;
+        gap: 8px;
+        transform: translateY(-20px);
+        font-size: 13px;
+        max-height: 260px;
+        overflow-y: scroll;
+    }
+
+    .all-files-title {
+        font-size: 15px;
+        line-height: 154%;
+    }
+
+    .all-files-item {
+        padding: 6px;
+    }
+
+    .dashboard-select-files-select-wrapper {
+        height: 40px;
+        padding: 16px 32px;
+        gap: 9px;
+        border-radius: 24px;
+        font-size: 14px;
+    }
+
+    .dashboard-select-files-select-title-svg svg {
+        height: 24px;
+        width: 16px;
+    }
+
+    .dashboard-form-input-wrapper {
+        border-radius: 48px;
+        padding: 0 12px;
+        min-width: 200px;
+    }
+
+    .dashboard-form-input-form {
+        height: 60px;
+    }
+
+    .dashboard-textarea {
+        font-size: 14px;
+    }
+
+    .dashboard-submit-button {
+        height: 35px;
+        width: 35px;
+    }
+
+    .dashboard-submit-button svg {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+/* extra small devices */
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+    .dashboard-sidebar {
+        display: none;
+    }
+
+    .dashboard-container {
+        width: 100%;
+        max-height: auto;
+    }
+
+    .dashboard-header {
+        height: 75px;
+        max-height: 75px;
+        min-height: 75px;
+        width: 100%;
+        padding: 12px 24px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .dashboard-header-profile-image-container {
+        height: 40px;
+        width: 40px;
+    }
+
+    .dashboard-header-title {
+        font-size: 18px;
+
+    }
+
+    .dashboard-header-profile-container {
+        gap: 12px;
+    }
+
+    .dashboard-header-profile-info-container {
+        gap: 4px;
+    }
+
+    .dashboard-header-profile-info-container p {
+        font-size: 14px;
+    }
+
+    .dashboard-header-profile-menu {
+        width: 100%;
+        padding: 16px 24px;
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    .dashboard-main-content-wrapper {
+        height: calc(100% - 75px);
+        min-height: calc(100% - 75px);
+        max-height: fit-content !important;
+        width: 100%;
+        overflow-y: auto;
+        padding: 0 24px;
+    }
+
+    .dashboard-main-content-wrapper-homepage {
+        height: calc(100% - 75px);
+        min-height: calc(100% - 75px);
+        max-height: fit-content !important;
+        gap: 60px;
+    }
+
+    .dashboard-home-main-title {
+        font-size: 26px;
+        margin-bottom: 12px
+    }
+
+    .dashboard-home-main-description {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .dashboard-homepage-chat-input-main-wrapper {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .upload-files-main-wrapper {
+        min-width: 200px;
+        padding: 12px;
+        gap: 8px;
+        font-size: 14px;
+        transform: translateY(-20px);
+    }
+
+    .all-files-main-wrapper {
+        min-width: 300px;
+        padding: 12px;
+        left: -50%;
+        gap: 8px;
+        transform: translateY(-20px);
+        font-size: 13px;
+        max-height: 260px;
+        overflow-y: scroll;
+    }
+
+    .all-files-title {
+        font-size: 15px;
+        line-height: 154%;
+    }
+
+    .all-files-item {
+        padding: 6px;
+    }
+
+    .dashboard-select-files-select-wrapper {
+        height: 40px;
+        padding: 16px 32px;
+        gap: 9px;
+        border-radius: 24px;
+        font-size: 14px;
+    }
+
+    .dashboard-select-files-select-title-svg svg {
+        height: 24px;
+        width: 16px;
+    }
+
+    .dashboard-form-input-wrapper {
+        border-radius: 48px;
+        padding: 0 12px;
+        min-width: 200px;
+    }
+
+    .dashboard-form-input-form {
+        height: 60px;
+    }
+
+    .dashboard-textarea {
+        font-size: 14px;
+    }
+
+    .dashboard-submit-button {
+        height: 35px;
+        width: 35px;
+    }
+
+    .dashboard-submit-button svg {
+        height: 24px;
+        width: 24px;
+    }
+}
