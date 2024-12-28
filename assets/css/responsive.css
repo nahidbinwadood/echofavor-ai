@@ -2317,11 +2317,10 @@
     margin-top: 12px;
     gap: 24px;
     align-items: stretch;
-    /* This ensures children stretch to same height */
     height: fit-content;
     display: flex;
-    /* Make sure flex is explicitly set */
-  }
+    flex-direction: column;
+}
 
   .contact-us-card {
     padding: 20px;
