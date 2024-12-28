@@ -856,6 +856,148 @@
 
     /* chat history:end */
 
+
+
+
+    /* conversation:start */
+    .dashboard-conversation-container {
+        height: calc(100vh - 282px);
+        min-height: calc(100vh - 282px);
+        max-height: calc(100vh - 282px);
+        overflow-y: auto;
+
+    }
+
+    .dashboard-conversation {
+        margin: 0px;
+        padding: 24px 24px !important;
+        gap: 12px !important;
+    }
+
+    .user-message-container {
+        width: 60%;
+    }
+
+    .user-message-time,
+    .ai-response-date,
+    .ai-related-documents-description {
+        font-size: 18px;
+    }
+
+    .user-message,
+    .ai-response {
+        color: #000;
+        font-size: 18px;
+        margin-top: 8px;
+
+    }
+
+    .ai-response-title {
+        font-size: 20px;
+    }
+
+    .point-dot {
+        flex-shrink: 0;
+    }
+
+    .user-message-edit-btn svg,
+    .ai-reaction svg,
+    .ai-social-reaction svg {
+        height: 25px;
+        width: 25px;
+    }
+
+    .ai-chat-image {
+        height: 50px;
+        width: 50px;
+    }
+
+    .ai-response-description {
+        display: flex;
+        gap: 12px;
+        padding-left: 0px;
+    }
+
+    .ai-message-wrapper {
+        gap: 16px;
+    }
+
+    .ai-related-documents-title {
+        font-size: 20px;
+    }
+
+    .ai-response-details-links {
+        gap: 8px;
+    }
+
+    .ai-details-intent-wrapper {
+        gap: 12px;
+    }
+
+    .ai-social-reaction span {
+        font-size: 16px;
+    }
+
+    .ai-social-reaction {
+        gap: 12px;
+    }
+
+    .dashboard-conversation-chat-input-main-wrapper {
+        padding: 0 24px;
+        margin: 0px !important;
+    }
+
+    .dashboard-conversation-chat-input {
+        margin: 0px;
+        padding: 0 24px;
+        align-items: start;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .dashboard-textarea {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .dashboard-form-input-logo,
+    .dashboard-submit-button {
+        margin-top: -3px;
+    }
+
+    .dashboard-form-input-wrapper {
+
+        padding: 0 10px;
+    }
+
+    .regenerate-btn {
+        height: 40px;
+        padding: 0px 16px;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .regenerate-btn svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .dashboard-conversation-chat-input-main-wrapper {
+        background: #fff;
+        gap: 12px;
+    }
+
+    .dashboard-regenerate-btn {
+        margin-top: 12px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .dashboard-conversion-chat-main-wrapper-container {
+        width: 100% !important;
+    }
+
+    /* conversation:end */
+
 }
 
 /* medium tablet devices */
@@ -1300,6 +1442,145 @@
 
     /* chat history:end */
 
+
+    /* conversation:start */
+    .dashboard-conversation-container {
+        height: calc(100vh - 282px);
+        min-height: calc(100vh - 282px);
+        max-height: calc(100vh - 282px);
+        overflow-y: auto;
+
+    }
+
+    .dashboard-conversation {
+        margin: 0px;
+        padding: 24px 24px !important;
+        gap: 12px !important;
+    }
+
+    .user-message-container {
+        width: 60%;
+    }
+
+    .user-message-time,
+    .ai-response-date,
+    .ai-related-documents-description {
+        font-size: 16px;
+    }
+
+    .user-message,
+    .ai-response {
+        color: #000;
+        font-size: 16px;
+        margin-top: 8px;
+
+    }
+
+    .ai-response-title {
+        font-size: 18px;
+    }
+
+    .point-dot {
+        flex-shrink: 0;
+    }
+
+    .user-message-edit-btn svg,
+    .ai-reaction svg,
+    .ai-social-reaction svg {
+        height: 25px;
+        width: 25px;
+    }
+
+    .ai-chat-image {
+        height: 50px;
+        width: 50px;
+    }
+
+    .ai-response-description {
+        display: flex;
+        gap: 12px;
+        padding-left: 0px;
+    }
+
+    .ai-message-wrapper {
+        gap: 16px;
+    }
+
+    .ai-related-documents-title {
+        font-size: 18px;
+    }
+
+    .ai-response-details-links {
+        gap: 8px;
+    }
+
+    .ai-details-intent-wrapper {
+        gap: 12px;
+    }
+
+    .ai-social-reaction span {
+        font-size: 14px;
+    }
+
+    .ai-social-reaction {
+        gap: 12px;
+    }
+
+    .dashboard-conversation-chat-input-main-wrapper {
+        padding: 0 24px;
+        margin: 0px !important;
+    }
+
+    .dashboard-conversation-chat-input {
+        margin: 0px;
+        padding: 0 24px;
+        align-items: start;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .dashboard-textarea {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .dashboard-form-input-logo,
+    .dashboard-submit-button {
+        margin-top: -3px;
+    }
+
+    .dashboard-form-input-wrapper {
+
+        padding: 0 10px;
+    }
+
+    .regenerate-btn {
+        height: 40px;
+        padding: 0px 16px;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .regenerate-btn svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .dashboard-conversation-chat-input-main-wrapper {
+        background: #fff;
+        gap: 12px;
+    }
+
+    .dashboard-regenerate-btn {
+        margin-top: 12px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .dashboard-conversion-chat-main-wrapper-container {
+        width: 100% !important;
+    }
+
+    /* conversation:end */
 
 }
 
@@ -1747,6 +2028,148 @@
     }
 
     /* chat history:end */
+
+
+
+    /* conversation:start */
+    .dashboard-conversation-container {
+        height: calc(100vh - 282px);
+        min-height: calc(100vh - 282px);
+        max-height: calc(100vh - 282px);
+        overflow-y: auto;
+
+    }
+
+    .dashboard-conversation {
+        margin: 0px;
+        padding: 24px 24px !important;
+        gap: 12px !important;
+    }
+
+    .user-message-container {
+        width: 100%;
+    }
+
+    .user-message-time,
+    .ai-response-date,
+    .ai-related-documents-description {
+        font-size: 14px;
+    }
+
+    .user-message,
+    .ai-response {
+        color: #000;
+        font-size: 15px;
+        margin-top: 4px;
+
+    }
+
+    .ai-response-title {
+        font-size: 16px;
+    }
+
+    .point-dot {
+        flex-shrink: 0;
+    }
+
+    .user-message-edit-btn svg,
+    .ai-reaction svg,
+    .ai-social-reaction svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .ai-chat-image {
+        height: 40px;
+        width: 40px;
+    }
+
+    .ai-response-description {
+        display: flex;
+        gap: 12px;
+        padding-left: 0px;
+    }
+
+    .ai-message-wrapper {
+        gap: 10px;
+    }
+
+    .ai-related-documents-title {
+        font-size: 16px;
+    }
+
+    .ai-response-details-links {
+        gap: 8px;
+    }
+
+    .ai-details-intent-wrapper {
+        gap: 12px;
+    }
+
+    .ai-social-reaction span {
+        font-size: 14px;
+    }
+
+    .ai-social-reaction {
+        gap: 12px;
+    }
+
+    .dashboard-conversation-chat-input-main-wrapper {
+        padding: 0 24px;
+        margin: 0px !important;
+    }
+
+    .dashboard-conversation-chat-input {
+        margin: 0px;
+        padding: 0 24px;
+        align-items: start;
+        justify-content: center;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .dashboard-textarea {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .dashboard-form-input-logo,
+    .dashboard-submit-button {
+        margin-top: 3px;
+    }
+
+    .dashboard-form-input-wrapper {
+        border-radius: 24px;
+        padding: 0 10px;
+    }
+
+    .regenerate-btn {
+        height: 40px;
+        padding: 0px 16px;
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .regenerate-btn svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .dashboard-conversation-chat-input-main-wrapper {
+        background: #fff;
+        gap: 12px;
+    }
+
+    .dashboard-regenerate-btn {
+        margin-top: 12px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .dashboard-conversion-chat-main-wrapper-container {
+        width: 100% !important;
+    }
+
+    /* conversation:end */
 }
 
 /* large mobile devices */
@@ -2192,6 +2615,148 @@
     }
 
     /* chat history:end */
+
+
+
+    /* conversation:start */
+    .dashboard-conversation-container {
+        height: calc(100vh - 282px);
+        min-height: calc(100vh - 282px);
+        max-height: calc(100vh - 282px);
+        overflow-y: auto;
+
+    }
+
+    .dashboard-conversation {
+        margin: 0px;
+        padding: 24px 24px !important;
+        gap: 12px !important;
+    }
+
+    .user-message-container {
+        width: 100%;
+    }
+
+    .user-message-time,
+    .ai-response-date,
+    .ai-related-documents-description {
+        font-size: 14px;
+    }
+
+    .user-message,
+    .ai-response {
+        color: #000;
+        font-size: 15px;
+        margin-top: 4px;
+
+    }
+
+    .ai-response-title {
+        font-size: 16px;
+    }
+
+    .point-dot {
+        flex-shrink: 0;
+    }
+
+    .user-message-edit-btn svg,
+    .ai-reaction svg,
+    .ai-social-reaction svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .ai-chat-image {
+        height: 40px;
+        width: 40px;
+    }
+
+    .ai-response-description {
+        display: flex;
+        gap: 12px;
+        padding-left: 0px;
+    }
+
+    .ai-message-wrapper {
+        gap: 10px;
+    }
+
+    .ai-related-documents-title {
+        font-size: 16px;
+    }
+
+    .ai-response-details-links {
+        gap: 8px;
+    }
+
+    .ai-details-intent-wrapper {
+        gap: 12px;
+    }
+
+    .ai-social-reaction span {
+        font-size: 14px;
+    }
+
+    .ai-social-reaction {
+        gap: 12px;
+    }
+
+    .dashboard-conversation-chat-input-main-wrapper {
+        padding: 0 24px;
+        margin: 0 !important;
+    }
+
+    .dashboard-conversation-chat-input {
+        margin: 0px;
+        padding: 0 24px;
+        align-items: start;
+        justify-content: center;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .dashboard-textarea {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .dashboard-form-input-logo,
+    .dashboard-submit-button {
+        margin-top: 3px;
+    }
+
+    .dashboard-form-input-wrapper {
+        border-radius: 24px;
+        padding: 0 10px;
+    }
+
+    .regenerate-btn {
+        height: 40px;
+        padding: 0px 16px;
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .regenerate-btn svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .dashboard-conversation-chat-input-main-wrapper {
+        background: #fff;
+        gap: 12px;
+    }
+
+    .dashboard-regenerate-btn {
+        margin-top: 12px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .dashboard-conversion-chat-main-wrapper-container {
+        width: 100% !important;
+    }
+
+    /* conversation:end */
 }
 
 /* mobile devices */
@@ -2635,6 +3200,148 @@
     }
 
     /* chat history:end */
+
+
+
+    /* conversation:start */
+    .dashboard-conversation-container {
+        height: calc(100vh - 282px);
+        min-height: calc(100vh - 282px);
+        max-height: calc(100vh - 282px);
+        overflow-y: auto;
+
+    }
+
+    .dashboard-conversation {
+        margin: 0px;
+        padding: 24px 24px !important;
+        gap: 12px !important;
+    }
+
+    .user-message-container {
+        width: 100%;
+    }
+
+    .user-message-time,
+    .ai-response-date,
+    .ai-related-documents-description {
+        font-size: 14px;
+    }
+
+    .user-message,
+    .ai-response {
+        color: #000;
+        font-size: 15px;
+        margin-top: 4px;
+
+    }
+
+    .ai-response-title {
+        font-size: 16px;
+    }
+
+    .point-dot {
+        flex-shrink: 0;
+    }
+
+    .user-message-edit-btn svg,
+    .ai-reaction svg,
+    .ai-social-reaction svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .ai-chat-image {
+        height: 40px;
+        width: 40px;
+    }
+
+    .ai-response-description {
+        display: flex;
+        gap: 12px;
+        padding-left: 0px;
+    }
+
+    .ai-message-wrapper {
+        gap: 10px;
+    }
+
+    .ai-related-documents-title {
+        font-size: 16px;
+    }
+
+    .ai-response-details-links {
+        gap: 8px;
+    }
+
+    .ai-details-intent-wrapper {
+        gap: 12px;
+    }
+
+    .ai-social-reaction span {
+        font-size: 14px;
+    }
+
+    .ai-social-reaction {
+        gap: 12px;
+    }
+
+    .dashboard-conversation-chat-input-main-wrapper {
+        padding: 0 24px;
+        margin: 0px !;
+    }
+
+    .dashboard-conversation-chat-input {
+        margin: 0px;
+        padding: 0 24px;
+        align-items: start;
+        justify-content: center;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .dashboard-textarea {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .dashboard-form-input-logo,
+    .dashboard-submit-button {
+        margin-top: 3px;
+    }
+
+    .dashboard-form-input-wrapper {
+        border-radius: 24px;
+        padding: 0 10px;
+    }
+
+    .regenerate-btn {
+        height: 40px;
+        padding: 0px 16px;
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .regenerate-btn svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .dashboard-conversation-chat-input-main-wrapper {
+        background: #fff;
+        gap: 12px;
+    }
+
+    .dashboard-regenerate-btn {
+        margin-top: 12px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .dashboard-conversion-chat-main-wrapper-container {
+        width: 100% !important;
+    }
+
+    /* conversation:end */
 }
 
 /* extra small devices */
@@ -3079,6 +3786,147 @@
     }
 
     /* chat history:end */
+
+
+    /* conversation:start */
+    .dashboard-conversation-container {
+        height: calc(100vh - 282px);
+        min-height: calc(100vh - 282px);
+        max-height: calc(100vh - 282px);
+        overflow-y: auto;
+
+    }
+
+    .dashboard-conversation {
+        margin: 0px;
+        padding: 24px 24px !important;
+        gap: 12px !important;
+    }
+
+    .user-message-container {
+        width: 100%;
+    }
+
+    .user-message-time,
+    .ai-response-date,
+    .ai-related-documents-description {
+        font-size: 14px;
+    }
+
+    .user-message,
+    .ai-response {
+        color: #000;
+        font-size: 15px;
+        margin-top: 4px;
+
+    }
+
+    .ai-response-title {
+        font-size: 16px;
+    }
+
+    .point-dot {
+        flex-shrink: 0;
+    }
+
+    .user-message-edit-btn svg,
+    .ai-reaction svg,
+    .ai-social-reaction svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .ai-chat-image {
+        height: 40px;
+        width: 40px;
+    }
+
+    .ai-response-description {
+        display: flex;
+        gap: 12px;
+        padding-left: 0px;
+    }
+
+    .ai-message-wrapper {
+        gap: 10px;
+    }
+
+    .ai-related-documents-title {
+        font-size: 16px;
+    }
+
+    .ai-response-details-links {
+        gap: 8px;
+    }
+
+    .ai-details-intent-wrapper {
+        gap: 12px;
+    }
+
+    .ai-social-reaction span {
+        font-size: 14px;
+    }
+
+    .ai-social-reaction {
+        gap: 12px;
+    }
+
+    .dashboard-conversation-chat-input-main-wrapper {
+        padding: 0 24px;
+        margin: 0px !important;
+    }
+
+    .dashboard-conversation-chat-input {
+        margin: 0px;
+        padding: 0 24px;
+        align-items: start;
+        justify-content: center;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .dashboard-textarea {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .dashboard-form-input-logo,
+    .dashboard-submit-button {
+        margin-top: 3px;
+    }
+
+    .dashboard-form-input-wrapper {
+        border-radius: 24px;
+        padding: 0 10px;
+    }
+
+    .regenerate-btn {
+        height: 40px;
+        padding: 0px 16px;
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .regenerate-btn svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .dashboard-conversation-chat-input-main-wrapper {
+        background: #fff;
+        gap: 12px;
+    }
+
+    .dashboard-regenerate-btn {
+        margin-top: 12px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .dashboard-conversion-chat-main-wrapper-container {
+        width: 100% !important;
+    }
+
+    /* conversation:end */
 }
 
 /* custom breakpoint */

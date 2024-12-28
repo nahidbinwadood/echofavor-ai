@@ -795,4 +795,6 @@ $(document).ready(function () {
       hideResponsiveSidebar()
     })
   })
+
+  
 });
