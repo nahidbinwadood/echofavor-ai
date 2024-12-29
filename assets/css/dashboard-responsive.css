@@ -182,7 +182,11 @@
     .dashboard-chat-history-item.active {
         padding: 10px;
     }
-
+    .dashboard-form-input-logo, .dashboard-submit-button {
+        margin-top: 3px;
+    }.dashboard-textarea {
+        margin-top: 4px;
+    }
     /* homepage:start */
     .dashboard-header {
         padding: 24px 40px 24px 40px;
@@ -326,7 +330,11 @@
     }
 
     /* homepage:end */
-
+    .dashboard-form-input-logo, .dashboard-submit-button {
+        margin-top: 3px;
+    }.dashboard-textarea {
+        margin-top: 4px;
+    }
     .chat-history-table,
     .subscription-cards-wrapper,
     .dashboard-contact-main-wrapper {
@@ -956,7 +964,7 @@
     }
 
     .dashboard-textarea {
-        margin-top: 0px;
+        margin-top: -4px;
         margin-bottom: 0px;
     }
 
@@ -1142,10 +1150,10 @@
         resize: none;
         min-width: 400px;
     }
-
     .dashboard-submit-button {
-        height: 45px;
-        width: 45px;
+        margin-top: 0px !important;
+        height: 35px;
+        width: 35px;
     }
 
     .dashboard-submit-button svg {
@@ -1540,7 +1548,7 @@
     }
 
     .dashboard-textarea {
-        margin-top: 0px;
+        margin-top: -3px;
         margin-bottom: 0px;
     }
 
