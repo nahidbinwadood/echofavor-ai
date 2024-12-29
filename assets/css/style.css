@@ -84,9 +84,11 @@ body {
   max-width: 1536px;
   margin: 0 auto;
 }
+
 input {
   background: white;
 }
+
 footer p {
   color: #fff;
 }
@@ -135,7 +137,7 @@ footer p {
   position: relative;
 }
 
-.menu-item > a {
+.menu-item>a {
   text-decoration: none;
   display: block;
   cursor: pointer;
@@ -261,7 +263,94 @@ footer p {
   background: transparent;
   border: 1px solid #fff;
   color: white;
+  transition: all 0.4s ease;
 }
+
+.button-transparent svg path {
+  transition: all 0.4s ease;
+}
+
+.button-transparent:hover {
+  background-color: #fff;
+  color: var(--primary--color);
+}
+
+.button-transparent:hover svg path {
+  fill: var(--primary--color);
+}
+
+
+.homepage-hero-glow-btn {
+  color: var(--primary--color);
+}
+
+.homepage-hero-glow-btn svg path {
+  fill: var(--primary--color);
+  transition: all 0.4s ease;
+}
+
+.homepage-hero-search-button {
+  transition: all 0.4s ease;
+  color: var(--primary--color);
+  background: var(--primary--color);
+  border: 1px solid var(--primary--color);
+}
+
+.homepage-hero-search-button svg path {
+
+  transition: all 0.4s ease;
+}
+
+.homepage-hero-search-button:hover {
+  background: white;
+  color: var(--primary--color);
+}
+
+.homepage-hero-search-button:hover svg path {
+  stroke: var(--primary--color);
+}
+
+/* hover */
+.featured-button,
+.trial-button,
+.footer-button,
+.footer-earning-button,
+.details-filter-input-btn,.contact-send-message-btn {
+  transition: all 0.4s ease;
+  border: 1px solid var(--primary--color);
+  background: var(--primary--color);
+}
+
+.featured-button:hover,
+.trial-button:hover,
+.footer-button:hover,
+.footer-earning-button:hover,
+.details-filter-input-btn:hover,.contact-send-message-btn:hover {
+  transition: all 0.4s ease;
+  background-color: transparent;
+  color: var(--primary--color);
+}
+
+.footer-earning-button svg path,
+.blog-search-button svg path,
+.details-filter-input-btn svg path,.contact-send-message-btn svg path {
+  transition: all 0.4s ease;
+}
+
+.footer-earning-button:hover svg path,
+.blog-search-button:hover svg path,
+.details-filter-input-btn:hover svg path,.contact-send-message-btn:hover svg path {
+  stroke: var(--primary--color);
+}
+
+.blog-search-button {
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+/* hover */
 
 .button-title {
   background: transparent;
@@ -279,8 +368,6 @@ footer p {
 }
 
 .footer-button {
-  outline: none;
-  border: none;
   cursor: pointer;
   color: #fff;
   white-space: nowrap;
@@ -944,8 +1031,7 @@ footer p {
 }
 
 /* Mobile Styles (320px+) */
-@media screen and (min-width: 320px) {
-}
+@media screen and (min-width: 320px) {}
 
 /* Tablet Styles (768px+) */
 @media screen and (min-width: 768px) {
@@ -1008,6 +1094,19 @@ footer p {
   border: 1px solid #141414;
 }
 
+.blog-tabs-wrapper .nav-pills .nav-link:hover {
+  background-color: var(--primary--color);
+  color: white;
+  /* This ensures text remains visible on black background */
+  transition: all 0.3s ease;
+  /* This creates a smooth transition effect */
+}
+
+
+.blog-tabs-wrapper .nav-pills .nav-link.active:hover {
+  background-color: var(--primary--color);
+}
+
 .blog-tabs-wrapper .nav-link.active {
   color: #fff;
   text-align: center;
@@ -1056,8 +1155,6 @@ footer p {
 }
 
 .details-filter-input-btn {
-  border: none;
-  outline: none;
   width: 48px;
   height: 48px;
   flex-shrink: 0;
@@ -1227,7 +1324,6 @@ footer p {
   padding: 16px;
   color: #fff;
   display: flex;
-  border: none;
   align-items: center;
   gap: 8px;
   justify-content: center;
@@ -1303,7 +1399,7 @@ footer p {
   color: transparent;
 }
 
-.auth-input-field:placeholder-shown + .auth-input-label {
+.auth-input-field:placeholder-shown+.auth-input-label {
   font-size: 1rem;
   color: #6b7280;
   top: 0.625rem;
@@ -1312,7 +1408,7 @@ footer p {
 }
 
 /* Focused input styling */
-.auth-input-field:focus + .auth-input-label {
+.auth-input-field:focus+.auth-input-label {
   font-size: 14px;
   color: var(--primary--color);
   padding: 0 4px;
