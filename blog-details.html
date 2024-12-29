@@ -323,18 +323,13 @@
                 <img src="./assets/images/mini-logo.png" alt="" />
               </div>
               <form style="z-index: 1" class="flex icon gap-4 w-full">
-                <input
+                <textarea
                   placeholder="What's in your minds"
                   class="outline-none border-none w-full details-filter-input"
-                  type="text"
                   name="details-filter"
                   id="details-filter"
-                />
-                <button
-                  type="submit"
-
-                  class="details-filter-input-btn"
-                >
+                ></textarea>
+                <button type="submit" class="details-filter-input-btn">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -530,5 +525,69 @@
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const textarea = document.getElementById('details-filter');
+
+        // Constants
+        const lineHeight = parseFloat(getComputedStyle(textarea).lineHeight);
+        const maxLines = 5;
+        const paddingTop = 8;
+        const paddingBottom = 8;
+        const maxHeight = lineHeight * maxLines + paddingTop + paddingBottom;
+
+        function adjustHeight() {
+          // Reset height to calculate proper scrollHeight
+          textarea.style.height = 'auto';
+
+          // Get current content height
+          const scrollHeight = textarea.scrollHeight;
+
+          if (scrollHeight <= maxHeight) {
+            // Content is within 5 lines - let it grow
+            textarea.style.height = scrollHeight + 'px';
+            textarea.style.overflowY = 'hidden';
+            textarea.classList.remove('scrollable');
+          } else {
+            // Content exceeds 5 lines - fix height and show scrollbar
+            textarea.style.height = maxHeight + 'px';
+            textarea.style.overflowY = 'auto';
+            textarea.classList.add('scrollable');
+          }
+        }
+
+        // Initial setup
+        adjustHeight();
+
+        // Handle input changes
+        textarea.addEventListener('input', adjustHeight);
+
+        // Handle Enter key
+        textarea.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            const cursorPosition = this.selectionStart;
+            const currentValue = this.value;
+            this.value =
+              currentValue.substring(0, cursorPosition) +
+              '\n' +
+              currentValue.substring(this.selectionEnd);
+
+            // Move cursor after the inserted newline
+            this.selectionStart = this.selectionEnd = cursorPosition + 1;
+            adjustHeight();
+          }
+        });
+
+        // Handle form submission
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          console.log('Submitted:', textarea.value);
+          textarea.value = '';
+          adjustHeight();
+        });
+      });
+    </script>
   </body>
 </html>

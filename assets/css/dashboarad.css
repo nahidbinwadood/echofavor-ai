@@ -159,6 +159,7 @@ body {
 
 /* Fallback for browsers that don't support custom scrollbars */
 @supports not (scrollbar-width: thin) {
+
   .dashboard-main-content-wrapper,
   .dashboard-conversation-container {
     /* Minimal fallback styling */
@@ -166,6 +167,81 @@ body {
   }
 }
 
+.dashboard-submit-button {
+  transition: all 0.4s ease;
+  border: 1px solid var(--primary--color);
+  background: var(--primary--color);
+}
+
+.dashboard-submit-button:hover,
+.ai-toggle-details-btn-copy:hover,
+.ai-toggle-details-btn-share:hover {
+  transition: all 0.4s ease;
+  background-color: transparent;
+  color: var(--primary--color);
+  cursor: pointer;
+}
+
+.dashboard-submit-button svg path,
+.ai-reaction-like svg path,
+.ai-reaction-dislike svg path,
+.ai-toggle-details-btn-copy svg path,
+.ai-toggle-details-btn-share svg path,
+.regenerate-btn svg path {
+  transition: all 0.4s ease;
+}
+
+.dashboard-submit-button:hover svg path,
+.ai-toggle-details-btn-copy:hover svg path,
+.ai-toggle-details-btn-share:hover svg path {
+  stroke: var(--primary--color);
+}
+
+.ai-reaction-like:hover svg path,
+.ai-reaction-dislike:hover svg path {
+  fill: var(--primary--color);
+}
+
+.regenerate-btn {
+  transition: all 0.4s ease;
+}
+
+.regenerate-btn:hover {
+  background: var(--primary--color);
+  color: #fff;
+}
+
+.regenerate-btn:hover svg path {
+  stroke: #fff;
+}
+
+.add-context-folder-submit,
+.context-folder-settings,
+.context-folder-share,
+.add-email-share-submit,
+.dashboard-drawer-bottom-restore-button,
+.delete-modal-btn.primary,
+.delete-modal-btn.transparent ,.cancel-subscription-btn{
+  transition: all 0.4s ease;
+}
+
+.add-context-folder-submit:hover,
+.context-folder-settings:hover,
+.context-folder-share:hover,
+.add-email-share-submit:hover {
+  border: 1px solid #a6bbea;
+  background: #a6bbea;
+}
+
+.dashboard-drawer-bottom-restore-button:hover,
+.delete-modal-btn.primary:hover {
+  background-color: transparent;
+  color: var(--primary--color);
+}
+.delete-modal-btn.transparent:hover,.cancel-subscription-btn:hover{
+  color: #fff;
+  background-color: var(--primary--color);
+}
 /* ====common==== */
 
 /* ===================================dashboard::start============================================ */
@@ -333,7 +409,7 @@ body {
   justify-content: space-between;
 }
 
-.space-y-2 > * + * {
+.space-y-2>*+* {
   margin-top: 0.5rem;
 }
 
@@ -661,7 +737,6 @@ body {
 }
 
 .dashboard-submit-button {
-  border: none;
   outline: none;
   background: var(--primary--color);
   height: 40px;
@@ -982,6 +1057,7 @@ body {
   justify-content: center;
   gap: 24px;
 }
+
 .dashboard-conversation-chat-input {
   display: flex;
   width: 100%;
@@ -989,6 +1065,7 @@ body {
   justify-content: center;
   gap: 24px;
 }
+
 .ai-response-details-container {
   padding-top: 12px;
   margin-top: 20px;
@@ -1262,14 +1339,12 @@ body {
   transition: all 0.3s ease;
 }
 
-.subscription-cancel-reason-input:checked + .custom-radio {
+.subscription-cancel-reason-input:checked+.custom-radio {
   border: 1px solid var(--primary--color);
   background: var(--primary--color);
 }
 
-.subscription-cancel-reason-input:checked
-  + .custom-radio
-  .custom-radio-indicator {
+.subscription-cancel-reason-input:checked+.custom-radio .custom-radio-indicator {
   opacity: 1;
 }
 
@@ -1319,7 +1394,7 @@ body {
   transition: opacity 0.5s linear;
 }
 
-.dashboard-drawer-wrapper.show + .drawer-backdrop {
+.dashboard-drawer-wrapper.show+.drawer-backdrop {
   opacity: 1;
   pointer-events: auto;
 }
@@ -1447,11 +1522,6 @@ body {
   transition: all 0.4s ease;
 }
 
-.context-folder-name:hover {
-  border: 1px solid #a6bbea;
-  background: #a6bbea;
-}
-
 .context-folder-settings,
 .context-folder-share {
   display: flex;
@@ -1535,7 +1605,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.custom-checkbox-input:checked + .custom-checkbox {
+.custom-checkbox-input:checked+.custom-checkbox {
   background-color: #0075ff;
   border: 1px solid #0075ff;
 }
@@ -1711,7 +1781,7 @@ body {
   transition: opacity 0.5s linear;
 }
 
-.upload-dashboard-drawer-wrapper.show + .upload-drawer-backdrop {
+.upload-dashboard-drawer-wrapper.show+.upload-drawer-backdrop {
   opacity: 1;
   pointer-events: auto;
 }

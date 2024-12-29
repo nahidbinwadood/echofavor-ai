@@ -214,7 +214,7 @@
             <div
               class="bg-white flex items-center gap-3 rounded-full pt-1 pr-1 pb-1 pl-6 hero-search-filter-wrapper"
             >
-              <div>
+              <div class="hero-search-filter-svg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
@@ -236,13 +236,14 @@
                 style="z-index: 1"
                 class="flex icon gap-4 w-full hero-search-filter"
               >
-                <input
-                  placeholder="Ask questions any here"
-                  class="outline-none border-none w-full banner-filter-input"
-                  type="text"
-                  name="banner-filter"
-                  id="banner-filter"
-                />
+                <div style="width: 100%">
+                  <textarea
+                    placeholder="Ask questions any here"
+                    class="outline-none border-none w-full banner-filter-input"
+                    name="banner-filter"
+                    id="banner-filter"
+                  ></textarea>
+                </div>
                 <button
                   type="submit"
                   class="button homepage-hero-search-button"
@@ -275,7 +276,7 @@
           </div>
 
           <!-- banner image -->
-          <div class="banner-image">
+          <div class="banner-image ">
             <img
               class="h-full w-full object-cover"
               src="./assets/images/3.png"
@@ -1380,5 +1381,6 @@
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/index-test.js"></script>
   </body>
 </html>

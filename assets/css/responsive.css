@@ -1,8 +1,8 @@
 @media only screen and (min-width: 1920px) {
-
   .responsive-sidebar,
   .sidebar-overlay,
-  .menu-buttons ,.mobile-table-header{
+  .menu-buttons,
+  .mobile-table-header {
     display: none;
   }
 
@@ -14,10 +14,10 @@
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1919px) {
-
   .responsive-sidebar,
   .sidebar-overlay,
-  .menu-buttons,.mobile-table-header {
+  .menu-buttons,
+  .mobile-table-header {
     display: none;
   }
 
@@ -36,8 +36,8 @@
   }
 
   .banner-image {
-    height: 550px;
-    width: 550px;
+    height: 450px;
+    width: 540px;
     position: absolute;
     right: 20px;
     bottom: -20%;
@@ -50,7 +50,7 @@
   }
 
   .hero-video-wrapper {
-    margin-top: -200px;
+    margin-top: -60px;
     height: 650px;
     width: 80% !important;
   }
@@ -62,7 +62,6 @@
 }
 
 @media only screen and (min-width: 1365px) and (max-width: 1599px) {
-
   .responsive-sidebar,
   .sidebar-overlay,
   .menu-buttons {
@@ -143,7 +142,7 @@
   }
 
   .hero-video-wrapper {
-    margin-top: -200px;
+    margin-top: -60px;
     height: 500px;
     width: 80% !important;
   }
@@ -657,7 +656,6 @@
 
 /* laptop devices */
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
-
   .responsive-sidebar,
   .sidebar-overlay,
   .menu-buttons {
@@ -724,7 +722,7 @@
   }
 
   .hero-video-wrapper {
-    margin-top: -200px;
+    margin-top: -150px;
     height: 500px;
     width: 80% !important;
   }
@@ -2074,7 +2072,6 @@
 
 /* medium tablet devices */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
   /* navbar */
   .nav_links,
   .nav_cta_buttons {
@@ -3037,7 +3034,6 @@
 
 /* small tablet devices */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-
   /* navbar */
   .nav_links,
   .nav_cta_buttons {
@@ -4038,7 +4034,6 @@
 
 /* large mobile devices */
 @media only screen and (min-width: 480px) and (max-width: 575px) {
-
   /* navbar */
   .nav_links,
   .nav_cta_buttons {
@@ -5105,14 +5100,21 @@
 
   /* update */
 
-
-
   /* price update */
   .enterprise-price-card {
     display: none;
   }
 
   /* price update */
+
+  /* custom */
+  .banner-filter-input {
+    margin-top: 0px;
+  }
+  .hero-search-filter-svg {
+    margin-top: 0px;
+  }
+  /* custom */
 }
 
 /* mobile devices */
@@ -6156,19 +6158,25 @@
 
   /* update */
 
-
-
   /* price update */
   .enterprise-price-card {
     display: none;
   }
 
   /* price update */
+
+  /* custom */
+  .banner-filter-input {
+    margin-top: 0px;
+  }
+  .hero-search-filter-svg {
+    margin-top: 0px;
+  }
+  /* custom */
 }
 
 /* extra small devices */
 @media only screen and (min-width: 320px) and (max-width: 374px) {
-
   /* navbar */
   .nav_links,
   .nav_cta_buttons {
@@ -7189,7 +7197,6 @@
 
   /* update */
 
-
   /* price update */
   .enterprise-price-card {
     display: none;
@@ -7197,4 +7204,17 @@
 
   /* price update */
 
+  /* custom */
+  .banner-filter-input,
+  .details-filter-input {
+    margin-top: 0px;
+  }
+  .hero-search-filter-svg {
+    margin-top: 0px;
+  }
+
+  .blog-details-newsletter-form {
+    min-height: 20px;
+  }
+  /* custom */
 }

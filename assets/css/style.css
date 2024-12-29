@@ -279,7 +279,6 @@ footer p {
   fill: var(--primary--color);
 }
 
-
 .homepage-hero-glow-btn {
   color: var(--primary--color);
 }
@@ -297,7 +296,6 @@ footer p {
 }
 
 .homepage-hero-search-button svg path {
-
   transition: all 0.4s ease;
 }
 
@@ -315,7 +313,8 @@ footer p {
 .trial-button,
 .footer-button,
 .footer-earning-button,
-.details-filter-input-btn,.contact-send-message-btn {
+.details-filter-input-btn,
+.contact-send-message-btn {
   transition: all 0.4s ease;
   border: 1px solid var(--primary--color);
   background: var(--primary--color);
@@ -325,7 +324,8 @@ footer p {
 .trial-button:hover,
 .footer-button:hover,
 .footer-earning-button:hover,
-.details-filter-input-btn:hover,.contact-send-message-btn:hover {
+.details-filter-input-btn:hover,
+.contact-send-message-btn:hover {
   transition: all 0.4s ease;
   background-color: transparent;
   color: var(--primary--color);
@@ -333,13 +333,15 @@ footer p {
 
 .footer-earning-button svg path,
 .blog-search-button svg path,
-.details-filter-input-btn svg path,.contact-send-message-btn svg path {
+.details-filter-input-btn svg path,
+.contact-send-message-btn svg path {
   transition: all 0.4s ease;
 }
 
 .footer-earning-button:hover svg path,
 .blog-search-button:hover svg path,
-.details-filter-input-btn:hover svg path,.contact-send-message-btn:hover svg path {
+.details-filter-input-btn:hover svg path,
+.contact-send-message-btn:hover svg path {
   stroke: var(--primary--color);
 }
 
@@ -561,7 +563,7 @@ footer p {
 /* hero video section */
 
 .hero-video-wrapper {
-  margin-top: -350px;
+  margin-top: -290px;
   position: relative;
   border-radius: 16px;
   width: 100%;
@@ -1102,7 +1104,6 @@ footer p {
   /* This creates a smooth transition effect */
 }
 
-
 .blog-tabs-wrapper .nav-pills .nav-link.active:hover {
   background-color: var(--primary--color);
 }
@@ -1496,3 +1497,114 @@ footer p {
 }
 
 /*========================================Auth pages::End======================================== */
+
+/* custom */
+.hero-search-filter-wrapper {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 48px;
+  padding: 4px 4px 4px 24px;
+  min-height: 40px;
+}
+
+.hero-search-filter-svg {
+  margin-top: -8px;
+}
+
+.hero-search-filter {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  align-items: center;
+  /* Changed to flex-start */
+}
+
+.banner-filter-input {
+  margin-top: 16px;
+  width: 100%;
+  resize: none;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 24px;
+  /* Single line height */
+  padding: 4px 0;
+  /* Reduced padding from 8px to 4px */
+  display: block;
+  overflow-y: hidden;
+}
+
+.banner-filter-input.scrollable {
+  overflow-y: auto;
+}
+
+/* Custom scrollbar */
+.banner-filter-input::-webkit-scrollbar {
+  width: 6px;
+}
+
+.banner-filter-input::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.banner-filter-input::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+/* blog */
+.blog-details-newsletter-form {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  /* Changed to allow height growth */
+  gap: 12px;
+  border-radius: 48px;
+  padding: 4px 24px;
+  min-height: 40px;
+}
+
+
+
+.blog-details-newsletter-form-logo img {
+  display: block;
+}
+
+.blog-details-newsletter-form form {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  align-items: center;
+}
+
+.details-filter-input {
+ margin-top: 16px;
+  width: 100%;
+  resize: none;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 24px;
+  padding: 4px 0;
+  overflow-y: hidden;
+}
+
+.details-filter-input.scrollable {
+  overflow-y: auto;
+}
+
+/* Custom scrollbar */
+.details-filter-input::-webkit-scrollbar {
+  width: 6px;
+}
+
+.details-filter-input::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.details-filter-input::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+/* custom */
