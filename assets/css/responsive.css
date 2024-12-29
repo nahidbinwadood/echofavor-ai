@@ -2,7 +2,7 @@
 
   .responsive-sidebar,
   .sidebar-overlay,
-  .menu-buttons {
+  .menu-buttons ,.mobile-table-header{
     display: none;
   }
 
@@ -13,11 +13,11 @@
   }
 }
 
-@media only screen and (min-width: 1600px)and (max-width: 1919px) {
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
 
   .responsive-sidebar,
   .sidebar-overlay,
-  .menu-buttons {
+  .menu-buttons,.mobile-table-header {
     display: none;
   }
 
@@ -59,7 +59,6 @@
     height: 40px;
     width: 40px;
   }
-
 }
 
 @media only screen and (min-width: 1365px) and (max-width: 1599px) {
@@ -78,7 +77,6 @@
 
   /* footer end*/
 
-
   .responsive-sidebar,
   .sidebar-overlay,
   .menu-buttons {
@@ -88,7 +86,6 @@
   .container {
     max-width: 1300px;
     margin: 0 auto;
-
   }
 
   .header {
@@ -234,7 +231,6 @@
 
   .pricing-section-wrapper {
     padding-top: 40px;
-    text-align: center;
   }
 
   .pricing-section-title-wrapper {
@@ -262,7 +258,7 @@
   }
 
   .pricing-card {
-    padding: 24px;
+    padding: 32px;
   }
 
   .pricing-card-title-wrapper h3 {
@@ -300,7 +296,8 @@
   .pricing-card-popular-button {
     right: 11.127px;
     top: 6.75px;
-    font-size: 14px;
+    padding: 6px 16px;
+    font-size: 14px !important;
   }
 
   .professional-cards-container {
@@ -815,7 +812,6 @@
 
   .pricing-section-wrapper {
     padding-top: 40px;
-    text-align: center;
   }
 
   .pricing-section-title-wrapper {
@@ -843,7 +839,7 @@
   }
 
   .pricing-card {
-    padding: 24px;
+    padding: 32px;
   }
 
   .pricing-card-title-wrapper h3 {
@@ -882,6 +878,7 @@
     right: 11.127px;
     top: 6.75px;
     font-size: 14px;
+    padding: 6px 12px;
   }
 
   .professional-cards-container {
@@ -1637,7 +1634,6 @@
 
   .pricing-section-wrapper {
     padding-top: 40px;
-    text-align: center;
   }
 
   .pricing-section-title-wrapper {
@@ -2070,7 +2066,7 @@
   }
 
   .testimonials-nav-btn:hover svg path {
-    stroke: #292D32;
+    stroke: #292d32;
   }
 
   /* update */
@@ -2549,7 +2545,6 @@
 
   .pricing-section-wrapper {
     padding-top: 40px;
-    text-align: center;
   }
 
   .pricing-section-title-wrapper {
@@ -3034,7 +3029,7 @@
   }
 
   .testimonials-nav-btn:hover svg path {
-    stroke: #292D32;
+    stroke: #292d32;
   }
 
   /* update */
@@ -3525,7 +3520,6 @@
 
   .pricing-section-wrapper {
     padding-top: 40px;
-    text-align: center;
   }
 
   .pricing-section-title-wrapper {
@@ -4036,7 +4030,7 @@
   }
 
   .testimonials-nav-btn:hover svg path {
-    stroke: #292D32;
+    stroke: #292d32;
   }
 
   /* update */
@@ -5106,10 +5100,19 @@
   }
 
   .testimonials-nav-btn:hover svg path {
-    stroke: #292D32;
+    stroke: #292d32;
   }
 
   /* update */
+
+
+
+  /* price update */
+  .enterprise-price-card {
+    display: none;
+  }
+
+  /* price update */
 }
 
 /* mobile devices */
@@ -6148,10 +6151,19 @@
   }
 
   .testimonials-nav-btn:hover svg path {
-    stroke: #292D32;
+    stroke: #292d32;
   }
 
   /* update */
+
+
+
+  /* price update */
+  .enterprise-price-card {
+    display: none;
+  }
+
+  /* price update */
 }
 
 /* extra small devices */
@@ -7166,15 +7178,23 @@
 
   /* ====Error Page::end=== */
 
-
   /* update */
   .testimonials-nav-btn:hover {
     background: #fff;
   }
 
   .testimonials-nav-btn:hover svg path {
-    stroke: #292D32;
+    stroke: #292d32;
   }
 
   /* update */
+
+
+  /* price update */
+  .enterprise-price-card {
+    display: none;
+  }
+
+  /* price update */
+
 }
