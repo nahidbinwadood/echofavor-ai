@@ -21,14 +21,14 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
-  <body>
+  <body style="overflow-x: hidden !important">
     <!-- header -->
     <header class="header">
       <nav
         class="container font-plus-jakarta flex items-center justify-between py-4"
       >
         <!-- logo -->
-        <div>
+        <div data-aos="fade-down" data-aos-duration="1000">
           <a class="nav-logo" href="index.html">
             <img src="./assets/images/logo.svg" alt="" />
           </a>
@@ -36,7 +36,11 @@
 
         <!-- navLinks -->
         <div>
-          <ul class="flex items-center gap-8 text-lg font-medium nav_links">
+          <ul
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            class="flex items-center gap-8 text-lg font-medium nav_links"
+          >
             <li>
               <a href="index.html" class="navlink">Home</a>
             </li>
@@ -63,7 +67,11 @@
         </div>
 
         <!-- button -->
-        <div class="flex items-center gap-4 nav_cta_buttons">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          class="flex items-center gap-4 nav_cta_buttons"
+        >
           <a href="register.html" class="button button-white">Register</a>
           <a href="sign-in.html" class="button button-transparent"
             >Start for Free</a
@@ -71,7 +79,7 @@
         </div>
 
         <!-- menu hamburger -->
-        <div class="menu-buttons">
+        <div data-aos="fade-down" data-aos-duration="1000" class="menu-buttons">
           <!-- open menu -->
           <div class="hamburger-open">
             <svg
@@ -117,7 +125,7 @@
               class="flex items-center gap-8 text-lg font-medium nav_links_sidebar"
             >
               <li>
-                <a href="index.html" class="navlink_active">Home</a>
+                <a href="index.html">Home</a>
               </li>
               <li>
                 <a href="pricing.html">Pricing</a>
@@ -182,7 +190,8 @@
         class="py-20 container flex items-center justify-center text-black error-page"
       >
         <!-- auth contents -->
-        <div class="flex flex-col items-center justify-center auth-wrapper">
+        <div data-aos="zoom-in"
+        data-aos-duration="1000" class="flex flex-col items-center justify-center auth-wrapper">
           <!-- logo -->
           <div class="w-full flex items-center justify-center">
             <img src="./assets/images/auth-logo.png" alt="" />
@@ -418,7 +427,7 @@
         class="container py-16 grid grid-cols-6 gap-12 footer-top-section"
       >
         <!-- logo section -->
-        <div class="col-span-2">
+        <div data-aos="zoom-out" class="col-span-2">
           <div>
             <img class="footer-logo" src="./assets/images/logo.svg" alt="" />
           </div>
@@ -432,7 +441,7 @@
         </div>
 
         <!-- Pages -->
-        <div>
+        <div data-aos="zoom-out" data-aos-delay="100">
           <h4 class="footer-item-title">ecohofavor AI</h4>
           <div class="mt-3 footer-item-wrapper">
             <ul class="flex flex-col gap-2">
@@ -447,7 +456,7 @@
         </div>
 
         <!-- Pages -->
-        <div>
+        <div data-aos="zoom-out" data-aos-delay="150">
           <h4 class="footer-item-title">Support</h4>
           <div class="mt-3 footer-item-wrapper">
             <ul class="flex flex-col gap-2">
@@ -464,7 +473,11 @@
         </div>
 
         <!-- Updates -->
-        <div class="col-span-2 footer-form-main-wrapper">
+        <div
+          data-aos="zoom-out"
+          data-aos-delay="200"
+          class="col-span-2 footer-form-main-wrapper"
+        >
           <h4 class="footer-item-title">Updates</h4>
           <p class="mt-3 footer-item-wrapper footer-item-description">
             Stay in the loop with updates on the AI ecosystem, company news, and
@@ -495,7 +508,7 @@
       </section>
 
       <!-- earning -->
-      <section class="earning-footer-main-wrapper">
+      <section data-aos="fade-up" class="earning-footer-main-wrapper">
         <section
           class="my-20 container footer-earning-wrapper flex items-center justify-between overflow-hidden"
         >

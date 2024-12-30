@@ -22,14 +22,14 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
-  <body>
+  <body style="overflow-x: hidden !important">
     <!-- header -->
     <header class="header">
       <nav
         class="container font-plus-jakarta flex items-center justify-between py-4"
       >
         <!-- logo -->
-        <div>
+        <div data-aos="fade-down" data-aos-duration="1000">
           <a class="nav-logo" href="index.html">
             <img src="./assets/images/logo.svg" alt="" />
           </a>
@@ -37,7 +37,11 @@
 
         <!-- navLinks -->
         <div>
-          <ul class="flex items-center gap-8 text-lg font-medium nav_links">
+          <ul
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            class="flex items-center gap-8 text-lg font-medium nav_links"
+          >
             <li>
               <a href="index.html" class="navlink_active navlink">Home</a>
             </li>
@@ -64,7 +68,11 @@
         </div>
 
         <!-- button -->
-        <div class="flex items-center gap-4 nav_cta_buttons">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          class="flex items-center gap-4 nav_cta_buttons"
+        >
           <a href="register.html" class="button button-white">Register</a>
           <a href="sign-in.html" class="button button-transparent"
             >Start for Free</a
@@ -72,7 +80,7 @@
         </div>
 
         <!-- menu hamburger -->
-        <div class="menu-buttons">
+        <div data-aos="fade-down" data-aos-duration="1000" class="menu-buttons">
           <!-- open menu -->
           <div class="hamburger-open">
             <svg
@@ -177,7 +185,7 @@
       </nav>
     </header>
     <!-- main -->
-    <main class="homepage">
+    <main class="homepage" style="overflow-x: hidden !important">
       <!-- hero section::start -->
       <section class="hero relative">
         <div class="container hero-wrapper">
@@ -185,7 +193,11 @@
             class="pt-10 flex flex-col items-center justify-center gap-8 hero-content"
           >
             <!-- glow button -->
-            <div class="button font-plus-jakarta homepage-hero-glow-btn">
+            <div
+              data-aos="zoom-out"
+              data-aos-duration="1200"
+              class="button font-plus-jakarta homepage-hero-glow-btn"
+            >
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -204,7 +216,11 @@
             </div>
 
             <!-- title -->
-            <h1 class="text-center hero-title">
+            <h1
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="text-center hero-title"
+            >
               Your Personal <span class="glowing-hero-title">AI Content </span
               ><br />
               Companion
@@ -276,7 +292,7 @@
           </div>
 
           <!-- banner image -->
-          <div class="banner-image ">
+          <div class="banner-image">
             <img
               class="h-full w-full object-cover"
               src="./assets/images/3.png"
@@ -287,7 +303,11 @@
       </section>
 
       <!-- video section -->
-      <div class="hero-video-main-wrapper">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="hero-video-main-wrapper"
+      >
         <div class="hero-video-wrapper container relative">
           <!-- shade -->
           <div class="hero-video-wrapper-shade"></div>
@@ -371,7 +391,11 @@
       <section class="pt-16 container featured-section">
         <!-- title -->
         <div class="w-full flex flex-col gap-4 items-center justify-center">
-          <div class="button button-title font-plus-jakarta">
+          <div
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+            class="button button-title font-plus-jakarta"
+          >
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -389,7 +413,13 @@
             <span class="font-normal">Featured</span>
           </div>
           <div>
-            <h2 class="primary-title">Learn how GPT works</h2>
+            <h2
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+              class="primary-title"
+            >
+              Learn how GPT works
+            </h2>
           </div>
         </div>
 
@@ -398,7 +428,11 @@
           <!-- feature-1 -->
           <div class="flex items-center feature-card-wrapper">
             <!-- image section -->
-            <div class="p-4 feature-image-card feature-image-card-left">
+            <div
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+              class="p-4 feature-image-card feature-image-card-left"
+            >
               <img src="./assets/images/feature-1.png" alt="" />
             </div>
             <!-- info section -->
@@ -407,7 +441,7 @@
                 class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
               >
                 <div>
-                  <button class="button featured-button">
+                  <button data-aos="fade-up" class="button featured-button">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="26"
@@ -426,11 +460,12 @@
                   <!-- description -->
                   <div class="mt-16 feature-card-info">
                     <h3
+                      data-aos="fade-up"
                       class="font-space-grotesk text-3xl text-black font-bold"
                     >
                       Multi-File Type Support
                     </h3>
-                    <p class="mt-4 feature-card-description">
+                    <p data-aos="fade-up" class="mt-4 feature-card-description">
                       The AI chatbot can handle various file formats, making it
                       incredibly versatile and user-friendly. Users can upload
                       and query content from multiple file types, including
@@ -447,7 +482,11 @@
             class="flex flex-row-reverse items-center feature-card-wrapper feature-card-wrapper-reverser"
           >
             <!-- image section -->
-            <div class="p-4 feature-image-card feature-image-card-right">
+            <div
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+              class="p-4 feature-image-card feature-image-card-right"
+            >
               <img src="./assets/images/feature-2.png" alt="" />
             </div>
             <!-- info section -->
@@ -456,7 +495,7 @@
                 class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
               >
                 <div>
-                  <button class="button featured-button">
+                  <button data-aos="fade-up" class="button featured-button">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="26"
@@ -475,11 +514,12 @@
                   <!-- description -->
                   <div class="mt-16 feature-card-info">
                     <h3
+                      data-aos="fade-up"
                       class="font-space-grotesk text-3xl text-black font-bold"
                     >
                       Personalized Content Queries
                     </h3>
-                    <p class="mt-4 feature-card-description">
+                    <p data-aos="fade-up" class="mt-4 feature-card-description">
                       Users can ask questions specifically about their own
                       content, making it a tailored experience.
                     </p>
@@ -492,7 +532,11 @@
           <!-- feature-3 -->
           <div class="flex items-center feature-card-wrapper">
             <!-- image section -->
-            <div class="p-4 feature-image-card feature-image-card-left">
+            <div
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+              class="p-4 feature-image-card feature-image-card-left"
+            >
               <img src="./assets/images/feature-3.png" alt="" />
             </div>
             <!-- info section -->
@@ -501,7 +545,7 @@
                 class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
               >
                 <div>
-                  <button class="button featured-button">
+                  <button data-aos="fade-up" class="button featured-button">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="26"
@@ -520,11 +564,12 @@
                   <!-- description -->
                   <div class="mt-16 feature-card-info">
                     <h3
+                      data-aos="fade-up"
                       class="font-space-grotesk text-3xl text-black font-bold"
                     >
                       Web Integration
                     </h3>
-                    <p class="mt-4 feature-card-description">
+                    <p data-aos="fade-up" class="mt-4 feature-card-description">
                       The AI can pull relevant information from the web,
                       providing comprehensive answers.
                     </p>
@@ -539,7 +584,11 @@
             class="flex flex-row-reverse items-center feature-card-wrapper feature-card-wrapper-reverser"
           >
             <!-- image section -->
-            <div class="p-4 feature-image-card feature-image-card-right">
+            <div
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+              class="p-4 feature-image-card feature-image-card-right"
+            >
               <img src="./assets/images/feature-4.png" alt="" />
             </div>
             <!-- info section -->
@@ -548,7 +597,7 @@
                 class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
               >
                 <div>
-                  <button class="button featured-button">
+                  <button data-aos="fade-up" class="button featured-button">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="26"
@@ -567,11 +616,12 @@
                   <!-- description -->
                   <div class="mt-16 feature-card-info">
                     <h3
+                      data-aos="fade-up"
                       class="font-space-grotesk text-3xl text-black font-bold"
                     >
                       User-Friendly Interface
                     </h3>
-                    <p class="mt-4 feature-card-description">
+                    <p data-aos="fade-up" class="mt-4 feature-card-description">
                       Easy to navigate and interact with, ensuring a smooth user
                       experience.
                     </p>
@@ -584,7 +634,11 @@
           <!-- feature-5 -->
           <div class="flex items-center feature-card-wrapper">
             <!-- image section -->
-            <div class="p-4 feature-image-card feature-image-card-left">
+            <div
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+              class="p-4 feature-image-card feature-image-card-left"
+            >
               <img src="./assets/images/feature-5.png" alt="" />
             </div>
             <!-- info section -->
@@ -593,7 +647,7 @@
                 class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
               >
                 <div>
-                  <button class="button featured-button">
+                  <button data-aos="fade-up" class="button featured-button">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="26"
@@ -612,11 +666,12 @@
                   <!-- description -->
                   <div class="mt-16 feature-card-info">
                     <h3
+                      data-aos="fade-up"
                       class="font-space-grotesk text-3xl text-black font-bold"
                     >
                       Real-Time Responses
                     </h3>
-                    <p class="mt-4 feature-card-description">
+                    <p data-aos="fade-up" class="mt-4 feature-card-description">
                       Get instant answers to your queries, enhancing
                       productivity and efficiency.
                     </p>
@@ -631,7 +686,11 @@
             class="flex flex-row-reverse items-center feature-card-wrapper feature-card-wrapper-reverser"
           >
             <!-- image section -->
-            <div class="p-4 feature-image-card feature-image-card-right">
+            <div
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+              class="p-4 feature-image-card feature-image-card-right"
+            >
               <img src="./assets/images/feature-6.png" alt="" />
             </div>
             <!-- info section -->
@@ -640,7 +699,7 @@
                 class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
               >
                 <div>
-                  <button class="button featured-button">
+                  <button data-aos="fade-up" class="button featured-button">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="26"
@@ -659,11 +718,12 @@
                   <!-- description -->
                   <div class="mt-16 feature-card-info">
                     <h3
+                      data-aos="fade-up"
                       class="font-space-grotesk text-3xl text-black font-bold"
                     >
                       Versatile Applications
                     </h3>
-                    <p class="mt-4 feature-card-description">
+                    <p data-aos="fade-up" class="mt-4 feature-card-description">
                       Suitable for various needs, from personal inquiries to
                       professional research.
                     </p>
@@ -676,7 +736,11 @@
           <!-- feature-7 -->
           <div class="flex items-center feature-card-wrapper">
             <!-- image section -->
-            <div class="p-4 feature-image-card feature-image-card-left">
+            <div
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+              class="p-4 feature-image-card feature-image-card-left"
+            >
               <img src="./assets/images/feature-7.png" alt="" />
             </div>
             <!-- info section -->
@@ -685,7 +749,7 @@
                 class="p-4 feature-card rounded-2xl h-full flex flex-col justify-center"
               >
                 <div>
-                  <button class="button featured-button">
+                  <button data-aos="fade-up" class="button featured-button">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="26"
@@ -704,11 +768,12 @@
                   <!-- description -->
                   <div class="mt-16 feature-card-info">
                     <h3
+                      data-aos="fade-up"
                       class="font-space-grotesk text-3xl text-black font-bold"
                     >
                       Secure and Private
                     </h3>
-                    <p class="mt-4 feature-card-description">
+                    <p data-aos="fade-up" class="mt-4 feature-card-description">
                       Ensures user data and content are handled with utmost
                       security and privacy.
                     </p>
@@ -722,11 +787,19 @@
       <!-- featured section::end -->
 
       <!-- testimonials section::start -->
-      <section class="testimonial-slider-main-wrapper">
+      <section
+        data-aos="zoom-out"
+        data-aos-duration="1200"
+        class="testimonial-slider-main-wrapper"
+      >
         <section class="py-16 container testimonial-slider-wrapper">
           <!-- title -->
           <div class="w-full flex flex-col gap-4 items-center justify-center">
-            <div class="button button-title font-plus-jakarta">
+            <div
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+              class="button button-title font-plus-jakarta"
+            >
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -744,12 +817,22 @@
               <span class="font-normal">Testimonials</span>
             </div>
             <div>
-              <h2 class="primary-title">What our client say</h2>
+              <h2
+                data-aos="zoom-out"
+                data-aos-duration="1000"
+                class="primary-title"
+              >
+                What our client say
+              </h2>
             </div>
           </div>
 
           <!-- testimonial slider -->
-          <div class="mt-16 owl-carousel overflow-hidden rounded-lg">
+          <div
+            data-aos="zoom-out"
+            data-aos-duration="1200"
+            class="mt-16 owl-carousel overflow-hidden rounded-lg"
+          >
             <div class="p-4 testimonial-slider rounded-2xl">
               <!-- stars -->
               <div
@@ -1024,6 +1107,8 @@
 
           <!-- nav buttons -->
           <div
+            data-aos="zoom-out"
+            data-aos-duration="1200"
             class="mt-8 w-full flex items-center justify-center gap-6 testimonial-slider-nav-buttons-wrapper"
           >
             <div id="testimonial-slider-prev-btn" class="testimonials-nav-btn">
@@ -1090,7 +1175,11 @@
           <div
             class="w-full flex flex-col gap-4 items-center justify-center blog-title-section-homepage"
           >
-            <div class="button button-title font-plus-jakarta">
+            <div
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+              class="button button-title font-plus-jakarta"
+            >
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1108,7 +1197,13 @@
               <span class="font-normal">Recent articles</span>
             </div>
             <div>
-              <h2 class="primary-title">Discover our latest blog posts</h2>
+              <h2
+                data-aos="zoom-out"
+                data-aos-duration="1000"
+                class="primary-title"
+              >
+                Discover our latest blog posts
+              </h2>
             </div>
           </div>
 
@@ -1117,7 +1212,12 @@
             class="mt-16 grid grid-cols-3 gap-12 blog-cards-section-homepage"
           >
             <!-- card-1 -->
-            <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+            <a
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              href="blog-details.html"
+              class="rounded-2xl cursor-pointer"
+            >
               <!-- image -->
               <div class="article-card-image-wrapper">
                 <img src="./assets/images/article-1.jpg" alt="" />
@@ -1138,7 +1238,13 @@
               </div>
             </a>
             <!-- card-2 -->
-            <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+            <a
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+              href="blog-details.html"
+              class="rounded-2xl cursor-pointer"
+            >
               <!-- image -->
               <div class="article-card-image-wrapper">
                 <img src="./assets/images/article-2.jpg" alt="" />
@@ -1159,7 +1265,13 @@
               </div>
             </a>
             <!-- card-3 -->
-            <a href="blog-details.html" class="rounded-2xl cursor-pointer">
+            <a
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1200"
+              href="blog-details.html"
+              class="rounded-2xl cursor-pointer"
+            >
               <!-- image -->
               <div class="article-card-image-wrapper">
                 <img src="./assets/images/article-3.jpg" alt="" />
@@ -1185,7 +1297,13 @@
           <div
             class="mt-16 flex items-center justify-center article-see-all-btn-homepage"
           >
-            <a href="blog.html" class="button featured-button">See All</a>
+            <a
+              data-aos="zoom-out"
+              data-aos-duration="1200"
+              href="blog.html"
+              class="button featured-button"
+              >See All</a
+            >
           </div>
         </section>
       </section>
@@ -1206,11 +1324,11 @@
 
           <!-- contents -->
           <div class="z-10">
-            <h3 class="trial-title text-center">
+            <h3 data-aos="zoom-out" class="trial-title text-center">
               Experience the Future of AI-Powered <br />
               Assistance Today!
             </h3>
-            <p class="trial-description mt-4">
+            <p data-aos="zoom-out" class="trial-description mt-4">
               Unlock the full potential of echofavor.ai with a free trial.
               Explore our AI chatbot's capabilities to ask questions about your
               own content and get comprehensive answers from the web. No credit
@@ -1222,6 +1340,7 @@
               class="mt-8 w-full flex items-center justify-center start-trial-button"
             >
               <a
+                data-aos="zoom-out"
                 href="sign-in.html"
                 class="button trial-button w-fit rounded-full"
                 >Start Your Free Trial</a
@@ -1238,7 +1357,7 @@
         class="container py-16 grid grid-cols-6 gap-12 footer-top-section"
       >
         <!-- logo section -->
-        <div class="col-span-2">
+        <div data-aos="zoom-out" class="col-span-2">
           <div>
             <img class="footer-logo" src="./assets/images/logo.svg" alt="" />
           </div>
@@ -1252,7 +1371,7 @@
         </div>
 
         <!-- Pages -->
-        <div>
+        <div data-aos="zoom-out" data-aos-delay="100">
           <h4 class="footer-item-title">ecohofavor AI</h4>
           <div class="mt-3 footer-item-wrapper">
             <ul class="flex flex-col gap-2">
@@ -1267,7 +1386,7 @@
         </div>
 
         <!-- Pages -->
-        <div>
+        <div data-aos="zoom-out" data-aos-delay="150">
           <h4 class="footer-item-title">Support</h4>
           <div class="mt-3 footer-item-wrapper">
             <ul class="flex flex-col gap-2">
@@ -1284,7 +1403,11 @@
         </div>
 
         <!-- Updates -->
-        <div class="col-span-2 footer-form-main-wrapper">
+        <div
+          data-aos="zoom-out"
+          data-aos-delay="200"
+          class="col-span-2 footer-form-main-wrapper"
+        >
           <h4 class="footer-item-title">Updates</h4>
           <p class="mt-3 footer-item-wrapper footer-item-description">
             Stay in the loop with updates on the AI ecosystem, company news, and
@@ -1315,7 +1438,7 @@
       </section>
 
       <!-- earning -->
-      <section class="earning-footer-main-wrapper">
+      <section data-aos="fade-up" class="earning-footer-main-wrapper">
         <section
           class="my-20 container footer-earning-wrapper flex items-center justify-between overflow-hidden"
         >

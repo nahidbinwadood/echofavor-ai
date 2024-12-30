@@ -21,14 +21,14 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
-  <body>
+  <body style="overflow-x: hidden !important">
     <!-- header -->
     <header class="header">
       <nav
         class="container font-plus-jakarta flex items-center justify-between py-4"
       >
         <!-- logo -->
-        <div>
+        <div data-aos="fade-down" data-aos-duration="1000">
           <a class="nav-logo" href="index.html">
             <img src="./assets/images/logo.svg" alt="" />
           </a>
@@ -36,7 +36,11 @@
 
         <!-- navLinks -->
         <div>
-          <ul class="flex items-center gap-8 text-lg font-medium nav_links">
+          <ul
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            class="flex items-center gap-8 text-lg font-medium nav_links"
+          >
             <li>
               <a href="index.html" class="navlink">Home</a>
             </li>
@@ -63,7 +67,11 @@
         </div>
 
         <!-- button -->
-        <div class="flex items-center gap-4 nav_cta_buttons">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          class="flex items-center gap-4 nav_cta_buttons"
+        >
           <a href="register.html" class="button button-white">Register</a>
           <a href="sign-in.html" class="button button-transparent"
             >Start for Free</a
@@ -71,7 +79,7 @@
         </div>
 
         <!-- menu hamburger -->
-        <div class="menu-buttons">
+        <div data-aos="fade-down" data-aos-duration="1000" class="menu-buttons">
           <!-- open menu -->
           <div class="hamburger-open">
             <svg
@@ -154,7 +162,7 @@
                 <li><a href="#">For business</a></li>
               </ul>
               <li>
-                <a href="blog.html" class="navlink navlink_active">Blog</a>
+                <a href="blog.html" class="navlink_active navlink">Blog</a>
               </li>
               <li>
                 <a href="affiliate.html">Affiliate</a>
@@ -183,11 +191,17 @@
         <div
           class="w-full flex flex-col gap-4 items-center justify-center blog-details-page-main-title"
         >
-          <div class="button button-title font-plus-jakarta">
+          <div
+            data-aos="zoom-out"
+            data-aos-duration="1200"
+            class="button button-title font-plus-jakarta"
+          >
             <span class="font-normal">Product updates</span>
           </div>
           <div>
             <h2
+              data-aos="zoom-out"
+              data-aos-duration="1200"
               style="width: 70%; margin: 0 auto"
               class="primary-title text-center blog-details-page-title"
             >
@@ -195,6 +209,8 @@
               Too
             </h2>
             <p
+              data-aos="zoom-out"
+              data-aos-duration="1200"
               style="
                 color: #42526e;
                 text-align: center;
@@ -212,7 +228,11 @@
       <!-- blog details section::start -->
       <section class="pt-16 container overflow-hidden blog-details-container">
         <!-- banner -->
-        <div class="blog-details-banner">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          class="blog-details-banner"
+        >
           <img
             class="rounded-2xl"
             src="./assets/images/blog-details.png"
@@ -222,7 +242,7 @@
 
         <!-- details -->
         <div class="mt-16 blog-details-description-wrapper">
-          <p class="blog-details-description">
+          <p data-aos="zoom-in" class="blog-details-description">
             As artificial intelligence (AI) continues to evolve, it’s
             transforming industries in ways we couldn’t have imagined just a few
             years ago. One of the most powerful applications of AI is
@@ -235,7 +255,7 @@
           </p>
 
           <!-- title with details -->
-          <div class="mt-10 blog-details-with-title-wrapper">
+          <div data-aos="zoom-in" class="mt-10 blog-details-with-title-wrapper">
             <h3 class="text-black font-plus-jakarta text-xl font-semibold">
               1. Boosting Efficiency by Automating Repetitive Tasks
             </h3>
@@ -265,7 +285,7 @@
               support.
             </p>
           </div>
-          <div class="mt-10 blog-details-with-title-wrapper">
+          <div data-aos="zoom-in" class="mt-10 blog-details-with-title-wrapper">
             <h3 class="text-black font-plus-jakarta text-xl font-semibold">
               1. Boosting Efficiency by Automating Repetitive Tasks
             </h3>
@@ -305,7 +325,7 @@
           <div
             class="blog-details-page my-20 rounded-2xl py-16 flex flex-col items-center justify-center gap-10 relative"
           >
-            <div class="text-center">
+            <div data-aos="zoom-out" class="text-center">
               <h5 class="font-semibold text-3xl blog-details-newsletter-title">
                 What can I help with?
               </h5>
@@ -317,6 +337,7 @@
             <!-- form -->
 
             <div
+              data-aos="zoom-out"
               class="bg-white flex items-center gap-3 rounded-full px-6 py-1 blog-details-newsletter-form"
             >
               <div class="blog-details-newsletter-form-logo">
@@ -382,7 +403,7 @@
         class="container py-16 grid grid-cols-6 gap-12 footer-top-section"
       >
         <!-- logo section -->
-        <div class="col-span-2">
+        <div data-aos="zoom-out" class="col-span-2">
           <div>
             <img class="footer-logo" src="./assets/images/logo.svg" alt="" />
           </div>
@@ -396,7 +417,7 @@
         </div>
 
         <!-- Pages -->
-        <div>
+        <div data-aos="zoom-out" data-aos-delay="100">
           <h4 class="footer-item-title">ecohofavor AI</h4>
           <div class="mt-3 footer-item-wrapper">
             <ul class="flex flex-col gap-2">
@@ -411,7 +432,7 @@
         </div>
 
         <!-- Pages -->
-        <div>
+        <div data-aos="zoom-out" data-aos-delay="150">
           <h4 class="footer-item-title">Support</h4>
           <div class="mt-3 footer-item-wrapper">
             <ul class="flex flex-col gap-2">
@@ -428,7 +449,11 @@
         </div>
 
         <!-- Updates -->
-        <div class="col-span-2 footer-form-main-wrapper">
+        <div
+          data-aos="zoom-out"
+          data-aos-delay="200"
+          class="col-span-2 footer-form-main-wrapper"
+        >
           <h4 class="footer-item-title">Updates</h4>
           <p class="mt-3 footer-item-wrapper footer-item-description">
             Stay in the loop with updates on the AI ecosystem, company news, and
@@ -459,7 +484,7 @@
       </section>
 
       <!-- earning -->
-      <section class="earning-footer-main-wrapper">
+      <section data-aos="zoom-out" class="earning-footer-main-wrapper">
         <section
           class="my-20 container footer-earning-wrapper flex items-center justify-between overflow-hidden"
         >

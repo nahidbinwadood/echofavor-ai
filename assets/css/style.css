@@ -1606,5 +1606,10 @@ footer p {
   background: #888;
   border-radius: 3px;
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
+ 
 /* custom */

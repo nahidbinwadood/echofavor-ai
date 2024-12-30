@@ -1,13 +1,45 @@
 $(document).ready(function () {
-  // // Initialize Lenis
-  // const lenis = new Lenis({
-  //   autoRaf: true,
-  // });
+  AOS.init({
+    once: true,
+    duration: 800,
+  });
 
-  // // Listen for the scroll event and log the event data
-  // lenis.on('scroll', (e) => {
-  //   // console.log(e);
-  // });
+  // // Initialize Lenis
+  // Initialize Lenis
+  const lenis = new Lenis({
+    wheelEventsTarget: document.documentElement,
+    // Exclude both textareas from Lenis
+    ignoredElements: [
+      document.querySelector('.banner-filter-input'),
+      document.querySelector('.details-filter-input'),
+    ],
+  });
+
+  // Get both textareas
+  const textareas = document.querySelectorAll(
+    '.banner-filter-input, .details-filter-input'
+  );
+
+  // Add scroll handling to both textareas
+  textareas?.forEach((textarea) => {
+    textarea?.addEventListener(
+      'wheel',
+      (e) => {
+        if (textarea.scrollHeight > textarea.clientHeight) {
+          e.stopPropagation();
+        }
+      },
+      { passive: false }
+    );
+  });
+
+  // Regular Lenis animation
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
 
   //sticky navbar:
 
@@ -247,4 +279,20 @@ $(document).ready(function () {
   productSidebar?.addEventListener('click', () => {
     submenuSidebar?.classList.toggle('show');
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // Gsap::
+
+
 });

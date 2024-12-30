@@ -21,14 +21,14 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
-  <body>
+  <body style="overflow-x: hidden !important">
     <!-- header -->
     <header class="header">
       <nav
         class="container font-plus-jakarta flex items-center justify-between py-4"
       >
         <!-- logo -->
-        <div>
+        <div data-aos="fade-down" data-aos-duration="1000">
           <a class="nav-logo" href="index.html">
             <img src="./assets/images/logo.svg" alt="" />
           </a>
@@ -36,7 +36,11 @@
 
         <!-- navLinks -->
         <div>
-          <ul class="flex items-center gap-8 text-lg font-medium nav_links">
+          <ul
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            class="flex items-center gap-8 text-lg font-medium nav_links"
+          >
             <li>
               <a href="index.html" class="navlink">Home</a>
             </li>
@@ -65,7 +69,11 @@
         </div>
 
         <!-- button -->
-        <div class="flex items-center gap-4 nav_cta_buttons">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          class="flex items-center gap-4 nav_cta_buttons"
+        >
           <a href="register.html" class="button button-white">Register</a>
           <a href="sign-in.html" class="button button-transparent"
             >Start for Free</a
@@ -73,7 +81,7 @@
         </div>
 
         <!-- menu hamburger -->
-        <div class="menu-buttons">
+        <div data-aos="fade-down" data-aos-duration="1000" class="menu-buttons">
           <!-- open menu -->
           <div class="hamburger-open">
             <svg
@@ -159,7 +167,9 @@
                 <a href="blog.html">Blog</a>
               </li>
               <li>
-                <a href="affiliate.html" class="navlink navlink_active">Affiliate</a>
+                <a href="affiliate.html" class="navlink_active navlink"
+                  >Affiliate</a
+                >
               </li>
               <li>
                 <a href="contact.html">Contact Us</a>
@@ -179,27 +189,47 @@
     </header>
 
     <!-- main -->
-    <main class="affiliate-page-main-wrapper">
+    <main
+      style="overflow-x: hidden !important"
+      class="affiliate-page-main-wrapper"
+    >
       <!-- affiliate banner section::start -->
       <section
         class="container py-20 flex items-center gap-12 affiliate-page-banner-section-wrapper"
       >
         <div class="text-black">
-          <h2 class="affiliate-title">
+          <h2
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+            class="affiliate-title"
+          >
             Become a Echofavor <br />
             Workspace Affiliate
           </h2>
-          <p class="affiliate-description mt-2">
+          <p
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+            class="affiliate-description mt-2"
+          >
             As artificial intelligence (AI) continues to evolve, it’s
             transforming industries in ways we couldn’t have imagined just a few
             years ago.
           </p>
-          <div class="inline-block">
+          <div
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+            class="inline-block"
+          >
             <a href="" class="button footer-button mt-4">Join Now</a>
           </div>
         </div>
         <div class="affiliate-banner-bg">
-          <img src="./assets/images/affiliate-banner-bg.png" alt="" />
+          <img
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+            src="./assets/images/affiliate-banner-bg.png"
+            alt=""
+          />
         </div>
       </section>
       <!-- affiliate banner section::end -->
@@ -208,7 +238,11 @@
       <section
         class="py-10 container flex items-center justify-center affiliate-buttons-wrapper"
       >
-        <div class="affiliate-button">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          class="affiliate-button"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -226,7 +260,12 @@
           </svg>
           <span>30 Days cookie</span>
         </div>
-        <div class="affiliate-button">
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          class="affiliate-button"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -244,7 +283,12 @@
           </svg>
           <span>30% commission</span>
         </div>
-        <div class="affiliate-button">
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="150"
+          data-aos-duration="1000"
+          class="affiliate-button"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -270,6 +314,7 @@
         <!-- title -->
         <div>
           <h3
+            data-aos="zoom-out"
             class="text-black text-center font-semibold text-3xl affiliate-how-it-works-title"
           >
             How it works
@@ -280,7 +325,7 @@
         <div
           class="mt-20 grid grid-cols-3 gap-12 affiliate-how-it-works-cards-wrapper"
         >
-          <div class="text-black">
+          <div data-aos="zoom-out" class="text-black">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -322,7 +367,7 @@
               </p>
             </div>
           </div>
-          <div class="text-black">
+          <div data-aos="zoom-out" class="text-black">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -347,7 +392,7 @@
               </p>
             </div>
           </div>
-          <div class="text-black">
+          <div data-aos="zoom-out" class="text-black">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -421,6 +466,7 @@
         </div>
         <!-- btn -->
         <div
+          data-aos="zoom-out"
           class="mt-10 w-full flex items-center justify-center affiliate-how-it-works-cards-wrapper-join-now-btn"
         >
           <div class="inline-block">
@@ -434,14 +480,21 @@
       <section class="py-20 container affiliate-faq-wrapper">
         <!-- title -->
         <div class="affiliate-faq-title">
-          <h3 class="text-black text-center font-semibold text-3xl">
+          <h3
+            data-aos="zoom-out"
+            class="text-black text-center font-semibold text-3xl"
+          >
             Affiliate FAQ
           </h3>
         </div>
 
         <!-- faq -->
         <section class="mt-16 affiliate-faq">
-          <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div
+            data-aos="zoom-in"
+            class="accordion accordion-flush"
+            id="accordionFlushExample"
+          >
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
@@ -619,11 +672,11 @@
 
           <!-- contents -->
           <div class="z-10">
-            <h3 class="trial-title text-center">
+            <h3 data-aos="zoom-out" class="trial-title text-center">
               Experience the Future of AI-Powered <br />
               Assistance Today!
             </h3>
-            <p class="trial-description mt-4">
+            <p data-aos="zoom-out" class="trial-description mt-4">
               Unlock the full potential of echofavor.ai with a free trial.
               Explore our AI chatbot's capabilities to ask questions about your
               own content and get comprehensive answers from the web. No credit
@@ -635,6 +688,7 @@
               class="mt-8 w-full flex items-center justify-center start-trial-button"
             >
               <a
+                data-aos="zoom-out"
                 href="sign-in.html"
                 class="button trial-button w-fit rounded-full"
                 >Start Your Free Trial</a
@@ -652,7 +706,7 @@
         class="container py-16 grid grid-cols-6 gap-12 footer-top-section"
       >
         <!-- logo section -->
-        <div class="col-span-2">
+        <div data-aos="zoom-out" class="col-span-2">
           <div>
             <img class="footer-logo" src="./assets/images/logo.svg" alt="" />
           </div>
@@ -666,7 +720,7 @@
         </div>
 
         <!-- Pages -->
-        <div>
+        <div data-aos="zoom-out" data-aos-delay="100">
           <h4 class="footer-item-title">ecohofavor AI</h4>
           <div class="mt-3 footer-item-wrapper">
             <ul class="flex flex-col gap-2">
@@ -681,7 +735,7 @@
         </div>
 
         <!-- Pages -->
-        <div>
+        <div data-aos="zoom-out" data-aos-delay="150">
           <h4 class="footer-item-title">Support</h4>
           <div class="mt-3 footer-item-wrapper">
             <ul class="flex flex-col gap-2">
@@ -698,7 +752,11 @@
         </div>
 
         <!-- Updates -->
-        <div class="col-span-2 footer-form-main-wrapper">
+        <div
+          data-aos="zoom-out"
+          data-aos-delay="200"
+          class="col-span-2 footer-form-main-wrapper"
+        >
           <h4 class="footer-item-title">Updates</h4>
           <p class="mt-3 footer-item-wrapper footer-item-description">
             Stay in the loop with updates on the AI ecosystem, company news, and
@@ -729,7 +787,7 @@
       </section>
 
       <!-- earning -->
-      <section class="earning-footer-main-wrapper">
+      <section data-aos="zoom-out" class="earning-footer-main-wrapper">
         <section
           class="my-20 container footer-earning-wrapper flex items-center justify-between overflow-hidden"
         >
