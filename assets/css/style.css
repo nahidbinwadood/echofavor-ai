@@ -281,8 +281,12 @@ footer p {
 
 .homepage-hero-glow-btn {
   color: var(--primary--color);
+
 }
 
+.homepage-hero-glow-btn,.button-title {
+  cursor: auto !important;
+}
 .homepage-hero-glow-btn svg path {
   fill: var(--primary--color);
   transition: all 0.4s ease;
@@ -367,6 +371,13 @@ footer p {
   border-radius: 4px;
   border: 1px solid var(--primary--color);
   background: var(--primary--color);
+}
+.featured-button-advantage {
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid var(--primary--color);
+  background: var(--primary--color);
+  cursor: auto !important;
 }
 
 .footer-button {
@@ -1611,5 +1622,5 @@ html, body {
   overflow-x: hidden;
 }
 
- 
+
 /* custom */
