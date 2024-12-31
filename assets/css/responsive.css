@@ -5114,6 +5114,11 @@
   .hero-search-filter-svg {
     margin-top: 0px;
   }
+  .prof-free-card,
+  .prof-pro-card,
+  .prof-buss-card {
+    display: none;
+  }
   /* custom */
 }
 
@@ -6172,6 +6177,12 @@
   .hero-search-filter-svg {
     margin-top: 0px;
   }
+
+  .prof-free-card,
+  .prof-pro-card,
+  .prof-buss-card {
+    display: none;
+  }
   /* custom */
 }
 
@@ -7215,6 +7226,11 @@
 
   .blog-details-newsletter-form {
     min-height: 20px;
+  }
+  .prof-free-card,
+  .prof-pro-card,
+  .prof-buss-card {
+    display: none;
   }
   /* custom */
 }
