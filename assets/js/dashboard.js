@@ -1,5 +1,8 @@
 $(document).ready(function () {
-  $('.upload-folders-select').niceSelect();
+  // nice select:::
+  $('.upload-drawer-folders-select').niceSelect();
+  $('.upload-drawer-all-files-select').niceSelect();
+
   const profileButton = document.querySelector(
     '.dashboard-header-profile-container'
   );
@@ -472,6 +475,13 @@ $(document).ready(function () {
   const uploadDrawerWrapper = document.querySelector(
     '.upload-dashboard-drawer-wrapper'
   );
+  const manageFilesButton = document.querySelector(
+    '.dashboard-sidebar-manage-item.files'
+  );
+  const uploadFileInputDrawerButton = document.querySelector(
+    '.upload-file-drawer-button'
+  );
+
   const uploadBackDrop = document.querySelector('.upload-drawer-backdrop');
   uploadFoldersWrapper?.addEventListener('click', (e) => {
     if (e.target.classList.contains('default-upload-button')) {
@@ -481,6 +491,19 @@ $(document).ready(function () {
       }
     }
   });
+
+  // show upload drawer by clicking on files from manage items (sidebar):
+  manageFilesButton?.addEventListener('click', (e) => {
+    if (uploadDrawerWrapper) {
+      uploadDrawerWrapper.classList.toggle('show');
+    }
+  });
+  uploadFileInputDrawerButton?.addEventListener('click', (e) => {
+    if (uploadDrawerWrapper) {
+      uploadDrawerWrapper.classList.toggle('show');
+    }
+  });
+
   uploadBackDrop?.addEventListener('click', () => {
     uploadDrawerWrapper.classList.remove('show');
   });
@@ -500,6 +523,32 @@ $(document).ready(function () {
     btn?.addEventListener('click', () => {
       uploadDrawerWrapper.classList.remove('show');
     });
+  });
+
+  const selectedOption = document.getElementById('selectedOption');
+  const dropdownOptions = document.getElementById('dropdownOptions');
+
+  // Truncate text longer than 50 characters and add ellipsis
+  const truncateText = (text, maxLength) =>
+    text.length > maxLength ? text.slice(0, maxLength) + '...' : text;
+
+  // Handle displaying the dropdown
+  selectedOption.addEventListener('click', () => {
+    dropdownOptions.style.display =
+      dropdownOptions.style.display === 'block' ? 'none' : 'block';
+  });
+
+  // Update the selected option and truncate the displayed text
+  dropdownOptions.addEventListener('click', (event) => {
+    if (event.target.tagName === 'LI') {
+      selectedOption.textContent = truncateText(event.target.textContent, 50);
+      dropdownOptions.style.display = 'none';
+    }
+  });
+
+  // Apply truncation to all dropdown options
+  document.querySelectorAll('.dropdown-options li').forEach((item) => {
+    item.textContent = truncateText(item.textContent, 50);
   });
 
   //upload
@@ -555,7 +604,7 @@ $(document).ready(function () {
     folderDiv.innerHTML = `
       <div class="upload-file-item default-upload-button">
                   <p>Default</p>
-                  <div>
+                  <div class='hidden'>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -678,65 +727,123 @@ $(document).ready(function () {
     }
   });
 
+  // Function to show and hide toast
+  function showToast(duration) {
+    const toast = document.getElementById('uploadToast');
+    toast.classList.remove('hidden');
+
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        toast.classList.add('hidden');
+        resolve();
+      }, duration);
+    });
+  }
+
   // Event listener for the Upload button
-  uploadButton?.addEventListener('click', () => {
+  uploadButton?.addEventListener('click', async () => {
     if (selectedFiles.length > 0) {
-      selectedFiles.forEach((file) => {
-        // Create dynamic HTML for uploaded file
-        const fileItem = document.createElement('div');
-        fileItem.className = 'uploaded-file-item';
-        fileItem.innerHTML = `
-      <div class="uploaded-file-item-content">
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="21"
-            viewBox="0 0 20 21"
-            fill="none">
-            <path
-              d="M5 10.694L8.36 14.054L15.0919 7.33398"
-              stroke="#292D32"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <div class="uploaded-file-item-title">
-          ${
-            file.name.length > 20
-              ? file.name.substring(0, 20) + '...'
-              : file.name
-          }
-        </div>
-        <div class="uploaded-file-item-info">
-          ${formatSize(file.size)} |   ${new Date().toLocaleTimeString()}
-        </div>
-      </div>
-      <div
-        data-bs-toggle="modal"
-        data-bs-target="#deleteUploadModal"
-        class="uploaded-file-item-delete-btn cursor-pointer">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="21"
-          viewBox="0 0 20 21"
-          fill="none">
-          <path
-            d="M3 13.5L9 7.5"
-            stroke="#141414"
-            stroke-linecap="round"
-            stroke-linejoin="round"/>
-          <path
-            d="M9 13.5L3 7.5"
-            stroke="#141414"
-            stroke-linecap="round"
-            stroke-linejoin="round"/>
-        </svg>
-      </div>
-    `;
-        uploadedFileWrapper.appendChild(fileItem);
+      // Show toast for 3 seconds
+      showToast(3000).then(() => {
+          document.querySelectorAll('.upload-icon-cross').forEach((crossIcon) => {
+              crossIcon.classList.add('hidden');
+              crossIcon.nextElementSibling.classList.remove('hidden');
+          });
+      });
+
+      selectedFiles?.forEach((file) => {
+          const fileItem = document.createElement('div');
+          fileItem.className = 'uploaded-file-item';
+          // Store full file name as data attribute
+          fileItem.setAttribute('data-full-name', file.name);
+
+          fileItem.innerHTML = `
+           <div class="uploaded-file-item">
+                  <div class="uploaded-file-item-content">
+                    <div class="uploaded-file-icon">
+                       <svg class='upload-icon-cross'
+                            xmlns="http://www.w3.org/2000/svg"
+                            version="1.1"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="10"
+                            height="10"
+                            x="0"
+                            y="0"
+                            viewBox="0 0 329.269 329"
+                            style="enable-background: new 0 0 512 512"
+                            xml:space="preserve"
+                            class="hovered-paths"
+                        >
+                            <g>
+                                <g fill="#f44336">
+                                    <path
+                                        d="M21.34 329.398c-5.461 0-10.926-2.09-15.082-6.25-8.344-8.34-8.344-21.824 0-30.164L292.848 6.391c8.34-8.34 21.824-8.34 30.164 0 8.343 8.34 8.343 21.824 0 30.164L36.422 323.148a21.231 21.231 0 0 1-15.082 6.25zm0 0"
+                                        fill="#f44336"
+                                        opacity="1"
+                                        data-original="#f44336"
+                                        class="hovered-path"
+                                    ></path>
+                                    <path
+                                        d="M307.93 329.398c-5.461 0-10.922-2.09-15.082-6.25L6.258 36.555c-8.344-8.34-8.344-21.825 0-30.164 8.34-8.34 21.82-8.34 30.164 0l286.59 286.593c8.343 8.34 8.343 21.825 0 30.164-4.16 4.18-9.621 6.25-15.082 6.25zm0 0"
+                                        fill="#f44336"
+                                        opacity="1"
+                                        data-original="#f44336"
+                                        class="hovered-path"
+                                    ></path>
+                                </g>
+                            </g>
+                        </svg>
+                        <svg class='upload-icon-right hidden'
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
+                            fill="none">
+                            <path
+                                d="M5 10.694L8.36 14.054L15.0919 7.33398"
+                                stroke="#292D32"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="uploaded-file-item-title" data-full-name="${file.name}">
+                        ${file.name.length > 20 ? file.name.substring(0, 20) + '...' : file.name}
+                    </div>
+                    <div class="uploaded-file-item-info">
+                        ${formatSize(file.size)} | ${new Date().toLocaleTimeString()}
+                    </div>
+                  </div>
+                  <div
+                    data-bs-toggle="modal"
+                    data-bs-target="#deleteUploadModal"
+                    class="uploaded-file-item-delete-btn cursor-pointer"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="21"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                    >
+                      <path
+                        d="M3 13.5L9 7.5"
+                        stroke="#141414"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9 13.5L3 7.5"
+                        stroke="#141414"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+          `;
+          uploadedFileWrapper.appendChild(fileItem);
       });
 
       // Reset selected files
@@ -750,6 +857,33 @@ $(document).ready(function () {
     }
   });
 
+  const allUploadedFilesUploadDrawer = document.querySelectorAll(
+    '.uploaded-file-item'
+  );
+
+  // Add event listener to the parent container (uploadedFileWrapper)
+  uploadedFileWrapper.addEventListener('click', (e) => {
+    const fileItem = e.target.closest('.uploaded-file-item');
+    if (fileItem) {
+        const titleElement = fileItem.querySelector('.uploaded-file-item-title');
+        const infoElement = fileItem.querySelector('.uploaded-file-item-info');
+        const fullFileName = fileItem?.parentElement.getAttribute('data-full-name') || fileItem?.getAttribute('data-full-name');
+        const uploadStatus = fileItem.querySelector('.upload-icon-right').classList.contains('hidden') ? 'processing' : 'completed';
+
+        const fileInfo = infoElement ? infoElement.textContent.trim().split('|') : [];
+
+        const fileData = {
+            fileName: fullFileName, // Now using the full file name
+            displayName: titleElement ? titleElement.textContent.trim() : '',
+            fileSize: fileInfo[0] ? fileInfo[0].trim() : '',
+            uploadTime: fileInfo[1] ? fileInfo[1].trim() : '',
+            uploadStatus: uploadStatus,
+            element: fileItem
+        };
+
+        console.log('File Data:', fullFileName);
+    }
+});
   // dashboard responsive sidebar:
   const responsiveToggleButton = document.querySelector(
     '.dashboard-responsive-sidebar--toggle--btn'
@@ -783,18 +917,18 @@ $(document).ready(function () {
     responsiveToggleButtonSvg?.classList.toggle('show');
   }
 
-  const responsiveDashboardSidebarManageItems=document.querySelectorAll('.dashboard-sidebar-manage-item')
-  responsiveDashboardSidebarManageItems?.forEach((button)=>{
-    button?.addEventListener('click', ()=>{
-      hideResponsiveSidebar()
-    })
-  })
-  const newChatButtons=document.querySelectorAll('.new-chat-button')
-  newChatButtons.forEach((button)=>{
-    button?.addEventListener('click', ()=>{
-      hideResponsiveSidebar()
-    })
-  })
-
-
+  const responsiveDashboardSidebarManageItems = document.querySelectorAll(
+    '.dashboard-sidebar-manage-item'
+  );
+  responsiveDashboardSidebarManageItems?.forEach((button) => {
+    button?.addEventListener('click', () => {
+      hideResponsiveSidebar();
+    });
+  });
+  const newChatButtons = document.querySelectorAll('.new-chat-button');
+  newChatButtons.forEach((button) => {
+    button?.addEventListener('click', () => {
+      hideResponsiveSidebar();
+    });
+  });
 });
