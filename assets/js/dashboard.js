@@ -23,6 +23,20 @@ $(document).ready(function () {
   });
 
   //chat history::options:
+  function truncateTextChatHistory(element, limit) {
+    if (element?.innerText?.length > limit) {
+      const updatedText = element?.innerText?.slice(0, limit) + '...';
+      element.innerText = updatedText;
+    }
+    return element;
+  }
+  const chatHistoryTitles = document.querySelectorAll(
+    '.dashboard-chat-history-item-title'
+  );
+
+  chatHistoryTitles?.forEach((title) => {
+    truncateTextChatHistory(title, 30);
+  });
 
   const chatHistoryOptionBtn = document.querySelector(
     '.dashboard-chat-history-item-options'
@@ -367,15 +381,20 @@ $(document).ready(function () {
   );
   inviteUserBtn?.addEventListener('click', () => {
     const invEmail = addEmailShareInput.value;
-    if (invEmail) {
-      noInvitesText.forEach((text) => {
-        text.classList.add('hidden');
-      });
-      if (invitedStatusWrapper && expiredStatusWrapper) {
-        invitedStatusWrapper.classList.remove('hidden');
-        expiredStatusWrapper.classList.remove('hidden');
-        addEmailShareInput.value = '';
+    console.log(invEmail.length);
+    if (invEmail.length > 0) {
+      if (invEmail) {
+        noInvitesText.forEach((text) => {
+          text.classList.add('hidden');
+        });
+        if (invitedStatusWrapper && expiredStatusWrapper) {
+          invitedStatusWrapper.classList.remove('hidden');
+          expiredStatusWrapper.classList.remove('hidden');
+          addEmailShareInput.value = '';
+        }
       }
+    } else {
+      alert('Please enter a valid email address.');
     }
   });
 
@@ -648,7 +667,7 @@ $(document).ready(function () {
   uploadedFileTitles.forEach((title) => {
     if (title) {
       const originalText = title.textContent.trim(); // Get the text content
-      console.log(originalText.length); // Log the length of the text
+      //console.log(originalText.length); // Log the length of the text
 
       // Truncate and update if it exceeds the max length
       const maxLength = 20;
@@ -745,19 +764,19 @@ $(document).ready(function () {
     if (selectedFiles.length > 0) {
       // Show toast for 3 seconds
       showToast(3000).then(() => {
-          document.querySelectorAll('.upload-icon-cross').forEach((crossIcon) => {
-              crossIcon.classList.add('hidden');
-              crossIcon.nextElementSibling.classList.remove('hidden');
-          });
+        document.querySelectorAll('.upload-icon-cross').forEach((crossIcon) => {
+          crossIcon.classList.add('hidden');
+          crossIcon.nextElementSibling.classList.remove('hidden');
+        });
       });
 
       selectedFiles?.forEach((file) => {
-          const fileItem = document.createElement('div');
-          fileItem.className = 'uploaded-file-item';
-          // Store full file name as data attribute
-          fileItem.setAttribute('data-full-name', file.name);
+        const fileItem = document.createElement('div');
+        fileItem.className = 'uploaded-file-item';
+        // Store full file name as data attribute
+        fileItem.setAttribute('data-full-name', file.name);
 
-          fileItem.innerHTML = `
+        fileItem.innerHTML = `
            <div class="uploaded-file-item">
                   <div class="uploaded-file-item-content">
                     <div class="uploaded-file-icon">
@@ -807,11 +826,19 @@ $(document).ready(function () {
                                 stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <div class="uploaded-file-item-title" data-full-name="${file.name}">
-                        ${file.name.length > 20 ? file.name.substring(0, 20) + '...' : file.name}
+                    <div class="uploaded-file-item-title" data-full-name="${
+                      file.name
+                    }">
+                        ${
+                          file.name.length > 20
+                            ? file.name.substring(0, 20) + '...'
+                            : file.name
+                        }
                     </div>
                     <div class="uploaded-file-item-info">
-                        ${formatSize(file.size)} | ${new Date().toLocaleTimeString()}
+                        ${formatSize(
+                          file.size
+                        )} | ${new Date().toLocaleTimeString()}
                     </div>
                   </div>
                   <div
@@ -843,7 +870,7 @@ $(document).ready(function () {
                 </div>
 
           `;
-          uploadedFileWrapper.appendChild(fileItem);
+        uploadedFileWrapper.appendChild(fileItem);
       });
 
       // Reset selected files
@@ -865,25 +892,33 @@ $(document).ready(function () {
   uploadedFileWrapper.addEventListener('click', (e) => {
     const fileItem = e.target.closest('.uploaded-file-item');
     if (fileItem) {
-        const titleElement = fileItem.querySelector('.uploaded-file-item-title');
-        const infoElement = fileItem.querySelector('.uploaded-file-item-info');
-        const fullFileName = fileItem?.parentElement.getAttribute('data-full-name') || fileItem?.getAttribute('data-full-name');
-        const uploadStatus = fileItem.querySelector('.upload-icon-right').classList.contains('hidden') ? 'processing' : 'completed';
+      const titleElement = fileItem.querySelector('.uploaded-file-item-title');
+      const infoElement = fileItem.querySelector('.uploaded-file-item-info');
+      const fullFileName =
+        fileItem?.parentElement.getAttribute('data-full-name') ||
+        fileItem?.getAttribute('data-full-name');
+      const uploadStatus = fileItem
+        .querySelector('.upload-icon-right')
+        .classList.contains('hidden')
+        ? 'processing'
+        : 'completed';
 
-        const fileInfo = infoElement ? infoElement.textContent.trim().split('|') : [];
+      const fileInfo = infoElement
+        ? infoElement.textContent.trim().split('|')
+        : [];
 
-        const fileData = {
-            fileName: fullFileName, // Now using the full file name
-            displayName: titleElement ? titleElement.textContent.trim() : '',
-            fileSize: fileInfo[0] ? fileInfo[0].trim() : '',
-            uploadTime: fileInfo[1] ? fileInfo[1].trim() : '',
-            uploadStatus: uploadStatus,
-            element: fileItem
-        };
+      const fileData = {
+        fileName: fullFileName, // Now using the full file name
+        displayName: titleElement ? titleElement.textContent.trim() : '',
+        fileSize: fileInfo[0] ? fileInfo[0].trim() : '',
+        uploadTime: fileInfo[1] ? fileInfo[1].trim() : '',
+        uploadStatus: uploadStatus,
+        element: fileItem,
+      };
 
-        console.log('File Data:', fullFileName);
+      console.log('File Data:', fullFileName);
     }
-});
+  });
   // dashboard responsive sidebar:
   const responsiveToggleButton = document.querySelector(
     '.dashboard-responsive-sidebar--toggle--btn'

@@ -300,9 +300,9 @@ body {
   padding: 24px 8px 8px 8px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  max-height: 400px;
+  max-height: 300px;
   overflow-y: auto;
+  gap: 6px;
 }
 
 .dashboard-chat-history-item {
@@ -313,6 +313,10 @@ body {
   padding: 7px 6px 7px 16px;
   align-items: center;
   gap: 10px;
+  padding: 12px 16px;
+  justify-content: space-between;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .dashboard-chat-history-item-title {
@@ -322,13 +326,21 @@ body {
   line-height: 164%;
   text-transform: capitalize;
   white-space: initial;
+  text-wrap: nowrap;
+}
+.dashboard-chat-history-item-title-main-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .dashboard-chat-history-item.active {
-  border-radius: 8px;
   background: #172b4d;
   position: relative;
-  padding: 16px;
+}
+
+.dashboard-chat-history-item:hover {
+  background: #172b4d;
 }
 
 .dashboard-chat-item-option-wrapper {
@@ -368,7 +380,7 @@ body {
 
 .dashboard-chat-history-see-more {
   display: flex;
-  padding: 7px 6px 7px 16px;
+  padding: 12px 16px;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
@@ -400,9 +412,13 @@ body {
   display: flex;
   align-items: center;
   gap: 18px;
+  transition: all 0.4s ease;
+  border-radius: 8px;
   cursor: pointer;
 }
-
+.dashboard-sidebar-manage-item:hover{
+  background: #172b4d;
+}
 .dashboard-sidebar-manage-item.active {
   border-radius: 8px;
   background: var(--30-dark-neutrals-04, #172b4d);
@@ -492,18 +508,16 @@ body {
   /* opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
     transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
     visibility 0.4s cubic-bezier(0.4, 0, 0.2, 1); */
-
   transform: translateY(30px) scale(0.95);
   border-radius: 16px;
   display: flex;
   width: 244px;
   background: #fff;
-  padding: 19px 29px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
   box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.08);
   z-index: -1;
+  overflow: hidden;
 }
 
 .dashboard-header-profile-menu.active {
@@ -522,6 +536,14 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 199%;
+  transition: all 0.3s ease;
+  padding: 8px 24px;
+
+}
+
+.dashboard-header-profile-menu-items:hover {
+  background: var(--primary--color);
+  color: #fff;
 }
 
 .dashboard-main-content-wrapper {
@@ -1440,12 +1462,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .upload-dashboard-drawer-wrapper .dashboard-drawer-main-content-wrapper {
   color: #141414;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-   gap: 20px;
+  gap: 20px;
 }
 
 .dashboard-drawer-bottom-part {
@@ -1830,7 +1853,8 @@ body {
   max-height: 360px;
   overflow-y: auto;
 }
-.uploaded-file-icon{
+
+.uploaded-file-icon {
   height: 22px;
   width: 22px;
   flex-shrink: 0;
@@ -1838,10 +1862,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .toast-notification {
   position: fixed;
   top: 20px;
-left: 50%;
+  left: 50%;
   background-color: #333;
   color: white;
   padding: 12px 24px;
@@ -1969,12 +1994,14 @@ left: 50%;
   padding: 20px 24px;
   width: 100%;
 }
-.upload-dashboard-drawer-wrapper .upload-dashboard-drawer-bottom-part{
+
+.upload-dashboard-drawer-wrapper .upload-dashboard-drawer-bottom-part {
   position: absolute;
   background: #fff;
   bottom: 0;
   left: 0;
 }
+
 .upload-file-details-info {
   border-top: 1px solid #dfe1e6;
   border-bottom: 1px solid #dfe1e6;
