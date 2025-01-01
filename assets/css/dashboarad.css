@@ -182,13 +182,20 @@ body {
   color: var(--primary--color);
   cursor: pointer;
 }
+.new-chat-button{
+  transition: all 0.4s ease;
+}
+.new-chat-button:hover{
+  background-color: #fff;
+  color: var(--primary--color);
+}
 
 .dashboard-submit-button svg path,
 .ai-reaction-like svg path,
 .ai-reaction-dislike svg path,
 .ai-toggle-details-btn-copy svg path,
 .ai-toggle-details-btn-share svg path,
-.regenerate-btn svg path {
+.regenerate-btn svg path,.new-chat-button svg path {
   transition: all 0.4s ease;
 }
 
@@ -199,9 +206,8 @@ body {
 }
 
 .ai-reaction-like:hover svg path,
-.ai-reaction-dislike:hover svg path {
+.ai-reaction-dislike:hover svg path,.new-chat-button:hover svg path {
   fill: var(--primary--color);
-   
 }
 
 .regenerate-btn {
