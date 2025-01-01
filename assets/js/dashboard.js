@@ -53,6 +53,22 @@ $(document).ready(function () {
     }
   });
 
+  // mobile::
+  const chatHistoryOptionBtnSm = document.querySelector(
+    '.dashboard-chat-history-item-options-sm'
+  );
+  const chatHistoryOptionSm = document.querySelector(
+    '.dashboard-chat-item-option-wrapper-sm'
+  );
+  chatHistoryOptionBtnSm?.addEventListener('click', () => {
+     chatHistoryOptionSm?.classList.toggle('active')
+  });
+  document.addEventListener('click', (e) => {
+    if (!chatHistoryOptionBtnSm.contains(e.target)) {
+      chatHistoryOptionSm.classList.remove('active');
+    }
+  });
+
   // details toggle::
   const toggleBtn = document.querySelector('.ai-toggle-details-btn');
   const detailsContainer = document.querySelector(
@@ -81,6 +97,12 @@ $(document).ready(function () {
   const dashboardDrawerCloseBtn = document.querySelector(
     '.dashboard-drawer-wrapper-close'
   );
+
+  function ContextDrawerCloseFunc(){
+    contextDrawer.classList.remove('show');
+    resetDrawerBody();
+    contextDrawer.setAttribute('aria-hidden', 'true');
+  }
 
   contextFolderBtns?.forEach((contextFolderBtn) => {
     contextFolderBtn?.addEventListener('click', () => {
@@ -552,13 +574,13 @@ $(document).ready(function () {
     text.length > maxLength ? text.slice(0, maxLength) + '...' : text;
 
   // Handle displaying the dropdown
-  selectedOption.addEventListener('click', () => {
+  selectedOption?.addEventListener('click', () => {
     dropdownOptions.style.display =
       dropdownOptions.style.display === 'block' ? 'none' : 'block';
   });
 
   // Update the selected option and truncate the displayed text
-  dropdownOptions.addEventListener('click', (event) => {
+  dropdownOptions?.addEventListener('click', (event) => {
     if (event.target.tagName === 'LI') {
       selectedOption.textContent = truncateText(event.target.textContent, 50);
       dropdownOptions.style.display = 'none';
@@ -889,7 +911,7 @@ $(document).ready(function () {
   );
 
   // Add event listener to the parent container (uploadedFileWrapper)
-  uploadedFileWrapper.addEventListener('click', (e) => {
+  uploadedFileWrapper?.addEventListener('click', (e) => {
     const fileItem = e.target.closest('.uploaded-file-item');
     if (fileItem) {
       const titleElement = fileItem.querySelector('.uploaded-file-item-title');
@@ -935,6 +957,8 @@ $(document).ready(function () {
 
   responsiveToggleButton?.addEventListener('click', () => {
     showResponsiveSidebar();
+    ContextDrawerCloseFunc()
+    uploadDrawerWrapper.classList.remove('show');
   });
 
   dashboardMainContentMainWrapper?.addEventListener('click', () => {

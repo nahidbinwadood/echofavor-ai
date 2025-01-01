@@ -43,7 +43,6 @@
 
     .dashboard-responsive-sidebar--toggle--btn-svg {
         transition: all 0.3s ease;
-
     }
 
     .dashboard-responsive-sidebar--toggle--btn-svg.show {
@@ -64,10 +63,9 @@
         left: 0;
         width: 100%;
         min-height: 100vh;
-        background: rgba(0, 0, 0, 0.10);
+        background: rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(10px);
     }
-
 
     .dashboard-sidebar-responsive-header {
         height: 130px !important;
@@ -93,8 +91,6 @@
 
     /* sidebar */
 
-
-
     /* drawer:start */
     .dashboard-drawer-wrapper,
     .upload-dashboard-drawer-wrapper {
@@ -107,8 +103,6 @@
         padding: 24px 16px;
     }
 
-
-
     /* drawer:end */
 }
 
@@ -120,7 +114,6 @@
     .dashboard-responsive-sidebar-main-wrapper {
         display: none;
     }
-
 }
 
 /* custom:end */
@@ -166,7 +159,6 @@
 
     .new-chat-button {
         margin-top: 20px;
-
     }
 
     .dashboard-responsive-sidebar-main-wrapper {
@@ -182,11 +174,16 @@
     .dashboard-chat-history-item.active {
         padding: 10px;
     }
-    .dashboard-form-input-logo, .dashboard-submit-button {
+
+    .dashboard-form-input-logo,
+    .dashboard-submit-button {
         margin-top: 3px;
-    }.dashboard-textarea {
+    }
+
+    .dashboard-textarea {
         margin-top: 4px;
     }
+
     /* homepage:start */
     .dashboard-header {
         padding: 24px 40px 24px 40px;
@@ -217,7 +214,6 @@
 
     .uploaded-file-wrapper {
         max-height: 300px;
-
     }
 
     /* homepage:end */
@@ -243,7 +239,6 @@
 
     /* subscription:end */
 
-
     /* chat history:start */
     .chat-history-title {
         margin-bottom: 32px;
@@ -259,7 +254,6 @@
 
 /* laptop devices */
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
-
     .dashboard-main-content-wrapper-homepage {
         gap: 100px;
     }
@@ -271,7 +265,6 @@
 
     .new-chat-button {
         margin-top: 20px;
-
     }
 
     .dashboard-responsive-sidebar-main-wrapper {
@@ -293,7 +286,7 @@
     }
 
     .dashboard-container {
-        width: calc(100% - 320px)
+        width: calc(100% - 320px);
     }
 
     /* homepage:start */
@@ -326,15 +319,18 @@
 
     .uploaded-file-wrapper {
         max-height: 300px;
-
     }
 
     /* homepage:end */
-    .dashboard-form-input-logo, .dashboard-submit-button {
+    .dashboard-form-input-logo,
+    .dashboard-submit-button {
         margin-top: 3px;
-    }.dashboard-textarea {
+    }
+
+    .dashboard-textarea {
         margin-top: 4px;
     }
+
     .chat-history-table,
     .subscription-cards-wrapper,
     .dashboard-contact-main-wrapper {
@@ -416,7 +412,6 @@
     }
 
     /* chat history:end */
-
 }
 
 /* large tablet devices */
@@ -611,7 +606,6 @@
         padding: 8px;
     }
 
-
     .dashboard-chat-history-item {
         padding: 7px 6px 7px 8px;
     }
@@ -621,7 +615,6 @@
         font-size: 16px;
         gap: 11px;
         margin-bottom: 12px;
-
     }
 
     .dashboard-sidebar-manage-item svg {
@@ -657,7 +650,6 @@
 
     .context-folder-wrapper {
         margin: 14px 0;
-
     }
 
     .context-folder-name {
@@ -708,7 +700,6 @@
 
     /* share:end */
 
-
     /* upload:start */
     .uploaded-file-wrapper {
         margin-top: 20px !important;
@@ -740,9 +731,7 @@
 
     /* upload:end */
 
-
     /* drawer:end */
-
 
     /* contact::start */
     .chat-history-table,
@@ -762,14 +751,11 @@
         gap: 40px;
     }
 
-
-
     .contact-form {
         margin-top: 30px;
     }
 
     /* contact::end */
-
 
     /* subscription:start */
     .subscription-cards-wrapper {
@@ -823,7 +809,6 @@
 
     /* subscription:end */
 
-
     /* chat history:start */
     .chat-history-table .table thead tr th {
         padding: 14px 24px;
@@ -864,16 +849,12 @@
 
     /* chat history:end */
 
-
-
-
     /* conversation:start */
     .dashboard-conversation-container {
         height: calc(100vh - 282px);
         min-height: calc(100vh - 282px);
         max-height: calc(100vh - 282px);
         overflow-y: auto;
-
     }
 
     .dashboard-conversation {
@@ -897,7 +878,6 @@
         color: #000;
         font-size: 18px;
         margin-top: 8px;
-
     }
 
     .ai-response-title {
@@ -974,7 +954,6 @@
     }
 
     .dashboard-form-input-wrapper {
-
         padding: 0 10px;
     }
 
@@ -1006,6 +985,45 @@
 
     /* conversation:end */
 
+     /* custom */
+     .upload-file-drawer-button {
+        height: 40px;
+        width: 40px;
+    }
+
+    .upload-file-drawer-button svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .new-chat-button {
+        height: 32px !important;
+        font-size: 12px;
+        padding: 3px 12px;
+        border-radius: 20px;
+        gap: 4px;
+    }
+
+    .new-chat-button svg {
+        height: 14px;
+        width: 14px;
+    }
+
+    .dashboard-chat-item-option-item svg {
+        height: 16px;
+        width: 16px;
+    }
+
+    .dashboard-chat-item-option-wrapper-sm {
+        padding: 12px 20px;
+        gap: 12px;
+    }
+
+    .dashboard-chat-item-option-wrapper-sm .dashboard-chat-item-option-item {
+        font-size: 12px;
+    }
+
+    /* custom */
 }
 
 /* medium tablet devices */
@@ -1041,7 +1059,6 @@
 
     .dashboard-header-title {
         font-size: 18px;
-
     }
 
     .dashboard-header-profile-container {
@@ -1150,6 +1167,7 @@
         resize: none;
         min-width: 400px;
     }
+
     .dashboard-submit-button {
         margin-top: 0px !important;
         height: 35px;
@@ -1203,7 +1221,6 @@
         padding: 8px;
     }
 
-
     .dashboard-chat-history-item {
         padding: 7px 6px 7px 8px;
     }
@@ -1213,7 +1230,6 @@
         font-size: 16px;
         gap: 11px;
         margin-bottom: 12px;
-
     }
 
     .dashboard-sidebar-manage-item svg {
@@ -1249,7 +1265,6 @@
 
     .context-folder-wrapper {
         margin: 14px 0;
-
     }
 
     .context-folder-name {
@@ -1300,7 +1315,6 @@
 
     /* share:end */
 
-
     /* upload:start */
     .uploaded-file-wrapper {
         margin-top: 20px !important;
@@ -1332,9 +1346,7 @@
 
     /* upload:end */
 
-
     /* drawer:end */
-
 
     /* contact::start */
     .chat-history-table,
@@ -1345,13 +1357,10 @@
     }
 
     .dashboard-contact-main-container {
-
         padding-top: 20px !important;
         padding-bottom: 20px !important;
         gap: 40px;
     }
-
-
 
     .contact-form {
         width: 100%;
@@ -1360,8 +1369,6 @@
     }
 
     /* contact::end */
-
-
 
     /* subscription:start */
     .subscription-cards-wrapper {
@@ -1450,14 +1457,12 @@
 
     /* chat history:end */
 
-
     /* conversation:start */
     .dashboard-conversation-container {
         height: calc(100vh - 282px);
         min-height: calc(100vh - 282px);
         max-height: calc(100vh - 282px);
         overflow-y: auto;
-
     }
 
     .dashboard-conversation {
@@ -1481,7 +1486,6 @@
         color: #000;
         font-size: 16px;
         margin-top: 8px;
-
     }
 
     .ai-response-title {
@@ -1558,7 +1562,6 @@
     }
 
     .dashboard-form-input-wrapper {
-
         padding: 0 10px;
     }
 
@@ -1590,6 +1593,46 @@
 
     /* conversation:end */
 
+
+     /* custom */
+     .upload-file-drawer-button {
+        height: 40px;
+        width: 40px;
+    }
+
+    .upload-file-drawer-button svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .new-chat-button {
+        height: 32px !important;
+        font-size: 12px;
+        padding: 3px 12px;
+        border-radius: 20px;
+        gap: 4px;
+    }
+
+    .new-chat-button svg {
+        height: 14px;
+        width: 14px;
+    }
+
+    .dashboard-chat-item-option-item svg {
+        height: 16px;
+        width: 16px;
+    }
+
+    .dashboard-chat-item-option-wrapper-sm {
+        padding: 12px 20px;
+        gap: 12px;
+    }
+
+    .dashboard-chat-item-option-wrapper-sm .dashboard-chat-item-option-item {
+        font-size: 12px;
+    }
+
+    /* custom */
 }
 
 /* small tablet devices */
@@ -1619,7 +1662,6 @@
 
     .dashboard-header-title {
         font-size: 18px;
-
     }
 
     .dashboard-header-profile-container {
@@ -1659,7 +1701,7 @@
 
     .dashboard-home-main-title {
         font-size: 30px;
-        margin-bottom: 16px
+        margin-bottom: 16px;
     }
 
     .dashboard-home-main-description {
@@ -1777,7 +1819,7 @@
     }
 
     .dashboard-chat-history-item-title {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .dashboard-chat-history-item {
@@ -1789,7 +1831,6 @@
         font-size: 14px;
         gap: 11px;
         margin-bottom: 6px;
-
     }
 
     .dashboard-sidebar-manage-item svg {
@@ -1851,7 +1892,6 @@
         font-size: 14px;
     }
 
-
     /* settings */
     .settings-textarea,
     .custom-checkbox-wrapper,
@@ -1870,7 +1910,6 @@
     }
 
     /* share:end */
-
 
     /* upload:start */
     .uploaded-file-wrapper {
@@ -1902,7 +1941,6 @@
     }
 
     /* upload:end */
-
 
     /* drawer:end */
 
@@ -1943,7 +1981,6 @@
     }
 
     /* contact::end */
-
 
     /* subscription:start */
     .subscription-cards-wrapper {
@@ -1996,7 +2033,6 @@
 
     /* subscription:end */
 
-
     /* chat history:start */
     .chat-history-table .table thead tr th {
         padding: 14px 24px;
@@ -2037,15 +2073,12 @@
 
     /* chat history:end */
 
-
-
     /* conversation:start */
     .dashboard-conversation-container {
         height: calc(100vh - 282px);
         min-height: calc(100vh - 282px);
         max-height: calc(100vh - 282px);
         overflow-y: auto;
-
     }
 
     .dashboard-conversation {
@@ -2069,7 +2102,6 @@
         color: #000;
         font-size: 15px;
         margin-top: 4px;
-
     }
 
     .ai-response-title {
@@ -2178,6 +2210,46 @@
     }
 
     /* conversation:end */
+
+     /* custom */
+     .upload-file-drawer-button {
+        height: 40px;
+        width: 40px;
+    }
+
+    .upload-file-drawer-button svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .new-chat-button {
+        height: 32px !important;
+        font-size: 12px;
+        padding: 3px 12px;
+        border-radius: 20px;
+        gap: 4px;
+    }
+
+    .new-chat-button svg {
+        height: 14px;
+        width: 14px;
+    }
+
+    .dashboard-chat-item-option-item svg {
+        height: 16px;
+        width: 16px;
+    }
+
+    .dashboard-chat-item-option-wrapper-sm {
+        padding: 12px 20px;
+        gap: 12px;
+    }
+
+    .dashboard-chat-item-option-wrapper-sm .dashboard-chat-item-option-item {
+        font-size: 12px;
+    }
+
+    /* custom */
 }
 
 /* large mobile devices */
@@ -2211,7 +2283,6 @@
 
     .dashboard-header-title {
         font-size: 18px;
-
     }
 
     .dashboard-header-profile-container {
@@ -2251,7 +2322,7 @@
 
     .dashboard-home-main-title {
         font-size: 26px;
-        margin-bottom: 12px
+        margin-bottom: 12px;
     }
 
     .dashboard-home-main-description {
@@ -2377,7 +2448,6 @@
         font-size: 14px;
         gap: 11px;
         margin-bottom: 6px;
-
     }
 
     .dashboard-sidebar-manage-item svg {
@@ -2439,7 +2509,6 @@
         font-size: 14px;
     }
 
-
     /* settings */
     .settings-textarea,
     .custom-checkbox-wrapper,
@@ -2458,7 +2527,6 @@
     }
 
     /* share:end */
-
 
     /* upload:start */
     .uploaded-file-wrapper {
@@ -2490,7 +2558,6 @@
     }
 
     /* upload:end */
-
 
     /* drawer:end */
 
@@ -2583,7 +2650,6 @@
 
     /* subscription:end */
 
-
     /* chat history:start */
     .chat-history-table .table thead tr th {
         padding: 12px 20px;
@@ -2624,15 +2690,12 @@
 
     /* chat history:end */
 
-
-
     /* conversation:start */
     .dashboard-conversation-container {
         height: calc(100vh - 282px);
         min-height: calc(100vh - 282px);
         max-height: calc(100vh - 282px);
         overflow-y: auto;
-
     }
 
     .dashboard-conversation {
@@ -2656,7 +2719,6 @@
         color: #000;
         font-size: 15px;
         margin-top: 4px;
-
     }
 
     .ai-response-title {
@@ -2765,6 +2827,46 @@
     }
 
     /* conversation:end */
+
+     /* custom */
+     .upload-file-drawer-button {
+        height: 40px;
+        width: 40px;
+    }
+
+    .upload-file-drawer-button svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .new-chat-button {
+        height: 32px !important;
+        font-size: 12px;
+        padding: 3px 12px;
+        border-radius: 20px;
+        gap: 4px;
+    }
+
+    .new-chat-button svg {
+        height: 14px;
+        width: 14px;
+    }
+
+    .dashboard-chat-item-option-item svg {
+        height: 16px;
+        width: 16px;
+    }
+
+    .dashboard-chat-item-option-wrapper-sm {
+        padding: 12px 20px;
+        gap: 12px;
+    }
+
+    .dashboard-chat-item-option-wrapper-sm .dashboard-chat-item-option-item {
+        font-size: 12px;
+    }
+
+    /* custom */
 }
 
 /* mobile devices */
@@ -2794,7 +2896,6 @@
 
     .dashboard-header-title {
         font-size: 18px;
-
     }
 
     .dashboard-header-profile-container {
@@ -2834,7 +2935,7 @@
 
     .dashboard-home-main-title {
         font-size: 26px;
-        margin-bottom: 12px
+        margin-bottom: 12px;
     }
 
     .dashboard-home-main-description {
@@ -2960,7 +3061,6 @@
         font-size: 14px;
         gap: 11px;
         margin-bottom: 6px;
-
     }
 
     .dashboard-sidebar-manage-item svg {
@@ -3022,7 +3122,6 @@
         font-size: 14px;
     }
 
-
     /* settings */
     .settings-textarea,
     .custom-checkbox-wrapper,
@@ -3041,7 +3140,6 @@
     }
 
     /* share:end */
-
 
     /* upload:start */
     .uploaded-file-wrapper {
@@ -3074,7 +3172,6 @@
 
     /* upload:end */
 
-
     /* drawer:end */
 
     /* modals:start */
@@ -3098,7 +3195,6 @@
 
     /* modals:end */
 
-
     /* contact::start */
     .chat-history-table,
     .subscription-cards-wrapper,
@@ -3113,8 +3209,6 @@
         padding-bottom: 20px !important;
         gap: 40px;
     }
-
-
 
     /* contact::end */
 
@@ -3209,15 +3303,12 @@
 
     /* chat history:end */
 
-
-
     /* conversation:start */
     .dashboard-conversation-container {
         height: calc(100vh - 282px);
         min-height: calc(100vh - 282px);
         max-height: calc(100vh - 282px);
         overflow-y: auto;
-
     }
 
     .dashboard-conversation {
@@ -3241,7 +3332,6 @@
         color: #000;
         font-size: 15px;
         margin-top: 4px;
-
     }
 
     .ai-response-title {
@@ -3350,6 +3440,46 @@
     }
 
     /* conversation:end */
+
+     /* custom */
+     .upload-file-drawer-button {
+        height: 40px;
+        width: 40px;
+    }
+
+    .upload-file-drawer-button svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .new-chat-button {
+        height: 32px !important;
+        font-size: 12px;
+        padding: 3px 12px;
+        border-radius: 20px;
+        gap: 4px;
+    }
+
+    .new-chat-button svg {
+        height: 14px;
+        width: 14px;
+    }
+
+    .dashboard-chat-item-option-item svg {
+        height: 16px;
+        width: 16px;
+    }
+
+    .dashboard-chat-item-option-wrapper-sm {
+        padding: 12px 20px;
+        gap: 12px;
+    }
+
+    .dashboard-chat-item-option-wrapper-sm .dashboard-chat-item-option-item {
+        font-size: 12px;
+    }
+
+    /* custom */
 }
 
 /* extra small devices */
@@ -3379,7 +3509,6 @@
 
     .dashboard-header-title {
         font-size: 18px;
-
     }
 
     .dashboard-header-profile-container {
@@ -3419,7 +3548,7 @@
 
     .dashboard-home-main-title {
         font-size: 26px;
-        margin-bottom: 12px
+        margin-bottom: 12px;
     }
 
     .dashboard-home-main-description {
@@ -3545,7 +3674,6 @@
         font-size: 14px;
         gap: 11px;
         margin-bottom: 6px;
-
     }
 
     .dashboard-sidebar-manage-item svg {
@@ -3607,7 +3735,6 @@
         font-size: 14px;
     }
 
-
     /* settings */
     .settings-textarea,
     .custom-checkbox-wrapper,
@@ -3626,7 +3753,6 @@
     }
 
     /* share:end */
-
 
     /* upload:start */
     .uploaded-file-wrapper {
@@ -3658,7 +3784,6 @@
     }
 
     /* upload:end */
-
 
     /* drawer:end */
 
@@ -3698,10 +3823,7 @@
         gap: 40px;
     }
 
-
-
     /* contact::end */
-
 
     /* subscription:start */
     .subscription-cards-wrapper {
@@ -3754,7 +3876,6 @@
 
     /* subscription:end */
 
-
     /* chat history:start */
     .chat-history-table .table thead tr th {
         padding: 12px 20px;
@@ -3795,14 +3916,12 @@
 
     /* chat history:end */
 
-
     /* conversation:start */
     .dashboard-conversation-container {
         height: calc(100vh - 282px);
         min-height: calc(100vh - 282px);
         max-height: calc(100vh - 282px);
         overflow-y: auto;
-
     }
 
     .dashboard-conversation {
@@ -3826,7 +3945,6 @@
         color: #000;
         font-size: 15px;
         margin-top: 4px;
-
     }
 
     .ai-response-title {
@@ -3935,6 +4053,46 @@
     }
 
     /* conversation:end */
+
+    /* custom */
+    .upload-file-drawer-button {
+        height: 40px;
+        width: 40px;
+    }
+
+    .upload-file-drawer-button svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .new-chat-button {
+        height: 32px !important;
+        font-size: 12px;
+        padding: 3px 12px;
+        border-radius: 20px;
+        gap: 4px;
+    }
+
+    .new-chat-button svg {
+        height: 14px;
+        width: 14px;
+    }
+
+    .dashboard-chat-item-option-item svg {
+        height: 16px;
+        width: 16px;
+    }
+
+    .dashboard-chat-item-option-wrapper-sm {
+        padding: 12px 20px;
+        gap: 12px;
+    }
+
+    .dashboard-chat-item-option-wrapper-sm .dashboard-chat-item-option-item {
+        font-size: 12px;
+    }
+
+    /* custom */
 }
 
 /* custom breakpoint */
