@@ -71,22 +71,28 @@ $(document).ready(function () {
   });
 
   // details toggle::
-  const toggleBtn = document.querySelector('.ai-toggle-details-btn');
-  const detailsContainer = document.querySelector(
-    '.ai-response-details-container'
-  );
+  const toggleBtns = document.querySelectorAll('.ai-toggle-details-btn');
 
+toggleBtns?.forEach((toggleBtn) => {
   toggleBtn?.addEventListener('click', () => {
-    if (detailsContainer.classList.contains('collapsed')) {
-      // Expand
-      detailsContainer.classList.remove('collapsed');
-      toggleBtn.textContent = 'Hide Details';
-    } else {
-      // Collapse
-      detailsContainer.classList.add('collapsed');
-      toggleBtn.textContent = 'Show Details';
+    // Find the parent ai-response element
+    const responseContainer = toggleBtn.closest('.ai-response');
+    // Find the details container within the response container
+    const detailsContainer = responseContainer.querySelector('.ai-response-details-container');
+
+    if (detailsContainer) {
+      if (detailsContainer.classList.contains('collapsed')) {
+        // Expand
+        detailsContainer.classList.remove('collapsed');
+        toggleBtn.textContent = 'Hide Detail';
+      } else {
+        // Collapse
+        detailsContainer.classList.add('collapsed');
+        toggleBtn.textContent = 'Show Detail';
+      }
     }
   });
+});
 
   //drawer:
   const contextFolderBtns = document.querySelectorAll('.context-folder-btn');
@@ -517,7 +523,7 @@ $(document).ready(function () {
   const uploadDrawerWrapper = document.querySelector(
     '.upload-dashboard-drawer-wrapper'
   );
-  const manageFilesButton = document.querySelector(
+  const manageFilesButtons = document.querySelectorAll(
     '.dashboard-sidebar-manage-item.files'
   );
   const uploadFileInputDrawerButton = document.querySelector(
@@ -535,11 +541,13 @@ $(document).ready(function () {
   });
 
   // show upload drawer by clicking on files from manage items (sidebar):
-  manageFilesButton?.addEventListener('click', (e) => {
-    if (uploadDrawerWrapper) {
-      uploadDrawerWrapper.classList.toggle('show');
-    }
-  });
+  manageFilesButtons?.forEach((manageFilesButton)=>{
+    manageFilesButton?.addEventListener('click', (e) => {
+      if (uploadDrawerWrapper) {
+        uploadDrawerWrapper.classList.toggle('show');
+      }
+    });
+  })
   uploadFileInputDrawerButton?.addEventListener('click', (e) => {
     if (uploadDrawerWrapper) {
       uploadDrawerWrapper.classList.toggle('show');
@@ -922,7 +930,7 @@ $(document).ready(function () {
         fileItem?.getAttribute('data-full-name');
       const uploadStatus = fileItem
         .querySelector('.upload-icon-right')
-        .classList.contains('hidden')
+        ?.classList?.contains('hidden')
         ? 'processing'
         : 'completed';
 

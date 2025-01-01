@@ -201,6 +201,7 @@ body {
 .ai-reaction-like:hover svg path,
 .ai-reaction-dislike:hover svg path {
   fill: var(--primary--color);
+   
 }
 
 .regenerate-btn {
