@@ -248,7 +248,16 @@
     .chat-history-table .table tbody tr td {
         text-wrap: nowrap;
     }
+    .dashboard-chat-item-option-wrapper-sm .dashboard-chat-item-option-item {
+        font-size: 12px;
+    }
 
+    .chat-history-filter-wrapper {
+        margin-top: 12px;
+        margin-bottom: 24px;
+        text-wrap: nowrap;
+        margin-left: 24px;
+    }
     /* chat history:end */
 }
 
@@ -410,7 +419,16 @@
     .title-modal-container-description {
         font-size: 16px;
     }
+    .dashboard-chat-item-option-wrapper-sm .dashboard-chat-item-option-item {
+        font-size: 12px;
+    }
 
+    .chat-history-filter-wrapper {
+        margin-top: 12px;
+        margin-bottom: 24px;
+        text-wrap: nowrap;
+        margin-left: 32px;
+    }
     /* chat history:end */
 }
 
@@ -985,8 +1003,8 @@
 
     /* conversation:end */
 
-     /* custom */
-     .upload-file-drawer-button {
+    /* custom */
+    .upload-file-drawer-button {
         height: 40px;
         width: 40px;
     }
@@ -1022,6 +1040,14 @@
     .dashboard-chat-item-option-wrapper-sm .dashboard-chat-item-option-item {
         font-size: 12px;
     }
+
+    .chat-history-filter-wrapper {
+        margin-top: 12px;
+        margin-bottom: 24px;
+        text-wrap: nowrap;
+        margin-left: 24px;
+    }
+
 
     /* custom */
 }
@@ -1593,9 +1619,8 @@
 
     /* conversation:end */
 
-
-     /* custom */
-     .upload-file-drawer-button {
+    /* custom */
+    .upload-file-drawer-button {
         height: 40px;
         width: 40px;
     }
@@ -1630,6 +1655,18 @@
 
     .dashboard-chat-item-option-wrapper-sm .dashboard-chat-item-option-item {
         font-size: 12px;
+    }
+
+    .chat-history-filter-wrapper {
+        margin-top: 12px;
+        margin-bottom: 24px;
+        text-wrap: nowrap;
+        margin-left: 0px;
+    }
+
+    .chat-history-filter-select {
+        min-width: 250px;
+        font-size: 14px !important;
     }
 
     /* custom */
@@ -2211,8 +2248,8 @@
 
     /* conversation:end */
 
-     /* custom */
-     .upload-file-drawer-button {
+    /* custom */
+    .upload-file-drawer-button {
         height: 40px;
         width: 40px;
     }
@@ -2247,6 +2284,18 @@
 
     .dashboard-chat-item-option-wrapper-sm .dashboard-chat-item-option-item {
         font-size: 12px;
+    }
+
+    .chat-history-filter-wrapper {
+        margin-top: 12px;
+        margin-bottom: 24px;
+        text-wrap: nowrap;
+        margin-left: 0px;
+    }
+
+    .chat-history-filter-select {
+        min-width: 250px;
+        font-size: 14px !important;
     }
 
     /* custom */
@@ -2828,8 +2877,8 @@
 
     /* conversation:end */
 
-     /* custom */
-     .upload-file-drawer-button {
+    /* custom */
+    .upload-file-drawer-button {
         height: 40px;
         width: 40px;
     }
@@ -2864,6 +2913,19 @@
 
     .dashboard-chat-item-option-wrapper-sm .dashboard-chat-item-option-item {
         font-size: 12px;
+    }
+
+    .chat-history-filter-wrapper {
+        margin-top: 12px;
+        margin-bottom: 24px;
+        text-wrap: nowrap;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .chat-history-filter-select {
+        min-width: 250px;
+        font-size: 14px !important;
     }
 
     /* custom */
@@ -3441,8 +3503,8 @@
 
     /* conversation:end */
 
-     /* custom */
-     .upload-file-drawer-button {
+    /* custom */
+    .upload-file-drawer-button {
         height: 40px;
         width: 40px;
     }
@@ -3477,6 +3539,18 @@
 
     .dashboard-chat-item-option-wrapper-sm .dashboard-chat-item-option-item {
         font-size: 12px;
+    }
+
+    .chat-history-filter-wrapper {
+        margin-top: 12px;
+        margin-bottom: 24px;
+        text-wrap: nowrap;
+        margin-left: 0px;
+    }
+
+    .chat-history-filter-select {
+        min-width: 250px;
+        font-size: 14px !important;
     }
 
     /* custom */
@@ -4090,6 +4164,18 @@
 
     .dashboard-chat-item-option-wrapper-sm .dashboard-chat-item-option-item {
         font-size: 12px;
+    }
+
+    .chat-history-filter-wrapper {
+        margin-top: 12px;
+        margin-bottom: 24px;
+        text-wrap: nowrap;
+        margin-left: 0px;
+    }
+
+    .chat-history-filter-select {
+        min-width: 250px;
+        font-size: 14px !important;
     }
 
     /* custom */

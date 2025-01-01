@@ -2125,13 +2125,15 @@ body {
 }
 
 .upload-drawer-folders-select.nice-select:after,
-.upload-drawer-all-files-select.nice-select:after {
+.upload-drawer-all-files-select.nice-select:after,.chat-history-filter-select:after {
   height: 8px;
   margin-top: -6px;
   right: 20px;
   width: 8px;
 }
-
+.chat-history-filter-select{
+  min-width: 260px;
+}
 .upload-drawer-all-files-select select {
   display: block;
   width: 100%;
@@ -2257,4 +2259,13 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.chat-history-filter-wrapper {
+  margin-top: 24px;
+  margin-left: 100px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }

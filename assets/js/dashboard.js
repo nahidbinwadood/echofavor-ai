@@ -2,6 +2,7 @@ $(document).ready(function () {
   // nice select:::
   $('.upload-drawer-folders-select').niceSelect();
   $('.upload-drawer-all-files-select').niceSelect();
+  $('.chat-history-filter-select').niceSelect();
 
   const profileButton = document.querySelector(
     '.dashboard-header-profile-container'
